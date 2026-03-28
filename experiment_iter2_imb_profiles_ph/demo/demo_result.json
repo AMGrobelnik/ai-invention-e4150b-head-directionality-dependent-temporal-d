@@ -1,0 +1,13 @@
+{
+  "id": "exp_id1_it2__opus",
+  "type": "code",
+  "title": "IMB Profiles & Phase 1 Novelty Test: max(IMB) vs DD R\u00b2",
+  "summary": "This experiment processes 870,677 sentences across 335 UD treebanks to compute standard and encounter-only Instantaneous Memory Burden (IMB) profiles, then executes the Phase 1 novelty test by regressing max(IMB) on DD moments and tree properties.\n\nFor each sentence, the standard IMB profile accumulates age of each open dependency at every position. The encounter-only variant restricts to head-initial dependencies only. The decomposition identity total_IMB = sum(d_k*(d_k+1)/2) was verified on 32,669 spot-checks with zero failures.\n\nWorked example replication confirmed: two 5-node trees sharing identical DD multisets {1,1,2,2} produce different IMB profiles, max values (3 vs 2), and quadratic costs (18 vs 16), while linear costs are identical, demonstrating IMB captures temporal overlap invisible to DD statistics.\n\nPhase 1 novelty test: Pooled OLS of max(IMB) on 7 predictors yields R\u00b2=0.9475 (standard) and R\u00b2=0.8827 (encounter-only). Head-type splits (103 head-final, 151 head-initial, 82 mixed) reveal differential patterns. The encounter-only variant falls below the 0.90 novelty threshold, confirming temporal overlap from head-initial dependencies contains genuinely novel signal beyond aggregate DD statistics. All analyses include per-treebank regressions, residual distributions, and descriptive statistics stratified by head type, modality, and word order across all 335 treebanks.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id1_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id1_it2__opus/method_code_demo.ipynb"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eval_id5_it3__opus",
+  "type": "code",
+  "title": "Comprehensive Hypothesis Criteria Synthesis Evaluation",
+  "summary": "This evaluation synthesizes 4 dependency experiments (exp_id1-4) across 335 UD treebanks to assess 7 pre-registered criteria for the load-smoothing hypothesis plus 5 cross-cutting synthesis metrics. It loads full_method_out.json from each experiment, extracts key statistics (R\u00b2, Cohen's d, meta-analysis p-values, correlations), and renders verdicts using the hypothesis's own thresholds.\n\nResults: 0 confirmed, 1 partial pass (novelty R\u00b2: standard 0.9475 fails but encounter-only 0.8827 passes), 1 weak pass (\u03b1=1 control d=-0.085), 1 inconclusive (IC independence: 74.3% per-treebank but meta p=0.589), 4 failures (coverage 31.4% vs 70%, monotonic \u03b1 \u03c1=-0.70, spoken-written 3/7, case-marking null). The primary finding is an exploratory typological split: VSO d=1.039 (n=7), SVO d=0.134 (n=24), SOV d=-0.546 (n=26), gradient 1.585 SD. Head-initial-only IMB explains SOV anti-smoothing via 68.5% peak reduction.\n\nCross-cutting: confirmatory/exploratory classification (0 confirmed, 2 exploratory, 4 failures), reviewer resolution (3/8 fully resolved, 5/8 partial), 11 ranked paper revisions. Output datasets: criteria verdicts, typological split, confirmatory/exploratory table, reviewer resolution, paper revisions, head-initial-only analysis, and synthesis summary with explicit can/cannot claims.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_3/gen_art/eval_id5_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id5_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id5_it3__opus/eval_code_demo.ipynb"
+}

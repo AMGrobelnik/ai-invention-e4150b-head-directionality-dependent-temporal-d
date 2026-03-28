@@ -1,0 +1,13 @@
+{
+  "id": "eval_id4_it3__opus",
+  "type": "code",
+  "title": "Length-Stratified R\u00b2 and Residual Variance Evaluation",
+  "summary": "This evaluation analyzes the Phase 1 experiment (870K sentences, 335 treebanks) with four metric groups. (1) Sentence-length-stratified R\u00b2 shows R\u00b2 INCREASES monotonically from 0.847 (8-12 words) to 0.950 (36+ words) for standard max(IMB), and 0.382 to 0.899 for encounter-only, meaning DD moments predict temporal overlap better in longer sentences. However, absolute residual variance grows from 5.36 to 224.53 and mean absolute residualized max(IMB) rises from 1.81 to 9.67. Cross-stratification by head-type confirms encounter-only R\u00b2 is consistently lowest for head-final languages. (2) Head-type count reconciliation confirms the 335-to-294 reduction: all 335 split as 102/151/82, the n>=30 subset yields 83/141/70 matching the paper. WALS vs left_proportion agreement is only 20.2%. (3) Residual contextualization confirms 5.25% (standard) and 11.73% (encounter-only) residual. Incremental R\u00b2 shows mean_dd dominates (R2~0.80). Benchmarked against heavy-NP shift (R2~0.035) and given-before-new (R2~0.055), the 5.25% is competitive. Per-treebank: 70% have residual >5%, only 0.7% exceed 15%. (4) Monotonicity test: Spearman r=1.0 (p~0) confirming perfect monotonic R\u00b2 increase with length; linear slope 0.00263, bootstrap 95% CI [0.00239, 0.00288] entirely above zero.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_3/gen_art/eval_id4_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id4_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id4_it3__opus/eval_code_demo.ipynb"
+}

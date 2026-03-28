@@ -1,0 +1,13 @@
+{
+  "id": "data_id2_it1__opus",
+  "type": "code",
+  "title": "Universal Dependencies Treebank Feature Dataset",
+  "summary": "This dataset downloads and processes 335 Universal Dependencies (UD) treebanks from commul/universal_dependencies on HuggingFace, extracting syntactic dependency tree features per sentence. Sentences with fewer than 8 non-punctuation tokens are filtered out.\n\nEach example's input contains: raw text, tokens, integer head indices, dependency relations, UPOS tags (converted from int to string), and morphological features. The output provides 17 computed features: sentence_length, effective_length, tree_depth, max_arity, mean_arity, mean_dd (dependency distance), dd_variance, dd_skewness, dd_list, projectivity_proportion, n_nonprojective, mean_ic (intervener complexity), ic_variance, max_ic, functional_ratio, content_ratio, and head_direction_entropy.\n\nProjectivity uses descendant-based arc crossing detection. Head-direction entropy captures left/right dependency balance via Shannon entropy. Intervener complexity counts head nodes between dependent and governor.\n\nCoverage: 335 treebanks across 100+ languages, 870,677 examples from 2,198,185 initial sentences (per-treebank cap: 10,000). Only qte_tect failed to load. Per-example metadata includes fold (train/dev/test), treebank_id, language_code, treebank_name, and sent_id.\n\nOutput follows exp_sel_data_out schema. The full output (~1.95 GB) is split into 23 files under 95 MB each. Processing uses memory-safe streaming: each treebank saved to temp file independently, then assembled without holding all data in memory.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_1/gen_art/data_id2_it1__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/data_id2_it1__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/data_id2_it1__opus/data_code_demo.ipynb"
+}

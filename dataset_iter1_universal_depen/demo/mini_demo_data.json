@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "source": "commul/universal_dependencies",
+    "description": "Curated subset of UD treebank syntactic features for demo",
+    "num_examples": 50,
+    "treebanks": [
+      "ab_abnc",
+      "akk_riao",
+      "akk_pisandub",
+      "abq_atb",
+      "af_afribooms"
+    ],
+    "languages": [
+      "ab",
+      "abq",
+      "af",
+      "akk"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "abq_atb",
+      "examples": [
+        {
+          "input": "{\"text\": \"абарауи апшта йбзазаквад ауагIа швабыжта швабыжта йгIапсад ауагIа\", \"tokens\": [\"абарауи\", \"апшта\", \"йбзазаквад\", \"ауагIа\", \"швабыжта\", \"швабыжта\", \"йгIапсад\", \"ауагIа\"], \"heads\": [2, 3, 0, 7, 7, 5, 3, 7], \"deprels\": [\"obl\", \"advmod\", \"root\", \"nsubj\", \"advmod\", \"conj\", \"conj\", \"dislocated\"], \"upos\": [\"ADV\", \"ADV\", \"VERB\", \"NOUN\", \"ADV\", \"ADV\", \"VERB\", \"NOUN\"], \"feats\": [\"PronType=Dem\", null, \"Number=Plur|Number[abs]=Plur|Person[abs]=3|Tense=Aor|VerbForm=Fin\", \"Definite=Def\", null, null, \"Number[abs]=Plur|Person[abs]=3|Tense=Aor|VerbForm=Fin\", \"Definite=Def\"]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.75, \"mean_dd\": 1.8571, \"dd_variance\": 1.2653, \"dd_skewness\": 0.8849, \"dd_list\": [1, 1, 3, 2, 1, 4, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2857, \"ic_variance\": 0.2041, \"max_ic\": 1, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "39"
+        },
+        {
+          "input": "{\"text\": \"саргьи ауи сазхъвыцуа сджвылцIд йзылгвалищд ари бацацIахва хIва\", \"tokens\": [\"саргьи\", \"ауи\", \"сазхъвыцуа\", \"сджвылцIд\", \"йзылгвалищд\", \"ари\", \"бацацIахва\", \"хIва\"], \"heads\": [4, 3, 4, 0, 4, 7, 5, 5], \"deprels\": [\"nsubj\", \"iobj\", \"advcl\", \"root\", \"conj\", \"amod\", \"nsubj\", \"mark\"], \"upos\": [\"PRON\", \"PRON\", \"VERB\", \"VERB\", \"VERB\", \"PRON\", \"NOUN\", \"PART\"], \"feats\": [null, \"Number=Sing|PronType=Dem\", \"Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=1|Person[io]=3|Tense=Pres|VerbForm=NonFin\", \"Number[abs]=Sing|Person[abs]=1|Tense=Aor|VerbForm=Fin\", \"Gender[abs]=Neut|Gender[io]=Fem|Int=Yes|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=3|RelType=Rsn|VerbForm=NonFin\", null, null, null]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.75, \"mean_dd\": 1.7143, \"dd_variance\": 0.7755, \"dd_skewness\": 0.5891, \"dd_list\": [3, 1, 1, 1, 1, 2, 3], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2857, \"ic_variance\": 0.2041, \"max_ic\": 1, \"functional_ratio\": 0.1429, \"content_ratio\": 0.8571, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "74"
+        },
+        {
+          "input": "{\"text\": \"апхьага гIасахвта араса йшгIахъсрышвтуа cан сыла дгIацIалид йанакIвызлакIгьи\", \"tokens\": [\"апхьага\", \"гIасахвта\", \"араса\", \"йшгIахъсрышвтуа\", \"cан\", \"сыла\", \"дгIацIалид\", \"йанакIвызлакIгьи\"], \"heads\": [2, 4, 4, 7, 7, 7, 0, 7], \"deprels\": [\"obj\", \"advcl\", \"obl\", \"advcl\", \"nsubj\", \"obl\", \"root\", \"advmod\"], \"upos\": [\"NOUN\", \"VERB\", \"PRON\", \"VERB\", \"NOUN\", \"NOUN\", \"VERB\", \"ADV\"], \"feats\": [\"Definite=Def\", \"Number[erg]=Sing|Person[erg]=1|VerbForm=NonFin\", null, \"Caus=Yes|Gender[abs]=Neut|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=1|RelType=Mnr|Tense=Pres|VerbForm=NonFin\", \"Number[psor]=Sing|Person[psor]=1\", \"Number[psor]=Sing|Person[psor]=1\", \"Gender[abs]=Com|Number[abs]=Sing|Person[abs]=3|Tense=Pres|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.3333, \"mean_dd\": 1.5714, \"dd_variance\": 0.5306, \"dd_skewness\": 0.8599, \"dd_list\": [1, 2, 1, 3, 2, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.0, \"ic_variance\": 0.0, \"max_ic\": 0, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.5917}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "79"
+        },
+        {
+          "input": "{\"text\": \"апхъа азаман уагIахъата адунай йыквыз шабгаз йазкIкIыта зджьара йбзазун\", \"tokens\": [\"апхъа\", \"азаман\", \"уагIахъата\", \"адунай\", \"йыквыз\", \"шабгаз\", \"йазкIкIыта\", \"зджьара\", \"йбзазун\"], \"heads\": [2, 9, 9, 5, 3, 7, 9, 9, 0], \"deprels\": [\"amod\", \"obl\", \"nsubj\", \"obl\", \"acl\", \"advcl\", \"advcl\", \"advmod\", \"root\"], \"upos\": [\"ADJ\", \"NOUN\", \"NOUN\", \"NOUN\", \"VERB\", \"VERB\", \"VERB\", \"ADV\", \"VERB\"], \"feats\": [null, \"Definite=Def\", null, \"Definite=Def\", \"RelType=Abs|Tense=Past|VerbForm=NonFin\", \"RelType=Mnr|Tense=Past|VerbForm=NonFin\", \"Gender[io]=Neut|Number[abs]=Plur|Number[io]=Sing|Person[abs]=3|Person[io]=3\", null, \"Number[abs]=Plur|Person[abs]=3|Tense=Imp|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 1.6, \"mean_dd\": 2.625, \"dd_variance\": 5.2344, \"dd_skewness\": 1.0911, \"dd_list\": [1, 7, 6, 1, 2, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.625, \"ic_variance\": 1.2344, \"max_ic\": 3, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.5436}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "11"
+        },
+        {
+          "input": "{\"text\": \"афачыгIв угвы йшангIалуа уа йшутахъу йутахъызтын хъгIадзата йчпа йутахъызтын\", \"tokens\": [\"афачыгIв\", \"угвы\", \"йшангIалуа\", \"уа\", \"йшутахъу\", \"йутахъызтын\", \"хъгIадзата\", \"йчпа\", \"йутахъызтын\"], \"heads\": [3, 3, 0, 5, 8, 8, 8, 3, 8], \"deprels\": [\"dislocated\", \"iobj\", \"root\", \"iobj\", \"advcl\", \"advcl\", \"xcomp\", \"conj\", \"advcl\"], \"upos\": [\"NOUN\", \"NOUN\", \"VERB\", \"PRON\", \"VERB\", \"VERB\", \"ADJ\", \"VERB\", \"VERB\"], \"feats\": [\"Definite=Def\", \"Gender[psor]=Masc|Number[psor]=Sing|Person[psor]=2\", \"Gender[abs]=Neut|Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=3|RelType=Mnr|Tense=Pres|VerbForm=NonFin\", null, \"Gender[abs]=Neut|Gender[io]=Masc|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=2|RelType=Mnr|Tense=Pres|VerbForm=NonFin\", \"Gender[abs]=Neut|Gender[io]=Masc|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=2|VerbForm=Conv\", null, \"Gender[abs]=Neut|Mood=Imp|Number[abs]=Sing|Person[abs]=3\", \"Gender[abs]=Neut|Gender[io]=Masc|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=2|VerbForm=Conv\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.6667, \"mean_dd\": 2.0, \"dd_variance\": 1.75, \"dd_skewness\": 1.2959, \"dd_list\": [2, 1, 1, 3, 2, 1, 5, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.125, \"ic_variance\": 0.1094, \"max_ic\": 1, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.8113}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "84"
+        },
+        {
+          "input": "{\"text\": \"вкусно закIта хъгIа аъахым акIвапI ауи са бзидздза йызбитI\", \"tokens\": [\"вкусно\", \"закIта\", \"хъгIа\", \"аъахым\", \"акIвапI\", \"ауи\", \"са\", \"бзидздза\", \"йызбитI\"], \"heads\": [0, 3, 4, 1, 4, 9, 9, 9, 1], \"deprels\": [\"root\", \"advmod\", \"xcomp\", \"conj\", \"cop\", \"obj\", \"nsubj\", \"advmod\", \"conj\"], \"upos\": [\"ADJ\", \"ADV\", \"ADJ\", \"VERB\", \"AUX\", \"PRON\", \"PRON\", \"ADV\", \"VERB\"], \"feats\": [null, null, null, \"Polarity=Neg|Tense=Pres|VerbForm=NonFin\", \"Tense=Pres|VerbForm=Fin\", \"Number=Sing|PronType=Dem\", null, null, \"Gender[abs]=Neut|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=1|Tense=Pres|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 2.0, \"mean_dd\": 2.5, \"dd_variance\": 5.0, \"dd_skewness\": 1.7106, \"dd_list\": [1, 1, 3, 1, 3, 2, 1, 8], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.375, \"ic_variance\": 0.4844, \"max_ic\": 2, \"functional_ratio\": 0.125, \"content_ratio\": 0.875, \"head_direction_entropy\": 0.9544}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "95"
+        },
+        {
+          "input": "{\"text\": \"сара сазрыпхьарыз дыгьсымамызд сгьампхьазд ауи сгвы йасуа адуней сыкIвб лхIвад\", \"tokens\": [\"сара\", \"сазрыпхьарыз\", \"дыгьсымамызд\", \"сгьампхьазд\", \"ауи\", \"сгвы\", \"йасуа\", \"адуней\", \"сыкIвб\", \"лхIвад\"], \"heads\": [3, 3, 0, 3, 7, 7, 3, 9, 3, 9], \"deprels\": [\"iobj\", \"csubj\", \"root\", \"conj\", \"nsubj\", \"iobj\", \"conj\", \"obl\", \"conj\", \"parataxis\"], \"upos\": [\"PRON\", \"VERB\", \"VERB\", \"VERB\", \"PRON\", \"NOUN\", \"VERB\", \"NOUN\", \"VERB\", \"VERB\"], \"feats\": [null, \"Caus=Yes|Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=1|Person[io]=3|RelType=Erg|Tense=Subj2|VerbForm=NonFin\", \"Gender[abs]=Com|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=1|Polarity=Neg|Tense=Past|VerbForm=Fin\", \"Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=1|Person[io]=3|Polarity=Neg|Tense=Aor|VerbForm=Fin\", \"Number=Sing|PronType=Dem\", \"Number[psor]=Sing|Person[psor]=1\", \"Gender[abs]=Neut|Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=3|Tense=Pres|VerbForm=NonFin\", \"Definite=Def\", \"Number[abs]=Sing|Person[abs]=1|Tense=Pres|VerbForm=Fin\", \"Gender[erg]=Fem|Number[erg]=Sing|Person[erg]=3|Tense=Aor|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 10, \"effective_length\": 10, \"tree_depth\": 2, \"max_arity\": 5, \"mean_arity\": 3.0, \"mean_dd\": 2.1111, \"dd_variance\": 2.7654, \"dd_skewness\": 1.418, \"dd_list\": [2, 1, 1, 2, 1, 4, 1, 6, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1111, \"ic_variance\": 0.0988, \"max_ic\": 1, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.9911}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "77"
+        },
+        {
+          "input": "{\"text\": \"хIара хIнапхьуз асхъан хIхвыцквата хIнапхьуз асхъан ахIарыфква ллырдырын псайспадза зджьакI гIанылхквун\", \"tokens\": [\"хIара\", \"хIнапхьуз\", \"асхъан\", \"хIхвыцквата\", \"хIнапхьуз\", \"асхъан\", \"ахIарыфква\", \"ллырдырын\", \"псайспадза\", \"зджьакI\", \"гIанылхквун\"], \"heads\": [2, 8, 2, 5, 2, 5, 8, 0, 8, 11, 8], \"deprels\": [\"nsubj\", \"advcl\", \"mark\", \"acl\", \"conj\", \"mark\", \"obj\", \"root\", \"advmod\", \"obj\", \"conj\"], \"upos\": [\"PRON\", \"VERB\", \"SCONJ\", \"VERB\", \"VERB\", \"SCONJ\", \"NOUN\", \"VERB\", \"ADV\", \"NOUN\", \"VERB\"], \"feats\": [null, \"Gender[io]=Neut|Number[abs]=Plur|Number[io]=Sing|Person[abs]=1|Person[io]=3|Tense=Imp|VerbForm=NonFin\", null, \"Number=Plur|Number[abs]=Plur|Person[abs]=1|VerbForm=NonFin\", \"Gender[io]=Neut|Number[abs]=Plur|Number[io]=Sing|Person[abs]=1|Person[io]=3|Tense=Imp|VerbForm=NonFin\", null, \"Definite=Def|Number=Plur\", \"Caus=Yes|Gender[erg]=Fem|Gender[io]=Fem|Number[erg]=Sing|Number[io]=Sing|Person[erg]=3|Person[io]=3|Tense=Past|VerbForm=Fin\", null, \"Definite=Ind\", \"Gender[erg]=Fem|Number=Plur|Number[erg]=Sing|Person[erg]=3|Tense=Imp|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 11, \"effective_length\": 11, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.5, \"mean_dd\": 1.9, \"dd_variance\": 2.49, \"dd_skewness\": 1.692, \"dd_list\": [1, 6, 1, 1, 3, 1, 1, 1, 1, 3], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1, \"ic_variance\": 0.09, \"max_ic\": 1, \"functional_ratio\": 0.2, \"content_ratio\": 0.8, \"head_direction_entropy\": 1.0}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "66"
+        },
+        {
+          "input": "{\"text\": \"саба йахща невинка йгIатыргунта ласа гIаргванта вязать йсчпатI наскьи афронт йаъакву йрыртуашта\", \"tokens\": [\"саба\", \"йахща\", \"невинка\", \"йгIатыргунта\", \"ласа\", \"гIаргванта\", \"вязать\", \"йсчпатI\", \"наскьи\", \"афронт\", \"йаъакву\", \"йрыртуашта\"], \"heads\": [2, 4, 4, 0, 6, 4, 8, 4, 7, 11, 12, 4], \"deprels\": [\"nmod\", \"nsubj\", \"obl\", \"root\", \"obj\", \"conj\", \"xcomp\", \"conj\", \"obj\", \"obl\", \"iobj\", \"conj\"], \"upos\": [\"NOUN\", \"NOUN\", \"PROPN\", \"VERB\", \"NOUN\", \"VERB\", \"VERB\", \"AUX\", \"NOUN\", \"NOUN\", \"VERB\", \"VERB\"], \"feats\": [\"Number[psor]=Sing|Person[psor]=1\", \"Gender[psor]=Masc|Number[psor]=Sing|Person[psor]=3\", null, \"Number[abs]=Plur|Number[erg]=Plur|Person[abs]=3|Person[erg]=3\", null, \"Number[erg]=Plur|Person[erg]=3\", null, \"Number[abs]=Plur|Number[erg]=Sing|Person[abs]=3|Person[erg]=1|Tense=Aor|VerbForm=Fin\", null, \"Definite=Def\", \"Number=Plur|RelType=Abs|Tense=Pres|VerbForm=NonFin\", \"Number[abs]=Plur|Number[erg]=Plur|Number[io]=Plur|Person[abs]=3|Person[erg]=3|Person[io]=3|Tense=Fut\"]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 12, \"tree_depth\": 3, \"max_arity\": 5, \"mean_arity\": 1.5714, \"mean_dd\": 2.1818, \"dd_variance\": 4.1488, \"dd_skewness\": 2.0767, \"dd_list\": [1, 2, 1, 1, 2, 1, 4, 2, 1, 1, 8], \"projectivity_proportion\": 0.9091, \"n_nonprojective\": 1, \"mean_ic\": 0.6364, \"ic_variance\": 1.5041, \"max_ic\": 4, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.9457}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "46"
+        },
+        {
+          "input": "{\"text\": \"йуымрыбагъьауата ауи дыната йчпата йутахъызтын арса чIврыта цIагIвта гIвмачвакI зквшвауала йрыгIв арса лентIа апшта\", \"tokens\": [\"йуымрыбагъьауата\", \"ауи\", \"дыната\", \"йчпата\", \"йутахъызтын\", \"арса\", \"чIврыта\", \"цIагIвта\", \"гIвмачвакI\", \"зквшвауала\", \"йрыгIв\", \"арса\", \"лентIа\", \"апшта\"], \"heads\": [0, 4, 4, 5, 11, 11, 11, 7, 10, 11, 1, 11, 14, 12], \"deprels\": [\"root\", \"obl\", \"discourse\", \"csubj\", \"advcl\", \"advmod\", \"advmod\", \"conj\", \"nsubj\", \"advcl\", \"conj\", \"advmod\", \"nmod\", \"parataxis\"], \"upos\": [\"VERB\", \"PRON\", \"PART\", \"VERB\", \"VERB\", \"ADV\", \"ADJ\", \"ADJ\", \"NOUN\", \"VERB\", \"VERB\", \"ADV\", \"NOUN\", \"ADJ\"], \"feats\": [\"Gender[abs]=Neut|Gender[erg]=Masc|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=2|Polarity=Neg|Tense=Pres|VerbForm=NonFin\", \"Number=Sing|PronType=Dem\", null, \"Gender[abs]=Neut|Number[abs]=Sing|Person[abs]=3\", \"Gender[abs]=Neut|Gender[io]=Masc|Number[abs]=Sing|Number[io]=Sing|Person[abs]=3|Person[io]=2|VerbForm=Conv\", null, null, null, null, \"RelType=Io|Tense=Pres|VerbForm=NonFin\", \"Gender[abs]=Neut|Mood=Imp|Number[abs]=Sing|Person[abs]=3\", null, null, null]}",
+          "output": "{\"sentence_length\": 14, \"effective_length\": 14, \"tree_depth\": 4, \"max_arity\": 5, \"mean_arity\": 1.625, \"mean_dd\": 2.7692, \"dd_variance\": 7.1006, \"dd_skewness\": 1.5655, \"dd_list\": [2, 1, 1, 6, 5, 4, 1, 1, 1, 10, 1, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.6923, \"ic_variance\": 1.4438, \"max_ic\": 4, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.8905}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "89"
+        }
+      ]
+    },
+    {
+      "dataset": "ab_abnc",
+      "examples": [
+        {
+          "input": "{\"text\": \"Сара Сталини Бериеи сшьырцаз Лакоба исиҭаз адҵа насыгӡон.\", \"tokens\": [\"Сара\", \"Сталини\", \"Бериеи\", \"сшьырцаз\", \"Лакоба\", \"исиҭаз\", \"адҵа\", \"насыгӡон\", \".\"], \"heads\": [4, 4, 2, 8, 6, 7, 8, 0, 8], \"deprels\": [\"nsubj\", \"obj\", \"conj\", \"ccomp:purp\", \"nsubj\", \"acl:relcl\", \"obj\", \"root\", \"punct\"], \"upos\": [\"PRON\", \"PROPN\", \"PROPN\", \"VERB\", \"PROPN\", \"VERB\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [\"Number=Sing|Person=1|PronType=Prs\", \"NameType=Prs\", \"NameType=Prs\", \"Dyn=Yes|Mood=Prp|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|VerbForm=NonFin\", \"NameType=Prs\", \"Dyn=Yes|Gender[subj]=Masc|Number[io]=Sing|Number[subj]=Sing|Person[io]=1|Person[obj]=Rel|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=NonFin\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Dyn=Yes|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Imp|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.6, \"mean_dd\": 1.75, \"dd_variance\": 1.1875, \"dd_skewness\": 1.0867, \"dd_list\": [3, 2, 1, 4, 1, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.375, \"ic_variance\": 0.4844, \"max_ic\": 2, \"functional_ratio\": 0.125, \"content_ratio\": 0.875, \"head_direction_entropy\": 0.8113}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w1439000"
+        },
+        {
+          "input": "{\"text\": \"Шәымҭақәак рышьҭахь Мкан дхынҳәит, амилициа уажәы иаауеит ҳәа.\", \"tokens\": [\"Шәымҭақәак\", \"рышьҭахь\", \"Мкан\", \"дхынҳәит\", \",\", \"амилициа\", \"уажәы\", \"иаауеит\", \"ҳәа\", \".\"], \"heads\": [4, 1, 4, 0, 8, 8, 8, 4, 8, 4], \"deprels\": [\"obl\", \"case\", \"nsubj\", \"root\", \"punct\", \"nsubj\", \"advmod\", \"conj\", \"mark\", \"punct\"], \"upos\": [\"NOUN\", \"ADP\", \"PROPN\", \"VERB\", \"PUNCT\", \"NOUN\", \"ADV\", \"VERB\", \"PART\", \"PUNCT\"], \"feats\": [\"Animacy=Nhum|Number=Plur\", \"Number[psor]=Plur|Person[psor]=3\", \"NameType=Prs\", \"Dyn=Yes|Gender[subj]=Com|Mood=Ind|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", null, \"Animacy=Nhum|Definite=Def|Number=Sing\", null, \"Dyn=Yes|Mood=Ind|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin\", null, null]}",
+          "output": "{\"sentence_length\": 10, \"effective_length\": 8, \"tree_depth\": 2, \"max_arity\": 4, \"mean_arity\": 3.0, \"mean_dd\": 2.4444, \"dd_variance\": 2.6914, \"dd_skewness\": 0.9289, \"dd_list\": [3, 1, 1, 3, 2, 1, 4, 1, 6], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1111, \"ic_variance\": 0.0988, \"max_ic\": 1, \"functional_ratio\": 0.4444, \"content_ratio\": 0.5556, \"head_direction_entropy\": 0.9911}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "dbar-v+awmtakua+w9227300"
+        },
+        {
+          "input": "{\"text\": \"Леонидгьы аҧара газеҭ хәыҷык инылаҳәаны, икьаҿ аҩнуҵҟатәи аџьыба инҭеиҵеит.\", \"tokens\": [\"Леонидгьы\", \"аҧара\", \"газеҭ\", \"хәыҷык\", \"инылаҳәаны\", \",\", \"икьаҿ\", \"аҩнуҵҟатәи\", \"аџьыба\", \"инҭеиҵеит\", \".\"], \"heads\": [10, 10, 5, 3, 10, 10, 9, 9, 10, 0, 10], \"deprels\": [\"nsubj\", \"obj\", \"iobj:lo\", \"amod\", \"advcl:conv\", \"punct\", \"nmod:poss\", \"amod\", \"iobj:lo\", \"root\", \"punct\"], \"upos\": [\"PROPN\", \"NOUN\", \"NOUN\", \"ADJ\", \"VERB\", \"PUNCT\", \"NOUN\", \"ADJ\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [\"NameType=Prs\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Animacy=Nhum|Number=Sing\", \"Number=Sing\", \"Dyn=Yes|Person[obj]=3|Subcat=Tran|Tense=Aor|VerbForm=NonFin\", null, \"Animacy=Nhum|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Definite=Def\", \"Animacy=Nhum|Gender[psor]=Neut|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[lo]=Neut|Gender[subj]=Masc|Mood=Ind|Number[lo]=Sing|Number[subj]=Sing|Person[lo]=3|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 11, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 6, \"mean_arity\": 2.5, \"mean_dd\": 3.4, \"dd_variance\": 8.24, \"dd_skewness\": 0.9152, \"dd_list\": [9, 8, 2, 1, 5, 4, 2, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.8, \"ic_variance\": 1.36, \"max_ic\": 3, \"functional_ratio\": 0.2, \"content_ratio\": 0.8, \"head_direction_entropy\": 0.7219}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "dbar-v+awmtakua+w9131600"
+        },
+        {
+          "input": "{\"text\": \"Георги иаара аамҭа анахыҧаӡа, Лиудмила аҭел дасит, аха ҿимҭит.\", \"tokens\": [\"Георги\", \"иаара\", \"аамҭа\", \"анахыҧаӡа\", \",\", \"Лиудмила\", \"аҭел\", \"дасит\", \",\", \"аха\", \"ҿимҭит\", \".\"], \"heads\": [2, 3, 4, 8, 8, 8, 8, 0, 11, 11, 8, 11], \"deprels\": [\"nmod:poss\", \"nmod:poss\", \"nsubj\", \"advcl\", \"punct\", \"nsubj\", \"iobj\", \"root\", \"punct\", \"cc\", \"conj\", \"punct\"], \"upos\": [\"PROPN\", \"VERB\", \"NOUN\", \"VERB\", \"PUNCT\", \"PROPN\", \"NOUN\", \"VERB\", \"PUNCT\", \"CCONJ\", \"VERB\", \"PUNCT\"], \"feats\": [\"NameType=Prs\", \"Dyn=Yes|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=3|Subcat=Intr|VerbForm=Vnoun\", \"Animacy=Nhum|Gender[psor]=Neut|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[lo]=Neut|Number[lo]=Sing|Person[lo]=3|Person[subj]=3|RelType=Tmp|Subcat=Intr|Tense=Aor|VerbForm=NonFin\", null, \"NameType=Prs\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Dyn=Yes|Gender[io]=Neut|Gender[subj]=Com|Mood=Ind|Number[io]=Sing|Number[subj]=Sing|Person[io]=3|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", null, null, \"Dyn=Yes|Gender[subj]=Masc|Mood=Ind|Number[subj]=Sing|Person[subj]=3|Polarity=Neg|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 9, \"tree_depth\": 4, \"max_arity\": 5, \"mean_arity\": 2.2, \"mean_dd\": 1.8182, \"dd_variance\": 1.0579, \"dd_skewness\": 0.8701, \"dd_list\": [1, 1, 1, 4, 3, 2, 1, 2, 1, 3, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.0, \"ic_variance\": 0.0, \"max_ic\": 0, \"functional_ratio\": 0.3636, \"content_ratio\": 0.6364, \"head_direction_entropy\": 0.684}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w2938600"
+        },
+        {
+          "input": "{\"text\": \"Иҟалаз уи ауп: Алыми Амшәи раҧхьаҵәҟьа ишьҭан кәац жьыхәҭа дук.\", \"tokens\": [\"Иҟалаз\", \"уи\", \"ауп\", \":\", \"Алыми\", \"Амшәи\", \"раҧхьаҵәҟьа\", \"ишьҭан\", \"кәац\", \"жьыхәҭа\", \"дук\", \".\"], \"heads\": [2, 0, 2, 2, 8, 5, 5, 2, 10, 8, 10, 8], \"deprels\": [\"nsubj\", \"root\", \"cop\", \"punct\", \"obl\", \"conj\", \"case\", \"parataxis\", \"compound\", \"nsubj\", \"amod\", \"punct\"], \"upos\": [\"VERB\", \"PRON\", \"AUX\", \"PUNCT\", \"PROPN\", \"NOUN\", \"ADP\", \"VERB\", \"NOUN\", \"NOUN\", \"ADJ\", \"PUNCT\"], \"feats\": [\"Dyn=Yes|Person[subj]=Rel|Subcat=Intr|Tense=Past|VerbForm=NonFin\", \"PronType=Prs\", \"Dyn=No|Gender[io]=Neut|Mood=Ind|Number[io]=Sing|Person[io]=3|Person[subj]=3|Tense=Pres|VerbForm=Fin\", null, \"NameType=Prs\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Number[psor]=Plur|Person[psor]=3\", \"Dyn=No|Mood=Ind|Person[subj]=3|Tense=Imp|VerbForm=Fin\", \"Animacy=Nhum|Number=Sing\", \"Animacy=Nhum|Number=Sing\", \"Number=Sing\", null]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 10, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.75, \"mean_dd\": 2.1818, \"dd_variance\": 2.3306, \"dd_skewness\": 1.3785, \"dd_list\": [1, 1, 2, 3, 1, 2, 6, 1, 2, 1, 4], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1818, \"ic_variance\": 0.1488, \"max_ic\": 1, \"functional_ratio\": 0.3636, \"content_ratio\": 0.6364, \"head_direction_entropy\": 0.8454}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "apsua-lakkua+w160100"
+        },
+        {
+          "input": "{\"text\": \"« Изулакгьы сыҧсы згагәышьеит » – аҳәеит, маҷк аҟара агәгьы ааҭынчхеит.\", \"tokens\": [\"«\", \"Изулакгьы\", \"сыҧсы\", \"згагәышьеит\", \"»\", \"–\", \"аҳәеит\", \",\", \"маҷк\", \"аҟара\", \"агәгьы\", \"ааҭынчхеит\", \".\"], \"heads\": [4, 4, 4, 7, 4, 7, 0, 12, 12, 9, 12, 7, 7], \"deprels\": [\"punct\", \"advcl\", \"obj\", \"ccomp:quote\", \"punct\", \"punct\", \"root\", \"punct\", \"obl\", \"case\", \"nsubj\", \"conj\", \"punct\"], \"upos\": [\"PUNCT\", \"VERB\", \"NOUN\", \"VERB\", \"PUNCT\", \"PUNCT\", \"VERB\", \"PUNCT\", \"ADV\", \"ADP\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [null, \"Dyn=Yes|Number[subj]=Sing|Person[obj]=Rel|Person[subj]=1|Subcat=Tran|VerbForm=NonFin\", \"Animacy=Nhum|Number=Sing|Number[psor]=Sing|Person[psor]=1\", \"Dyn=Yes|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null, null, \"Dyn=Yes|Gender[subj]=Neut|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null, null, \"Gender[psor]=Neut|Number[psor]=Sing|Person[psor]=3\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Dyn=Yes|Mood=Ind|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 13, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 3.0, \"mean_dd\": 2.5833, \"dd_variance\": 2.7431, \"dd_skewness\": 0.6789, \"dd_list\": [3, 2, 1, 3, 1, 1, 4, 3, 1, 1, 5, 6], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.3333, \"ic_variance\": 0.3889, \"max_ic\": 2, \"functional_ratio\": 0.5, \"content_ratio\": 0.5, \"head_direction_entropy\": 0.9183}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "apsua-lakkua+w254700"
+        },
+        {
+          "input": "{\"text\": \"– Еилукаазар, ҳауа иаҳа бзиа иубо абраҵәҟьа иҳауҳәароуп! – рҳәеит даргьы.\", \"tokens\": [\"–\", \"Еилукаазар\", \",\", \"ҳауа\", \"иаҳа\", \"бзиа\", \"иубо\", \"абраҵәҟьа\", \"иҳауҳәароуп\", \"!\", \"–\", \"рҳәеит\", \"даргьы\", \".\"], \"heads\": [9, 9, 9, 7, 7, 7, 9, 9, 12, 9, 9, 0, 12, 12], \"deprels\": [\"punct\", \"advcl\", \"punct\", \"obj\", \"advmod\", \"compound:prt\", \"acl:relcl\", \"advmod\", \"ccomp:quote\", \"punct\", \"punct\", \"root\", \"nsubj\", \"punct\"], \"upos\": [\"PUNCT\", \"VERB\", \"PUNCT\", \"NOUN\", \"ADV\", \"ADV\", \"VERB\", \"ADV\", \"VERB\", \"PUNCT\", \"PUNCT\", \"VERB\", \"PRON\", \"PUNCT\"], \"feats\": [null, \"Dyn=Yes|Gender[subj]=Masc|Mood=Cnd|Number[subj]=Sing|Person[obj]=3|Person[subj]=2|Subcat=Tran|Tense=Aor|VerbForm=NonFin\", null, \"Animacy=Hum|Number=Sing|Number[psor]=Plur|Person[psor]=1\", null, null, \"Dyn=Yes|Gender[subj]=Masc|Number[subj]=Sing|Person[obj]=Rel|Person[subj]=2|Subcat=Tran|Tense=Pres|VerbForm=NonFin\", null, \"Dyn=Yes|Gender[subj]=Masc|Mood=Nec|Number[lo]=Plur|Number[subj]=Sing|Person[lo]=1|Person[obj]=3|Person[subj]=2|Subcat=Tran|VerbForm=Fin\", null, null, \"Dyn=Yes|Mood=Ind|Number[subj]=Plur|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", \"Number=Plur|Person=3|PronType=Prs\", null]}",
+          "output": "{\"sentence_length\": 14, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 7, \"mean_arity\": 4.3333, \"mean_dd\": 3.0, \"dd_variance\": 5.3846, \"dd_skewness\": 1.1081, \"dd_list\": [8, 7, 6, 3, 2, 1, 2, 1, 3, 1, 2, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2308, \"ic_variance\": 0.1775, \"max_ic\": 1, \"functional_ratio\": 0.3846, \"content_ratio\": 0.6154, \"head_direction_entropy\": 0.8905}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "apsua-lakkua+w237300"
+        },
+        {
+          "input": "{\"text\": \"Абар шьҭа хымшуп, чарыцк иадамхаргьы лҿы инҭалмыршәижьҭеи, убри иахҟьаны дымлашьит, дагьычмазаҩхеит.\", \"tokens\": [\"Абар\", \"шьҭа\", \"хымшуп\", \",\", \"чарыцк\", \"иадамхаргьы\", \"лҿы\", \"инҭалмыршәижьҭеи\", \",\", \"убри\", \"иахҟьаны\", \"дымлашьит\", \",\", \"дагьычмазаҩхеит\", \".\"], \"heads\": [3, 3, 0, 8, 8, 8, 8, 3, 12, 12, 10, 3, 14, 12, 3], \"deprels\": [\"advmod\", \"advmod\", \"root\", \"punct\", \"obj\", \"advmod\", \"iobj:lo\", \"advcl\", \"punct\", \"obl\", \"case\", \"parataxis\", \"punct\", \"conj\", \"punct\"], \"upos\": [\"ADV\", \"ADV\", \"VERB\", \"PUNCT\", \"NOUN\", \"ADV\", \"NOUN\", \"VERB\", \"PUNCT\", \"PRON\", \"ADP\", \"VERB\", \"PUNCT\", \"VERB\", \"PUNCT\"], \"feats\": [null, null, \"Animacy=Nhum|Dyn=No|Mood=Ind|Number=Card|Tense=Pres|VerbForm=Fin\", null, \"Animacy=Nhum|Number=Sing\", null, \"Animacy=Nhum|Gender[psor]=Fem|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[lo]=Neut|Gender[subj]=Fem|Number[lo]=Sing|Number[subj]=Sing|Person[lo]=3|Person[obj]=3|Person[subj]=3|Polarity=Neg|Subcat=Intr|Tense=Aor|VerbForm=NonFin|Voice=Cau\", null, \"Number=Sing|PronType=Dem\", \"Gender[psor]=Neut|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[subj]=Com|Mood=Ind|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", null, \"Dyn=Yes|Gender[subj]=Com|Mood=Ind|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 15, \"effective_length\": 11, \"tree_depth\": 3, \"max_arity\": 5, \"mean_arity\": 2.8, \"mean_dd\": 3.4286, \"dd_variance\": 9.9592, \"dd_skewness\": 1.6764, \"dd_list\": [2, 1, 4, 3, 2, 1, 5, 3, 2, 1, 9, 1, 2, 12], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5, \"ic_variance\": 1.25, \"max_ic\": 4, \"functional_ratio\": 0.3571, \"content_ratio\": 0.6429, \"head_direction_entropy\": 0.9403}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "apsua-lakkua+w1043900"
+        },
+        {
+          "input": "{\"text\": \"Георги изыҧшыз идыруазшәа, икра ҩымш шагыз уи ашәҟәы ипартфел иааҭиган, ашьҭамҭа уаҩы имбо иҧхьеикит.\", \"tokens\": [\"Георги\", \"изыҧшыз\", \"идыруазшәа\", \",\", \"икра\", \"ҩымш\", \"шагыз\", \"уи\", \"ашәҟәы\", \"ипартфел\", \"иааҭиган\", \",\", \"ашьҭамҭа\", \"уаҩы\", \"имбо\", \"иҧхьеикит\", \".\"], \"heads\": [3, 3, 11, 11, 7, 7, 11, 9, 11, 11, 16, 16, 16, 15, 16, 0, 16], \"deprels\": [\"iobj:ro\", \"ccomp:obj\", \"advcl:compar\", \"punct\", \"iobj\", \"nsubj\", \"advcl\", \"det\", \"obj\", \"iobj:lo\", \"advcl:seq\", \"punct\", \"obj\", \"nsubj\", \"advcl:conv\", \"root\", \"punct\"], \"upos\": [\"PROPN\", \"VERB\", \"VERB\", \"PUNCT\", \"NOUN\", \"NOUN\", \"VERB\", \"PRON\", \"NOUN\", \"NOUN\", \"VERB\", \"PUNCT\", \"NOUN\", \"NOUN\", \"VERB\", \"VERB\", \"PUNCT\"], \"feats\": [\"NameType=Prs\", \"Dyn=Yes|Gender[ro]=Masc|Number[ro]=Sing|Person[ro]=3|Person[subj]=Rel|Reln=Ben|Subcat=Intr|Tense=Past|VerbForm=NonFin\", \"Dyn=Yes|Gender[subj]=Masc|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Imp|VerbForm=NonFin\", null, \"Animacy=Nhum|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Animacy=Nhum|Number=Card\", \"Dyn=No|Gender[io]=Neut|Number[io]=Sing|Person[io]=3|Person[subj]=3|RelType=Mnr|Tense=Imp|VerbForm=NonFin\", \"Number=Sing|PronType=Dem\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Animacy=Nhum|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[lo]=Neut|Gender[subj]=Masc|Mood=Ind|Number[lo]=Sing|Number[subj]=Sing|Person[lo]=3|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin\", null, \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Animacy=Hum|Number=Sing\", \"Dyn=Yes|Gender[subj]=Masc|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Polarity=Neg|Subcat=Tran|Tense=Pres|VerbForm=NonFin\", \"Dyn=Yes|Gender[subj]=Masc|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 17, \"effective_length\": 14, \"tree_depth\": 3, \"max_arity\": 5, \"mean_arity\": 2.6667, \"mean_dd\": 2.75, \"dd_variance\": 4.8125, \"dd_skewness\": 1.1722, \"dd_list\": [2, 1, 8, 7, 2, 1, 4, 1, 2, 1, 5, 4, 3, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5, \"ic_variance\": 0.5, \"max_ic\": 2, \"functional_ratio\": 0.25, \"content_ratio\": 0.75, \"head_direction_entropy\": 0.3373}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w2901200"
+        },
+        {
+          "input": "{\"text\": \"Уаанӡа шәкәац афҩы мгарц азы инаҧхьаскуеит, – аҳәан, акәац жьыхәҭа ду рҳәазо, иаманы идәықәлеит Абгахәыҷы.\", \"tokens\": [\"Уаанӡа\", \"шәкәац\", \"афҩы\", \"мгарц\", \"азы\", \"инаҧхьаскуеит\", \",\", \"–\", \"аҳәан\", \",\", \"акәац\", \"жьыхәҭа\", \"ду\", \"рҳәазо\", \",\", \"иаманы\", \"идәықәлеит\", \"Абгахәыҷы\", \".\"], \"heads\": [6, 3, 4, 6, 4, 9, 6, 6, 17, 14, 12, 14, 12, 17, 17, 17, 0, 17, 17], \"deprels\": [\"advmod\", \"nmod:poss\", \"nsubj\", \"advcl\", \"case\", \"ccomp:quote\", \"punct\", \"punct\", \"advcl:seq\", \"punct\", \"compound\", \"obj\", \"amod\", \"advcl:conv\", \"punct\", \"advcl:conv\", \"root\", \"nsubj\", \"punct\"], \"upos\": [\"ADV\", \"NOUN\", \"NOUN\", \"VERB\", \"ADP\", \"VERB\", \"PUNCT\", \"PUNCT\", \"VERB\", \"PUNCT\", \"NOUN\", \"NOUN\", \"ADJ\", \"VERB\", \"PUNCT\", \"VERB\", \"VERB\", \"NOUN\", \"PUNCT\"], \"feats\": [null, \"Animacy=Nhum|Number=Sing|Number[psor]=Plur|Person[psor]=2\", \"Animacy=Nhum|Gender[psor]=Neut|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Mood=Prp|Person[subj]=3|Polarity=Neg|Subcat=Intr|VerbForm=NonFin\", \"Gender[psor]=Neut|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Pres|VerbForm=Fin\", null, null, \"Dyn=Yes|Gender[subj]=Neut|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin\", null, \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Animacy=Nhum|Number=Sing\", \"Number=Sing\", \"Dyn=Yes|Person[obj]=3|Subcat=Intr|Tense=Pres|VerbForm=NonFin|Voice=Cau\", null, \"Dyn=No|Gender[io]=Neut|Number[io]=Sing|Person[io]=3|Person[subj]=3|Tense=Pres|VerbForm=NonFin\", \"Dyn=Yes|Mood=Ind|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=Fin\", \"Animacy=Nhum|Definite=Def|Number=Sing\", null]}",
+          "output": "{\"sentence_length\": 19, \"effective_length\": 14, \"tree_depth\": 5, \"max_arity\": 6, \"mean_arity\": 2.5714, \"mean_dd\": 2.2778, \"dd_variance\": 3.2006, \"dd_skewness\": 1.9075, \"dd_list\": [5, 1, 1, 2, 1, 3, 1, 2, 8, 4, 1, 2, 1, 3, 2, 1, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2778, \"ic_variance\": 0.4228, \"max_ic\": 2, \"functional_ratio\": 0.3333, \"content_ratio\": 0.6667, \"head_direction_entropy\": 0.9183}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "apsua-lakkua+w194600"
+        }
+      ]
+    },
+    {
+      "dataset": "af_afribooms",
+      "examples": [
+        {
+          "input": "{\"text\": \"'n Spesiale woord van welkom aan die Madiba-familie.\", \"tokens\": [\"'n\", \"Spesiale\", \"woord\", \"van\", \"welkom\", \"aan\", \"die\", \"Madiba-familie\", \".\"], \"heads\": [3, 3, 0, 5, 3, 8, 8, 5, 3], \"deprels\": [\"det\", \"amod\", \"root\", \"case\", \"nmod\", \"case\", \"det\", \"nmod\", \"punct\"], \"upos\": [\"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"PUNCT\"], \"feats\": [\"Definite=Ind|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", null]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.6667, \"mean_dd\": 2.25, \"dd_variance\": 2.4375, \"dd_skewness\": 1.552, \"dd_list\": [2, 1, 1, 2, 2, 1, 3, 6], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.25, \"ic_variance\": 0.4375, \"max_ic\": 2, \"functional_ratio\": 0.625, \"content_ratio\": 0.375, \"head_direction_entropy\": 0.9544}",
+          "metadata_fold": "dev",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "dev-s159"
+        },
+        {
+          "input": "{\"text\": \"'n Handelsmerk is 'n handelsnaam, 'n slagspreuk of 'n logo.\", \"tokens\": [\"'n\", \"Handelsmerk\", \"is\", \"'n\", \"handelsnaam\", \",\", \"'n\", \"slagspreuk\", \"of\", \"'n\", \"logo\", \".\"], \"heads\": [2, 5, 5, 5, 0, 5, 8, 5, 8, 11, 8, 5], \"deprels\": [\"det\", \"nsubj\", \"cop\", \"det\", \"root\", \"punct\", \"det\", \"conj\", \"cc\", \"det\", \"conj\", \"punct\"], \"upos\": [\"DET\", \"NOUN\", \"AUX\", \"DET\", \"NOUN\", \"PUNCT\", \"DET\", \"NOUN\", \"CCONJ\", \"DET\", \"NOUN\", \"PUNCT\"], \"feats\": [\"Definite=Ind|PronType=Art\", \"Number=Sing\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Cop\", \"Definite=Ind|PronType=Art\", \"Number=Sing\", null, \"Definite=Ind|PronType=Art\", \"Number=Sing\", null, \"Definite=Ind|PronType=Art\", \"Number=Sing\", null]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 10, \"tree_depth\": 3, \"max_arity\": 6, \"mean_arity\": 2.75, \"mean_dd\": 2.1818, \"dd_variance\": 3.0579, \"dd_skewness\": 1.7611, \"dd_list\": [1, 3, 2, 1, 1, 1, 3, 1, 1, 3, 7], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1818, \"ic_variance\": 0.3306, \"max_ic\": 2, \"functional_ratio\": 0.7273, \"content_ratio\": 0.2727, \"head_direction_entropy\": 0.994}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s756"
+        },
+        {
+          "input": "{\"text\": \"Staatskoerant nr. 23406, Vol. 443, Mei 2002, bladsy 26 en 27.\", \"tokens\": [\"Staatskoerant\", \"nr.\", \"23406\", \",\", \"Vol.\", \"443\", \",\", \"Mei\", \"2002\", \",\", \"bladsy\", \"26\", \"en\", \"27\", \".\"], \"heads\": [0, 1, 2, 2, 2, 5, 5, 5, 8, 1, 1, 11, 12, 12, 1], \"deprels\": [\"root\", \"amod\", \"dep\", \"punct\", \"conj\", \"dep\", \"punct\", \"conj\", \"dep\", \"punct\", \"nmod\", \"amod\", \"cc\", \"conj\", \"punct\"], \"upos\": [\"NOUN\", \"X\", \"SYM\", \"PUNCT\", \"X\", \"SYM\", \"PUNCT\", \"PROPN\", \"SYM\", \"PUNCT\", \"NOUN\", \"SYM\", \"CCONJ\", \"SYM\", \"PUNCT\"], \"feats\": [\"Number=Sing\", null, null, null, null, null, null, \"Number=Sing\", null, null, \"Number=Sing\", null, null, null, null]}",
+          "output": "{\"sentence_length\": 15, \"effective_length\": 11, \"tree_depth\": 4, \"max_arity\": 4, \"mean_arity\": 2.3333, \"mean_dd\": 3.6429, \"dd_variance\": 16.2296, \"dd_skewness\": 1.5263, \"dd_list\": [1, 1, 2, 3, 1, 2, 3, 1, 9, 10, 1, 1, 2, 14], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7857, \"ic_variance\": 2.4541, \"max_ic\": 5, \"functional_ratio\": 0.3571, \"content_ratio\": 0.6429, \"head_direction_entropy\": 0.0}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s358"
+        },
+        {
+          "input": "{\"text\": \"Tweedens, alhoewel die afname in armoede wesenlik was, het algehele ongelykheid gedurende die 1990s vermeerder.\", \"tokens\": [\"Tweedens\", \",\", \"alhoewel\", \"die\", \"afname\", \"in\", \"armoede\", \"wesenlik\", \"was\", \",\", \"het\", \"algehele\", \"ongelykheid\", \"gedurende\", \"die\", \"1990s\", \"vermeerder\", \".\"], \"heads\": [17, 1, 17, 5, 8, 7, 5, 17, 8, 8, 17, 13, 17, 16, 16, 17, 0, 17], \"deprels\": [\"advmod\", \"punct\", \"amod\", \"det\", \"nsubj\", \"case\", \"nmod\", \"dep\", \"cop\", \"punct\", \"aux\", \"amod\", \"nsubj\", \"case\", \"det\", \"obl\", \"root\", \"punct\"], \"upos\": [\"ADV\", \"PUNCT\", \"SCONJ\", \"DET\", \"NOUN\", \"ADP\", \"NOUN\", \"ADJ\", \"AUX\", \"PUNCT\", \"AUX\", \"ADJ\", \"NOUN\", \"ADP\", \"DET\", \"SYM\", \"VERB\", \"PUNCT\"], \"feats\": [\"Degree=Pos\", null, null, \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", \"AdjType=Pred|Case=Nom|Degree=Pos\", \"Tense=Past|VerbForm=Fin|VerbType=Cop\", null, \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Aux\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", null, \"Subcat=Intr|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 18, \"effective_length\": 15, \"tree_depth\": 4, \"max_arity\": 7, \"mean_arity\": 2.4286, \"mean_dd\": 3.8824, \"dd_variance\": 21.045, \"dd_skewness\": 1.6733, \"dd_list\": [16, 1, 14, 1, 3, 1, 2, 9, 1, 2, 6, 1, 4, 2, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.9412, \"ic_variance\": 2.6436, \"max_ic\": 5, \"functional_ratio\": 0.5294, \"content_ratio\": 0.4706, \"head_direction_entropy\": 0.874}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "test-s274"
+        },
+        {
+          "input": "{\"text\": \"Ek wil weereens die Springbokke bedank wat die aanvoorwerk gedoen het toe hulle die Rugbywêreldbeker verlede jaar gewen het.\", \"tokens\": [\"Ek\", \"wil\", \"weereens\", \"die\", \"Springbokke\", \"bedank\", \"wat\", \"die\", \"aanvoorwerk\", \"gedoen\", \"het\", \"toe\", \"hulle\", \"die\", \"Rugbywêreldbeker\", \"verlede\", \"jaar\", \"gewen\", \"het\", \".\"], \"heads\": [6, 6, 6, 5, 6, 0, 10, 9, 10, 6, 10, 18, 18, 15, 18, 17, 15, 10, 18, 18], \"deprels\": [\"nsubj\", \"aux\", \"advmod\", \"det\", \"obj\", \"root\", \"nsubj\", \"det\", \"obj\", \"ccomp\", \"aux\", \"advmod\", \"nsubj\", \"det\", \"obj\", \"amod\", \"nmod\", \"ccomp\", \"aux\", \"punct\"], \"upos\": [\"PRON\", \"AUX\", \"ADV\", \"DET\", \"NOUN\", \"VERB\", \"PRON\", \"DET\", \"NOUN\", \"VERB\", \"AUX\", \"ADV\", \"PRON\", \"DET\", \"NOUN\", \"ADJ\", \"NOUN\", \"VERB\", \"AUX\", \"PUNCT\"], \"feats\": [\"Case=Nom|Number=Sing|Person=1|PronType=Prs\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Degree=Pos\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"PronType=Rel\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"Subcat=Tran|Tense=Past|VerbForm=Part\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Aux\", \"Degree=Pos\", \"Case=Acc,Nom|Number=Plur|Person=3|PronType=Prs\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"Subcat=Tran|Tense=Past|VerbForm=Part\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Aux\", null]}",
+          "output": "{\"sentence_length\": 20, \"effective_length\": 19, \"tree_depth\": 5, \"max_arity\": 5, \"mean_arity\": 2.7143, \"mean_dd\": 2.7895, \"dd_variance\": 4.0609, \"dd_skewness\": 0.9834, \"dd_list\": [5, 4, 3, 1, 1, 3, 1, 1, 4, 1, 6, 5, 1, 3, 1, 2, 8, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.6316, \"ic_variance\": 0.5485, \"max_ic\": 2, \"functional_ratio\": 0.3684, \"content_ratio\": 0.6316, \"head_direction_entropy\": 0.8997}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s1173"
+        },
+        {
+          "input": "{\"text\": \"Ons sal insgelyks met die res van ons kontinent en ons ontwikkelingsvennote bly saamwerk om die inwerkingstelling van die NEPAD-programme te bespoedig.\", \"tokens\": [\"Ons\", \"sal\", \"insgelyks\", \"met\", \"die\", \"res\", \"van\", \"ons\", \"kontinent\", \"en\", \"ons\", \"ontwikkelingsvennote\", \"bly\", \"saamwerk\", \"om\", \"die\", \"inwerkingstelling\", \"van\", \"die\", \"NEPAD-programme\", \"te\", \"bespoedig\", \".\"], \"heads\": [13, 13, 13, 6, 6, 14, 9, 9, 6, 9, 12, 9, 0, 13, 22, 17, 22, 20, 20, 17, 22, 14, 22], \"deprels\": [\"nsubj\", \"aux\", \"advmod\", \"case\", \"det\", \"obl\", \"case\", \"det\", \"nmod\", \"cc\", \"det\", \"conj\", \"root\", \"xcomp\", \"case\", \"det\", \"obj\", \"case\", \"det\", \"nmod\", \"mark\", \"obl\", \"punct\"], \"upos\": [\"PRON\", \"AUX\", \"ADV\", \"ADP\", \"DET\", \"NOUN\", \"ADP\", \"PRON\", \"NOUN\", \"CCONJ\", \"PRON\", \"NOUN\", \"VERB\", \"VERB\", \"ADP\", \"DET\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"PART\", \"VERB\", \"PUNCT\"], \"feats\": [\"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Degree=Pos\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Plur|Person=1|Poss=Yes|PronType=Prs\", \"Number=Sing\", null, \"Number=Plur|Person=1|Poss=Yes|PronType=Prs\", \"Number=Plur\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"Subcat=Intr|Tense=Pres|VerbForm=Fin,Inf\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Plur\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 23, \"effective_length\": 22, \"tree_depth\": 5, \"max_arity\": 4, \"mean_arity\": 2.75, \"mean_dd\": 3.8636, \"dd_variance\": 13.0269, \"dd_skewness\": 1.0386, \"dd_list\": [12, 11, 10, 2, 1, 8, 2, 1, 3, 1, 1, 3, 1, 7, 1, 5, 2, 1, 3, 1, 8, 1], \"projectivity_proportion\": 0.9545, \"n_nonprojective\": 1, \"mean_ic\": 0.7727, \"ic_variance\": 1.4483, \"max_ic\": 3, \"functional_ratio\": 0.5909, \"content_ratio\": 0.4091, \"head_direction_entropy\": 0.9024}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s1055"
+        },
+        {
+          "input": "{\"text\": \"Altesaam 95% van Suid-Afrikaners leef nou nader as vyf kilometer aan 'n gesondheidsfasiliteit, en ons is ingelig dat alle klinieke nou toegang tot drinkwater het.\", \"tokens\": [\"Altesaam\", \"95%\", \"van\", \"Suid-Afrikaners\", \"leef\", \"nou\", \"nader\", \"as\", \"vyf\", \"kilometer\", \"aan\", \"'n\", \"gesondheidsfasiliteit\", \",\", \"en\", \"ons\", \"is\", \"ingelig\", \"dat\", \"alle\", \"klinieke\", \"nou\", \"toegang\", \"tot\", \"drinkwater\", \"het\", \".\"], \"heads\": [5, 5, 4, 2, 0, 5, 5, 7, 7, 9, 13, 13, 7, 13, 5, 18, 18, 5, 18, 21, 26, 26, 26, 25, 23, 18, 26], \"deprels\": [\"advmod\", \"nsubj\", \"case\", \"obl\", \"root\", \"advmod\", \"advmod\", \"amod\", \"amod\", \"nmod\", \"case\", \"det\", \"obl\", \"punct\", \"cc\", \"nsubj:pass\", \"aux:pass\", \"conj\", \"amod\", \"det\", \"nsubj\", \"advmod\", \"obj\", \"case\", \"nmod\", \"dep\", \"punct\"], \"upos\": [\"ADV\", \"SYM\", \"ADP\", \"NOUN\", \"VERB\", \"ADV\", \"ADV\", \"SCONJ\", \"NUM\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"PUNCT\", \"CCONJ\", \"PRON\", \"AUX\", \"VERB\", \"SCONJ\", \"DET\", \"NOUN\", \"ADV\", \"NOUN\", \"ADP\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [\"Degree=Pos\", null, \"AdpType=Prep\", \"Number=Plur\", \"Subcat=Intr|Tense=Pres|VerbForm=Fin,Inf\", \"Degree=Pos\", \"Degree=Pos\", null, null, \"Number=Sing\", \"AdpType=Prep\", \"Definite=Ind|PronType=Art\", \"Number=Sing\", null, null, \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Tense=Past|VerbForm=Fin|VerbType=Pas\", \"Subcat=Tran|Tense=Past|VerbForm=Part\", null, \"PronType=Ind\", \"Number=Plur\", \"Degree=Pos\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 27, \"effective_length\": 25, \"tree_depth\": 5, \"max_arity\": 6, \"mean_arity\": 2.3636, \"mean_dd\": 3.0385, \"dd_variance\": 9.1908, \"dd_skewness\": 1.9096, \"dd_list\": [4, 3, 1, 2, 1, 2, 1, 2, 1, 2, 1, 6, 1, 10, 2, 1, 13, 1, 1, 5, 4, 3, 1, 2, 8, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.6923, \"ic_variance\": 1.1361, \"max_ic\": 3, \"functional_ratio\": 0.3462, \"content_ratio\": 0.6538, \"head_direction_entropy\": 0.9957}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "test-s288"
+        },
+        {
+          "input": "{\"text\": \"Leerprogramme bevat ook werkskedules wat die tempo en orde van hierdie aktiwiteite vir elke jaar verskaf, asook voorbeelde van lesplanne wat in enige gegewe tydperk geïmplementeer kan word.\", \"tokens\": [\"Leerprogramme\", \"bevat\", \"ook\", \"werkskedules\", \"wat\", \"die\", \"tempo\", \"en\", \"orde\", \"van\", \"hierdie\", \"aktiwiteite\", \"vir\", \"elke\", \"jaar\", \"verskaf\", \",\", \"asook\", \"voorbeelde\", \"van\", \"lesplanne\", \"wat\", \"in\", \"enige\", \"gegewe\", \"tydperk\", \"geïmplementeer\", \"kan\", \"word\", \".\"], \"heads\": [2, 0, 2, 2, 16, 7, 16, 7, 7, 12, 12, 9, 15, 15, 12, 4, 16, 4, 4, 21, 19, 27, 26, 26, 26, 27, 21, 27, 27, 27], \"deprels\": [\"nsubj\", \"root\", \"advmod\", \"obj\", \"nsubj\", \"det\", \"obj\", \"cc\", \"conj\", \"case\", \"det\", \"nmod\", \"case\", \"det\", \"nmod\", \"ccomp\", \"punct\", \"cc\", \"conj\", \"case\", \"nmod\", \"nsubj:pass\", \"case\", \"det\", \"amod\", \"obl\", \"ccomp\", \"aux\", \"aux:pass\", \"punct\"], \"upos\": [\"NOUN\", \"VERB\", \"ADV\", \"NOUN\", \"PRON\", \"DET\", \"NOUN\", \"CCONJ\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"ADP\", \"PRON\", \"NOUN\", \"VERB\", \"PUNCT\", \"CCONJ\", \"NOUN\", \"ADP\", \"NOUN\", \"PRON\", \"ADP\", \"PRON\", \"ADJ\", \"NOUN\", \"VERB\", \"AUX\", \"AUX\", \"PUNCT\"], \"feats\": [\"Number=Plur\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"Degree=Pos\", \"Number=Plur\", \"PronType=Rel\", \"Definite=Def|PronType=Art\", \"Number=Sing\", null, \"Number=Sing\", \"AdpType=Prep\", \"PronType=Dem\", \"Number=Plur\", \"AdpType=Prep\", \"PronType=Ind\", \"Number=Sing\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null, null, \"Number=Plur\", \"AdpType=Prep\", \"Number=Plur\", \"PronType=Rel\", \"AdpType=Prep\", \"PronType=Ind\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"Subcat=Tran|Tense=Past|VerbForm=Part\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Pas\", null]}",
+          "output": "{\"sentence_length\": 30, \"effective_length\": 28, \"tree_depth\": 7, \"max_arity\": 5, \"mean_arity\": 2.6364, \"mean_dd\": 3.7586, \"dd_variance\": 17.0107, \"dd_skewness\": 1.6321, \"dd_list\": [1, 1, 2, 11, 1, 9, 1, 2, 2, 1, 3, 2, 1, 3, 12, 1, 14, 15, 1, 2, 5, 3, 2, 1, 1, 6, 1, 2, 3], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7931, \"ic_variance\": 2.5779, \"max_ic\": 5, \"functional_ratio\": 0.4828, \"content_ratio\": 0.5172, \"head_direction_entropy\": 0.9991}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s350"
+        },
+        {
+          "input": "{\"text\": \"Ons het noodtaakspanne wat die uitdaging aanspreek ten opsigte van koolgehalte en die verskaffing van kool deur die mynbedryf, en ons is hard besig om die goedkeuring en oprigting van gasturbineprojekte te bespoedig.\", \"tokens\": [\"Ons\", \"het\", \"noodtaakspanne\", \"wat\", \"die\", \"uitdaging\", \"aanspreek\", \"ten\", \"opsigte\", \"van\", \"koolgehalte\", \"en\", \"die\", \"verskaffing\", \"van\", \"kool\", \"deur\", \"die\", \"mynbedryf\", \",\", \"en\", \"ons\", \"is\", \"hard\", \"besig\", \"om\", \"die\", \"goedkeuring\", \"en\", \"oprigting\", \"van\", \"gasturbineprojekte\", \"te\", \"bespoedig\", \".\"], \"heads\": [2, 0, 2, 7, 6, 7, 3, 9, 7, 11, 9, 11, 14, 11, 16, 14, 19, 19, 16, 19, 2, 25, 25, 25, 2, 34, 28, 34, 28, 28, 32, 30, 34, 25, 34], \"deprels\": [\"nsubj\", \"root\", \"obj\", \"nsubj\", \"det\", \"obj\", \"ccomp\", \"case\", \"obl\", \"case\", \"nmod\", \"cc\", \"det\", \"conj\", \"case\", \"nmod\", \"case\", \"det\", \"nmod\", \"punct\", \"cc\", \"nsubj\", \"cop\", \"advmod\", \"conj\", \"case\", \"det\", \"obj\", \"cc\", \"conj\", \"case\", \"nmod\", \"mark\", \"obl\", \"punct\"], \"upos\": [\"PRON\", \"VERB\", \"NOUN\", \"PRON\", \"DET\", \"NOUN\", \"VERB\", \"ADP\", \"NOUN\", \"ADP\", \"NOUN\", \"CCONJ\", \"DET\", \"NOUN\", \"ADP\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"PUNCT\", \"CCONJ\", \"PRON\", \"AUX\", \"ADV\", \"ADJ\", \"ADP\", \"DET\", \"NOUN\", \"CCONJ\", \"NOUN\", \"ADP\", \"NOUN\", \"PART\", \"VERB\", \"PUNCT\"], \"feats\": [\"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"Number=Plur\", \"PronType=Rel\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"AdpType=Prep\", \"Number=Plur\", \"AdpType=Prep\", \"Number=Sing\", null, \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", null, null, \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Cop\", \"Degree=Pos\", \"AdjType=Pred|Case=Nom|Degree=Pos\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", null, \"Number=Sing\", \"AdpType=Prep\", \"Number=Plur\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 35, \"effective_length\": 33, \"tree_depth\": 8, \"max_arity\": 4, \"mean_arity\": 2.4286, \"mean_dd\": 3.2941, \"dd_variance\": 23.5017, \"dd_skewness\": 2.9987, \"dd_list\": [1, 1, 3, 1, 1, 4, 1, 2, 1, 2, 1, 1, 3, 1, 2, 2, 1, 3, 1, 19, 3, 2, 1, 23, 8, 1, 6, 1, 2, 1, 2, 1, 9, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7647, \"ic_variance\": 3.8858, \"max_ic\": 8, \"functional_ratio\": 0.5, \"content_ratio\": 0.5, \"head_direction_entropy\": 0.9975}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s1140"
+        },
+        {
+          "input": "{\"text\": \"Ofskoon die Suid-Afrikaanse Polisiediens reeds die teiken-indiensnemingsgetal van 152 000 polisiebeamptes bereik en die opleidingsprogramme verbeter het, erken ons dat die uitwerking hiervan nog nie groot genoeg is om aan almal 'n sterker gevoel van veiligheid en sekuriteit te verleen nie.\", \"tokens\": [\"Ofskoon\", \"die\", \"Suid-Afrikaanse\", \"Polisiediens\", \"reeds\", \"die\", \"teiken-indiensnemingsgetal\", \"van\", \"152\", \"000\", \"polisiebeamptes\", \"bereik\", \"en\", \"die\", \"opleidingsprogramme\", \"verbeter\", \"het\", \",\", \"erken\", \"ons\", \"dat\", \"die\", \"uitwerking\", \"hiervan\", \"nog\", \"nie\", \"groot\", \"genoeg\", \"is\", \"om\", \"aan\", \"almal\", \"'n\", \"sterker\", \"gevoel\", \"van\", \"veiligheid\", \"en\", \"sekuriteit\", \"te\", \"verleen\", \"nie\", \".\"], \"heads\": [19, 4, 4, 12, 12, 7, 12, 11, 11, 9, 7, 19, 12, 15, 16, 12, 12, 12, 0, 19, 19, 23, 27, 23, 26, 27, 19, 27, 27, 41, 32, 41, 35, 35, 41, 37, 35, 37, 37, 41, 27, 41, 41], \"deprels\": [\"amod\", \"det\", \"amod\", \"nsubj\", \"advmod\", \"det\", \"obj\", \"case\", \"dep\", \"dep\", \"nmod\", \"dep\", \"cc\", \"det\", \"obj\", \"conj\", \"aux\", \"punct\", \"root\", \"nsubj\", \"amod\", \"det\", \"nsubj\", \"amod\", \"advmod\", \"advmod\", \"dep\", \"advmod\", \"cop\", \"case\", \"case\", \"obl\", \"det\", \"amod\", \"obj\", \"case\", \"nmod\", \"cc\", \"conj\", \"mark\", \"obl\", \"mark\", \"punct\"], \"upos\": [\"SCONJ\", \"DET\", \"ADJ\", \"NOUN\", \"ADV\", \"DET\", \"NOUN\", \"ADP\", \"SYM\", \"SYM\", \"NOUN\", \"VERB\", \"CCONJ\", \"DET\", \"NOUN\", \"VERB\", \"AUX\", \"PUNCT\", \"VERB\", \"PRON\", \"SCONJ\", \"DET\", \"NOUN\", \"PRON\", \"ADV\", \"ADV\", \"ADJ\", \"ADV\", \"AUX\", \"ADP\", \"ADP\", \"PRON\", \"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"NOUN\", \"CCONJ\", \"NOUN\", \"PART\", \"VERB\", \"PART\", \"PUNCT\"], \"feats\": [null, \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"Degree=Pos\", \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", null, null, \"Number=Plur\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null, \"Definite=Def|PronType=Art\", \"Number=Plur\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Aux\", null, \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", null, \"Definite=Def|PronType=Art\", \"Number=Sing\", \"PronType=Rel\", \"Degree=Pos\", \"Degree=Pos\", \"AdjType=Pred|Case=Nom|Degree=Pos\", \"Degree=Pos\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Cop\", \"AdpType=Prep\", \"AdpType=Prep\", \"PronType=Ind\", \"Definite=Ind|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Cmp\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", null, \"Number=Sing\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"PartType=Neg\", null]}",
+          "output": "{\"sentence_length\": 43, \"effective_length\": 41, \"tree_depth\": 5, \"max_arity\": 7, \"mean_arity\": 2.8, \"mean_dd\": 3.6429, \"dd_variance\": 14.7534, \"dd_skewness\": 1.902, \"dd_list\": [18, 2, 1, 8, 7, 1, 5, 3, 2, 1, 4, 7, 1, 1, 1, 4, 5, 6, 1, 2, 1, 4, 1, 1, 1, 8, 1, 2, 11, 1, 9, 2, 1, 6, 1, 2, 1, 2, 1, 14, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.8571, \"ic_variance\": 1.9796, \"max_ic\": 7, \"functional_ratio\": 0.4048, \"content_ratio\": 0.5952, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "train",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "train-s941"
+        }
+      ]
+    },
+    {
+      "dataset": "akk_pisandub",
+      "examples": [
+        {
+          "input": "{\"text\": \"É-GAL LÚ-dAMAR-UTU LUGAL TIN-⸢TIR⸣-[KI] IBILA d-AG-ku-dúr-ri-ÙRU LUGAL TIN-⸢TIR⸣-[KI]\", \"tokens\": [\"É-GAL\", \"LÚ-dAMAR-UTU\", \"LUGAL\", \"TIN-⸢TIR⸣-[KI]\", \"IBILA\", \"d-AG-ku-dúr-ri-ÙRU\", \"LUGAL\", \"TIN-⸢TIR⸣-[KI]\"], \"heads\": [0, 1, 2, 3, 2, 5, 6, 7], \"deprels\": [\"root\", \"nmod\", \"appos\", \"nmod\", \"appos\", \"nmod\", \"appos\", \"nmod\"], \"upos\": [\"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\"], \"feats\": [null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 5, \"max_arity\": 2, \"mean_arity\": 1.1667, \"mean_dd\": 1.2857, \"dd_variance\": 0.4898, \"dd_skewness\": 2.0412, \"dd_list\": [1, 1, 1, 3, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.1429, \"ic_variance\": 0.1224, \"max_ic\": 1, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.0}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_amel-marduk_2_01"
+        },
+        {
+          "input": "{\"text\": \"1 BÁN 6 1/2 NINDA ša É-GAL LÚ-dAMAR-UTU LUGAL\", \"tokens\": [\"1\", \"BÁN\", \"6\", \"1/2\", \"NINDA\", \"ša\", \"É-GAL\", \"LÚ-dAMAR-UTU\", \"LUGAL\"], \"heads\": [2, 0, 5, 3, 2, 7, 2, 7, 8], \"deprels\": [\"nummod\", \"root\", \"nummod\", \"flat\", \"conj\", \"case\", \"nmod\", \"nmod\", \"appos\"], \"upos\": [\"NUM\", \"NOUN\", \"NUM\", \"NUM\", \"NOUN\", \"ADP\", \"NOUN\", \"PROPN\", \"NOUN\"], \"feats\": [null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.6, \"mean_dd\": 1.875, \"dd_variance\": 1.8594, \"dd_skewness\": 1.4097, \"dd_list\": [1, 2, 1, 3, 1, 5, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.375, \"ic_variance\": 0.4844, \"max_ic\": 2, \"functional_ratio\": 0.125, \"content_ratio\": 0.875, \"head_direction_entropy\": 0.9544}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_amel-marduk_4_01"
+        },
+        {
+          "input": "{\"text\": \"ta-am-ši-li é-sag-íl i-te-[pu-uš -ma xx]-⸢tim⸣ a-na úri-KI ù si-it-ta-tì ma-ḫa-za\", \"tokens\": [\"ta-am-ši-li\", \"é-sag-íl\", \"i-te-[pu-uš\", \"-ma\", \"xx]-⸢tim⸣\", \"a-na\", \"úri-KI\", \"ù\", \"si-it-ta-tì\", \"ma-ḫa-za\"], \"heads\": [3, 1, 0, 5, 3, 7, 5, 9, 7, 9], \"deprels\": [\"obj\", \"nmod\", \"root\", \"cc\", \"dep\", \"case\", \"dep\", \"cc\", \"conj\", \"nmod\"], \"upos\": [\"NOUN\", \"PROPN\", \"VERB\", \"CCONJ\", \"X\", \"ADP\", \"PROPN\", \"CCONJ\", \"NOUN\", \"NOUN\"], \"feats\": [null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 10, \"effective_length\": 10, \"tree_depth\": 4, \"max_arity\": 2, \"mean_arity\": 1.8, \"mean_dd\": 1.4444, \"dd_variance\": 0.2469, \"dd_skewness\": 0.2236, \"dd_list\": [2, 1, 1, 2, 1, 2, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.0, \"ic_variance\": 0.0, \"max_ic\": 0, \"functional_ratio\": 0.3333, \"content_ratio\": 0.6667, \"head_direction_entropy\": 0.9911}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon8_Cyrus_II_01_1b"
+        },
+        {
+          "input": "{\"text\": \"d-NÈ-ERI₁₁-GAL dan-dan-ni DINGIR-MEŠ ú-ša-li-ik i-da -a-a i-na-ar a-a-bi -ia ú-ša-am-qì-it ga-ri -ia\", \"tokens\": [\"d-NÈ-ERI₁₁-GAL\", \"dan-dan-ni\", \"DINGIR-MEŠ\", \"ú-ša-li-ik\", \"i-da\", \"-a-a\", \"i-na-ar\", \"a-a-bi\", \"-ia\", \"ú-ša-am-qì-it\", \"ga-ri\", \"-ia\"], \"heads\": [4, 1, 2, 0, 4, 5, 4, 7, 8, 7, 10, 11], \"deprels\": [\"iobj\", \"amod\", \"nmod\", \"root\", \"obj\", \"det\", \"parataxis\", \"obj\", \"det\", \"parataxis\", \"obj\", \"det\"], \"upos\": [\"PROPN\", \"ADJ\", \"NOUN\", \"VERB\", \"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"PRON\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 12, \"tree_depth\": 4, \"max_arity\": 3, \"mean_arity\": 1.375, \"mean_dd\": 1.5455, \"dd_variance\": 0.7934, \"dd_skewness\": 1.0206, \"dd_list\": [3, 1, 1, 1, 1, 3, 1, 1, 3, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2727, \"ic_variance\": 0.1983, \"max_ic\": 1, \"functional_ratio\": 0.2727, \"content_ratio\": 0.7273, \"head_direction_entropy\": 0.4395}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_nabopolassar_03_05"
+        },
+        {
+          "input": "{\"text\": \"DINGIR-MEŠ a-ši-ib lìb-bi -šu-nu i-zi-bu at-⸢ma⸣-an -šu-un i-na ug-ga-ti ša ú-še-ri-bi a-na qé-reb šu-an-na-KI\", \"tokens\": [\"DINGIR-MEŠ\", \"a-ši-ib\", \"lìb-bi\", \"-šu-nu\", \"i-zi-bu\", \"at-⸢ma⸣-an\", \"-šu-un\", \"i-na\", \"ug-ga-ti\", \"ša\", \"ú-še-ri-bi\", \"a-na\", \"qé-reb\", \"šu-an-na-KI\"], \"heads\": [5, 1, 2, 3, 0, 5, 6, 9, 5, 11, 5, 13, 11, 13], \"deprels\": [\"nsubj\", \"nmod\", \"nmod\", \"det\", \"root\", \"obj\", \"det\", \"case\", \"obl\", \"mark\", \"ccomp\", \"case\", \"obl\", \"nmod\"], \"upos\": [\"NOUN\", \"NOUN\", \"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"PRON\", \"ADP\", \"NOUN\", \"SCONJ\", \"VERB\", \"ADP\", \"NOUN\", \"PROPN\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 14, \"effective_length\": 14, \"tree_depth\": 4, \"max_arity\": 4, \"mean_arity\": 1.625, \"mean_dd\": 1.9231, \"dd_variance\": 2.5325, \"dd_skewness\": 1.5002, \"dd_list\": [4, 1, 1, 1, 1, 1, 1, 4, 1, 6, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.3846, \"ic_variance\": 0.5444, \"max_ic\": 2, \"functional_ratio\": 0.3846, \"content_ratio\": 0.6154, \"head_direction_entropy\": 0.8905}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon8_Cyrus_II_01_3b"
+        },
+        {
+          "input": "{\"text\": \"[xx GIŠ-IG-MEŠ GIŠ-EREN MAḪ]-MEŠ ta-aḫ-lu-up-tim ZABAR as-ku-up-pu ù nu-ku-⸢še⸣-[e pi-ti-iq e-ri-i e-ma KÁ-MEŠ] -⸢ši⸣-na [ú-ra-at-ti]\", \"tokens\": [\"[xx\", \"GIŠ-IG-MEŠ\", \"GIŠ-EREN\", \"MAḪ]-MEŠ\", \"ta-aḫ-lu-up-tim\", \"ZABAR\", \"as-ku-up-pu\", \"ù\", \"nu-ku-⸢še⸣-[e\", \"pi-ti-iq\", \"e-ri-i\", \"e-ma\", \"KÁ-MEŠ]\", \"-⸢ši⸣-na\", \"[ú-ra-at-ti]\"], \"heads\": [2, 15, 2, 2, 2, 5, 15, 9, 7, 9, 10, 13, 15, 13, 0], \"deprels\": [\"dep\", \"iobj\", \"nmod\", \"amod\", \"nmod\", \"nmod\", \"obj\", \"cc\", \"conj\", \"conj\", \"nmod\", \"case\", \"obl\", \"det\", \"root\"], \"upos\": [\"X\", \"NOUN\", \"NOUN\", \"ADJ\", \"NOUN\", \"NOUN\", \"NOUN\", \"CCONJ\", \"NOUN\", \"NOUN\", \"NOUN\", \"ADP\", \"NOUN\", \"PRON\", \"VERB\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 15, \"effective_length\": 15, \"tree_depth\": 4, \"max_arity\": 4, \"mean_arity\": 2.0, \"mean_dd\": 2.7143, \"dd_variance\": 11.3469, \"dd_skewness\": 2.2322, \"dd_list\": [1, 13, 1, 2, 3, 1, 8, 1, 2, 1, 1, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5714, \"ic_variance\": 2.102, \"max_ic\": 5, \"functional_ratio\": 0.2143, \"content_ratio\": 0.7857, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon8_Cyrus_II_01_14"
+        },
+        {
+          "input": "{\"text\": \"a-na d-AMAR-UTU EN -šú d-AG-IBILA-ú-ṣur LUGAL KÁ-DINGIR-RA-KI ti-ri-iṣ ŠU-II d-AG ù d-AMAR-UTU KAR a-gur-ri a-na ki-da-nu BÀD KÁ-DINGIR-RA-KI ú-šá-as-ḫi-ir\", \"tokens\": [\"a-na\", \"d-AMAR-UTU\", \"EN\", \"-šú\", \"d-AG-IBILA-ú-ṣur\", \"LUGAL\", \"KÁ-DINGIR-RA-KI\", \"ti-ri-iṣ\", \"ŠU-II\", \"d-AG\", \"ù\", \"d-AMAR-UTU\", \"KAR\", \"a-gur-ri\", \"a-na\", \"ki-da-nu\", \"BÀD\", \"KÁ-DINGIR-RA-KI\", \"ú-šá-as-ḫi-ir\"], \"heads\": [2, 19, 2, 3, 19, 5, 6, 5, 8, 9, 12, 10, 19, 13, 16, 19, 19, 17, 0], \"deprels\": [\"case\", \"obl\", \"appos\", \"det\", \"nsubj\", \"appos\", \"nmod\", \"appos\", \"nmod\", \"nmod\", \"cc\", \"conj\", \"obl\", \"nmod\", \"case\", \"advmod\", \"obj\", \"nmod\", \"root\"], \"upos\": [\"ADP\", \"PROPN\", \"NOUN\", \"PRON\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"NOUN\", \"PROPN\", \"CCONJ\", \"PROPN\", \"NOUN\", \"NOUN\", \"ADP\", \"ADV\", \"NOUN\", \"PROPN\", \"VERB\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 19, \"effective_length\": 19, \"tree_depth\": 6, \"max_arity\": 5, \"mean_arity\": 1.5, \"mean_dd\": 3.2222, \"dd_variance\": 20.6173, \"dd_skewness\": 2.234, \"dd_list\": [1, 17, 1, 1, 14, 1, 1, 3, 1, 1, 1, 2, 6, 1, 1, 3, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 1.2222, \"ic_variance\": 7.9506, \"max_ic\": 10, \"functional_ratio\": 0.2222, \"content_ratio\": 0.7778, \"head_direction_entropy\": 0.9911}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_nabopolassar_09_01"
+        },
+        {
+          "input": "{\"text\": \"Ina ITI ŠE UD 20 KAM MU 43 KAM uš-šu ša é-zi-da É ki-i-ni É d-AG šá qé-reb bar-sìp-KI ad-de-e uš-ši -šu\", \"tokens\": [\"Ina\", \"ITI\", \"ŠE\", \"UD\", \"20\", \"KAM\", \"MU\", \"43\", \"KAM\", \"uš-šu\", \"ša\", \"é-zi-da\", \"É\", \"ki-i-ni\", \"É\", \"d-AG\", \"šá\", \"qé-reb\", \"bar-sìp-KI\", \"ad-de-e\", \"uš-ši\", \"-šu\"], \"heads\": [2, 20, 2, 3, 4, 5, 5, 7, 8, 20, 12, 10, 12, 13, 12, 15, 18, 12, 18, 0, 20, 21], \"deprels\": [\"case\", \"obl\", \"flat\", \"flat\", \"flat\", \"flat\", \"flat\", \"obl\", \"flat\", \"obj\", \"det\", \"acl\", \"appos\", \"amod\", \"appos\", \"nmod\", \"det\", \"obl\", \"nmod\", \"root\", \"obj\", \"det\"], \"upos\": [\"ADP\", \"NOUN\", \"NOUN\", \"NOUN\", \"NUM\", \"DET\", \"NOUN\", \"NUM\", \"DET\", \"NOUN\", \"DET\", \"PROPN\", \"NOUN\", \"ADJ\", \"NOUN\", \"PROPN\", \"DET\", \"NOUN\", \"PROPN\", \"VERB\", \"NOUN\", \"PRON\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 22, \"effective_length\": 22, \"tree_depth\": 7, \"max_arity\": 4, \"mean_arity\": 1.6154, \"mean_dd\": 2.6667, \"dd_variance\": 16.3175, \"dd_skewness\": 2.8655, \"dd_list\": [1, 18, 1, 1, 1, 1, 2, 1, 1, 10, 1, 2, 1, 1, 3, 1, 1, 6, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.8095, \"ic_variance\": 5.1066, \"max_ic\": 10, \"functional_ratio\": 0.1905, \"content_ratio\": 0.8095, \"head_direction_entropy\": 0.7919}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon10_3"
+        },
+        {
+          "input": "{\"text\": \"i-na u₄-mi -šu-ma ṣa-lam LUGAL-ti a-lik ma-aḫ-ri -ia šá BÀD šu-a-ti i-pu-šu a-mu-úr i-na áš-ri ki-i-nu te-me-en-na ra-bi-i it-ti ALAM -ia lu-ú ú-ki-in a-na du-ur UD-MEŠ\", \"tokens\": [\"i-na\", \"u₄-mi\", \"-šu-ma\", \"ṣa-lam\", \"LUGAL-ti\", \"a-lik\", \"ma-aḫ-ri\", \"-ia\", \"šá\", \"BÀD\", \"šu-a-ti\", \"i-pu-šu\", \"a-mu-úr\", \"i-na\", \"áš-ri\", \"ki-i-nu\", \"te-me-en-na\", \"ra-bi-i\", \"it-ti\", \"ALAM\", \"-ia\", \"lu-ú\", \"ú-ki-in\", \"a-na\", \"du-ur\", \"UD-MEŠ\"], \"heads\": [2, 13, 2, 13, 4, 5, 6, 7, 12, 12, 12, 5, 0, 15, 23, 15, 15, 17, 20, 23, 20, 23, 13, 25, 23, 25], \"deprels\": [\"case\", \"obl\", \"det\", \"obj\", \"nmod\", \"nmod\", \"nmod\", \"det\", \"mark\", \"obj\", \"det\", \"acl\", \"root\", \"case\", \"obl\", \"amod\", \"conj\", \"amod\", \"case\", \"obl\", \"det\", \"advmod\", \"parataxis\", \"case\", \"obl\", \"nmod\"], \"upos\": [\"ADP\", \"NOUN\", \"PRON\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"PRON\", \"SCONJ\", \"NOUN\", \"PRON\", \"VERB\", \"VERB\", \"ADP\", \"NOUN\", \"ADJ\", \"NOUN\", \"ADJ\", \"ADP\", \"NOUN\", \"PRON\", \"PART\", \"VERB\", \"ADP\", \"NOUN\", \"NOUN\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 26, \"effective_length\": 26, \"tree_depth\": 5, \"max_arity\": 4, \"mean_arity\": 2.0833, \"mean_dd\": 2.88, \"dd_variance\": 10.1056, \"dd_skewness\": 1.529, \"dd_list\": [1, 11, 1, 9, 1, 1, 1, 1, 3, 2, 1, 7, 1, 8, 1, 2, 1, 1, 3, 1, 1, 10, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.64, \"ic_variance\": 1.9104, \"max_ic\": 5, \"functional_ratio\": 0.36, \"content_ratio\": 0.64, \"head_direction_entropy\": 0.9988}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_nabopolassar_03_16"
+        },
+        {
+          "input": "{\"text\": \"d-šà-zu EN mu-du-ú ŠÀ DINGIR-ME ša AN-e ù KI-tim ša ta-ka-la-at ni-ši-im i-bar-ru-ú ka-a-a-ni ia-a-ši-im ṣa-aḫ-ra-am ša i-na ni-ši la ut-tu-ú šá ŠÀ -ía ib-re-e -ma i-na KUR ab-ba-nu-ú iš-ku-na-an-ni a-na re-še-e-ti\", \"tokens\": [\"d-šà-zu\", \"EN\", \"mu-du-ú\", \"ŠÀ\", \"DINGIR-ME\", \"ša\", \"AN-e\", \"ù\", \"KI-tim\", \"ša\", \"ta-ka-la-at\", \"ni-ši-im\", \"i-bar-ru-ú\", \"ka-a-a-ni\", \"ia-a-ši-im\", \"ṣa-aḫ-ra-am\", \"ša\", \"i-na\", \"ni-ši\", \"la\", \"ut-tu-ú\", \"šá\", \"ŠÀ\", \"-ía\", \"ib-re-e\", \"-ma\", \"i-na\", \"KUR\", \"ab-ba-nu-ú\", \"iš-ku-na-an-ni\", \"a-na\", \"re-še-e-ti\"], \"heads\": [13, 1, 2, 3, 4, 7, 5, 9, 7, 13, 13, 11, 0, 13, 25, 15, 21, 19, 21, 21, 25, 23, 25, 23, 13, 30, 28, 29, 30, 25, 32, 30], \"deprels\": [\"nsubj\", \"appos\", \"nmod\", \"nmod\", \"nmod\", \"case\", \"nmod\", \"cc\", \"conj\", \"mark\", \"obj\", \"nmod\", \"root\", \"advmod\", \"iobj\", \"nmod\", \"mark\", \"case\", \"obl\", \"advmod\", \"xcomp\", \"case\", \"obl\", \"det\", \"parataxis\", \"cc\", \"case\", \"obl\", \"compound\", \"conj\", \"case\", \"obl\"], \"upos\": [\"PROPN\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"ADP\", \"NOUN\", \"CCONJ\", \"NOUN\", \"SCONJ\", \"NOUN\", \"NOUN\", \"VERB\", \"ADJ\", \"PRON\", \"NOUN\", \"SCONJ\", \"ADP\", \"NOUN\", \"PART\", \"VERB\", \"ADP\", \"NOUN\", \"PRON\", \"VERB\", \"CCONJ\", \"ADP\", \"NOUN\", \"VERB\", \"VERB\", \"ADP\", \"NOUN\"], \"feats\": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]}",
+          "output": "{\"sentence_length\": 32, \"effective_length\": 32, \"tree_depth\": 8, \"max_arity\": 5, \"mean_arity\": 1.7222, \"mean_dd\": 2.6774, \"dd_variance\": 9.3153, \"dd_skewness\": 2.213, \"dd_list\": [12, 1, 1, 1, 1, 1, 2, 1, 2, 3, 2, 1, 1, 10, 1, 4, 1, 2, 1, 4, 1, 2, 1, 12, 4, 1, 1, 1, 5, 1, 2], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.6774, \"ic_variance\": 2.283, \"max_ic\": 7, \"functional_ratio\": 0.3226, \"content_ratio\": 0.6774, \"head_direction_entropy\": 0.9812}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_pisandub",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_pisandub",
+          "metadata_sent_id": "babylon7_nabopolassar_03_03"
+        }
+      ]
+    },
+    {
+      "dataset": "akk_riao",
+      "examples": [
+        {
+          "input": "{\"text\": \"uššīšu ina muhhi kiṣir šadê danni addi\", \"tokens\": [\"uššī\", \"šu\", \"ina\", \"muhhi\", \"kiṣir\", \"šadê\", \"danni\", \"addi\"], \"heads\": [8, 1, 4, 8, 4, 5, 6, 0], \"deprels\": [\"obj\", \"det:poss\", \"case\", \"obl\", \"nmod:poss\", \"nmod:poss\", \"amod\", \"root\"], \"upos\": [\"NOUN\", \"PRON\", \"ADP\", \"NOUN\", \"NOUN\", \"NOUN\", \"ADJ\", \"VERB\"], \"feats\": [\"Gender=Masc|NounBase=Suffixal|Number=Plur\", \"Gender=Masc|Number=Sing|Person=3\", null, \"Case=Gen|Gender=Masc|NounBase=Free|Number=Sing\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Masc|Number=Plur\", \"Case=Gen|Gender=Masc|Number=Sing\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 4, \"max_arity\": 2, \"mean_arity\": 1.4, \"mean_dd\": 2.2857, \"dd_variance\": 4.7755, \"dd_skewness\": 1.3577, \"dd_list\": [7, 1, 1, 4, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7143, \"ic_variance\": 1.3469, \"max_ic\": 3, \"functional_ratio\": 0.2857, \"content_ratio\": 0.7143, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q006033-15"
+        },
+        {
+          "input": "{\"text\": \"asumettu ša qurdiya ēpuš ina libbi ašqup\", \"tokens\": [\"asumettu\", \"ša\", \"qurdi\", \"ya\", \"ēpuš\", \"ina\", \"libbi\", \"ašqup\"], \"heads\": [5, 3, 1, 3, 0, 7, 8, 5], \"deprels\": [\"obj\", \"case\", \"nmod\", \"det:poss\", \"root\", \"case\", \"obl\", \"conj\"], \"upos\": [\"NOUN\", \"ADP\", \"NOUN\", \"PRON\", \"VERB\", \"ADP\", \"NOUN\", \"VERB\"], \"feats\": [\"Gender=Fem|NounBase=Free|Number=Sing\", null, \"Case=Gen|Gender=Masc|NounBase=Suffixal|Number=Sing\", \"Number=Sing|Person=1\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\", null, \"Case=Gen|Gender=Masc|NounBase=Free|Number=Sing\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 8, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 2, \"mean_arity\": 1.4, \"mean_dd\": 1.8571, \"dd_variance\": 1.2653, \"dd_skewness\": 0.8849, \"dd_list\": [4, 1, 2, 1, 1, 1, 3], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2857, \"ic_variance\": 0.2041, \"max_ic\": 1, \"functional_ratio\": 0.4286, \"content_ratio\": 0.5714, \"head_direction_entropy\": 0.9852}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004455-482"
+        },
+        {
+          "input": "{\"text\": \"līṭīšunu aṣbat pānātuya uktillū ana Labnana ittalkū\", \"tokens\": [\"līṭī\", \"šunu\", \"aṣbat\", \"pānātu\", \"ya\", \"uktillū\", \"ana\", \"Labnana\", \"ittalkū\"], \"heads\": [3, 1, 0, 6, 4, 3, 8, 9, 3], \"deprels\": [\"obj\", \"det:poss\", \"root\", \"obl\", \"det:poss\", \"conj\", \"case\", \"obl\", \"conj\"], \"upos\": [\"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"PRON\", \"VERB\", \"ADP\", \"PROPN\", \"VERB\"], \"feats\": [\"Gender=Masc|NounBase=Suffixal|Number=Plur\", \"Gender=Masc|Number=Plur|Person=3\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\", \"Gender=Fem|NounBase=Suffixal|Number=Plur\", \"Number=Sing|Person=1\", \"Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|VerbStem=D\", null, null, \"Gender=Masc|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.3333, \"mean_dd\": 2.125, \"dd_variance\": 2.6094, \"dd_skewness\": 1.5764, \"dd_list\": [2, 1, 2, 1, 3, 1, 1, 6], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5, \"ic_variance\": 1.0, \"max_ic\": 3, \"functional_ratio\": 0.375, \"content_ratio\": 0.625, \"head_direction_entropy\": 1.0}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004455-453"
+        },
+        {
+          "input": "{\"text\": \"rubû arkû ina šarrāni mārīya ša Aššur inabbûšu\", \"tokens\": [\"rubû\", \"arkû\", \"ina\", \"šarrāni\", \"mārī\", \"ya\", \"ša\", \"Aššur\", \"inabbû\", \"šu\"], \"heads\": [0, 1, 4, 9, 4, 5, 9, 9, 1, 9], \"deprels\": [\"root\", \"amod\", \"case\", \"obl\", \"appos\", \"det:poss\", \"obj\", \"nsubj\", \"acl:relcl\", \"obj\"], \"upos\": [\"NOUN\", \"ADJ\", \"ADP\", \"NOUN\", \"NOUN\", \"PRON\", \"PRON\", \"PROPN\", \"VERB\", \"PRON\"], \"feats\": [\"Case=Nom|Gender=Masc|NounBase=Free|Number=Sing\", \"Case=Nom|Gender=Masc|Number=Sing\", null, \"Gender=Masc|Number=Plur\", \"Gender=Masc|NounBase=Suffixal|Number=Plur\", \"Number=Sing|Person=1\", null, \"Gender=Masc\", \"Gender=Masc|Mood=Ind|Number=Sing|Person=3|Subordinative=Yes|Tense=Pres|VerbForm=Fin|VerbStem=G\", \"Gender=Masc|Number=Sing|Person=3\"]}",
+          "output": "{\"sentence_length\": 10, \"effective_length\": 10, \"tree_depth\": 4, \"max_arity\": 4, \"mean_arity\": 2.25, \"mean_dd\": 2.3333, \"dd_variance\": 5.5556, \"dd_skewness\": 1.5839, \"dd_list\": [1, 1, 5, 1, 1, 2, 1, 8, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.3333, \"ic_variance\": 0.4444, \"max_ic\": 2, \"functional_ratio\": 0.2222, \"content_ratio\": 0.7778, \"head_direction_entropy\": 0.9911}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004492-9"
+        },
+        {
+          "input": "{\"text\": \"ēkallāti ina šiddi mātiya arṣip epinnāti ina šiddi mātiya arkus\", \"tokens\": [\"ēkallāti\", \"ina\", \"šiddi\", \"māti\", \"ya\", \"arṣip\", \"epinnāti\", \"ina\", \"šiddi\", \"māti\", \"ya\", \"arkus\"], \"heads\": [6, 3, 6, 3, 4, 0, 12, 9, 12, 9, 10, 6], \"deprels\": [\"obj\", \"case\", \"obl\", \"nmod:poss\", \"det:poss\", \"root\", \"obj\", \"case\", \"obl\", \"nmod:poss\", \"det:poss\", \"conj\"], \"upos\": [\"NOUN\", \"ADP\", \"NOUN\", \"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"ADP\", \"NOUN\", \"NOUN\", \"PRON\", \"VERB\"], \"feats\": [\"Gender=Fem|NounBase=Free|Number=Plur\", null, \"Case=Gen|Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Suffixal|Number=Sing\", \"Number=Sing|Person=1\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\", \"Gender=Fem|NounBase=Free|Number=Plur\", null, \"Case=Gen|Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Suffixal|Number=Sing\", \"Number=Sing|Person=1\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 12, \"effective_length\": 12, \"tree_depth\": 4, \"max_arity\": 3, \"mean_arity\": 1.8333, \"mean_dd\": 2.5455, \"dd_variance\": 3.5207, \"dd_skewness\": 0.6722, \"dd_list\": [5, 1, 3, 1, 1, 5, 1, 3, 1, 1, 6], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7273, \"ic_variance\": 0.7438, \"max_ic\": 2, \"functional_ratio\": 0.3636, \"content_ratio\": 0.6364, \"head_direction_entropy\": 0.994}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q006033-9"
+        },
+        {
+          "input": "{\"text\": \"epinnāti ina šiddi mātiya arkus še’ū tabkāni eli ša pāna ušāter atbuk\", \"tokens\": [\"epinnāti\", \"ina\", \"šiddi\", \"māti\", \"ya\", \"arkus\", \"še’ū\", \"tabkāni\", \"eli\", \"ša\", \"pāna\", \"ušāter\", \"atbuk\"], \"heads\": [6, 3, 6, 3, 4, 0, 12, 12, 12, 9, 9, 6, 12], \"deprels\": [\"obj\", \"case\", \"obl\", \"nmod:poss\", \"det:poss\", \"root\", \"obj\", \"obl\", \"advmod\", \"fixed\", \"fixed\", \"conj\", \"xcomp\"], \"upos\": [\"NOUN\", \"ADP\", \"NOUN\", \"NOUN\", \"PRON\", \"VERB\", \"NOUN\", \"NOUN\", \"ADP\", \"ADP\", \"ADV\", \"VERB\", \"VERB\"], \"feats\": [\"Gender=Fem|NounBase=Free|Number=Plur\", null, \"Case=Gen|Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Suffixal|Number=Sing\", \"Number=Sing|Person=1\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\", \"Gender=Masc|Number=Plur\", \"Gender=Masc|Number=Plur\", null, null, null, \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=S\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 13, \"effective_length\": 13, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 2.4, \"mean_dd\": 2.75, \"dd_variance\": 3.1875, \"dd_skewness\": 0.4668, \"dd_list\": [5, 1, 3, 1, 1, 5, 4, 3, 1, 2, 6, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5, \"ic_variance\": 0.4167, \"max_ic\": 2, \"functional_ratio\": 0.1667, \"content_ratio\": 0.8333, \"head_direction_entropy\": 1.0}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q006013-50"
+        },
+        {
+          "input": "{\"text\": \"3 mē tibkī ana 20 libnāti rapšāti ištu kīdi eli mahrišu muhhišu uraddi ukabbir\", \"tokens\": [\"3 mē\", \"tibkī\", \"ana\", \"20\", \"libnāti\", \"rapšāti\", \"ištu\", \"kīdi\", \"eli\", \"mahri\", \"šu\", \"muhhi\", \"šu\", \"uraddi\", \"ukabbir\"], \"heads\": [2, 14, 4, 5, 14, 5, 8, 14, 10, 14, 10, 14, 12, 0, 14], \"deprels\": [\"nummod\", \"obj\", \"case\", \"nummod\", \"obl\", \"amod\", \"case\", \"obl\", \"case\", \"obl\", \"det:poss\", \"obl\", \"det:poss\", \"root\", \"xcomp\"], \"upos\": [\"NUM\", \"NOUN\", \"ADP\", \"NUM\", \"NOUN\", \"ADJ\", \"ADP\", \"NOUN\", \"ADP\", \"NOUN\", \"PRON\", \"NOUN\", \"PRON\", \"VERB\", \"VERB\"], \"feats\": [null, \"Gender=Masc|Number=Plur\", null, null, \"Gender=Fem|NounBase=Free|Number=Plur\", \"Gender=Fem|Number=Plur\", null, \"Case=Gen|Gender=Masc|NounBase=Free|Number=Sing\", null, \"Case=Gen|Gender=Masc|NounBase=Suffixal|Number=Sing\", \"Gender=Masc|Number=Sing|Person=3\", \"Case=Gen|Gender=Masc|NounBase=Suffixal|Number=Sing\", \"Gender=Masc|Number=Sing|Person=3\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=D\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=D\"]}",
+          "output": "{\"sentence_length\": 15, \"effective_length\": 15, \"tree_depth\": 3, \"max_arity\": 6, \"mean_arity\": 2.0, \"mean_dd\": 3.0, \"dd_variance\": 11.7143, \"dd_skewness\": 1.6034, \"dd_list\": [1, 12, 1, 1, 9, 1, 1, 6, 1, 4, 1, 2, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7857, \"ic_variance\": 2.1684, \"max_ic\": 5, \"functional_ratio\": 0.3571, \"content_ratio\": 0.6429, \"head_direction_entropy\": 0.8631}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q006035-189"
+        },
+        {
+          "input": "{\"text\": \"narkabātišunu aṣīʾi šeš līm 5 mē muqtablīšunu ina kakkī ušamqit sītātešunu ina ṣummê ina mudabiri Purattu ēkul\", \"tokens\": [\"narkabāti\", \"šunu\", \"aṣīʾi\", \"šeš līm 5 mē\", \"muqtablī\", \"šunu\", \"ina\", \"kakkī\", \"ušamqit\", \"sītāte\", \"šunu\", \"ina\", \"ṣummê\", \"ina\", \"mudabiri\", \"Purattu\", \"ēkul\"], \"heads\": [3, 1, 0, 5, 9, 5, 8, 9, 3, 17, 10, 13, 17, 15, 17, 17, 3], \"deprels\": [\"obj\", \"det:poss\", \"root\", \"nummod\", \"obj\", \"det:poss\", \"case\", \"obl\", \"conj\", \"obj\", \"det:poss\", \"case\", \"obl\", \"case\", \"obl\", \"nsubj\", \"conj\"], \"upos\": [\"NOUN\", \"PRON\", \"VERB\", \"NUM\", \"NOUN\", \"PRON\", \"ADP\", \"NOUN\", \"VERB\", \"NOUN\", \"PRON\", \"ADP\", \"NOUN\", \"ADP\", \"NOUN\", \"PROPN\", \"VERB\"], \"feats\": [\"Gender=Fem|NounBase=Suffixal|Number=Plur\", \"Gender=Masc|Number=Plur|Person=3\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\", null, \"Gender=Masc|NounBase=Suffixal|Number=Plur\", \"Gender=Masc|Number=Plur|Person=3\", null, \"Gender=Masc|Number=Plur\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=S\", \"Gender=Fem|NounBase=Suffixal|Number=Plur\", \"Gender=Masc|Number=Plur|Person=3\", null, \"Case=Gen|Gender=Masc|NounBase=Free|Number=Sing\", null, \"Case=Gen|Gender=Masc|NounBase=Free|Number=Sing\", \"Case=Nom|Gender=Fem\", \"Gender=Fem|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 17, \"effective_length\": 17, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 1.7778, \"mean_dd\": 3.0, \"dd_variance\": 11.625, \"dd_skewness\": 2.1287, \"dd_list\": [2, 1, 1, 4, 1, 1, 1, 6, 7, 1, 1, 4, 1, 2, 1, 14], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.75, \"ic_variance\": 2.3125, \"max_ic\": 6, \"functional_ratio\": 0.375, \"content_ratio\": 0.625, \"head_direction_entropy\": 0.896}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004455-402"
+        },
+        {
+          "input": "{\"text\": \"Hattu Hataru Ništun Sabidi Metqia Arṣania Tela Halua ālāni ša Habhi ša ina birīt Usu Arua Arardi šadê dannūti šaknū akšud\", \"tokens\": [\"Hattu\", \"Hataru\", \"Ništun\", \"Sabidi\", \"Metqia\", \"Arṣania\", \"Tela\", \"Halua\", \"ālāni\", \"ša\", \"Habhi\", \"ša\", \"ina\", \"birīt\", \"Usu\", \"Arua\", \"Arardi\", \"šadê\", \"dannūti\", \"šaknū\", \"akšud\"], \"heads\": [21, 1, 1, 1, 1, 1, 1, 1, 1, 11, 9, 20, 14, 20, 14, 15, 15, 15, 18, 9, 0], \"deprels\": [\"obj\", \"conj\", \"conj\", \"conj\", \"conj\", \"conj\", \"conj\", \"conj\", \"appos\", \"case\", \"nmod\", \"nsubj\", \"case\", \"obl\", \"nmod:poss\", \"conj\", \"conj\", \"appos\", \"amod\", \"acl:relcl\", \"root\"], \"upos\": [\"PROPN\", \"PROPN\", \"PROPN\", \"PROPN\", \"PROPN\", \"PROPN\", \"PROPN\", \"PROPN\", \"NOUN\", \"ADP\", \"PROPN\", \"PRON\", \"ADP\", \"NOUN\", \"PROPN\", \"PROPN\", \"PROPN\", \"NOUN\", \"ADJ\", \"VERB\", \"VERB\"], \"feats\": [null, null, null, null, null, null, null, null, \"Gender=Masc|Number=Plur\", null, \"Case=Gen\", null, null, \"Gender=Fem|NounBase=Bound|Number=Sing\", null, null, null, \"Gender=Masc|Number=Plur\", \"Gender=Masc|Number=Plur\", \"Gender=Masc|Number=Plur|Person=3|Subordinative=Yes|VerbForm=Stat|VerbStem=G\", \"Gender=Com|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|VerbStem=G\"]}",
+          "output": "{\"sentence_length\": 21, \"effective_length\": 21, \"tree_depth\": 7, \"max_arity\": 8, \"mean_arity\": 2.5, \"mean_dd\": 4.65, \"dd_variance\": 20.7275, \"dd_skewness\": 1.9123, \"dd_list\": [20, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 8, 1, 6, 1, 1, 2, 3, 1, 11], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.75, \"ic_variance\": 2.6875, \"max_ic\": 6, \"functional_ratio\": 0.1, \"content_ratio\": 0.9, \"head_direction_entropy\": 0.8113}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004455-36"
+        },
+        {
+          "input": "{\"text\": \"ēkal Aššur-naṣir-apli šar kiššati šar māt Aššur mār Tukulti-Ninurta šar kiššati šar māt Aššur mār Adad-nerari šar kiššati šar māt Aššur mār Aššur-dan šar kiššati šar māt Aššurma\", \"tokens\": [\"ēkal\", \"Aššur-naṣir-apli\", \"šar\", \"kiššati\", \"šar\", \"māt\", \"Aššur\", \"mār\", \"Tukulti-Ninurta\", \"šar\", \"kiššati\", \"šar\", \"māt\", \"Aššur\", \"mār\", \"Adad-nerari\", \"šar\", \"kiššati\", \"šar\", \"māt\", \"Aššur\", \"mār\", \"Aššur-dan\", \"šar\", \"kiššati\", \"šar\", \"māt\", \"Aššur\", \"ma\"], \"heads\": [0, 1, 2, 3, 2, 5, 6, 2, 8, 9, 10, 9, 12, 13, 9, 15, 16, 17, 16, 19, 20, 16, 22, 23, 24, 23, 26, 27, 28], \"deprels\": [\"root\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"appos\", \"nmod:poss\", \"nmod:poss\", \"dep\"], \"upos\": [\"NOUN\", \"PROPN\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"PROPN\", \"NOUN\", \"PROPN\", \"NOUN\", \"NOUN\", \"NOUN\", \"NOUN\", \"PROPN\", \"PART\"], \"feats\": [\"Gender=Fem|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Free|Number=Sing\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Fem|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Free|Number=Sing\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Fem|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Free|Number=Sing\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Fem|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Masc\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Case=Gen|Gender=Fem|NounBase=Free|Number=Sing\", \"Gender=Masc|NounBase=Bound|Number=Sing\", \"Gender=Fem|NounBase=Bound|Number=Sing\", \"Gender=Masc\", null]}",
+          "output": "{\"sentence_length\": 29, \"effective_length\": 29, \"tree_depth\": 11, \"max_arity\": 3, \"mean_arity\": 1.3333, \"mean_dd\": 1.8214, \"dd_variance\": 2.5753, \"dd_skewness\": 1.8475, \"dd_list\": [1, 1, 1, 3, 1, 1, 6, 1, 1, 1, 3, 1, 1, 6, 1, 1, 1, 3, 1, 1, 6, 1, 1, 1, 3, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.4643, \"ic_variance\": 0.8916, \"max_ic\": 3, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.0}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "akk_riao",
+          "metadata_language_code": "akk",
+          "metadata_treebank_name": "akk_riao",
+          "metadata_sent_id": "Q004568-1"
+        }
+      ]
+    }
+  ]
+}

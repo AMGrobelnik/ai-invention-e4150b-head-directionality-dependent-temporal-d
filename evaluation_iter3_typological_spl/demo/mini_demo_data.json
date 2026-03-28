@@ -1,0 +1,888 @@
+{
+  "treebanks": [
+    {
+      "treebank_id": "ar_padt",
+      "language": "Standard Arabic",
+      "word_order": "VSO",
+      "family": "Afro-Asiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.9572493669724689,
+        "p_value": 1.35456461594298e-72
+      },
+      "raw_llf": {
+        "cohen_d": 1.4167804926719927,
+        "p_value": 1.5528462810164623e-121
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.1520645211270228
+      },
+      "head_final_prop": 0.31499999999999995,
+      "glottolog_family_name": "Afro-Asiatic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "ar_pud",
+      "language": "Standard Arabic",
+      "word_order": "VSO",
+      "family": "Afro-Asiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 1.038653886534236,
+        "p_value": 1.9368692299724315e-81
+      },
+      "raw_llf": {
+        "cohen_d": 1.2654852709054398,
+        "p_value": 8.459358397123473e-106
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.05589236368191712
+      },
+      "head_final_prop": 0.35929999999999995,
+      "glottolog_family_name": "Afro-Asiatic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1000
+    },
+    {
+      "treebank_id": "cy_ccg",
+      "language": "Welsh",
+      "word_order": "VSO",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.5541528223549995,
+        "p_value": 6.240937240869037e-31
+      },
+      "raw_llf": {
+        "cohen_d": 0.6342010806900402,
+        "p_value": 1.3465163229088203e-38
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.1099268220049345
+      },
+      "head_final_prop": 0.46199999999999997,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1355
+    },
+    {
+      "treebank_id": "ga_idt",
+      "language": "Irish",
+      "word_order": "VSO",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 1.2629631375526513,
+        "p_value": 1.562497926194444e-105
+      },
+      "raw_llf": {
+        "cohen_d": 1.583517090530565,
+        "p_value": 3.1061228258274046e-138
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.29255766863353555
+      },
+      "head_final_prop": 0.4312,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 4005
+    },
+    {
+      "treebank_id": "ga_twittirish",
+      "language": "Irish",
+      "word_order": "VSO",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 1.2480607798058703,
+        "p_value": 5.90022489207882e-104
+      },
+      "raw_llf": {
+        "cohen_d": 1.1295497753087067,
+        "p_value": 2.7984358955288064e-91
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.8827267529493312
+      },
+      "head_final_prop": 0.3984,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 866
+    },
+    {
+      "treebank_id": "gd_arcosg",
+      "language": "Scottish Gaelic",
+      "word_order": "VSO",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.6865521987754255,
+        "p_value": 7.634393160480096e-44
+      },
+      "raw_llf": {
+        "cohen_d": 0.6764602885777172,
+        "p_value": 8.058784755303317e-43
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.24748491790296595
+      },
+      "head_final_prop": 0.44399999999999995,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 3544
+    },
+    {
+      "treebank_id": "gub_tudet",
+      "language": "Guajaj\u00e1ra",
+      "word_order": "VSO",
+      "family": "Tupian",
+      "n_sentences": 338,
+      "residualized_llf": {
+        "cohen_d": 1.5280460778594238,
+        "p_value": 2.646037497903013e-90
+      },
+      "raw_llf": {
+        "cohen_d": 1.179019292180532,
+        "p_value": 7.335440070640419e-66
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.740501601859401
+      },
+      "head_final_prop": 0.2098,
+      "glottolog_family_name": "Tupian",
+      "macroarea": "South America",
+      "data_n_sentences": 1182
+    },
+    {
+      "treebank_id": "cop_scriptorium",
+      "language": "Coptic",
+      "word_order": "SVO",
+      "family": "Afro-Asiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.25111094565223396,
+        "p_value": 3.2672901163056935e-08
+      },
+      "raw_llf": {
+        "cohen_d": 0.4229393925334293,
+        "p_value": 1.2377990177969965e-19
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.28512208373634335
+      },
+      "head_final_prop": 0.5933999999999999,
+      "glottolog_family_name": "Afro-Asiatic",
+      "macroarea": "Africa",
+      "data_n_sentences": 1419
+    },
+    {
+      "treebank_id": "wo_wtb",
+      "language": "Wolof",
+      "word_order": "SVO",
+      "family": "Atlantic-Congo",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.14907112082813428,
+        "p_value": 0.0009218911858517344
+      },
+      "raw_llf": {
+        "cohen_d": 0.2860829895032234,
+        "p_value": 3.651010145381462e-10
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.0591711710405493
+      },
+      "head_final_prop": 0.501,
+      "glottolog_family_name": "Atlantic-Congo",
+      "macroarea": "Africa",
+      "data_n_sentences": 1188
+    },
+    {
+      "treebank_id": "vi_vtb",
+      "language": "Vietnamese",
+      "word_order": "SVO",
+      "family": "Austroasiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.29851581929580456,
+        "p_value": 6.596105914157779e-11
+      },
+      "raw_llf": {
+        "cohen_d": 0.36834954977107814,
+        "p_value": 1.5669685315289057e-15
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.08620133621331766
+      },
+      "head_final_prop": 0.4303,
+      "glottolog_family_name": "Austroasiatic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1400
+    },
+    {
+      "treebank_id": "id_csui",
+      "language": "Standard Indonesian",
+      "word_order": "SVO",
+      "family": "Austronesian",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.6775245526617153,
+        "p_value": 6.289136318097903e-43
+      },
+      "raw_llf": {
+        "cohen_d": 0.8220457395028161,
+        "p_value": 5.248366247415186e-58
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.14138910001729144
+      },
+      "head_final_prop": 0.35229999999999995,
+      "glottolog_family_name": "Austronesian",
+      "macroarea": "Papunesia",
+      "data_n_sentences": 656
+    },
+    {
+      "treebank_id": "ca_ancora",
+      "language": "Catalan",
+      "word_order": "SVO",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.18021085238812842,
+        "p_value": 6.45786721640959e-05
+      },
+      "raw_llf": {
+        "cohen_d": 0.5136074226981961,
+        "p_value": 2.991480257585712e-27
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.04520785180421483
+      },
+      "head_final_prop": 0.5707,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "zh_beginner",
+      "language": "Mandarin Chinese",
+      "word_order": "SVO",
+      "family": "Sino-Tibetan",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.1503882503413849,
+        "p_value": 0.0008309011833800367
+      },
+      "raw_llf": {
+        "cohen_d": -0.40586690956474053,
+        "p_value": 2.6194275070791312e-18
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.22773059157188166
+      },
+      "head_final_prop": 0.5367,
+      "glottolog_family_name": "Sino-Tibetan",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 2295
+    },
+    {
+      "treebank_id": "th_pud",
+      "language": "Thai",
+      "word_order": "SVO",
+      "family": "Tai-Kadai",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.04804252301946732,
+        "p_value": 0.28322379424781846
+      },
+      "raw_llf": {
+        "cohen_d": -0.23128565347337393,
+        "p_value": 3.364381803392217e-07
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.5030908714086625
+      },
+      "head_final_prop": 0.37539999999999996,
+      "glottolog_family_name": "Tai-Kadai",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1000
+    },
+    {
+      "treebank_id": "fi_ftb",
+      "language": "Finnish",
+      "word_order": "SVO",
+      "family": "Uralic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.5480661296601446,
+        "p_value": 2.2767520373300088e-30
+      },
+      "raw_llf": {
+        "cohen_d": -0.8575586464294496,
+        "p_value": 8.224024222600332e-62
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.4112306637585985
+      },
+      "head_final_prop": 0.5257000000000001,
+      "glottolog_family_name": "Uralic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "ab_abnc",
+      "language": "Abkhaz",
+      "word_order": "SOV",
+      "family": "Abkhaz-Adyge",
+      "n_sentences": 321,
+      "residualized_llf": {
+        "cohen_d": -0.5705246299197619,
+        "p_value": 2.0673693349648685e-21
+      },
+      "raw_llf": {
+        "cohen_d": -0.8539237828927024,
+        "p_value": 4.876801815474866e-40
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.13386871243805515
+      },
+      "head_final_prop": 0.6525000000000001,
+      "glottolog_family_name": "Abkhaz-Adyge",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1316
+    },
+    {
+      "treebank_id": "am_att",
+      "language": "Amharic",
+      "word_order": "SOV",
+      "family": "Afro-Asiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.30942677465972634,
+        "p_value": 1.4011275739863477e-11
+      },
+      "raw_llf": {
+        "cohen_d": -0.002324123876645729,
+        "p_value": 0.9585741995338518
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.08385775923498105
+      },
+      "head_final_prop": 0.4639,
+      "glottolog_family_name": "Afro-Asiatic",
+      "macroarea": "Africa",
+      "data_n_sentences": 1074
+    },
+    {
+      "treebank_id": "arh_chibergis",
+      "language": "Arhuaco",
+      "word_order": "SOV",
+      "family": "Chibchan",
+      "n_sentences": 247,
+      "residualized_llf": {
+        "cohen_d": 0.24815286278529655,
+        "p_value": 0.00012414172934935216
+      },
+      "raw_llf": {
+        "cohen_d": 0.10125583726893606,
+        "p_value": 0.11281267917187046
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.3860247397387715
+      },
+      "head_final_prop": 0.3721,
+      "glottolog_family_name": "Chibchan",
+      "macroarea": "South America",
+      "data_n_sentences": 628
+    },
+    {
+      "treebank_id": "ta_ttb",
+      "language": "Tamil",
+      "word_order": "SOV",
+      "family": "Dravidian",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.7089012190620029,
+        "p_value": 3.960385068944135e-46
+      },
+      "raw_llf": {
+        "cohen_d": -0.969670266166843,
+        "p_value": 6.061538765067898e-74
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.46301975937280415
+      },
+      "head_final_prop": 0.7405999999999999,
+      "glottolog_family_name": "Dravidian",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 400
+    },
+    {
+      "treebank_id": "fa_perdt",
+      "language": "Western Farsi",
+      "word_order": "SOV",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.5988053359939698,
+        "p_value": 3.785640510934801e-35
+      },
+      "raw_llf": {
+        "cohen_d": -0.6953879835274046,
+        "p_value": 9.601245441644353e-45
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.23805160515404838
+      },
+      "head_final_prop": 0.5388999999999999,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "ja_bccwjluw",
+      "language": "Japanese",
+      "word_order": "SOV",
+      "family": "Japonic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.07866960374078692,
+        "p_value": 0.07917237298901471
+      },
+      "raw_llf": {
+        "cohen_d": -0.0934160431946617,
+        "p_value": 0.03722768844559294
+      },
+      "residualized_max_imb": {
+        "cohen_d": 0.16538042017351562
+      },
+      "head_final_prop": 0.4474,
+      "glottolog_family_name": "Japonic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "ka_glc",
+      "language": "Georgian",
+      "word_order": "SOV",
+      "family": "Kartvelian",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.10236640736650998,
+        "p_value": 0.022497289979082142
+      },
+      "raw_llf": {
+        "cohen_d": -0.08385326718398077,
+        "p_value": 0.061374324932815694
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.02250189818178834
+      },
+      "head_final_prop": 0.6189,
+      "glottolog_family_name": "Kartvelian",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 2214
+    },
+    {
+      "treebank_id": "naq_kdt",
+      "language": "Nama (Namibia)",
+      "word_order": "SOV",
+      "family": "Khoe-Kwadi",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": -0.48072515781701963,
+        "p_value": 2.204214414312697e-24
+      },
+      "raw_llf": {
+        "cohen_d": -0.703900769913743,
+        "p_value": 1.2915668650054943e-45
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.05282299432850797
+      },
+      "head_final_prop": 0.5735,
+      "glottolog_family_name": "Khoe-Kwadi",
+      "macroarea": "Africa",
+      "data_n_sentences": 2002
+    },
+    {
+      "treebank_id": "akk_riao",
+      "language": "Akkadian",
+      "word_order": "unknown",
+      "family": "Afro-Asiatic",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.13848453364634516,
+        "p_value": 0.002067619309590649
+      },
+      "raw_llf": {
+        "cohen_d": 0.1544557705970152,
+        "p_value": 0.0005999369996061646
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.09610694403731693
+      },
+      "head_final_prop": 0.4254,
+      "glottolog_family_name": "Afro-Asiatic",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 1874
+    },
+    {
+      "treebank_id": "jv_csui",
+      "language": "Javanese",
+      "word_order": "unknown",
+      "family": "Austronesian",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.5574854258929716,
+        "p_value": 3.062993863233638e-31
+      },
+      "raw_llf": {
+        "cohen_d": 0.5630606808990999,
+        "p_value": 9.266535828417328e-32
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.20299048403510786
+      },
+      "head_final_prop": 0.39590000000000003,
+      "glottolog_family_name": "Austronesian",
+      "macroarea": "Papunesia",
+      "data_n_sentences": 1000
+    },
+    {
+      "treebank_id": "bor_bdt",
+      "language": "Bororo",
+      "word_order": "unknown",
+      "family": "Bororoan",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.07916106818506331,
+        "p_value": 0.07732183537280744
+      },
+      "raw_llf": {
+        "cohen_d": -0.1417820394324897,
+        "p_value": 0.0016161696361735303
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.03253546099481601
+      },
+      "head_final_prop": 0.4618,
+      "glottolog_family_name": "Bororoan",
+      "macroarea": "South America",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "be_hse",
+      "language": "Belarusian",
+      "word_order": "No dominant order",
+      "family": "Indo-European",
+      "n_sentences": 500,
+      "residualized_llf": {
+        "cohen_d": 0.16855673805622257,
+        "p_value": 0.00018346877276823276
+      },
+      "raw_llf": {
+        "cohen_d": 0.19007561030272624,
+        "p_value": 2.5493377911331062e-05
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.1267235404419902
+      },
+      "head_final_prop": 0.527,
+      "glottolog_family_name": "Indo-European",
+      "macroarea": "Eurasia",
+      "data_n_sentences": 5000
+    },
+    {
+      "treebank_id": "quc_iu",
+      "language": "K'iche'",
+      "word_order": "unknown",
+      "family": "Mayan",
+      "n_sentences": 260,
+      "residualized_llf": {
+        "cohen_d": 0.624534532450276,
+        "p_value": 2.4154929315274526e-20
+      },
+      "raw_llf": {
+        "cohen_d": 0.5952965641310203,
+        "p_value": 7.306793632586839e-19
+      },
+      "residualized_max_imb": {
+        "cohen_d": -0.5599555728052187
+      },
+      "head_final_prop": 0.41290000000000004,
+      "glottolog_family_name": "Mayan",
+      "macroarea": "North America",
+      "data_n_sentences": 1435
+    }
+  ],
+  "exp_metadata": {
+    "aggregate_results": {
+      "residualized_llf": {
+        "proportion_d_gt_0.2": 0.313953488372093,
+        "proportion_significant": 0.7325581395348837,
+        "median_cohen_d": -0.06363159937929781,
+        "mean_cohen_d": -0.03497150836595579,
+        "by_word_order": {
+          "SOV": {
+            "n": 26,
+            "median_d": -0.5458541193529757,
+            "mean_d": -0.4876027980870027
+          },
+          "other": {
+            "n": 29,
+            "median_d": -0.04522706093430924,
+            "mean_d": -0.019678175614508134
+          },
+          "VSO": {
+            "n": 7,
+            "median_d": 1.038653886534236,
+            "mean_d": 1.0393826099792964
+          },
+          "SVO": {
+            "n": 24,
+            "median_d": 0.13414442774265187,
+            "mean_d": 0.12354632723981386
+          }
+        }
+      },
+      "residualized_max_imb": {
+        "proportion_abs_d_gt_0.2": 0.3023255813953488,
+        "proportion_significant": 0.6162790697674418,
+        "median_cohen_d": -0.05753176736123321,
+        "mean_cohen_d": -0.02040190099229314
+      },
+      "convexity_raw": [
+        {
+          "alpha": 1.0,
+          "median_d": -0.22756377642773523,
+          "mean_d": -0.21738984371368011,
+          "prop_sig": 0.6395348837209303
+        },
+        {
+          "alpha": 1.2,
+          "median_d": -0.2206951342052663,
+          "mean_d": -0.20462603656782227,
+          "prop_sig": 0.6395348837209303
+        },
+        {
+          "alpha": 1.5,
+          "median_d": -0.1952026027629602,
+          "mean_d": -0.18391201113773972,
+          "prop_sig": 0.5581395348837209
+        },
+        {
+          "alpha": 2.0,
+          "median_d": -0.16242533664028364,
+          "mean_d": -0.1519783646372719,
+          "prop_sig": 0.4069767441860465
+        },
+        {
+          "alpha": 3.0,
+          "median_d": -0.10910762534262519,
+          "mean_d": -0.10909622460974223,
+          "prop_sig": 0.1744186046511628
+        }
+      ],
+      "convexity_residualized": [
+        {
+          "alpha": 1.0,
+          "median_d": -0.03268387390185985,
+          "mean_d": -0.08471267327801736,
+          "prop_sig": 0.5697674418604651
+        },
+        {
+          "alpha": 1.2,
+          "median_d": -0.021388484319654965,
+          "mean_d": -0.0920590167445222,
+          "prop_sig": 0.5697674418604651
+        },
+        {
+          "alpha": 1.5,
+          "median_d": -0.008840688137178037,
+          "mean_d": -0.08659896025090962,
+          "prop_sig": 0.5348837209302325
+        },
+        {
+          "alpha": 2.0,
+          "median_d": -0.007128313887803823,
+          "mean_d": -0.06783757750571642,
+          "prop_sig": 0.5116279069767442
+        },
+        {
+          "alpha": 3.0,
+          "median_d": 0.020691852438350755,
+          "mean_d": -0.0477338938080704,
+          "prop_sig": 0.5232558139534884
+        }
+      ],
+      "convexity_monotonicity": {
+        "test": "R^2 of cost from DD decreases with alpha",
+        "r2_by_alpha": [
+          [
+            1.0,
+            0.8725262344359936
+          ],
+          [
+            1.2,
+            0.7701136571987952
+          ],
+          [
+            1.5,
+            0.610978733485134
+          ],
+          [
+            2.0,
+            0.44630408135494326
+          ],
+          [
+            3.0,
+            0.335310057509579
+          ]
+        ],
+        "spearman_rho": -0.9999999999999999,
+        "spearman_p": 1.4042654220543672e-24,
+        "r2_monotonic_decrease": true,
+        "r2_drop_alpha1_to_max": 0.5372161769264147,
+        "raw_abs_d_by_alpha": [
+          [
+            1.0,
+            0.22756377642773523
+          ],
+          [
+            1.2,
+            0.2206951342052663
+          ],
+          [
+            1.5,
+            0.1952026027629602
+          ],
+          [
+            2.0,
+            0.16242533664028364
+          ],
+          [
+            3.0,
+            0.10910762534262519
+          ]
+        ]
+      },
+      "negative_control_alpha1": {
+        "r2_alpha1_from_dd": 0.8725262344359936,
+        "r2_alpha_max_from_dd": 0.335310057509579,
+        "r2_drop": 0.5372161769264147,
+        "r2_monotonic_decrease": true,
+        "passes": true
+      },
+      "alpha_star": 2.0,
+      "r2_cost_from_dd_by_alpha": {
+        "1.0": 0.8725262344359936,
+        "1.2": 0.7701136571987952,
+        "1.5": 0.610978733485134,
+        "2.0": 0.44630408135494326,
+        "3.0": 0.335310057509579
+      }
+    },
+    "novelty_test": {
+      "llf": {
+        "r2_diff": 0.1466027094509449,
+        "r2_level": 0.12981219149498735,
+        "beta": [
+          -0.0829455858460509,
+          0.01748711453055343,
+          0.0007776795073896283,
+          0.042755197234733214,
+          -0.002567771980581819,
+          -0.005935450593887832,
+          -0.0035200340162899347,
+          0.0211518840416297
+        ]
+      },
+      "max_imb": {
+        "r2_diff": 0.6790244852221865,
+        "r2_level": 0.939438893752233,
+        "beta": [
+          11.261952214199429,
+          15.150481356010609,
+          0.5038031374822335,
+          -1.5378846625632001,
+          -1.6435521751741369,
+          -5.106179160872492,
+          -7.97979064606659,
+          9.061379224695846
+        ]
+      },
+      "cost_1.0": {
+        "r2_diff": 0.5074442495528838,
+        "r2_cost_from_dd": 0.8725262344359936,
+        "beta": [
+          1390.0262928402567,
+          -66.28624652439049,
+          46.58984240922359,
+          -36.57314097259014,
+          -65.18600788459744,
+          -72.99652781405831,
+          -43.606639461092804,
+          -125.49406056241324
+        ]
+      },
+      "cost_1.2": {
+        "r2_diff": 0.4497950022252032,
+        "r2_cost_from_dd": 0.7701136571987952,
+        "beta": [
+          5523.904000554964,
+          -656.1838979431682,
+          183.15162690757504,
+          -233.0654983787824,
+          -227.7749185700954,
+          -160.7031282527739,
+          22.75130691380836,
+          -699.2797250546807
+        ]
+      },
+      "cost_1.5": {
+        "r2_diff": 0.39300260181455016,
+        "r2_cost_from_dd": 0.610978733485134,
+        "beta": [
+          44996.81052382033,
+          -8466.741046406138,
+          1485.0592469383223,
+          -2407.7534550756645,
+          -1592.3884290374997,
+          -317.7022053509228,
+          1756.3575096034044,
+          -7914.698071002507
+        ]
+      },
+      "cost_2.0": {
+        "r2_diff": 0.3512151490075217,
+        "r2_cost_from_dd": 0.44630408135494326,
+        "beta": [
+          1593662.7809713855,
+          -391065.2689496292,
+          52332.076452533096,
+          -95905.8274694707,
+          -47435.64935673381,
+          15820.495272297514,
+          107088.0251209513,
+          -367730.5015521988
+        ]
+      },
+      "cost_3.0": {
+        "r2_diff": 0.3300430612810952,
+        "r2_cost_from_dd": 0.335310057509579,
+        "beta": [
+          2276734132.9858465,
+          -631995635.2161162,
+          73583105.35870261,
+          -145597118.6474433,
+          -57758795.216160566,
+          41801624.81260612,
+          186296174.63581333,
+          -622604378.9063983
+        ]
+      }
+    }
+  }
+}

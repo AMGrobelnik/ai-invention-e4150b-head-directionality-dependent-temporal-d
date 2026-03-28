@@ -1,0 +1,13 @@
+{
+  "id": "exp_id4_it2__opus",
+  "type": "code",
+  "title": "Modality, Head-Final IMB, and Case-Marking Analysis",
+  "summary": "Implements Phases 4-5 of the load-smoothing hypothesis across 177 UD treebanks (566K sentences). Phase 4 compares spoken vs written LLF across 6 language pairs with disfluency exclusion, OLS residualization controlling for length/depth/complexity, Welch's t-tests, Cohen's d with 10K bootstrap CIs, and sensitivity checks. Result: 3/6 pairs show spoken higher residual LLF; 4/6 significant at Bonferroni p<0.01. Phase 5a computes standard and encounter-only IMB for 51 SOV and 126 SVO treebanks. SOV shows dramatically larger llf_delta than SVO (d=2.58, p=5.45e-15); head-final proportion correlates strongly with llf_delta (r=0.50, p=1.27e-12). Phase 5b finds no significant case-richness/LLF correlation in SOV languages (r=-0.047, p=0.74). Phase 5c DOM analysis across 22 treebanks: 9/22 show case-marked higher LLF; mixed-effects coef=-0.0006 (p=0.20). All IMB computations validated via worked examples and identity checks. Uses numpy-vectorized profiles, container-aware memory limits (29GB cgroup), streaming data loading. Total runtime: 100s. Output follows exp_gen_sol_out schema with 6 dataset groups: phase4_modality_comparison, phase5a_head_final_effects, phase5b_case_richness, phase5c_dom_analysis, pilot_validation, and comprehensive_summary containing all aggregated results.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_2/gen_art/exp_id4_it2__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id4_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id4_it2__opus/method_code_demo.ipynb"
+}

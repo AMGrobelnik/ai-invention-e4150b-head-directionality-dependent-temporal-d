@@ -1,0 +1,13 @@
+{
+  "id": "exp_id1_it3__opus",
+  "type": "code",
+  "title": "True Encounter-Only IMB with VSO 10K Reanalysis",
+  "summary": "Implements three IMB variants (standard, head-initial-only, true encounter-only) plus encounter-count profiles, compared against 100 projective baselines per sentence across 21 UD treebanks (11 VSO at 10K cap, 5 SOV + 5 SVO at 500 cap, 25,739 total sentences). True encounter-only IMB is confirmed identically zero for all sentences, proving burden derives from anticipatory load before both endpoints are encountered. Per-treebank Cohen's d shows a clear typological gradient: VSO median d=+1.057 (11/11 positive), SVO median d=+0.174 (mixed), SOV median d=-0.791 (0/5 positive). Head-initial-only amplifies this gradient (VSO d=+1.475, SOV d=-1.051). OLS residualization controls for seven tree properties (mean DD, DD variance, DD skewness, sentence length, tree depth, mean arity, projectivity) with R-squared 0.26 for LLF and 0.72 for max IMB. Leave-one-out sensitivity across 11 VSO treebanks spanning 4 language families (Afro-Asiatic, Austronesian, Tupian, Indo-European) shows no sign flips, max median change 0.08, confirming robustness. Convexity analysis at alpha 1.0-3.0 and encounter-count LLF (VSO d=+0.670) provide convergent evidence. Zero identity violations across all sentences. Output has per-treebank raw and residualized Cohen's d, p-values, aggregate typological comparisons, full LOO details, and R-squared novelty tests. Processed in 92 seconds using 3-worker parallel execution on 4 CPUs.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_3/gen_art/exp_id1_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id1_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id1_it3__opus/method_code_demo.ipynb"
+}

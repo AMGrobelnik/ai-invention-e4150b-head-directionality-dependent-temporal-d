@@ -1,0 +1,3104 @@
+{
+  "metadata": {
+    "description": "Mini demo data for Modality, Head-Final IMB, and Case-Marking Analysis",
+    "source": "Load-smoothing hypothesis analysis across 177 UD treebanks"
+  },
+  "sample_sentences": {
+    "head_initial_tree": {
+      "description": "Head-initial (SVO-like): root at position 1, all dependents after",
+      "heads": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "deprels": [
+        "root",
+        "dep",
+        "dep",
+        "dep",
+        "dep"
+      ],
+      "dd_list": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "head_final_tree": {
+      "description": "Head-final (SOV-like): root at position 5, all dependents before",
+      "heads": [
+        5,
+        5,
+        5,
+        5,
+        0
+      ],
+      "deprels": [
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "root"
+      ],
+      "dd_list": [
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    "tree_a": {
+      "description": "Right-branching chain: 1->2->3->4, 3->5",
+      "heads": [
+        0,
+        1,
+        2,
+        2,
+        3
+      ],
+      "deprels": [
+        "root",
+        "dep",
+        "dep",
+        "dep",
+        "dep"
+      ],
+      "dd_list": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "expected_imb": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        2.0
+      ],
+      "expected_llf": 0.5333333
+    },
+    "tree_b": {
+      "description": "Balanced: root->2,3 and 3->4,5",
+      "heads": [
+        0,
+        1,
+        1,
+        3,
+        3
+      ],
+      "deprels": [
+        "root",
+        "dep",
+        "dep",
+        "dep",
+        "dep"
+      ],
+      "dd_list": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "expected_imb": [
+        0.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "expected_llf": 0.8
+    },
+    "with_disfluency": {
+      "description": "Sentence with reparandum disfluency marker",
+      "heads": [
+        0,
+        1,
+        1,
+        3
+      ],
+      "deprels": [
+        "root",
+        "dep",
+        "reparandum",
+        "dep"
+      ],
+      "dd_list": [
+        1,
+        2,
+        1
+      ]
+    },
+    "longer_sov": {
+      "description": "Longer SOV-like sentence with mixed dependencies",
+      "heads": [
+        3,
+        3,
+        0,
+        6,
+        6,
+        3,
+        8,
+        0,
+        6
+      ],
+      "deprels": [
+        "dep",
+        "dep",
+        "root",
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "root",
+        "dep"
+      ],
+      "dd_list": [
+        2,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2
+      ]
+    },
+    "longer_svo": {
+      "description": "Longer SVO-like sentence with mixed dependencies",
+      "heads": [
+        0,
+        1,
+        1,
+        3,
+        3,
+        1,
+        6,
+        6,
+        8
+      ],
+      "deprels": [
+        "root",
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "dep",
+        "dep"
+      ],
+      "dd_list": [
+        1,
+        2,
+        1,
+        2,
+        5,
+        1,
+        2,
+        1
+      ]
+    }
+  },
+  "phase4_modality": {
+    "pairs": [
+      {
+        "pair_id": "sl",
+        "lang": "Slovenian",
+        "n_spoken": 3290,
+        "n_written": 10000,
+        "mean_llf_spoken": 0.4279765243215833,
+        "mean_llf_written": 0.4314560999851655,
+        "residual_llf_cohens_d": 0.031379133291548095,
+        "residual_llf_p": 0.11944738508274681,
+        "spoken_higher": true,
+        "underpowered": false
+      },
+      {
+        "pair_id": "fr",
+        "lang": "French",
+        "n_spoken": 3570,
+        "n_written": 10000,
+        "mean_llf_spoken": 0.41872784162008886,
+        "mean_llf_written": 0.46766175282058775,
+        "residual_llf_cohens_d": -0.5305605072482736,
+        "residual_llf_p": 5.004088775851193e-151,
+        "spoken_higher": false,
+        "underpowered": false
+      },
+      {
+        "pair_id": "it",
+        "lang": "Italian",
+        "n_spoken": 310,
+        "n_written": 10000,
+        "mean_llf_spoken": 0.44953997169592264,
+        "mean_llf_written": 0.4679438715803999,
+        "residual_llf_cohens_d": -0.18076707963901778,
+        "residual_llf_p": 0.0014604890534923908,
+        "spoken_higher": false,
+        "underpowered": false
+      },
+      {
+        "pair_id": "tr",
+        "lang": "Turkish",
+        "n_spoken": 3099,
+        "n_written": 5589,
+        "mean_llf_spoken": 0.4185327346316398,
+        "mean_llf_written": 0.38894222998598926,
+        "residual_llf_cohens_d": 0.12062317214812542,
+        "residual_llf_p": 1.1035738579149895e-07,
+        "spoken_higher": true,
+        "underpowered": false
+      },
+      {
+        "pair_id": "en",
+        "lang": "English",
+        "n_spoken": 13071,
+        "n_written": 10000,
+        "mean_llf_spoken": 0.451749689369595,
+        "mean_llf_written": 0.4473208739559601,
+        "residual_llf_cohens_d": 0.026589245705991613,
+        "residual_llf_p": 0.04700900121318297,
+        "spoken_higher": true,
+        "underpowered": false
+      },
+      {
+        "pair_id": "en_extra",
+        "lang": "English (extra)",
+        "n_spoken": 922,
+        "n_written": 10000,
+        "mean_llf_spoken": 0.4227139981185964,
+        "mean_llf_written": 0.4473208739559601,
+        "residual_llf_cohens_d": -0.24317002983094996,
+        "residual_llf_p": 2.3500031236207635e-14,
+        "spoken_higher": false,
+        "underpowered": false
+      }
+    ],
+    "aggregate": {
+      "n_pairs": 6,
+      "n_spoken_higher": 3,
+      "proportion_spoken_higher": 0.5,
+      "mean_cohens_d": -0.12931767759542936,
+      "bonferroni_threshold": 0.01,
+      "n_significant": 4
+    }
+  },
+  "phase5a_head_final": {
+    "treebanks": [
+      {
+        "tb_id": "ab_abnc",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3888006485960089,
+        "mean_llf_encounter": 0.31257360754164343,
+        "llf_delta": 0.07622704105436545,
+        "proportion_head_final": 0.6964183162016042,
+        "language": "Abkhaz",
+        "family": "Abkhaz-Adyge",
+        "n_sentences": 321
+      },
+      {
+        "tb_id": "am_att",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.45156128169437487,
+        "mean_llf_encounter": 0.3375863138772156,
+        "llf_delta": 0.11397496781715927,
+        "proportion_head_final": 0.49500137668204697,
+        "language": "Amharic",
+        "family": "Afro-Asiatic",
+        "n_sentences": 568
+      },
+      {
+        "tb_id": "arh_chibergis",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4598164468359213,
+        "mean_llf_encounter": 0.37858683338462756,
+        "llf_delta": 0.08122961345129376,
+        "proportion_head_final": 0.3827618280091137,
+        "language": "Arhuaco",
+        "family": "Chibchan",
+        "n_sentences": 247
+      },
+      {
+        "tb_id": "arr_tudet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39409013239798846,
+        "mean_llf_encounter": 0.37083333333333335,
+        "llf_delta": 0.02325679906465511,
+        "proportion_head_final": 0.5314980158730158,
+        "language": "Karo (Brazil)",
+        "family": "Tupian",
+        "n_sentences": 8
+      },
+      {
+        "tb_id": "bej_autogramm",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.38316654498048425,
+        "mean_llf_encounter": 0.27693245381088644,
+        "llf_delta": 0.10623409116959781,
+        "proportion_head_final": 0.5907509564080844,
+        "language": "Beja",
+        "family": "Afro-Asiatic",
+        "n_sentences": 492
+      },
+      {
+        "tb_id": "bho_bhtb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.35947550826158237,
+        "mean_llf_encounter": 0.28149228725172937,
+        "llf_delta": 0.077983221009853,
+        "proportion_head_final": 0.6573885025891472,
+        "language": "Bhojpuri",
+        "family": "Indo-European",
+        "n_sentences": 301
+      },
+      {
+        "tb_id": "bm_crb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4333024636382378,
+        "mean_llf_encounter": 0.45712978514612573,
+        "llf_delta": -0.02382732150788791,
+        "proportion_head_final": 0.5330870834931573,
+        "language": "Bambara",
+        "family": "Mande",
+        "n_sentences": 629
+      },
+      {
+        "tb_id": "bn_bru",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4172244180939833,
+        "mean_llf_encounter": 0.25131313131313127,
+        "llf_delta": 0.16591128678085204,
+        "proportion_head_final": 0.6327777777777778,
+        "language": "Bengali",
+        "family": "Indo-European",
+        "n_sentences": 5
+      },
+      {
+        "tb_id": "ckb_mukri",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3936383950256301,
+        "mean_llf_encounter": 0.23300958300958302,
+        "llf_delta": 0.16062881201604706,
+        "proportion_head_final": 0.7327117327117327,
+        "language": "Central Kurdish",
+        "family": "Indo-European",
+        "n_sentences": 13
+      },
+      {
+        "tb_id": "eme_tudet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3886695906432749,
+        "mean_llf_encounter": 0.3655895691609977,
+        "llf_delta": 0.02308002148227717,
+        "proportion_head_final": 0.5879311660561661,
+        "language": "Teko",
+        "family": "Tupian",
+        "n_sentences": 8
+      },
+      {
+        "tb_id": "eu_bdt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4225383303270063,
+        "mean_llf_encounter": 0.39320500162101235,
+        "llf_delta": 0.029333328705993922,
+        "proportion_head_final": 0.5361970643469594,
+        "language": "Basque",
+        "family": null,
+        "n_sentences": 6436
+      },
+      {
+        "tb_id": "fa_perdt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3993239883121036,
+        "mean_llf_encounter": 0.36346794983518266,
+        "llf_delta": 0.035856038476920926,
+        "proportion_head_final": 0.5599234630571293,
+        "language": "Western Farsi",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "fa_seraji",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4075434236940191,
+        "mean_llf_encounter": 0.3996577024786027,
+        "llf_delta": 0.007885721215416364,
+        "proportion_head_final": 0.5265710952331304,
+        "language": "Western Farsi",
+        "family": "Indo-European",
+        "n_sentences": 5285
+      },
+      {
+        "tb_id": "hi_hdtb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.38597789379793523,
+        "mean_llf_encounter": 0.3319676296582361,
+        "llf_delta": 0.054010264139699116,
+        "proportion_head_final": 0.5784184684549973,
+        "language": "Hindi",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "hi_pud",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3785948868746143,
+        "mean_llf_encounter": 0.33229167859106057,
+        "llf_delta": 0.04630320828355372,
+        "proportion_head_final": 0.5783422427688029,
+        "language": "Hindi",
+        "family": "Indo-European",
+        "n_sentences": 970
+      },
+      {
+        "tb_id": "hyw_armtdp",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4246750638732281,
+        "mean_llf_encounter": 0.4257977873738787,
+        "llf_delta": -0.0011227235006505687,
+        "proportion_head_final": 0.6161141483594499,
+        "language": "Western Armenian",
+        "family": "Indo-European",
+        "n_sentences": 4976
+      },
+      {
+        "tb_id": "ja_bccwjluw",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.42769522696755113,
+        "mean_llf_encounter": 0.3134959582692377,
+        "llf_delta": 0.11419926869831343,
+        "proportion_head_final": 0.40691632336514777,
+        "language": "Japanese",
+        "family": "Japonic",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "ja_gsd",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4025295882041074,
+        "mean_llf_encounter": 0.2737649721948996,
+        "llf_delta": 0.1287646160092078,
+        "proportion_head_final": 0.4761894694158762,
+        "language": "Japanese",
+        "family": "Japonic",
+        "n_sentences": 7230
+      },
+      {
+        "tb_id": "ja_gsdluw",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.415856062475321,
+        "mean_llf_encounter": 0.32375013814708864,
+        "llf_delta": 0.09210592432823234,
+        "proportion_head_final": 0.4242201826129881,
+        "language": "Japanese",
+        "family": "Japonic",
+        "n_sentences": 6584
+      },
+      {
+        "tb_id": "ja_pud",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39913725712389686,
+        "mean_llf_encounter": 0.25959057104334543,
+        "llf_delta": 0.13954668608055143,
+        "proportion_head_final": 0.4496130640859703,
+        "language": "Japanese",
+        "family": "Japonic",
+        "n_sentences": 984
+      },
+      {
+        "tb_id": "ja_pudluw",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.40723509675013697,
+        "mean_llf_encounter": 0.3100581407477082,
+        "llf_delta": 0.09717695600242876,
+        "proportion_head_final": 0.41687288410638285,
+        "language": "Japanese",
+        "family": "Japonic",
+        "n_sentences": 971
+      },
+      {
+        "tb_id": "ka_glc",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.43361410650620197,
+        "mean_llf_encounter": 0.41344195543146184,
+        "llf_delta": 0.02017215107474013,
+        "proportion_head_final": 0.624913411387053,
+        "language": "Georgian",
+        "family": "Kartvelian",
+        "n_sentences": 2866
+      },
+      {
+        "tb_id": "ka_gnc",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4036462854113091,
+        "mean_llf_encounter": 0.41126505763046256,
+        "llf_delta": -0.007618772219153469,
+        "proportion_head_final": 0.6456655191272438,
+        "language": "Georgian",
+        "family": "Kartvelian",
+        "n_sentences": 1030
+      },
+      {
+        "tb_id": "ko_gsd",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.41776553758399837,
+        "mean_llf_encounter": 0.27469597147097485,
+        "llf_delta": 0.14306956611302352,
+        "proportion_head_final": 0.6280252795257372,
+        "language": "Korean",
+        "family": "Koreanic",
+        "n_sentences": 3752
+      },
+      {
+        "tb_id": "ko_kaist",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3866295875480028,
+        "mean_llf_encounter": 0.21335364102924623,
+        "llf_delta": 0.17327594651875658,
+        "proportion_head_final": 0.7596667670805421,
+        "language": "Korean",
+        "family": "Koreanic",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "ko_ksl",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4000868758380085,
+        "mean_llf_encounter": 0.18498959096367046,
+        "llf_delta": 0.21509728487433805,
+        "proportion_head_final": 0.7921334346211246,
+        "language": "Korean",
+        "family": "Koreanic",
+        "n_sentences": 6534
+      },
+      {
+        "tb_id": "ko_littleprince",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39170024592231345,
+        "mean_llf_encounter": 0.22071937712638814,
+        "llf_delta": 0.1709808687959253,
+        "proportion_head_final": 0.7355211325700328,
+        "language": "Korean",
+        "family": "Koreanic",
+        "n_sentences": 542
+      },
+      {
+        "tb_id": "ko_pud",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.40103748852689397,
+        "mean_llf_encounter": 0.17510103024495316,
+        "llf_delta": 0.2259364582819408,
+        "proportion_head_final": 0.7917928711808726,
+        "language": "Korean",
+        "family": "Koreanic",
+        "n_sentences": 910
+      },
+      {
+        "tb_id": "ml_ufal",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4106531997865511,
+        "mean_llf_encounter": 0.29668019840714865,
+        "llf_delta": 0.11397300137940247,
+        "proportion_head_final": 0.6415146251013468,
+        "language": "Malayalam",
+        "family": "Dravidian",
+        "n_sentences": 124
+      },
+      {
+        "tb_id": "mr_ufal",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.392173301659616,
+        "mean_llf_encounter": 0.34210781846927857,
+        "llf_delta": 0.050065483190337434,
+        "proportion_head_final": 0.6054119925434547,
+        "language": "Marathi",
+        "family": "Indo-European",
+        "n_sentences": 153
+      },
+      {
+        "tb_id": "myu_tudet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4967867906211291,
+        "mean_llf_encounter": 0.49962220168607635,
+        "llf_delta": -0.002835411064947224,
+        "proportion_head_final": 0.3070118349988418,
+        "language": "Mundurukú",
+        "family": "Tupian",
+        "n_sentences": 26
+      },
+      {
+        "tb_id": "naq_kdt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3955179707578384,
+        "mean_llf_encounter": 0.33817669872022066,
+        "llf_delta": 0.05734127203761774,
+        "proportion_head_final": 0.6155143942902064,
+        "language": "Nama (Namibia)",
+        "family": "Khoe-Kwadi",
+        "n_sentences": 1285
+      },
+      {
+        "tb_id": "nmf_suansu",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4303862001609627,
+        "mean_llf_encounter": 0.3770888979706156,
+        "llf_delta": 0.05329730219034706,
+        "proportion_head_final": 0.5222759648931194,
+        "language": "East-Central Tangkhul Naga",
+        "family": "Sino-Tibetan",
+        "n_sentences": 66
+      },
+      {
+        "tb_id": "sah_yktdt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.45818997995468586,
+        "mean_llf_encounter": 0.39862914862914867,
+        "llf_delta": 0.05956083132553719,
+        "proportion_head_final": 0.6257020757020756,
+        "language": "Sakha",
+        "family": "Turkic",
+        "n_sentences": 13
+      },
+      {
+        "tb_id": "ta_mwtt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.45953086419753086,
+        "mean_llf_encounter": 0.28277777777777774,
+        "llf_delta": 0.17675308641975312,
+        "proportion_head_final": 0.611111111111111,
+        "language": "Tamil",
+        "family": "Dravidian",
+        "n_sentences": 5
+      },
+      {
+        "tb_id": "ta_ttb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3830472883604225,
+        "mean_llf_encounter": 0.21077098752122053,
+        "llf_delta": 0.17227630083920198,
+        "proportion_head_final": 0.7288397680330722,
+        "language": "Tamil",
+        "family": "Dravidian",
+        "n_sentences": 506
+      },
+      {
+        "tb_id": "te_mtg",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.35753841871838465,
+        "mean_llf_encounter": 0.22054829943718832,
+        "llf_delta": 0.13699011928119634,
+        "proportion_head_final": 0.7588406179049455,
+        "language": "Telugu",
+        "family": "Dravidian",
+        "n_sentences": 27
+      },
+      {
+        "tb_id": "tr_atis",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4185327346316398,
+        "mean_llf_encounter": 0.17965771868341662,
+        "llf_delta": 0.2388750159482232,
+        "proportion_head_final": 0.8065761993746626,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 3099
+      },
+      {
+        "tb_id": "tr_boun",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.38894222998598926,
+        "mean_llf_encounter": 0.2726517105336757,
+        "llf_delta": 0.11629051945231356,
+        "proportion_head_final": 0.6987650257277298,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 5589
+      },
+      {
+        "tb_id": "tr_framenet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.37071710597522445,
+        "mean_llf_encounter": 0.19626532668635302,
+        "llf_delta": 0.17445177928887143,
+        "proportion_head_final": 0.7893054414254235,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 539
+      },
+      {
+        "tb_id": "tr_gb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39744808237728546,
+        "mean_llf_encounter": 0.260085979458851,
+        "llf_delta": 0.13736210291843448,
+        "proportion_head_final": 0.7056650491751112,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 380
+      },
+      {
+        "tb_id": "tr_imst",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39776539766884683,
+        "mean_llf_encounter": 0.28991256122164966,
+        "llf_delta": 0.10785283644719718,
+        "proportion_head_final": 0.6589821003454188,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 2328
+      },
+      {
+        "tb_id": "tr_kenet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.38854975672514275,
+        "mean_llf_encounter": 0.21673459088658523,
+        "llf_delta": 0.17181516583855752,
+        "proportion_head_final": 0.758992628806128,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "tr_penn",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3943957910141508,
+        "mean_llf_encounter": 0.18304252890561332,
+        "llf_delta": 0.21135326210853747,
+        "proportion_head_final": 0.8018514732965468,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "tr_pud",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.39317865848342015,
+        "mean_llf_encounter": 0.2543724959148562,
+        "llf_delta": 0.13880616256856393,
+        "proportion_head_final": 0.701432286084286,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 901
+      },
+      {
+        "tb_id": "tr_tourism",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3797862382654785,
+        "mean_llf_encounter": 0.20522571258498942,
+        "llf_delta": 0.1745605256804891,
+        "proportion_head_final": 0.7854759752319038,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 716
+      },
+      {
+        "tb_id": "tr_tuecl",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.4054847732200673,
+        "mean_llf_encounter": 0.35490175102675103,
+        "llf_delta": 0.050583022193316285,
+        "proportion_head_final": 0.6416842514210934,
+        "language": "Turkish",
+        "family": "Turkic",
+        "n_sentences": 20
+      },
+      {
+        "tb_id": "ug_udt",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3920339304315041,
+        "mean_llf_encounter": 0.21937270551516355,
+        "llf_delta": 0.17266122491634053,
+        "proportion_head_final": 0.7462322513597948,
+        "language": "Uighur",
+        "family": "Turkic",
+        "n_sentences": 1974
+      },
+      {
+        "tb_id": "ur_udtb",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.36403129892063807,
+        "mean_llf_encounter": 0.32277029416647635,
+        "llf_delta": 0.04126100475416172,
+        "proportion_head_final": 0.5891462070149965,
+        "language": "Urdu",
+        "family": "Indo-European",
+        "n_sentences": 4994
+      },
+      {
+        "tb_id": "urb_tudet",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3871553138219805,
+        "mean_llf_encounter": 0.3649339549339549,
+        "llf_delta": 0.022221358888025566,
+        "proportion_head_final": 0.505,
+        "language": "Urubú-Kaapor",
+        "family": "Tupian",
+        "n_sentences": 5
+      },
+      {
+        "tb_id": "yrk_tundra",
+        "word_order": "SOV",
+        "mean_llf_standard": 0.3936994458407531,
+        "mean_llf_encounter": 0.3105251545340081,
+        "llf_delta": 0.08317429130674503,
+        "proportion_head_final": 0.6042016090485478,
+        "language": "Tundra Nenets",
+        "family": "Uralic",
+        "n_sentences": 49
+      },
+      {
+        "tb_id": "apu_ufpa",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4429612031701815,
+        "mean_llf_encounter": 0.4772370894050535,
+        "llf_delta": -0.03427588623487199,
+        "proportion_head_final": 0.558672723475355,
+        "language": "Apurinã",
+        "family": "Arawakan",
+        "n_sentences": 16
+      },
+      {
+        "tb_id": "bg_btb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45126579232514197,
+        "mean_llf_encounter": 0.455531128196987,
+        "llf_delta": -0.004265335871845022,
+        "proportion_head_final": 0.5830993360129276,
+        "language": "Bulgarian",
+        "family": "Indo-European",
+        "n_sentences": 7570
+      },
+      {
+        "tb_id": "br_keb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4905589915894214,
+        "mean_llf_encounter": 0.47777113103236785,
+        "llf_delta": 0.012787860557053554,
+        "proportion_head_final": 0.5067066641110862,
+        "language": "Breton",
+        "family": "Indo-European",
+        "n_sentences": 511
+      },
+      {
+        "tb_id": "ca_ancora",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.466044948464347,
+        "mean_llf_encounter": 0.47008081369244775,
+        "llf_delta": -0.004035865228100732,
+        "proportion_head_final": 0.5749745628953762,
+        "language": "Catalan",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "cop_bohairic",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4644279717690057,
+        "mean_llf_encounter": 0.48030706909139487,
+        "llf_delta": -0.01587909732238918,
+        "proportion_head_final": 0.6167180664104238,
+        "language": "Coptic",
+        "family": "Afro-Asiatic",
+        "n_sentences": 991
+      },
+      {
+        "tb_id": "cop_scriptorium",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4694471989388604,
+        "mean_llf_encounter": 0.48841384707962765,
+        "llf_delta": -0.01896664814076726,
+        "proportion_head_final": 0.5946777815868602,
+        "language": "Coptic",
+        "family": "Afro-Asiatic",
+        "n_sentences": 2084
+      },
+      {
+        "tb_id": "cs_cac",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4627731667099784,
+        "mean_llf_encounter": 0.4769911690242305,
+        "llf_delta": -0.014218002314252076,
+        "proportion_head_final": 0.5612545888979984,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "cs_cltt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46946912953347103,
+        "mean_llf_encounter": 0.46376273812653074,
+        "llf_delta": 0.005706391406940292,
+        "proportion_head_final": 0.5464872796706047,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 864
+      },
+      {
+        "tb_id": "cs_fictree",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.453430412443222,
+        "mean_llf_encounter": 0.485387501587267,
+        "llf_delta": -0.03195708914404499,
+        "proportion_head_final": 0.5836276311466138,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 7245
+      },
+      {
+        "tb_id": "cs_pdtc",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4507524108805083,
+        "mean_llf_encounter": 0.4675661131152223,
+        "llf_delta": -0.016813702234713956,
+        "proportion_head_final": 0.566948948670757,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "cs_poetry",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46354568019722514,
+        "mean_llf_encounter": 0.48879690358233235,
+        "llf_delta": -0.025251223385107213,
+        "proportion_head_final": 0.5726667529633671,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 233
+      },
+      {
+        "tb_id": "cs_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.43669839971830543,
+        "mean_llf_encounter": 0.4495218183743373,
+        "llf_delta": -0.01282341865603187,
+        "proportion_head_final": 0.574699529292926,
+        "language": "Czech",
+        "family": "Indo-European",
+        "n_sentences": 909
+      },
+      {
+        "tb_id": "da_ddt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4497635380045925,
+        "mean_llf_encounter": 0.4735955916757617,
+        "llf_delta": -0.023832053671169195,
+        "proportion_head_final": 0.579062970871586,
+        "language": "Danish",
+        "family": "Indo-European",
+        "n_sentences": 4284
+      },
+      {
+        "tb_id": "en_atis",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4587027969914783,
+        "mean_llf_encounter": 0.4823748127559498,
+        "llf_delta": -0.023672015764471477,
+        "proportion_head_final": 0.5132767632582749,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 4573
+      },
+      {
+        "tb_id": "en_childes",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44868103686416805,
+        "mean_llf_encounter": 0.4402594046039921,
+        "llf_delta": 0.008421632260175949,
+        "proportion_head_final": 0.5895792306859607,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 8498
+      },
+      {
+        "tb_id": "en_ctetex",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.43688414059132574,
+        "mean_llf_encounter": 0.4419737718955768,
+        "llf_delta": -0.005089631304251052,
+        "proportion_head_final": 0.6526705858319476,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 270
+      },
+      {
+        "tb_id": "en_eslspok",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4228748054375867,
+        "mean_llf_encounter": 0.4039836331497187,
+        "llf_delta": 0.01889117228786802,
+        "proportion_head_final": 0.6589717544923303,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 922
+      },
+      {
+        "tb_id": "en_ewt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4473197543345448,
+        "mean_llf_encounter": 0.4656424613700696,
+        "llf_delta": -0.0183227070355248,
+        "proportion_head_final": 0.617205644774655,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "en_gentle",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4526869975611893,
+        "mean_llf_encounter": 0.4740997877844323,
+        "llf_delta": -0.021412790223242995,
+        "proportion_head_final": 0.6039769231193545,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 685
+      },
+      {
+        "tb_id": "en_gum",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4422710036067355,
+        "mean_llf_encounter": 0.45201366147176436,
+        "llf_delta": -0.00974265786502887,
+        "proportion_head_final": 0.6238120523110081,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 9024
+      },
+      {
+        "tb_id": "en_gumreddit",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44043822220910855,
+        "mean_llf_encounter": 0.45957691349478363,
+        "llf_delta": -0.01913869128567508,
+        "proportion_head_final": 0.6268447732820284,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 671
+      },
+      {
+        "tb_id": "en_lines",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44489885252468,
+        "mean_llf_encounter": 0.4607695259808335,
+        "llf_delta": -0.015870673456153506,
+        "proportion_head_final": 0.6237021717616348,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 4524
+      },
+      {
+        "tb_id": "en_littleprince",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4217262824174604,
+        "mean_llf_encounter": 0.39977194668529575,
+        "llf_delta": 0.021954335732164654,
+        "proportion_head_final": 0.6393914607835436,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 299
+      },
+      {
+        "tb_id": "en_partut",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4441616615114227,
+        "mean_llf_encounter": 0.4421147633541125,
+        "llf_delta": 0.0020468981573102396,
+        "proportion_head_final": 0.6158819091780171,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 1904
+      },
+      {
+        "tb_id": "en_pronouns",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.42777777777777787,
+        "mean_llf_encounter": 0.46388888888888885,
+        "llf_delta": -0.03611111111111098,
+        "proportion_head_final": 0.5277777777777778,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 10
+      },
+      {
+        "tb_id": "en_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.43537655171532447,
+        "mean_llf_encounter": 0.4287634715830361,
+        "llf_delta": 0.00661308013228834,
+        "proportion_head_final": 0.6453043061097772,
+        "language": "English",
+        "family": "Indo-European",
+        "n_sentences": 951
+      },
+      {
+        "tb_id": "es_ancora",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4703517607578148,
+        "mean_llf_encounter": 0.47787004743615125,
+        "llf_delta": -0.007518286678336428,
+        "proportion_head_final": 0.5664513035562426,
+        "language": "Spanish",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "es_coser",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45569945545744595,
+        "mean_llf_encounter": 0.45382685119526756,
+        "llf_delta": 0.00187260426217839,
+        "proportion_head_final": 0.5675937325862616,
+        "language": "Spanish",
+        "family": "Indo-European",
+        "n_sentences": 285
+      },
+      {
+        "tb_id": "es_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.480882421485734,
+        "mean_llf_encounter": 0.48719562809428935,
+        "llf_delta": -0.006313206608555333,
+        "proportion_head_final": 0.56426241398249,
+        "language": "Spanish",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "es_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46753145983107514,
+        "mean_llf_encounter": 0.47047125750183266,
+        "llf_delta": -0.002939797670757527,
+        "proportion_head_final": 0.5719812544146766,
+        "language": "Spanish",
+        "family": "Indo-European",
+        "n_sentences": 958
+      },
+      {
+        "tb_id": "fi_ftb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.38462816168092495,
+        "mean_llf_encounter": 0.3940556000805214,
+        "llf_delta": -0.009427438399596422,
+        "proportion_head_final": 0.5265673506722423,
+        "language": "Finnish",
+        "family": "Uralic",
+        "n_sentences": 7436
+      },
+      {
+        "tb_id": "fi_ood",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45551998031787855,
+        "mean_llf_encounter": 0.47768756439642845,
+        "llf_delta": -0.022167584078549907,
+        "proportion_head_final": 0.5427539983289549,
+        "language": "Finnish",
+        "family": "Uralic",
+        "n_sentences": 855
+      },
+      {
+        "tb_id": "fi_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4487147852874597,
+        "mean_llf_encounter": 0.4571563122776106,
+        "llf_delta": -0.008441526990150883,
+        "proportion_head_final": 0.5586356485642521,
+        "language": "Finnish",
+        "family": "Uralic",
+        "n_sentences": 852
+      },
+      {
+        "tb_id": "fi_tdt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44831746994917904,
+        "mean_llf_encounter": 0.4589201623448849,
+        "llf_delta": -0.010602692395705882,
+        "proportion_head_final": 0.5728559539801696,
+        "language": "Finnish",
+        "family": "Uralic",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "fr_alts",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46554278444683483,
+        "mean_llf_encounter": 0.47897189993951345,
+        "llf_delta": -0.013429115492678612,
+        "proportion_head_final": 0.5930770276017863,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 1933
+      },
+      {
+        "tb_id": "fr_fqb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.47463652423561925,
+        "mean_llf_encounter": 0.46973678056804075,
+        "llf_delta": 0.0048997436675785044,
+        "proportion_head_final": 0.5306433048898038,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 1423
+      },
+      {
+        "tb_id": "fr_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46766175282058775,
+        "mean_llf_encounter": 0.46431684049336575,
+        "llf_delta": 0.003344912327222005,
+        "proportion_head_final": 0.5738357173156039,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "fr_parisstories",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.40446244882255994,
+        "mean_llf_encounter": 0.38511444841520404,
+        "llf_delta": 0.019348000407355903,
+        "proportion_head_final": 0.6298281555277947,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 1834
+      },
+      {
+        "tb_id": "fr_partut",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46280659380920414,
+        "mean_llf_encounter": 0.4684532351791003,
+        "llf_delta": -0.005646641369896177,
+        "proportion_head_final": 0.5781452243466586,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 931
+      },
+      {
+        "tb_id": "fr_poitevindivital",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44281092766423924,
+        "mean_llf_encounter": 0.4494260782647633,
+        "llf_delta": -0.0066151506005240335,
+        "proportion_head_final": 0.5801177046169024,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 200
+      },
+      {
+        "tb_id": "fr_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.453144783558211,
+        "mean_llf_encounter": 0.4509750558293869,
+        "llf_delta": 0.002169727728824067,
+        "proportion_head_final": 0.5857888561917167,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 972
+      },
+      {
+        "tb_id": "fr_rhapsodie",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4349281973184313,
+        "mean_llf_encounter": 0.42281190027236054,
+        "llf_delta": 0.012116297046070756,
+        "proportion_head_final": 0.5891124767224735,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 1736
+      },
+      {
+        "tb_id": "fr_sequoia",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46413935644423393,
+        "mean_llf_encounter": 0.4584711414631697,
+        "llf_delta": 0.005668214981064235,
+        "proportion_head_final": 0.5714836998418998,
+        "language": "French",
+        "family": "Indo-European",
+        "n_sentences": 2414
+      },
+      {
+        "tb_id": "gn_oldtudet",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.41610054347826086,
+        "mean_llf_encounter": 0.325,
+        "llf_delta": 0.09110054347826085,
+        "proportion_head_final": 0.6349206349206349,
+        "language": "Paraguayan Guaraní",
+        "family": "Tupian",
+        "n_sentences": 2
+      },
+      {
+        "tb_id": "ha_northernautogramm",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4625962697291596,
+        "mean_llf_encounter": 0.451063444217327,
+        "llf_delta": 0.0115328255118326,
+        "proportion_head_final": 0.48280740439942216,
+        "language": "Hausa",
+        "family": "Afro-Asiatic",
+        "n_sentences": 174
+      },
+      {
+        "tb_id": "ha_southernautogramm",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45010824221121615,
+        "mean_llf_encounter": 0.41434259784441396,
+        "llf_delta": 0.035765644366802185,
+        "proportion_head_final": 0.489381116414429,
+        "language": "Hausa",
+        "family": "Afro-Asiatic",
+        "n_sentences": 577
+      },
+      {
+        "tb_id": "ha_westernautogramm",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44267486319068894,
+        "mean_llf_encounter": 0.4102707386348922,
+        "llf_delta": 0.03240412455579672,
+        "proportion_head_final": 0.5408915489149629,
+        "language": "Hausa",
+        "family": "Afro-Asiatic",
+        "n_sentences": 623
+      },
+      {
+        "tb_id": "he_htb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4972388257296019,
+        "mean_llf_encounter": 0.49428698917868,
+        "llf_delta": 0.002951836550921849,
+        "proportion_head_final": 0.4856574243826348,
+        "language": "Modern Hebrew",
+        "family": "Afro-Asiatic",
+        "n_sentences": 5622
+      },
+      {
+        "tb_id": "he_iahltknesset",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4856081698511701,
+        "mean_llf_encounter": 0.5063119873893066,
+        "llf_delta": -0.020703817538136493,
+        "proportion_head_final": 0.5256769565945246,
+        "language": "Modern Hebrew",
+        "family": "Afro-Asiatic",
+        "n_sentences": 2309
+      },
+      {
+        "tb_id": "he_iahltwiki",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.48995341711636436,
+        "mean_llf_encounter": 0.4997155280853199,
+        "llf_delta": -0.009762110968955517,
+        "proportion_head_final": 0.4797366657095277,
+        "language": "Modern Hebrew",
+        "family": "Afro-Asiatic",
+        "n_sentences": 4654
+      },
+      {
+        "tb_id": "id_csui",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4897241007943102,
+        "mean_llf_encounter": 0.4749549638950258,
+        "llf_delta": 0.01476913689928444,
+        "proportion_head_final": 0.3627542285269882,
+        "language": "Standard Indonesian",
+        "family": "Austronesian",
+        "n_sentences": 991
+      },
+      {
+        "tb_id": "id_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4902571944714791,
+        "mean_llf_encounter": 0.48311078955363473,
+        "llf_delta": 0.007146404917844351,
+        "proportion_head_final": 0.398734390706694,
+        "language": "Standard Indonesian",
+        "family": "Austronesian",
+        "n_sentences": 5070
+      },
+      {
+        "tb_id": "id_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.48015446092337355,
+        "mean_llf_encounter": 0.4768247964372339,
+        "llf_delta": 0.0033296644861396385,
+        "proportion_head_final": 0.4180023124108175,
+        "language": "Standard Indonesian",
+        "family": "Austronesian",
+        "n_sentences": 940
+      },
+      {
+        "tb_id": "is_gc",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.5021414855217358,
+        "mean_llf_encounter": 0.5088097197007274,
+        "llf_delta": -0.00666823417899165,
+        "proportion_head_final": 0.4540438922850981,
+        "language": "Icelandic",
+        "family": "Indo-European",
+        "n_sentences": 4545
+      },
+      {
+        "tb_id": "is_icepahc",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.3863370362117531,
+        "mean_llf_encounter": 0.4296986604220568,
+        "llf_delta": -0.043361624210303706,
+        "proportion_head_final": 0.47951935727638284,
+        "language": "Icelandic",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "is_modern",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.3733228355134487,
+        "mean_llf_encounter": 0.41642738691949915,
+        "llf_delta": -0.04310455140605046,
+        "proportion_head_final": 0.5113224227197108,
+        "language": "Icelandic",
+        "family": "Indo-European",
+        "n_sentences": 3034
+      },
+      {
+        "tb_id": "is_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4683700672968292,
+        "mean_llf_encounter": 0.4739161020412594,
+        "llf_delta": -0.005546034744430217,
+        "proportion_head_final": 0.5133086212379926,
+        "language": "Icelandic",
+        "family": "Indo-European",
+        "n_sentences": 931
+      },
+      {
+        "tb_id": "it_isdt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4679438715803999,
+        "mean_llf_encounter": 0.46629651379658715,
+        "llf_delta": 0.0016473577838127529,
+        "proportion_head_final": 0.5693101434303514,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "it_kiparlaforest",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.3797193845287379,
+        "mean_llf_encounter": 0.3725990667344837,
+        "llf_delta": 0.007120317794254205,
+        "proportion_head_final": 0.682744824908924,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 405
+      },
+      {
+        "tb_id": "it_markit",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45482638256523644,
+        "mean_llf_encounter": 0.4620251814462523,
+        "llf_delta": -0.007198798881015878,
+        "proportion_head_final": 0.6129221081703995,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 1261
+      },
+      {
+        "tb_id": "it_old",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.42332346117530745,
+        "mean_llf_encounter": 0.4619298220473713,
+        "llf_delta": -0.03860636087206387,
+        "proportion_head_final": 0.6469946580965085,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 3381
+      },
+      {
+        "tb_id": "it_parlamint",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46647596910084566,
+        "mean_llf_encounter": 0.485915716324275,
+        "llf_delta": -0.019439747223429338,
+        "proportion_head_final": 0.5897782302623988,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 597
+      },
+      {
+        "tb_id": "it_partut",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4618227551127161,
+        "mean_llf_encounter": 0.4609026829824945,
+        "llf_delta": 0.0009200721302216053,
+        "proportion_head_final": 0.5787684749533097,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 1936
+      },
+      {
+        "tb_id": "it_postwita",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46096918138730014,
+        "mean_llf_encounter": 0.4618496244905628,
+        "llf_delta": -0.0008804431032626847,
+        "proportion_head_final": 0.5113050390984092,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 6034
+      },
+      {
+        "tb_id": "it_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46358866308422353,
+        "mean_llf_encounter": 0.46039611784784146,
+        "llf_delta": 0.0031925452363820717,
+        "proportion_head_final": 0.5736993858680013,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 957
+      },
+      {
+        "tb_id": "it_twittiro",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4600313496721383,
+        "mean_llf_encounter": 0.4651326050446924,
+        "llf_delta": -0.00510125537255407,
+        "proportion_head_final": 0.5170373746983681,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 1392
+      },
+      {
+        "tb_id": "it_valico",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44953997169592264,
+        "mean_llf_encounter": 0.4557641175725902,
+        "llf_delta": -0.006224145876667586,
+        "proportion_head_final": 0.6098777193328072,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 310
+      },
+      {
+        "tb_id": "it_vit",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4727538908407002,
+        "mean_llf_encounter": 0.4700471826685964,
+        "llf_delta": 0.002706708172103778,
+        "proportion_head_final": 0.5671796559306262,
+        "language": "Italian",
+        "family": "Indo-European",
+        "n_sentences": 8645
+      },
+      {
+        "tb_id": "kpv_ikdp",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4561813540768235,
+        "mean_llf_encounter": 0.456315873704806,
+        "llf_delta": -0.00013451962798249895,
+        "proportion_head_final": 0.576173782286831,
+        "language": "Komi-Zyrian",
+        "family": "Uralic",
+        "n_sentences": 97
+      },
+      {
+        "tb_id": "kpv_lattice",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4389648855289807,
+        "mean_llf_encounter": 0.4411851764137733,
+        "llf_delta": -0.002220290884792586,
+        "proportion_head_final": 0.5890745353157736,
+        "language": "Komi-Zyrian",
+        "family": "Uralic",
+        "n_sentences": 369
+      },
+      {
+        "tb_id": "lt_alksnis",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44473483968560923,
+        "mean_llf_encounter": 0.44958915354471457,
+        "llf_delta": -0.004854313859105341,
+        "proportion_head_final": 0.6177463888759069,
+        "language": "Lithuanian",
+        "family": "Indo-European",
+        "n_sentences": 2778
+      },
+      {
+        "tb_id": "lt_hse",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4287258291387214,
+        "mean_llf_encounter": 0.4361946714500807,
+        "llf_delta": -0.007468842311359247,
+        "proportion_head_final": 0.6167778619778714,
+        "language": "Lithuanian",
+        "family": "Indo-European",
+        "n_sentences": 230
+      },
+      {
+        "tb_id": "lv_cairo",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.43211422558227064,
+        "mean_llf_encounter": 0.500602109530681,
+        "llf_delta": -0.06848788394841032,
+        "proportion_head_final": 0.4980416408987837,
+        "language": "Latvian",
+        "family": "Indo-European",
+        "n_sentences": 7
+      },
+      {
+        "tb_id": "lv_lvtb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.43763739270762364,
+        "mean_llf_encounter": 0.45065538258580934,
+        "llf_delta": -0.013017989878185698,
+        "proportion_head_final": 0.6321200043946427,
+        "language": "Latvian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "mk_mtb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4529555334547551,
+        "mean_llf_encounter": 0.4850192675977414,
+        "llf_delta": -0.0320637341429863,
+        "proportion_head_final": 0.5743267253108881,
+        "language": "Macedonian",
+        "family": "Indo-European",
+        "n_sentences": 65
+      },
+      {
+        "tb_id": "myv_jr",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45888262391851187,
+        "mean_llf_encounter": 0.46120584005983317,
+        "llf_delta": -0.002323216141321305,
+        "proportion_head_final": 0.5787257823283687,
+        "language": "Erzya",
+        "family": "Uralic",
+        "n_sentences": 831
+      },
+      {
+        "tb_id": "no_bokmaal",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45046694835739143,
+        "mean_llf_encounter": 0.4634558388962514,
+        "llf_delta": -0.012988890538859987,
+        "proportion_head_final": 0.5904136342004558,
+        "language": "Norwegian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "no_nynorsk",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4525796079945703,
+        "mean_llf_encounter": 0.46457505592177567,
+        "llf_delta": -0.01199544792720536,
+        "proportion_head_final": 0.5862448022182464,
+        "language": "Norwegian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "pad_tuecl",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.5226919004516407,
+        "mean_llf_encounter": 0.4961032319566642,
+        "llf_delta": 0.026588668494976486,
+        "proportion_head_final": 0.31419413919413913,
+        "language": "Paumari",
+        "family": "Arawan",
+        "n_sentences": 7
+      },
+      {
+        "tb_id": "pl_lfg",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4696118882333718,
+        "mean_llf_encounter": 0.4747201276773874,
+        "llf_delta": -0.0051082394440156165,
+        "proportion_head_final": 0.5122107992106487,
+        "language": "Polish",
+        "family": "Indo-European",
+        "n_sentences": 4869
+      },
+      {
+        "tb_id": "pl_mpdt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44491296912475864,
+        "mean_llf_encounter": 0.47012258578251503,
+        "llf_delta": -0.025209616657756395,
+        "proportion_head_final": 0.5583904771247192,
+        "language": "Polish",
+        "family": "Indo-European",
+        "n_sentences": 1966
+      },
+      {
+        "tb_id": "pl_pdb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.47019563738435827,
+        "mean_llf_encounter": 0.47340809408453005,
+        "llf_delta": -0.003212456700171784,
+        "proportion_head_final": 0.5054999642934771,
+        "language": "Polish",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "pl_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.466326359256844,
+        "mean_llf_encounter": 0.46897049100726473,
+        "llf_delta": -0.0026441317504207196,
+        "proportion_head_final": 0.4924919313991485,
+        "language": "Polish",
+        "family": "Indo-European",
+        "n_sentences": 924
+      },
+      {
+        "tb_id": "pt_bosque",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4692339999890163,
+        "mean_llf_encounter": 0.4637718892083985,
+        "llf_delta": 0.005462110780617813,
+        "proportion_head_final": 0.5583503418008138,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 7791
+      },
+      {
+        "tb_id": "pt_dantestocks",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4817377737846017,
+        "mean_llf_encounter": 0.4809329099850345,
+        "llf_delta": 0.0008048637995671792,
+        "proportion_head_final": 0.474049070409421,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 3664
+      },
+      {
+        "tb_id": "pt_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4702634177673681,
+        "mean_llf_encounter": 0.46534340616654535,
+        "llf_delta": 0.004920011600822727,
+        "proportion_head_final": 0.5648706027592372,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "pt_petrogold",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.47895631997854526,
+        "mean_llf_encounter": 0.4720675016586492,
+        "llf_delta": 0.006888818319896073,
+        "proportion_head_final": 0.5282069632882405,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 7730
+      },
+      {
+        "tb_id": "pt_porttinari",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4617673762137142,
+        "mean_llf_encounter": 0.45434767384466135,
+        "llf_delta": 0.007419702369052872,
+        "proportion_head_final": 0.567828220560177,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 7966
+      },
+      {
+        "tb_id": "pt_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4608367988856176,
+        "mean_llf_encounter": 0.4578834440297443,
+        "llf_delta": 0.002953354855873336,
+        "proportion_head_final": 0.5786329797658452,
+        "language": "Portuguese",
+        "family": "Indo-European",
+        "n_sentences": 958
+      },
+      {
+        "tb_id": "ro_art",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46112412321952007,
+        "mean_llf_encounter": 0.4531113034367365,
+        "llf_delta": 0.008012819782783565,
+        "proportion_head_final": 0.5731415006864603,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 33
+      },
+      {
+        "tb_id": "ro_moldoro",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.49619470244470243,
+        "mean_llf_encounter": 0.4527137894784954,
+        "llf_delta": 0.04348091296620704,
+        "proportion_head_final": 0.36474636474636474,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 6
+      },
+      {
+        "tb_id": "ro_nonstandard",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4538341894617497,
+        "mean_llf_encounter": 0.480011314133743,
+        "llf_delta": -0.02617712467199329,
+        "proportion_head_final": 0.5723717448701721,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "ro_rrt",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4775345418628702,
+        "mean_llf_encounter": 0.47722381796991387,
+        "llf_delta": 0.00031072389295633274,
+        "proportion_head_final": 0.4917113795184174,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 9018
+      },
+      {
+        "tb_id": "ro_simonero",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4836840151947099,
+        "mean_llf_encounter": 0.47652714503137783,
+        "llf_delta": 0.007156870163332052,
+        "proportion_head_final": 0.4463268398024124,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 4621
+      },
+      {
+        "tb_id": "ro_tuecl",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45008959029069256,
+        "mean_llf_encounter": 0.4705825808831912,
+        "llf_delta": -0.02049299059249865,
+        "proportion_head_final": 0.5328519101491881,
+        "language": "Romanian",
+        "family": "Indo-European",
+        "n_sentences": 187
+      },
+      {
+        "tb_id": "ru_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4700477965898074,
+        "mean_llf_encounter": 0.4675865013864739,
+        "llf_delta": 0.002461295203333491,
+        "proportion_head_final": 0.5195170424443597,
+        "language": "Russian",
+        "family": "Indo-European",
+        "n_sentences": 4218
+      },
+      {
+        "tb_id": "ru_poetry",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4537083202137592,
+        "mean_llf_encounter": 0.4745342781672041,
+        "llf_delta": -0.02082595795344494,
+        "proportion_head_final": 0.5725166754890927,
+        "language": "Russian",
+        "family": "Indo-European",
+        "n_sentences": 2812
+      },
+      {
+        "tb_id": "ru_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4558931487927077,
+        "mean_llf_encounter": 0.461865633914487,
+        "llf_delta": -0.005972485121779281,
+        "proportion_head_final": 0.545600581444885,
+        "language": "Russian",
+        "family": "Indo-European",
+        "n_sentences": 930
+      },
+      {
+        "tb_id": "ru_syntagrus",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.449484406396206,
+        "mean_llf_encounter": 0.4557907601128818,
+        "llf_delta": -0.006306353716675761,
+        "proportion_head_final": 0.5579791337828749,
+        "language": "Russian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "ru_taiga",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45530796783500427,
+        "mean_llf_encounter": 0.47164130424761197,
+        "llf_delta": -0.016333336412607702,
+        "proportion_head_final": 0.5574136190619389,
+        "language": "Russian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "sl_ssj",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4314560999851655,
+        "mean_llf_encounter": 0.44805372454152564,
+        "llf_delta": -0.016597624556360158,
+        "proportion_head_final": 0.6198822601664353,
+        "language": "Slovenian",
+        "family": "Indo-European",
+        "n_sentences": 10000
+      },
+      {
+        "tb_id": "sl_sst",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4285395949714389,
+        "mean_llf_encounter": 0.44801588259014374,
+        "llf_delta": -0.019476287618704846,
+        "proportion_head_final": 0.6179506723106174,
+        "language": "Slovenian",
+        "family": "Indo-European",
+        "n_sentences": 3290
+      },
+      {
+        "tb_id": "sme_giella",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.48182088121406424,
+        "mean_llf_encounter": 0.477859608155674,
+        "llf_delta": 0.0039612730583902245,
+        "proportion_head_final": 0.4784202567112235,
+        "language": "North Saami",
+        "family": "Uralic",
+        "n_sentences": 1086
+      },
+      {
+        "tb_id": "sq_staf",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.47332377237775963,
+        "mean_llf_encounter": 0.4908819890626256,
+        "llf_delta": -0.017558216684865957,
+        "proportion_head_final": 0.5481106630965524,
+        "language": "Albanian",
+        "family": "Indo-European",
+        "n_sentences": 145
+      },
+      {
+        "tb_id": "sq_tsa",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.48704571876724023,
+        "mean_llf_encounter": 0.4770648718935312,
+        "llf_delta": 0.009980846873709037,
+        "proportion_head_final": 0.5265958995886,
+        "language": "Albanian",
+        "family": "Indo-European",
+        "n_sentences": 55
+      },
+      {
+        "tb_id": "sv_lines",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45731236005320375,
+        "mean_llf_encounter": 0.4803260042060341,
+        "llf_delta": -0.02301364415283036,
+        "proportion_head_final": 0.5854383342171042,
+        "language": "Swedish",
+        "family": "Indo-European",
+        "n_sentences": 4485
+      },
+      {
+        "tb_id": "sv_old",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.44570241516812636,
+        "mean_llf_encounter": 0.4613888460040356,
+        "llf_delta": -0.01568643083590926,
+        "proportion_head_final": 0.5719818341898275,
+        "language": "Swedish",
+        "family": "Indo-European",
+        "n_sentences": 33
+      },
+      {
+        "tb_id": "sv_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.461245716593076,
+        "mean_llf_encounter": 0.4720215369959733,
+        "llf_delta": -0.010775820402897318,
+        "proportion_head_final": 0.5941780923004065,
+        "language": "Swedish",
+        "family": "Indo-European",
+        "n_sentences": 935
+      },
+      {
+        "tb_id": "sv_swell",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4675557784916036,
+        "mean_llf_encounter": 0.4959008639358023,
+        "llf_delta": -0.02834508544419867,
+        "proportion_head_final": 0.5911388869204691,
+        "language": "Swedish",
+        "family": "Indo-European",
+        "n_sentences": 405
+      },
+      {
+        "tb_id": "sv_talbanken",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4558006350020752,
+        "mean_llf_encounter": 0.4577495974848554,
+        "llf_delta": -0.0019489624827802032,
+        "proportion_head_final": 0.5952914351799105,
+        "language": "Swedish",
+        "family": "Indo-European",
+        "n_sentences": 4683
+      },
+      {
+        "tb_id": "th_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.41610930613821495,
+        "mean_llf_encounter": 0.4285970378172721,
+        "llf_delta": -0.012487731679057146,
+        "proportion_head_final": 0.3780324973518677,
+        "language": "Thai",
+        "family": "Tai-Kadai",
+        "n_sentences": 973
+      },
+      {
+        "tb_id": "th_tud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4094973797130016,
+        "mean_llf_encounter": 0.41990549383104225,
+        "llf_delta": -0.010408114118040657,
+        "proportion_head_final": 0.364120084781169,
+        "language": "Thai",
+        "family": "Tai-Kadai",
+        "n_sentences": 3034
+      },
+      {
+        "tb_id": "uk_iu",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.452184588982041,
+        "mean_llf_encounter": 0.46507133813226087,
+        "llf_delta": -0.012886749150219867,
+        "proportion_head_final": 0.5638356082389953,
+        "language": "Ukrainian",
+        "family": "Indo-European",
+        "n_sentences": 5008
+      },
+      {
+        "tb_id": "uk_parlamint",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.45768610843694674,
+        "mean_llf_encounter": 0.4716277968917407,
+        "llf_delta": -0.013941688454793988,
+        "proportion_head_final": 0.5530663371606427,
+        "language": "Ukrainian",
+        "family": "Indo-European",
+        "n_sentences": 3962
+      },
+      {
+        "tb_id": "vi_tuecl",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46312633296995936,
+        "mean_llf_encounter": 0.45834450667720117,
+        "llf_delta": 0.004781826292758196,
+        "proportion_head_final": 0.5159596899972513,
+        "language": "Vietnamese",
+        "family": "Austroasiatic",
+        "n_sentences": 97
+      },
+      {
+        "tb_id": "vi_vtb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.46524184180026135,
+        "mean_llf_encounter": 0.4528108958732728,
+        "llf_delta": 0.012430945926988568,
+        "proportion_head_final": 0.44499949428198327,
+        "language": "Vietnamese",
+        "family": "Austroasiatic",
+        "n_sentences": 2771
+      },
+      {
+        "tb_id": "wo_wtb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4582420373430117,
+        "mean_llf_encounter": 0.461425396374628,
+        "llf_delta": -0.003183359031616262,
+        "proportion_head_final": 0.5029309818530285,
+        "language": "Wolof",
+        "family": "Atlantic-Congo",
+        "n_sentences": 1842
+      },
+      {
+        "tb_id": "yo_ytb",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.41979200784694837,
+        "mean_llf_encounter": 0.45484254308528566,
+        "llf_delta": -0.03505053523833729,
+        "proportion_head_final": 0.5168157712193798,
+        "language": "Yoruba",
+        "family": "Atlantic-Congo",
+        "n_sentences": 296
+      },
+      {
+        "tb_id": "yue_hk",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.447665462599944,
+        "mean_llf_encounter": 0.42850744376143507,
+        "llf_delta": 0.019158018838508928,
+        "proportion_head_final": 0.4613002987121172,
+        "language": "Yue Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 513
+      },
+      {
+        "tb_id": "zh_beginner",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4184167459578753,
+        "mean_llf_encounter": 0.4066521459459523,
+        "llf_delta": 0.011764600011923032,
+        "proportion_head_final": 0.5451122821863372,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 1023
+      },
+      {
+        "tb_id": "zh_cfl",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4263572445759227,
+        "mean_llf_encounter": 0.4055271297850155,
+        "llf_delta": 0.02083011479090724,
+        "proportion_head_final": 0.5427938706163721,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 353
+      },
+      {
+        "tb_id": "zh_gsd",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4032429104883175,
+        "mean_llf_encounter": 0.35994725124710014,
+        "llf_delta": 0.043295659241217366,
+        "proportion_head_final": 0.6226312139154222,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 4923
+      },
+      {
+        "tb_id": "zh_gsdsimp",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.40323183441719546,
+        "mean_llf_encounter": 0.35999112315263526,
+        "llf_delta": 0.043240711264560194,
+        "proportion_head_final": 0.6227460144472867,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 4923
+      },
+      {
+        "tb_id": "zh_hk",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.4264089470736232,
+        "mean_llf_encounter": 0.3969417263099699,
+        "llf_delta": 0.029467220763653323,
+        "proportion_head_final": 0.5672317980143435,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 417
+      },
+      {
+        "tb_id": "zh_patentchar",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.42714259238843727,
+        "mean_llf_encounter": 0.4059849364327488,
+        "llf_delta": 0.02115765595568847,
+        "proportion_head_final": 0.7025640830517484,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 182
+      },
+      {
+        "tb_id": "zh_pud",
+        "word_order": "SVO",
+        "mean_llf_standard": 0.3990068744424319,
+        "mean_llf_encounter": 0.3277459024999754,
+        "llf_delta": 0.07126097194245651,
+        "proportion_head_final": 0.596296884848354,
+        "language": "Mandarin Chinese",
+        "family": "Sino-Tibetan",
+        "n_sentences": 951
+      }
+    ],
+    "comparison": {
+      "sov_vs_svo_llf_delta": {
+        "mean_sov": 0.10094826631618971,
+        "mean_svo": -0.0032726760874096645,
+        "cohens_d": 2.5766287054574475,
+        "p": 5.453016531800894e-15,
+        "sov_larger": true
+      },
+      "head_final_prop_vs_llf_delta_correlation": {
+        "pearson_r": 0.5007627236244688,
+        "pearson_p": 1.2655708598354066e-12,
+        "spearman_r": 0.25816943958726474,
+        "spearman_p": 0.0005216434276345709
+      },
+      "head_final_proportions_by_wo": {
+        "SOV_mean": 0.6195481658821784,
+        "SOV_std": 0.12003060415851893,
+        "SVO_mean": 0.5537735975295978,
+        "SVO_std": 0.0661530473569197
+      },
+      "n_sov": 51,
+      "n_svo": 126
+    }
+  },
+  "phase5b_case_richness": {
+    "scatter": [
+      {
+        "tb_id": "ab_abnc",
+        "case_richness_count": 8,
+        "case_token_proportion": 0.0156,
+        "mean_llf_standard": 0.3888006485960089,
+        "language": "Abkhaz",
+        "family": "Abkhaz-Adyge"
+      },
+      {
+        "tb_id": "am_att",
+        "case_richness_count": 5,
+        "case_token_proportion": 0.0114,
+        "mean_llf_standard": 0.45156128169437487,
+        "language": "Amharic",
+        "family": "Afro-Asiatic"
+      },
+      {
+        "tb_id": "arh_chibergis",
+        "case_richness_count": 4,
+        "case_token_proportion": 0.1019,
+        "mean_llf_standard": 0.4598164468359213,
+        "language": "Arhuaco",
+        "family": "Chibchan"
+      },
+      {
+        "tb_id": "arr_tudet",
+        "case_richness_count": 10,
+        "case_token_proportion": 0.0431,
+        "mean_llf_standard": 0.39409013239798846,
+        "language": "Karo (Brazil)",
+        "family": "Tupian"
+      },
+      {
+        "tb_id": "bej_autogramm",
+        "case_richness_count": 9,
+        "case_token_proportion": 0.1491,
+        "mean_llf_standard": 0.38316654498048425,
+        "language": "Beja",
+        "family": "Afro-Asiatic"
+      },
+      {
+        "tb_id": "bho_bhtb",
+        "case_richness_count": 5,
+        "case_token_proportion": 0.6066,
+        "mean_llf_standard": 0.35947550826158237,
+        "language": "Bhojpuri",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "bm_crb",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.4333024636382378,
+        "language": "Bambara",
+        "family": "Mande"
+      },
+      {
+        "tb_id": "bn_bru",
+        "case_richness_count": 4,
+        "case_token_proportion": 0.3344,
+        "mean_llf_standard": 0.4172244180939833,
+        "language": "Bengali",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "ckb_mukri",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.3936383950256301,
+        "language": "Central Kurdish",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "eme_tudet",
+        "case_richness_count": 6,
+        "case_token_proportion": 0.1405,
+        "mean_llf_standard": 0.3886695906432749,
+        "language": "Teko",
+        "family": "Tupian"
+      },
+      {
+        "tb_id": "eu_bdt",
+        "case_richness_count": 15,
+        "case_token_proportion": 0.3465,
+        "mean_llf_standard": 0.4225383303270063,
+        "language": "Basque",
+        "family": null
+      },
+      {
+        "tb_id": "fa_perdt",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.3993239883121036,
+        "language": "Western Farsi",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "fa_seraji",
+        "case_richness_count": 3,
+        "case_token_proportion": 0.0074,
+        "mean_llf_standard": 0.4075434236940191,
+        "language": "Western Farsi",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "hi_hdtb",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.5356,
+        "mean_llf_standard": 0.38597789379793523,
+        "language": "Hindi",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "hi_pud",
+        "case_richness_count": 8,
+        "case_token_proportion": 0.4219,
+        "mean_llf_standard": 0.3785948868746143,
+        "language": "Hindi",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "hyw_armtdp",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.3329,
+        "mean_llf_standard": 0.4246750638732281,
+        "language": "Western Armenian",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "ja_bccwjluw",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.42769522696755113,
+        "language": "Japanese",
+        "family": "Japonic"
+      },
+      {
+        "tb_id": "ja_gsd",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.4025295882041074,
+        "language": "Japanese",
+        "family": "Japonic"
+      },
+      {
+        "tb_id": "ja_gsdluw",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.415856062475321,
+        "language": "Japanese",
+        "family": "Japonic"
+      },
+      {
+        "tb_id": "ja_pud",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.39913725712389686,
+        "language": "Japanese",
+        "family": "Japonic"
+      },
+      {
+        "tb_id": "ja_pudluw",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.40723509675013697,
+        "language": "Japanese",
+        "family": "Japonic"
+      },
+      {
+        "tb_id": "ka_glc",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.6276,
+        "mean_llf_standard": 0.43361410650620197,
+        "language": "Georgian",
+        "family": "Kartvelian"
+      },
+      {
+        "tb_id": "ka_gnc",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.4117,
+        "mean_llf_standard": 0.4036462854113091,
+        "language": "Georgian",
+        "family": "Kartvelian"
+      },
+      {
+        "tb_id": "ko_gsd",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.41776553758399837,
+        "language": "Korean",
+        "family": "Koreanic"
+      },
+      {
+        "tb_id": "ko_kaist",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.3866295875480028,
+        "language": "Korean",
+        "family": "Koreanic"
+      },
+      {
+        "tb_id": "ko_ksl",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.4000868758380085,
+        "language": "Korean",
+        "family": "Koreanic"
+      },
+      {
+        "tb_id": "ko_littleprince",
+        "case_richness_count": 3,
+        "case_token_proportion": 0.2006,
+        "mean_llf_standard": 0.39170024592231345,
+        "language": "Korean",
+        "family": "Koreanic"
+      },
+      {
+        "tb_id": "ko_pud",
+        "case_richness_count": 3,
+        "case_token_proportion": 0.1922,
+        "mean_llf_standard": 0.40103748852689397,
+        "language": "Korean",
+        "family": "Koreanic"
+      },
+      {
+        "tb_id": "ml_ufal",
+        "case_richness_count": 12,
+        "case_token_proportion": 0.4544,
+        "mean_llf_standard": 0.4106531997865511,
+        "language": "Malayalam",
+        "family": "Dravidian"
+      },
+      {
+        "tb_id": "mr_ufal",
+        "case_richness_count": 9,
+        "case_token_proportion": 0.3707,
+        "mean_llf_standard": 0.392173301659616,
+        "language": "Marathi",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "myu_tudet",
+        "case_richness_count": 1,
+        "case_token_proportion": 0.0029,
+        "mean_llf_standard": 0.4967867906211291,
+        "language": "Mundurukú",
+        "family": "Tupian"
+      },
+      {
+        "tb_id": "naq_kdt",
+        "case_richness_count": 3,
+        "case_token_proportion": 0.2511,
+        "mean_llf_standard": 0.3955179707578384,
+        "language": "Nama (Namibia)",
+        "family": "Khoe-Kwadi"
+      },
+      {
+        "tb_id": "nmf_suansu",
+        "case_richness_count": 6,
+        "case_token_proportion": 0.1384,
+        "mean_llf_standard": 0.4303862001609627,
+        "language": "East-Central Tangkhul Naga",
+        "family": "Sino-Tibetan"
+      },
+      {
+        "tb_id": "sah_yktdt",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.3644,
+        "mean_llf_standard": 0.45818997995468586,
+        "language": "Sakha",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "ta_mwtt",
+        "case_richness_count": 9,
+        "case_token_proportion": 0.4063,
+        "mean_llf_standard": 0.45953086419753086,
+        "language": "Tamil",
+        "family": "Dravidian"
+      },
+      {
+        "tb_id": "ta_ttb",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.4532,
+        "mean_llf_standard": 0.3830472883604225,
+        "language": "Tamil",
+        "family": "Dravidian"
+      },
+      {
+        "tb_id": "te_mtg",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.35753841871838465,
+        "language": "Telugu",
+        "family": "Dravidian"
+      },
+      {
+        "tb_id": "tr_atis",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.6134,
+        "mean_llf_standard": 0.4185327346316398,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_boun",
+        "case_richness_count": 8,
+        "case_token_proportion": 0.454,
+        "mean_llf_standard": 0.38894222998598926,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_framenet",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.3762,
+        "mean_llf_standard": 0.37071710597522445,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_gb",
+        "case_richness_count": 8,
+        "case_token_proportion": 0.3949,
+        "mean_llf_standard": 0.39744808237728546,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_imst",
+        "case_richness_count": 8,
+        "case_token_proportion": 0.4339,
+        "mean_llf_standard": 0.39776539766884683,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_kenet",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.3868,
+        "mean_llf_standard": 0.38854975672514275,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_penn",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.4322,
+        "mean_llf_standard": 0.3943957910141508,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_pud",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.288,
+        "mean_llf_standard": 0.39317865848342015,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_tourism",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.2828,
+        "mean_llf_standard": 0.3797862382654785,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "tr_tuecl",
+        "case_richness_count": 7,
+        "case_token_proportion": 0.4403,
+        "mean_llf_standard": 0.4054847732200673,
+        "language": "Turkish",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "ug_udt",
+        "case_richness_count": 6,
+        "case_token_proportion": 0.367,
+        "mean_llf_standard": 0.3920339304315041,
+        "language": "Uighur",
+        "family": "Turkic"
+      },
+      {
+        "tb_id": "ur_udtb",
+        "case_richness_count": 6,
+        "case_token_proportion": 0.5453,
+        "mean_llf_standard": 0.36403129892063807,
+        "language": "Urdu",
+        "family": "Indo-European"
+      },
+      {
+        "tb_id": "urb_tudet",
+        "case_richness_count": 1,
+        "case_token_proportion": 0.0984,
+        "mean_llf_standard": 0.3871553138219805,
+        "language": "Urubú-Kaapor",
+        "family": "Tupian"
+      },
+      {
+        "tb_id": "yrk_tundra",
+        "case_richness_count": 0,
+        "case_token_proportion": 0.0,
+        "mean_llf_standard": 0.3936994458407531,
+        "language": "Tundra Nenets",
+        "family": "Uralic"
+      }
+    ],
+    "correlations": {
+      "n_sov_treebanks": 51,
+      "case_richness_count": {
+        "pearson_r": -0.047396398030989564,
+        "pearson_p": 0.7411941392144803,
+        "spearman_r": -0.11529758024804744,
+        "spearman_p": 0.420433914055182,
+        "partial_r_controlling_length": -0.06554440449764987,
+        "partial_p_controlling_length": 0.6476938053351157,
+        "partial_r_with_hde": -0.06272452974568317,
+        "partial_p_with_hde": 0.6619164673085717
+      },
+      "case_richness_encounter_only": {
+        "pearson_r": 0.06061750103096053,
+        "pearson_p": 0.6726217824901063,
+        "spearman_r": 0.07835444826285606,
+        "spearman_p": 0.5847003785786155
+      },
+      "case_token_proportion": {
+        "pearson_r": -0.1779866246036121,
+        "pearson_p": 0.21145561710818928,
+        "spearman_r": -0.18305220927887347,
+        "spearman_p": 0.19853328083277727
+      }
+    }
+  },
+  "phase5c_dom": {
+    "per_treebank": [
+      {
+        "tb_id": "es_ancora",
+        "lang": "Spanish",
+        "n_case_marked": 269,
+        "n_unmarked": 6805,
+        "sufficient_data": true,
+        "cohens_d": -0.1907945336672639,
+        "p": 0.006653091793350799,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "es_coser",
+        "lang": "Spanish",
+        "n_case_marked": 42,
+        "n_unmarked": 114,
+        "sufficient_data": true,
+        "cohens_d": -0.46124283681934336,
+        "p": 0.009686821377904544,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "es_gsd",
+        "lang": "Spanish",
+        "n_case_marked": 257,
+        "n_unmarked": 4862,
+        "sufficient_data": true,
+        "cohens_d": -0.34764255735457344,
+        "p": 3.539181227214007e-07,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "es_pud",
+        "lang": "Spanish",
+        "n_case_marked": 26,
+        "n_unmarked": 510,
+        "sufficient_data": true,
+        "cohens_d": 0.34414485787506,
+        "p": 0.12324722671307879,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "fa_perdt",
+        "lang": "Western Farsi",
+        "n_case_marked": 0,
+        "n_unmarked": 5914,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "fa_seraji",
+        "lang": "Western Farsi",
+        "n_case_marked": 1,
+        "n_unmarked": 2644,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "he_htb",
+        "lang": "Modern Hebrew",
+        "n_case_marked": 23,
+        "n_unmarked": 2760,
+        "sufficient_data": true,
+        "cohens_d": -0.08385600705186322,
+        "p": 0.7434757818036795,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "he_iahltknesset",
+        "lang": "Modern Hebrew",
+        "n_case_marked": 6,
+        "n_unmarked": 1266,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "he_iahltwiki",
+        "lang": "Modern Hebrew",
+        "n_case_marked": 18,
+        "n_unmarked": 2160,
+        "sufficient_data": true,
+        "cohens_d": -0.13427502143231218,
+        "p": 0.6214329084753795,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "hi_hdtb",
+        "lang": "Hindi",
+        "n_case_marked": 4532,
+        "n_unmarked": 694,
+        "sufficient_data": true,
+        "cohens_d": 0.18617986281801857,
+        "p": 1.0818001500774083e-06,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "hi_pud",
+        "lang": "Hindi",
+        "n_case_marked": 720,
+        "n_unmarked": 29,
+        "sufficient_data": true,
+        "cohens_d": -0.03251479645677069,
+        "p": 0.8765257151636443,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "ko_gsd",
+        "lang": "Korean",
+        "n_case_marked": 0,
+        "n_unmarked": 2636,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ko_kaist",
+        "lang": "Korean",
+        "n_case_marked": 0,
+        "n_unmarked": 6596,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ko_ksl",
+        "lang": "Korean",
+        "n_case_marked": 0,
+        "n_unmarked": 4690,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ko_littleprince",
+        "lang": "Korean",
+        "n_case_marked": 340,
+        "n_unmarked": 11,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ko_pud",
+        "lang": "Korean",
+        "n_case_marked": 538,
+        "n_unmarked": 51,
+        "sufficient_data": true,
+        "cohens_d": -0.10542602679520491,
+        "p": 0.47213327960689017,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "ro_art",
+        "lang": "Romanian",
+        "n_case_marked": 14,
+        "n_unmarked": 2,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ro_moldoro",
+        "lang": "Romanian",
+        "n_case_marked": 0,
+        "n_unmarked": 3,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ro_nonstandard",
+        "lang": "Romanian",
+        "n_case_marked": 6087,
+        "n_unmarked": 20,
+        "sufficient_data": true,
+        "cohens_d": -0.25752570677469366,
+        "p": 0.31533866967569885,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "ro_rrt",
+        "lang": "Romanian",
+        "n_case_marked": 3295,
+        "n_unmarked": 1171,
+        "sufficient_data": true,
+        "cohens_d": -0.1085321984969205,
+        "p": 0.0013416315496614162,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "ro_simonero",
+        "lang": "Romanian",
+        "n_case_marked": 1475,
+        "n_unmarked": 645,
+        "sufficient_data": true,
+        "cohens_d": 0.05325313707022615,
+        "p": 0.2512856346192426,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "ro_tuecl",
+        "lang": "Romanian",
+        "n_case_marked": 78,
+        "n_unmarked": 32,
+        "sufficient_data": true,
+        "cohens_d": 0.052588133814607425,
+        "p": 0.8064258640566153,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "tr_atis",
+        "lang": "Turkish",
+        "n_case_marked": 1671,
+        "n_unmarked": 15,
+        "sufficient_data": true,
+        "cohens_d": -0.43884210364718695,
+        "p": 0.22077664683297685,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "tr_boun",
+        "lang": "Turkish",
+        "n_case_marked": 3554,
+        "n_unmarked": 35,
+        "sufficient_data": true,
+        "cohens_d": -0.13033970682134002,
+        "p": 0.40728387431192153,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "tr_framenet",
+        "lang": "Turkish",
+        "n_case_marked": 280,
+        "n_unmarked": 31,
+        "sufficient_data": true,
+        "cohens_d": 0.15983082950582903,
+        "p": 0.3780949366509512,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "tr_gb",
+        "lang": "Turkish",
+        "n_case_marked": 207,
+        "n_unmarked": 0,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "tr_imst",
+        "lang": "Turkish",
+        "n_case_marked": 1397,
+        "n_unmarked": 63,
+        "sufficient_data": true,
+        "cohens_d": -0.07405106129378672,
+        "p": 0.5850375712262801,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "tr_kenet",
+        "lang": "Turkish",
+        "n_case_marked": 5270,
+        "n_unmarked": 541,
+        "sufficient_data": true,
+        "cohens_d": 0.036404715921467205,
+        "p": 0.4212379807031661,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "tr_penn",
+        "lang": "Turkish",
+        "n_case_marked": 4692,
+        "n_unmarked": 265,
+        "sufficient_data": true,
+        "cohens_d": 0.04590278301787598,
+        "p": 0.48948603629262827,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "tr_pud",
+        "lang": "Turkish",
+        "n_case_marked": 326,
+        "n_unmarked": 168,
+        "sufficient_data": true,
+        "cohens_d": 0.04196987127024275,
+        "p": 0.65042911408208,
+        "direction": "case_marked_higher"
+      },
+      {
+        "tb_id": "tr_tourism",
+        "lang": "Turkish",
+        "n_case_marked": 278,
+        "n_unmarked": 28,
+        "sufficient_data": true,
+        "cohens_d": -0.5446522036878269,
+        "p": 0.05731532747699007,
+        "direction": "unmarked_higher"
+      },
+      {
+        "tb_id": "tr_tuecl",
+        "lang": "Turkish",
+        "n_case_marked": 11,
+        "n_unmarked": 0,
+        "sufficient_data": false,
+        "cohens_d": null,
+        "p": null,
+        "direction": null
+      },
+      {
+        "tb_id": "ur_udtb",
+        "lang": "Urdu",
+        "n_case_marked": 2396,
+        "n_unmarked": 340,
+        "sufficient_data": true,
+        "cohens_d": 0.4052017780899445,
+        "p": 2.8133117937058384e-14,
+        "direction": "case_marked_higher"
+      }
+    ],
+    "aggregate": {
+      "n_dom_treebanks_analyzed": 33,
+      "n_with_sufficient_data": 22,
+      "min_sentences_threshold": 30,
+      "aggregate_proportion_positive": 0.4090909090909091,
+      "mixed_effects_coefficient": -0.0005650665810982877,
+      "mixed_effects_p": 0.20397686030039885
+    }
+  },
+  "pilot_validation": {
+    "micro_tests": {
+      "all_passed": true,
+      "tree_a_imb": true,
+      "tree_a_llf": true,
+      "identity_a": true,
+      "tree_b_imb": true,
+      "tree_b_llf": true,
+      "identity_b": true,
+      "encounter_head_final": true,
+      "encounter_head_initial": true,
+      "disfluency_exclusion": true
+    },
+    "pilot_slovenian": {
+      "n_spoken": 3290,
+      "n_written": 10000,
+      "mean_llf_spoken": 0.4378427240604161,
+      "mean_llf_written": 0.434935787704529,
+      "identity_rate": 0.7675,
+      "all_in_01": true
+    },
+    "pilot_sov": {
+      "tr_boun": {
+        "n": 5589,
+        "piloted": 100,
+        "mean_std_max": 25.81,
+        "mean_enc_max": 7.45,
+        "pct_reduced": 1.0
+      },
+      "ko_kaist": {
+        "n": 10000,
+        "piloted": 100,
+        "mean_std_max": 15.95,
+        "mean_enc_max": 2.34,
+        "pct_reduced": 1.0
+      },
+      "hi_hdtb": {
+        "n": 10000,
+        "piloted": 100,
+        "mean_std_max": 26.09,
+        "mean_enc_max": 8.61,
+        "pct_reduced": 0.96
+      },
+      "ja_gsd": {
+        "n": 7230,
+        "piloted": 100,
+        "mean_std_max": 27.71,
+        "mean_enc_max": 5.31,
+        "pct_reduced": 0.98
+      },
+      "fa_perdt": {
+        "n": 10000,
+        "piloted": 100,
+        "mean_std_max": 59.57,
+        "mean_enc_max": 19.92,
+        "pct_reduced": 1.0
+      }
+    },
+    "encounter_only_reduces_imb_in_sov": true,
+    "identity_check_passed": false,
+    "n_sentences_checked": 900
+  }
+}

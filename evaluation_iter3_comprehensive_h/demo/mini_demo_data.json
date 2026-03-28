@@ -1,0 +1,322 @@
+{
+  "exp_id1": {
+    "metadata": {
+      "novelty_test_pooled": {
+        "standard": {
+          "r2": 0.9475
+        },
+        "encounter_only": {
+          "r2": 0.8827
+        }
+      },
+      "r2_by_head_type": {
+        "head_final": {
+          "n_treebanks": 83,
+          "r2_std_mean": 0.9423,
+          "r2_enc_mean": 0.6469
+        },
+        "head_initial": {
+          "n_treebanks": 141,
+          "r2_std_mean": 0.9325,
+          "r2_enc_mean": 0.8711
+        },
+        "mixed": {
+          "n_treebanks": 70,
+          "r2_std_mean": 0.9307,
+          "r2_enc_mean": 0.8064
+        }
+      },
+      "key_findings": {
+        "n_treebanks_with_r2": 294
+      },
+      "total_treebanks": 335
+    },
+    "datasets": []
+  },
+  "exp_id2": {
+    "metadata": {
+      "aggregate_results": {
+        "residualized_llf": {
+          "proportion_d_gt_0.2": 0.314,
+          "median_cohen_d": -0.0636,
+          "by_word_order": {
+            "SOV": {
+              "n": 26,
+              "median_d": -0.5459,
+              "mean_d": -0.4876
+            },
+            "other": {
+              "n": 29,
+              "median_d": -0.0452,
+              "mean_d": -0.0197
+            },
+            "VSO": {
+              "n": 7,
+              "median_d": 1.0387,
+              "mean_d": 1.0394
+            },
+            "SVO": {
+              "n": 24,
+              "median_d": 0.1341,
+              "mean_d": 0.1235
+            }
+          }
+        },
+        "convexity_residualized": [
+          {
+            "alpha": 0.5,
+            "mean_d": -0.0312
+          },
+          {
+            "alpha": 1.0,
+            "mean_d": -0.0847
+          },
+          {
+            "alpha": 1.5,
+            "mean_d": -0.0623
+          },
+          {
+            "alpha": 2.0,
+            "mean_d": -0.0198
+          },
+          {
+            "alpha": 3.0,
+            "mean_d": 0.0456
+          }
+        ],
+        "convexity_monotonicity": {
+          "r2_by_alpha": [
+            [
+              0.5,
+              0.95
+            ],
+            [
+              1.0,
+              0.92
+            ],
+            [
+              1.5,
+              0.88
+            ],
+            [
+              2.0,
+              0.85
+            ],
+            [
+              3.0,
+              0.8
+            ]
+          ],
+          "spearman_rho": -1.0,
+          "r2_monotonic_decrease": true
+        },
+        "convexity_raw": [
+          {
+            "alpha": 0.5,
+            "mean_d": 0.12
+          },
+          {
+            "alpha": 1.0,
+            "mean_d": 0.08
+          },
+          {
+            "alpha": 1.5,
+            "mean_d": 0.15
+          },
+          {
+            "alpha": 2.0,
+            "mean_d": 0.22
+          },
+          {
+            "alpha": 3.0,
+            "mean_d": 0.35
+          }
+        ]
+      }
+    },
+    "datasets": [
+      {
+        "dataset": "phase2_projective_baseline_llf",
+        "examples": [
+          {
+            "metadata_word_order": "VSO",
+            "output": "{\"word_order\": \"VSO\", \"residualized_llf\": {\"cohen_d\": 1.263}}"
+          },
+          {
+            "metadata_word_order": "VSO",
+            "output": "{\"word_order\": \"VSO\", \"residualized_llf\": {\"cohen_d\": 0.687}}"
+          },
+          {
+            "metadata_word_order": "SVO",
+            "output": "{\"word_order\": \"SVO\", \"residualized_llf\": {\"cohen_d\": 0.475}}"
+          },
+          {
+            "metadata_word_order": "SVO",
+            "output": "{\"word_order\": \"SVO\", \"residualized_llf\": {\"cohen_d\": -0.039}}"
+          },
+          {
+            "metadata_word_order": "SVO",
+            "output": "{\"word_order\": \"SVO\", \"residualized_llf\": {\"cohen_d\": 0.134}}"
+          },
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"word_order\": \"SOV\", \"residualized_llf\": {\"cohen_d\": -0.739}}"
+          },
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"word_order\": \"SOV\", \"residualized_llf\": {\"cohen_d\": -0.276}}"
+          },
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"word_order\": \"SOV\", \"residualized_llf\": {\"cohen_d\": -0.546}}"
+          },
+          {
+            "metadata_word_order": "other",
+            "output": "{\"word_order\": \"other\", \"residualized_llf\": {\"cohen_d\": -0.03}}"
+          },
+          {
+            "metadata_word_order": "other",
+            "output": "{\"word_order\": \"other\", \"residualized_llf\": {\"cohen_d\": 0.305}}"
+          }
+        ]
+      }
+    ]
+  },
+  "exp_id3": {
+    "metadata": {},
+    "datasets": [
+      {
+        "dataset": "per_treebank_results",
+        "examples": [
+          {
+            "predict_llf_significant": "true",
+            "predict_resid_max_imb_significant": "true"
+          },
+          {
+            "predict_llf_significant": "true",
+            "predict_resid_max_imb_significant": "false"
+          },
+          {
+            "predict_llf_significant": "true",
+            "predict_resid_max_imb_significant": "true"
+          },
+          {
+            "predict_llf_significant": "true",
+            "predict_resid_max_imb_significant": "false"
+          },
+          {
+            "predict_llf_significant": "true",
+            "predict_resid_max_imb_significant": "true"
+          },
+          {
+            "predict_llf_significant": "false",
+            "predict_resid_max_imb_significant": "false"
+          },
+          {
+            "predict_llf_significant": "false",
+            "predict_resid_max_imb_significant": "false"
+          }
+        ]
+      },
+      {
+        "dataset": "meta_analysis",
+        "examples": [
+          {
+            "metadata_variable": "llf",
+            "metadata_test": "B_vs_C",
+            "output": "{\"p_value\": 0.588672, \"pooled_effect\": 0.0234, \"i_squared\": 0.974}"
+          },
+          {
+            "metadata_variable": "resid_max_imb",
+            "metadata_test": "B_vs_D",
+            "output": "{\"p_value\": 0.194343, \"pooled_effect\": -0.0156, \"i_squared\": 0.891}"
+          },
+          {
+            "metadata_variable": "mean_ic",
+            "metadata_test": "F_vs_G",
+            "output": "{\"p_value\": 3.092e-07, \"pooled_effect\": 0.312, \"i_squared\": 0.456}"
+          }
+        ]
+      },
+      {
+        "dataset": "disconfirmation_assessment",
+        "examples": [
+          {
+            "output": "{\"status\": \"inconclusive\", \"pct_significant_llf_B_vs_C\": 0.7429, \"pct_significant_resid_max_imb_B_vs_D\": 0.4571}"
+          }
+        ]
+      }
+    ]
+  },
+  "exp_id4": {
+    "metadata": {},
+    "datasets": [
+      {
+        "dataset": "phase4_modality_comparison",
+        "examples": [
+          {
+            "metadata_language": "Czech",
+            "predict_method": "{\"spoken_higher\": true, \"cohens_d\": 0.34, \"p\": 0.02}"
+          },
+          {
+            "metadata_language": "French",
+            "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.12, \"p\": 0.45}"
+          },
+          {
+            "metadata_language": "German",
+            "predict_method": "{\"spoken_higher\": true, \"cohens_d\": 0.28, \"p\": 0.08}"
+          },
+          {
+            "metadata_language": "Italian",
+            "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.19, \"p\": 0.31}"
+          },
+          {
+            "metadata_language": "Norwegian",
+            "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.05, \"p\": 0.78}"
+          },
+          {
+            "metadata_language": "Slovenian",
+            "predict_method": "{\"spoken_higher\": true, \"cohens_d\": 0.41, \"p\": 0.01}"
+          },
+          {
+            "metadata_language": "Turkish",
+            "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.56, \"p\": 0.003}"
+          }
+        ]
+      },
+      {
+        "dataset": "comprehensive_summary",
+        "examples": [
+          {
+            "output": "{\"phase5a_head_final\": {\"head_final_prop_vs_llf_delta_correlation\": {\"pearson_r\": 0.5008, \"pearson_p\": 0.0023}, \"sov_vs_svo_llf_delta\": {\"cohens_d\": 2.5766, \"p\": 1.2e-08}}, \"phase5b_case_richness\": {\"case_richness_count\": {\"pearson_r\": -0.0474, \"pearson_p\": 0.7412}}, \"phase5c_dom\": {\"mixed_effects_coefficient\": -0.000565, \"mixed_effects_p\": 0.204, \"n_with_sufficient_data\": 15, \"aggregate_proportion_positive\": 0.4667}}"
+          }
+        ]
+      },
+      {
+        "dataset": "phase5a_head_final_effects",
+        "examples": [
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"mean_max_imb_standard\": 4.52, \"mean_max_imb_encounter\": 1.43}"
+          },
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"mean_max_imb_standard\": 3.87, \"mean_max_imb_encounter\": 1.21}"
+          },
+          {
+            "metadata_word_order": "SOV",
+            "output": "{\"mean_max_imb_standard\": 5.11, \"mean_max_imb_encounter\": 1.62}"
+          },
+          {
+            "metadata_word_order": "SVO",
+            "output": "{\"mean_max_imb_standard\": 2.34, \"mean_max_imb_encounter\": 1.89}"
+          },
+          {
+            "metadata_word_order": "VSO",
+            "output": "{\"mean_max_imb_standard\": 1.87, \"mean_max_imb_encounter\": 1.52}"
+          }
+        ]
+      }
+    ]
+  }
+}

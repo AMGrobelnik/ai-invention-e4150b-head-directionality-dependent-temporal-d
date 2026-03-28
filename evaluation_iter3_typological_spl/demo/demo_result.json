@@ -1,0 +1,13 @@
+{
+  "id": "eval_id3_it3__opus",
+  "type": "code",
+  "title": "Typological Split Permutation Test and Meta-Analysis",
+  "summary": "This evaluation validates the post-hoc typological split in temporal dependency overlap across 86 UD treebanks through five analyses. (1) A 10,000-iteration permutation test confirms the 1.58 SD VSO-SOV gap is highly significant (p < 0.0001 for both gap and Kruskal-Wallis H), with all pairwise Mann-Whitney tests significant after Bonferroni correction. (2) DerSimonian-Laird random-effects meta-analysis stratified by word order: VSO pooled d=+1.04 (CI [0.79,1.28], p\u22480), SVO pooled d=+0.12 (p=0.077), SOV pooled d=-0.49 (p<10\u207b\u00b9\u00b3), overall d=-0.04 (p=0.53). Raw LLF meta-analysis confirms similar patterns. (3) Head-final proportion correlates strongly with residualized LLF d: Pearson r=-0.80 (p<10\u207b\u00b2\u2070), bootstrap 95% CI [-0.86,-0.71], partial r=-0.80 controlling for n_sentences, across all 86 treebanks. (4) VSO leave-one-out is robust: min gap=1.54, all permutation p<0.05, max influence (ga_idt) causes only 0.04 gap drop. VSO families: Afro-Asiatic(2), Indo-European(4), Tupian(1). (5) Prediction scorecard: 2/10 confirmed (DC2, DC3 disconfirmations), 5/10 failed (SC1-SC5), 3/10 inconclusive. Output: 96 examples (86 treebanks + 10 criteria), 112 aggregate metrics. Schema-validated against exp_eval_sol_out.json.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_3/gen_art/eval_id3_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id3_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id3_it3__opus/eval_code_demo.ipynb"
+}

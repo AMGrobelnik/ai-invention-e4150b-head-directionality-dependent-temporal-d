@@ -1,0 +1,13 @@
+{
+  "id": "eval_id2_it3__opus",
+  "type": "code",
+  "title": "R\u00b2 Gap Decomposition & Typological Stratification Eval",
+  "summary": "This evaluation decomposes R\u00b2 monotonicity across convexity exponent \u03b1 into mathematical vs empirical components by comparing real sentences against 50 random projective baselines per sentence across 86 UD treebanks (41,129 sentences). The core analysis computes pooled OLS R\u00b2 for real and baseline data at each \u03b1 \u2208 {1.0, 1.2, 1.5, 2.0, 3.0} using 6 features (DD moments + tree properties). Key finding: \u0394R\u00b2 increases from -0.04 at \u03b1=1.0 to +0.24 at \u03b1=3.0 (Spearman \u03c1=0.9), meaning baseline R\u00b2 drops faster than real R\u00b2, ruling out the mathematical artifact hypothesis. Bootstrap 95% CIs (2000 treebank-level resamples) quantify uncertainty. Typological stratification of residualized convexity Cohen's d by word order shows significant Kruskal-Wallis differences at \u03b1\u22652.0 (p<0.05), but ranking (SVO>SOV>VSO) differs from LLF pattern (VSO>SVO>SOV). Per-treebank R\u00b2 for all 86 treebanks confirms the gap pattern is consistent. Three verdict metrics: not mathematical artifact (\u03c1=0.9, range=0.28), not merely weak empirical (max gap=0.24), not typologically modulated in LLF-matching sense. Uses ProcessPoolExecutor with 4 workers, completing in ~9 min. Output conforms to exp_eval_sol_out schema with 80+ aggregate metrics and per-treebank examples with eval_ and predict_ fields.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_3/gen_art/eval_id2_it3__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id2_it3__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/eval_id2_it3__opus/eval_code_demo.ipynb"
+}

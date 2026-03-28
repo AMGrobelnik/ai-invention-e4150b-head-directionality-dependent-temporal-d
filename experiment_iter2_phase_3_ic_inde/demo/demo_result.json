@@ -1,0 +1,13 @@
+{
+  "id": "exp_id3_it2__opus",
+  "type": "code",
+  "title": "Phase 3: IC Independence Test via Nested Logistic Regression",
+  "summary": "This experiment tests whether LLF (Load Levelling Factor) and residualized max(IMB) provide significant incremental explanatory power beyond intervener complexity (IC) in nested logistic regression models predicting real-vs-baseline sentence status. It processes 35 typologically diverse UD treebanks covering SVO, SOV, VSO, and other word orders across 15+ language families, generating 50 random projective linearization baselines per sentence for 400 sentences per treebank (714,000 total rows). The pipeline fits 7 nested logistic regression models (A-G) per treebank with likelihood-ratio tests, then pools effects via DerSimonian-Laird random-effects meta-analysis. Key findings: residualization R-squared=0.9614; LLF significantly improves model fit beyond IC in 74.3% of treebanks (Bonferroni-corrected); residualized max_imb significant in 60.0%; however meta-analysis pooled effects are non-significant (LLF p=0.589, resid p=0.194) due to extreme heterogeneity (I-squared over 97%). The bidirectional test shows IC remains highly significant after controlling for LLF (meta p less than 0.000001). Overall status: inconclusive. Per-treebank effects are strong but vary in direction across languages, preventing a clear pooled signal. Output has 4 datasets: model comparison summaries, per-treebank results with LR tests and coefficients, meta-analysis results, and disconfirmation assessment.",
+  "original_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/3_invention_loop/iter_2/gen_art/exp_id3_it2__opus",
+  "demo_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id3_it2__opus",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/ai-inventor/aii_pipeline/data/runs/comp-ling-dobrovoljc_bnd/4_gen_paper_repo/exp_id3_it2__opus/method_code_demo.ipynb"
+}
