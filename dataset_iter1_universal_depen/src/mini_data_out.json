@@ -1,0 +1,3804 @@
+{
+  "metadata": {
+    "source": "commul/universal_dependencies",
+    "total_treebanks": 336,
+    "successful_treebanks": 335,
+    "failed_treebanks": [
+      "qte_tect"
+    ],
+    "min_sentence_length": 8,
+    "length_filter": "effective_length >= 8 (excluding PUNCT)",
+    "max_examples_per_treebank": 10000,
+    "total_sentences_before_filter": 2198185,
+    "total_sentences_after_filter": 870677,
+    "treebank_stats": {
+      "abq_atb": {
+        "total": 98,
+        "filtered": 32,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 56667
+      },
+      "ab_abnc": {
+        "total": 1316,
+        "filtered": 321,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 698012
+      },
+      "af_afribooms": {
+        "total": 1934,
+        "filtered": 1862,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4541548
+      },
+      "akk_pisandub": {
+        "total": 101,
+        "filtered": 79,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 150050
+      },
+      "akk_riao": {
+        "total": 1874,
+        "filtered": 1130,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2340336
+      },
+      "aqz_tudet": {
+        "total": 343,
+        "filtered": 13,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 18563
+      },
+      "sq_staf": {
+        "total": 200,
+        "filtered": 145,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 338130
+      },
+      "sq_tsa": {
+        "total": 60,
+        "filtered": 55,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 103380
+      },
+      "gsw_divital": {
+        "total": 977,
+        "filtered": 687,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1359267
+      },
+      "gsw_uzh": {
+        "total": 100,
+        "filtered": 91,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 127593
+      },
+      "am_att": {
+        "total": 1074,
+        "filtered": 568,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 829093
+      },
+      "grc_perseus": {
+        "total": 13919,
+        "filtered": 9818,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 22013569
+      },
+      "grc_proiel": {
+        "total": 17082,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 22681742
+      },
+      "grc_ptnk": {
+        "total": 1576,
+        "filtered": 1557,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4626437
+      },
+      "hbo_ptnk": {
+        "total": 5608,
+        "filtered": 5445,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 15242866
+      },
+      "apu_ufpa": {
+        "total": 165,
+        "filtered": 16,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 26741
+      },
+      "ar_padt": {
+        "total": 7664,
+        "filtered": 6918,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 27484090
+      },
+      "ar_pud": {
+        "total": 1000,
+        "filtered": 943,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2335030
+      },
+      "hy_armtdp": {
+        "total": 5527,
+        "filtered": 4054,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11759544
+      },
+      "hy_bsut": {
+        "total": 2523,
+        "filtered": 1839,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5150086
+      },
+      "aii_as": {
+        "total": 57,
+        "filtered": 15,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 24964
+      },
+      "az_tuecl": {
+        "total": 148,
+        "filtered": 21,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 32296
+      },
+      "bm_crb": {
+        "total": 1026,
+        "filtered": 629,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1072123
+      },
+      "eu_bdt": {
+        "total": 8993,
+        "filtered": 6436,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12107771
+      },
+      "bar_maibaam": {
+        "total": 1070,
+        "filtered": 712,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1102226
+      },
+      "bej_autogramm": {
+        "total": 763,
+        "filtered": 492,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1031810
+      },
+      "be_hse": {
+        "total": 25231,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 22427938
+      },
+      "bn_bru": {
+        "total": 56,
+        "filtered": 5,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7213
+      },
+      "bho_bhtb": {
+        "total": 357,
+        "filtered": 301,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 773936
+      },
+      "sab_chibergis": {
+        "total": 406,
+        "filtered": 71,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 96583
+      },
+      "bor_bdt": {
+        "total": 21384,
+        "filtered": 5309,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8252889
+      },
+      "br_keb": {
+        "total": 884,
+        "filtered": 511,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 820568
+      },
+      "bg_btb": {
+        "total": 11138,
+        "filtered": 7570,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16685349
+      },
+      "bxr_bdt": {
+        "total": 927,
+        "filtered": 449,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 822357
+      },
+      "yue_hk": {
+        "total": 1004,
+        "filtered": 513,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 883698
+      },
+      "cpg_amgic": {
+        "total": 36,
+        "filtered": 24,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 45042
+      },
+      "cpg_tuecl": {
+        "total": 350,
+        "filtered": 175,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 368213
+      },
+      "ca_ancora": {
+        "total": 16678,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 30738891
+      },
+      "ceb_gja": {
+        "total": 197,
+        "filtered": 52,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 66550
+      },
+      "ckb_mukri": {
+        "total": 138,
+        "filtered": 13,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 17157
+      },
+      "zh_beginner": {
+        "total": 2295,
+        "filtered": 1023,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1277122
+      },
+      "zh_cfl": {
+        "total": 451,
+        "filtered": 353,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 557296
+      },
+      "zh_gsd": {
+        "total": 4997,
+        "filtered": 4923,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9460200
+      },
+      "zh_gsdsimp": {
+        "total": 4997,
+        "filtered": 4923,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9499312
+      },
+      "zh_hk": {
+        "total": 1004,
+        "filtered": 417,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 602113
+      },
+      "zh_patentchar": {
+        "total": 200,
+        "filtered": 182,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 357362
+      },
+      "zh_pud": {
+        "total": 1000,
+        "filtered": 951,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1708424
+      },
+      "ctn_ctntb": {
+        "total": 2289,
+        "filtered": 337,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 524099
+      },
+      "ckt_hse": {
+        "total": 1004,
+        "filtered": 186,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 262915
+      },
+      "xcl_caval": {
+        "total": 4781,
+        "filtered": 4115,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10190487
+      },
+      "lzh_kyoto": {
+        "total": 86239,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 11828877
+      },
+      "lzh_tuecl": {
+        "total": 100,
+        "filtered": 27,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 31311
+      },
+      "cop_bohairic": {
+        "total": 1001,
+        "filtered": 991,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3132085
+      },
+      "cop_scriptorium": {
+        "total": 2203,
+        "filtered": 2084,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5597722
+      },
+      "hr_set": {
+        "total": 9010,
+        "filtered": 8190,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 20823503
+      },
+      "cs_cac": {
+        "total": 24709,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 25720843
+      },
+      "cs_cltt": {
+        "total": 1121,
+        "filtered": 864,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3629586
+      },
+      "cs_fictree": {
+        "total": 12760,
+        "filtered": 7245,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16312662
+      },
+      "cs_pdtc": {
+        "total": 213897,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 25110021
+      },
+      "cs_poetry": {
+        "total": 297,
+        "filtered": 233,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 666743
+      },
+      "cs_pud": {
+        "total": 1000,
+        "filtered": 909,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2184961
+      },
+      "da_ddt": {
+        "total": 5512,
+        "filtered": 4284,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9504238
+      },
+      "nl_alpino": {
+        "total": 13603,
+        "filtered": 9613,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 18206851
+      },
+      "nl_lassysmall": {
+        "total": 17120,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 20613262
+      },
+      "egy_ujaen": {
+        "total": 2347,
+        "filtered": 1318,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2419162
+      },
+      "en_atis": {
+        "total": 5432,
+        "filtered": 4573,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6503592
+      },
+      "en_childes": {
+        "total": 48183,
+        "filtered": 8498,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10219756
+      },
+      "en_ctetex": {
+        "total": 276,
+        "filtered": 270,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 667421
+      },
+      "en_eslspok": {
+        "total": 2320,
+        "filtered": 922,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1264902
+      },
+      "en_ewt": {
+        "total": 16622,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 20447297
+      },
+      "en_gentle": {
+        "total": 1334,
+        "filtered": 685,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1391501
+      },
+      "en_gum": {
+        "total": 13263,
+        "filtered": 9024,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 19693826
+      },
+      "en_gumreddit": {
+        "total": 895,
+        "filtered": 671,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1359152
+      },
+      "en_lines": {
+        "total": 5696,
+        "filtered": 4524,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9293303
+      },
+      "en_littleprince": {
+        "total": 500,
+        "filtered": 299,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 551765
+      },
+      "en_partut": {
+        "total": 2090,
+        "filtered": 1904,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4252753
+      },
+      "en_pronouns": {
+        "total": 285,
+        "filtered": 10,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13111
+      },
+      "en_pud": {
+        "total": 1000,
+        "filtered": 951,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1928717
+      },
+      "myv_jr": {
+        "total": 2138,
+        "filtered": 831,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1727115
+      },
+      "eo_cairo": {
+        "total": 20,
+        "filtered": 9,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12358
+      },
+      "eo_prago": {
+        "total": 131,
+        "filtered": 74,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 240322
+      },
+      "et_edt": {
+        "total": 30930,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19870277
+      },
+      "et_ewt": {
+        "total": 7190,
+        "filtered": 4114,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7982167
+      },
+      "fo_farpahc": {
+        "total": 1621,
+        "filtered": 1469,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3333979
+      },
+      "fo_oft": {
+        "total": 1208,
+        "filtered": 444,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 677328
+      },
+      "fi_ftb": {
+        "total": 18723,
+        "filtered": 7436,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12661516
+      },
+      "fi_ood": {
+        "total": 2122,
+        "filtered": 855,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1602319
+      },
+      "fi_pud": {
+        "total": 1000,
+        "filtered": 852,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1735937
+      },
+      "fi_tdt": {
+        "total": 15136,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 20193710
+      },
+      "fr_alts": {
+        "total": 2026,
+        "filtered": 1933,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5067091
+      },
+      "fr_fqb": {
+        "total": 2289,
+        "filtered": 1423,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2209700
+      },
+      "fr_gsd": {
+        "total": 16342,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 23740336
+      },
+      "fr_parisstories": {
+        "total": 2776,
+        "filtered": 1834,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3736571
+      },
+      "fr_partut": {
+        "total": 1020,
+        "filtered": 931,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2570814
+      },
+      "fr_poitevindivital": {
+        "total": 239,
+        "filtered": 200,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 393858
+      },
+      "fr_pud": {
+        "total": 1000,
+        "filtered": 972,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2394752
+      },
+      "fr_rhapsodie": {
+        "total": 3209,
+        "filtered": 1736,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3524552
+      },
+      "fr_sequoia": {
+        "total": 3099,
+        "filtered": 2414,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6159417
+      },
+      "qfn_fame": {
+        "total": 400,
+        "filtered": 270,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 336810
+      },
+      "gl_ctg": {
+        "total": 3993,
+        "filtered": 3987,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9398381
+      },
+      "gl_pud": {
+        "total": 1000,
+        "filtered": 956,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2219674
+      },
+      "gl_treegal": {
+        "total": 1000,
+        "filtered": 843,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2331935
+      },
+      "ka_glc": {
+        "total": 3164,
+        "filtered": 2866,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8084091
+      },
+      "ka_gnc": {
+        "total": 1818,
+        "filtered": 1030,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2335882
+      },
+      "de_gsd": {
+        "total": 15589,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 22068338
+      },
+      "de_hdt": {
+        "total": 189928,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 23162504
+      },
+      "de_lit": {
+        "total": 1920,
+        "filtered": 1708,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3403989
+      },
+      "de_pud": {
+        "total": 1000,
+        "filtered": 950,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2233470
+      },
+      "aln_gps": {
+        "total": 966,
+        "filtered": 836,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1650713
+      },
+      "got_proiel": {
+        "total": 5401,
+        "filtered": 2971,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5700973
+      },
+      "el_cretan": {
+        "total": 270,
+        "filtered": 199,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 470229
+      },
+      "el_gdt": {
+        "total": 2521,
+        "filtered": 2264,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7185224
+      },
+      "el_gud": {
+        "total": 1807,
+        "filtered": 1210,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2678409
+      },
+      "el_lesbian": {
+        "total": 540,
+        "filtered": 297,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 591483
+      },
+      "el_messinian": {
+        "total": 110,
+        "filtered": 31,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 59713
+      },
+      "gub_tudet": {
+        "total": 1182,
+        "filtered": 338,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 478406
+      },
+      "gn_oldtudet": {
+        "total": 59,
+        "filtered": 2,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2508
+      },
+      "gu_gujtb": {
+        "total": 187,
+        "filtered": 81,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 131700
+      },
+      "gwi_tuecl": {
+        "total": 313,
+        "filtered": 10,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13219
+      },
+      "ht_adolphe": {
+        "total": 3314,
+        "filtered": 3027,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5817223
+      },
+      "ht_autogramm": {
+        "total": 144,
+        "filtered": 131,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 261989
+      },
+      "ha_northernautogramm": {
+        "total": 423,
+        "filtered": 174,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 296071
+      },
+      "ha_southernautogramm": {
+        "total": 1927,
+        "filtered": 577,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 934072
+      },
+      "ha_westernautogramm": {
+        "total": 775,
+        "filtered": 623,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1255012
+      },
+      "he_htb": {
+        "total": 6143,
+        "filtered": 5622,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 14667370
+      },
+      "he_iahltknesset": {
+        "total": 2883,
+        "filtered": 2309,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6211777
+      },
+      "he_iahltwiki": {
+        "total": 5039,
+        "filtered": 4654,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13139932
+      },
+      "azz_itml": {
+        "total": 1260,
+        "filtered": 386,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 710858
+      },
+      "hi_hdtb": {
+        "total": 16649,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 26889170
+      },
+      "hi_pud": {
+        "total": 1000,
+        "filtered": 970,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2604794
+      },
+      "hit_hittb": {
+        "total": 136,
+        "filtered": 83,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 134832
+      },
+      "hu_szeged": {
+        "total": 1800,
+        "filtered": 1641,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4327991
+      },
+      "is_gc": {
+        "total": 5000,
+        "filtered": 4545,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10207871
+      },
+      "is_icepahc": {
+        "total": 44029,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 30425745
+      },
+      "is_modern": {
+        "total": 3535,
+        "filtered": 3034,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8059810
+      },
+      "is_pud": {
+        "total": 1000,
+        "filtered": 931,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2042730
+      },
+      "arh_chibergis": {
+        "total": 628,
+        "filtered": 247,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 328460
+      },
+      "id_csui": {
+        "total": 1030,
+        "filtered": 991,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2288218
+      },
+      "id_gsd": {
+        "total": 5598,
+        "filtered": 5070,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10064983
+      },
+      "id_pud": {
+        "total": 1000,
+        "filtered": 940,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1728597
+      },
+      "ga_cadhan": {
+        "total": 193,
+        "filtered": 167,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 448202
+      },
+      "ga_idt": {
+        "total": 4910,
+        "filtered": 4286,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11099048
+      },
+      "ga_twittirish": {
+        "total": 2596,
+        "filtered": 2294,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3932129
+      },
+      "it_isdt": {
+        "total": 14167,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 24193461
+      },
+      "it_kiparlaforest": {
+        "total": 1007,
+        "filtered": 405,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 797637
+      },
+      "it_markit": {
+        "total": 1292,
+        "filtered": 1261,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3643835
+      },
+      "it_old": {
+        "total": 3419,
+        "filtered": 3381,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10907875
+      },
+      "it_parlamint": {
+        "total": 701,
+        "filtered": 597,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1795170
+      },
+      "it_partut": {
+        "total": 2090,
+        "filtered": 1936,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5077264
+      },
+      "it_postwita": {
+        "total": 6712,
+        "filtered": 6034,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12053826
+      },
+      "it_pud": {
+        "total": 1000,
+        "filtered": 957,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2249192
+      },
+      "it_twittiro": {
+        "total": 1424,
+        "filtered": 1392,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2900984
+      },
+      "it_valico": {
+        "total": 398,
+        "filtered": 310,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 657869
+      },
+      "it_vit": {
+        "total": 10087,
+        "filtered": 8645,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 24096430
+      },
+      "ja_bccwjluw": {
+        "total": 57109,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 16224848
+      },
+      "ja_gsd": {
+        "total": 8100,
+        "filtered": 7230,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 14050226
+      },
+      "ja_gsdluw": {
+        "total": 8100,
+        "filtered": 6584,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11632011
+      },
+      "ja_pud": {
+        "total": 1000,
+        "filtered": 984,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2065468
+      },
+      "ja_pudluw": {
+        "total": 1000,
+        "filtered": 971,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1813643
+      },
+      "jv_csui": {
+        "total": 1000,
+        "filtered": 744,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1261948
+      },
+      "urb_tudet": {
+        "total": 83,
+        "filtered": 5,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6009
+      },
+      "xnr_kdtb": {
+        "total": 288,
+        "filtered": 129,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 216359
+      },
+      "krl_kkpp": {
+        "total": 228,
+        "filtered": 159,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 298401
+      },
+      "arr_tudet": {
+        "total": 674,
+        "filtered": 8,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9415
+      },
+      "kk_ktb": {
+        "total": 1078,
+        "filtered": 467,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 844299
+      },
+      "naq_kdt": {
+        "total": 3589,
+        "filtered": 1285,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2008432
+      },
+      "kfm_aha": {
+        "total": 10,
+        "filtered": 2,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3064
+      },
+      "quc_iu": {
+        "total": 1435,
+        "filtered": 260,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 409848
+      },
+      "koi_uh": {
+        "total": 128,
+        "filtered": 34,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 65128
+      },
+      "kpv_ikdp": {
+        "total": 214,
+        "filtered": 97,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 187712
+      },
+      "kpv_lattice": {
+        "total": 663,
+        "filtered": 369,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 760235
+      },
+      "ko_gsd": {
+        "total": 6339,
+        "filtered": 3752,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6238885
+      },
+      "ko_kaist": {
+        "total": 27363,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 14991290
+      },
+      "ko_ksl": {
+        "total": 15675,
+        "filtered": 6534,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9016845
+      },
+      "ko_littleprince": {
+        "total": 1551,
+        "filtered": 542,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 812201
+      },
+      "ko_pud": {
+        "total": 1000,
+        "filtered": 910,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1627592
+      },
+      "ky_ktmu": {
+        "total": 2530,
+        "filtered": 1623,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2701917
+      },
+      "ky_tuecl": {
+        "total": 173,
+        "filtered": 37,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 52721
+      },
+      "ltg_cairo": {
+        "total": 20,
+        "filtered": 7,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11122
+      },
+      "la_circse": {
+        "total": 1664,
+        "filtered": 1115,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3139513
+      },
+      "la_ittb": {
+        "total": 26977,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 23843091
+      },
+      "la_llct": {
+        "total": 9023,
+        "filtered": 7330,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 23317531
+      },
+      "la_perseus": {
+        "total": 2273,
+        "filtered": 1396,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2877596
+      },
+      "la_proiel": {
+        "total": 18689,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19723953
+      },
+      "la_udante": {
+        "total": 1723,
+        "filtered": 1622,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6089151
+      },
+      "lv_cairo": {
+        "total": 20,
+        "filtered": 7,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10989
+      },
+      "lv_lvtb": {
+        "total": 19580,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 23771003
+      },
+      "lij_glt": {
+        "total": 316,
+        "filtered": 251,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 616217
+      },
+      "lt_alksnis": {
+        "total": 3642,
+        "filtered": 2778,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7244208
+      },
+      "lt_hse": {
+        "total": 263,
+        "filtered": 230,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 551040
+      },
+      "olo_kkpp": {
+        "total": 125,
+        "filtered": 82,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 152727
+      },
+      "nds_lsdc": {
+        "total": 1000,
+        "filtered": 801,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2096953
+      },
+      "lb_luxbank": {
+        "total": 20,
+        "filtered": 15,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 18529
+      },
+      "mk_mtb": {
+        "total": 155,
+        "filtered": 65,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 108494
+      },
+      "jaa_jarawara": {
+        "total": 20,
+        "filtered": 4,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5466
+      },
+      "qaf_arabizi": {
+        "total": 1287,
+        "filtered": 1039,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1692127
+      },
+      "mpu_tudet": {
+        "total": 37,
+        "filtered": 2,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2374
+      },
+      "ml_ufal": {
+        "total": 218,
+        "filtered": 124,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 272389
+      },
+      "mt_mudt": {
+        "total": 2074,
+        "filtered": 1641,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3189081
+      },
+      "gv_cadhan": {
+        "total": 2336,
+        "filtered": 613,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 974927
+      },
+      "mr_ufal": {
+        "total": 466,
+        "filtered": 153,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 274455
+      },
+      "gun_dooley": {
+        "total": 1046,
+        "filtered": 641,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 922396
+      },
+      "gun_thomas": {
+        "total": 98,
+        "filtered": 58,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 105716
+      },
+      "frm_altm": {
+        "total": 217,
+        "filtered": 205,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 548404
+      },
+      "frm_profiterole": {
+        "total": 4584,
+        "filtered": 3619,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6974642
+      },
+      "mdf_jr": {
+        "total": 476,
+        "filtered": 197,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 365432
+      },
+      "myu_tudet": {
+        "total": 158,
+        "filtered": 26,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 40106
+      },
+      "nmf_suansu": {
+        "total": 584,
+        "filtered": 66,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 98925
+      },
+      "pcm_nsc": {
+        "total": 9241,
+        "filtered": 5282,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9940424
+      },
+      "nyq_aha": {
+        "total": 10,
+        "filtered": 2,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3064
+      },
+      "nap_rb": {
+        "total": 20,
+        "filtered": 14,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 21051
+      },
+      "yrk_tundra": {
+        "total": 170,
+        "filtered": 49,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 70315
+      },
+      "yrl_complin": {
+        "total": 2742,
+        "filtered": 972,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1768842
+      },
+      "sme_giella": {
+        "total": 3122,
+        "filtered": 1086,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1812953
+      },
+      "kmr_kurmanji": {
+        "total": 754,
+        "filtered": 636,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1178379
+      },
+      "gya_autogramm": {
+        "total": 403,
+        "filtered": 133,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 180824
+      },
+      "no_bokmaal": {
+        "total": 20044,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19814910
+      },
+      "no_nynorsk": {
+        "total": 17575,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19715447
+      },
+      "oc_ttb": {
+        "total": 1522,
+        "filtered": 1066,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1830778
+      },
+      "or_odtb": {
+        "total": 100,
+        "filtered": 64,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 97797
+      },
+      "cu_proiel": {
+        "total": 22628,
+        "filtered": 9855,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 19990599
+      },
+      "orv_birchbark": {
+        "total": 3184,
+        "filtered": 1169,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2138058
+      },
+      "orv_rnc": {
+        "total": 6047,
+        "filtered": 4824,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16779159
+      },
+      "orv_ruthenian": {
+        "total": 5365,
+        "filtered": 4281,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13923455
+      },
+      "orv_torot": {
+        "total": 26496,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19247840
+      },
+      "ang_cairo": {
+        "total": 20,
+        "filtered": 7,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10448
+      },
+      "fro_altm": {
+        "total": 553,
+        "filtered": 485,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1210209
+      },
+      "fro_profiterole": {
+        "total": 20359,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 14709794
+      },
+      "sga_dipsgg": {
+        "total": 64,
+        "filtered": 15,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 29146
+      },
+      "sga_dipwbg": {
+        "total": 34,
+        "filtered": 28,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 49886
+      },
+      "pro_corag": {
+        "total": 1291,
+        "filtered": 1215,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3249356
+      },
+      "otk_clausal": {
+        "total": 20,
+        "filtered": 4,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5482
+      },
+      "ota_boun": {
+        "total": 514,
+        "filtered": 377,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 897940
+      },
+      "ota_dudu": {
+        "total": 1782,
+        "filtered": 1081,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1932058
+      },
+      "ps_sikaram": {
+        "total": 155,
+        "filtered": 122,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 376505
+      },
+      "pad_tuecl": {
+        "total": 101,
+        "filtered": 7,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8886
+      },
+      "fa_perdt": {
+        "total": 29107,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 19341613
+      },
+      "fa_seraji": {
+        "total": 5997,
+        "filtered": 5285,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13467571
+      },
+      "pay_chibergis": {
+        "total": 524,
+        "filtered": 186,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 252878
+      },
+      "xpg_kul": {
+        "total": 132,
+        "filtered": 102,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 204567
+      },
+      "pl_lfg": {
+        "total": 17246,
+        "filtered": 4869,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8267412
+      },
+      "pl_mpdt": {
+        "total": 2018,
+        "filtered": 1966,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 5166005
+      },
+      "pl_pdb": {
+        "total": 22152,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 22358910
+      },
+      "pl_pud": {
+        "total": 1000,
+        "filtered": 924,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2200581
+      },
+      "qpm_philotis": {
+        "total": 2250,
+        "filtered": 1582,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3678998
+      },
+      "pt_bosque": {
+        "total": 9357,
+        "filtered": 7791,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 20351656
+      },
+      "pt_dantestocks": {
+        "total": 4042,
+        "filtered": 3664,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7495972
+      },
+      "pt_gsd": {
+        "total": 12020,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 22479334
+      },
+      "pt_petrogold": {
+        "total": 8946,
+        "filtered": 7730,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 22335893
+      },
+      "pt_porttinari": {
+        "total": 8418,
+        "filtered": 7966,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16643467
+      },
+      "pt_pud": {
+        "total": 1000,
+        "filtered": 958,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2168271
+      },
+      "ro_art": {
+        "total": 50,
+        "filtered": 33,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 58483
+      },
+      "ro_moldoro": {
+        "total": 30,
+        "filtered": 6,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7970
+      },
+      "ro_nonstandard": {
+        "total": 26225,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 24884435
+      },
+      "ro_rrt": {
+        "total": 9524,
+        "filtered": 9018,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 23487669
+      },
+      "ro_simonero": {
+        "total": 4681,
+        "filtered": 4621,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 14967084
+      },
+      "ro_tuecl": {
+        "total": 210,
+        "filtered": 187,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 471869
+      },
+      "ru_gsd": {
+        "total": 5030,
+        "filtered": 4218,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11094524
+      },
+      "ru_poetry": {
+        "total": 5085,
+        "filtered": 2812,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6385764
+      },
+      "ru_pud": {
+        "total": 1000,
+        "filtered": 930,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2304411
+      },
+      "ru_syntagrus": {
+        "total": 87337,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 25817290
+      },
+      "ru_taiga": {
+        "total": 121967,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 23134038
+      },
+      "sa_ufal": {
+        "total": 230,
+        "filtered": 82,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 157306
+      },
+      "sa_vedic": {
+        "total": 27182,
+        "filtered": 9775,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16965525
+      },
+      "gd_arcosg": {
+        "total": 4748,
+        "filtered": 3373,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8084333
+      },
+      "sr_set": {
+        "total": 4384,
+        "filtered": 4058,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10281370
+      },
+      "wuu_shud": {
+        "total": 983,
+        "filtered": 361,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 445229
+      },
+      "scn_stb": {
+        "total": 505,
+        "filtered": 429,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1015368
+      },
+      "sd_isra": {
+        "total": 5756,
+        "filtered": 4427,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9442895
+      },
+      "si_stb": {
+        "total": 100,
+        "filtered": 39,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 60772
+      },
+      "sms_giellagas": {
+        "total": 250,
+        "filtered": 131,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 248060
+      },
+      "sk_snk": {
+        "total": 10604,
+        "filtered": 4902,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9566731
+      },
+      "sl_ssj": {
+        "total": 13435,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 24457911
+      },
+      "sl_sst": {
+        "total": 6121,
+        "filtered": 3290,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 8269877
+      },
+      "soj_aha": {
+        "total": 8,
+        "filtered": 1,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1375
+      },
+      "ajp_madar": {
+        "total": 100,
+        "filtered": 30,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 38793
+      },
+      "sdh_garrusi": {
+        "total": 221,
+        "filtered": 59,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 87256
+      },
+      "es_ancora": {
+        "total": 17662,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 32557610
+      },
+      "es_coser": {
+        "total": 539,
+        "filtered": 285,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 653057
+      },
+      "es_gsd": {
+        "total": 16014,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 26125219
+      },
+      "es_pud": {
+        "total": 1000,
+        "filtered": 958,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2314230
+      },
+      "ssp_lse": {
+        "total": 488,
+        "filtered": 11,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12964
+      },
+      "sv_lines": {
+        "total": 5696,
+        "filtered": 4485,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10244135
+      },
+      "sv_old": {
+        "total": 40,
+        "filtered": 33,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 58114
+      },
+      "sv_pud": {
+        "total": 1000,
+        "filtered": 935,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2015651
+      },
+      "sv_swell": {
+        "total": 510,
+        "filtered": 405,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 886495
+      },
+      "sv_talbanken": {
+        "total": 6038,
+        "filtered": 4683,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 9988438
+      },
+      "swl_sslc": {
+        "total": 203,
+        "filtered": 101,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 136425
+      },
+      "tl_trg": {
+        "total": 128,
+        "filtered": 13,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16304
+      },
+      "tl_ugnayan": {
+        "total": 94,
+        "filtered": 67,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 88890
+      },
+      "ta_mwtt": {
+        "total": 534,
+        "filtered": 5,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 7793
+      },
+      "ta_ttb": {
+        "total": 600,
+        "filtered": 506,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1356917
+      },
+      "tt_nmctt": {
+        "total": 148,
+        "filtered": 118,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 245127
+      },
+      "eme_tudet": {
+        "total": 913,
+        "filtered": 8,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 10602
+      },
+      "te_mtg": {
+        "total": 1328,
+        "filtered": 27,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 38272
+      },
+      "th_pud": {
+        "total": 1000,
+        "filtered": 973,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2131307
+      },
+      "th_tud": {
+        "total": 3627,
+        "filtered": 3034,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 6677720
+      },
+      "tn_popapolelo": {
+        "total": 20,
+        "filtered": 12,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 16444
+      },
+      "tpn_tudet": {
+        "total": 581,
+        "filtered": 142,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 222150
+      },
+      "tr_atis": {
+        "total": 5432,
+        "filtered": 3099,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4659591
+      },
+      "tr_boun": {
+        "total": 9761,
+        "filtered": 5589,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11900313
+      },
+      "tr_framenet": {
+        "total": 2698,
+        "filtered": 539,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 845612
+      },
+      "tr_gb": {
+        "total": 2880,
+        "filtered": 380,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 562515
+      },
+      "tr_imst": {
+        "total": 5635,
+        "filtered": 2328,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4877906
+      },
+      "tr_kenet": {
+        "total": 18687,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 16584553
+      },
+      "tr_penn": {
+        "total": 16396,
+        "filtered": 10000,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": true,
+        "temp_size_bytes": 16769846
+      },
+      "tr_pud": {
+        "total": 1000,
+        "filtered": 901,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1828210
+      },
+      "tr_tourism": {
+        "total": 19830,
+        "filtered": 716,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1170528
+      },
+      "tr_tuecl": {
+        "total": 148,
+        "filtered": 20,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 30837
+      },
+      "qti_butr": {
+        "total": 51,
+        "filtered": 16,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 22474
+      },
+      "qtd_sagt": {
+        "total": 2184,
+        "filtered": 1785,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3645257
+      },
+      "uk_iu": {
+        "total": 7092,
+        "filtered": 5008,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 12977061
+      },
+      "uk_parlamint": {
+        "total": 7142,
+        "filtered": 3962,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 11161231
+      },
+      "xum_ikuvina": {
+        "total": 202,
+        "filtered": 50,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 76351
+      },
+      "hsb_ufal": {
+        "total": 644,
+        "filtered": 534,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1136805
+      },
+      "ur_udtb": {
+        "total": 5130,
+        "filtered": 4994,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 14950101
+      },
+      "ug_udt": {
+        "total": 3456,
+        "filtered": 1974,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 3539329
+      },
+      "uz_tuecl": {
+        "total": 148,
+        "filtered": 23,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 33542
+      },
+      "uz_ut": {
+        "total": 500,
+        "filtered": 379,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 590421
+      },
+      "uz_uzudt": {
+        "total": 681,
+        "filtered": 357,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 574990
+      },
+      "vep_vwt": {
+        "total": 103,
+        "filtered": 66,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 120974
+      },
+      "vi_tuecl": {
+        "total": 100,
+        "filtered": 97,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 173803
+      },
+      "vi_vtb": {
+        "total": 3323,
+        "filtered": 2771,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4703600
+      },
+      "wbp_ufal": {
+        "total": 55,
+        "filtered": 2,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 2503
+      },
+      "cy_ccg": {
+        "total": 2717,
+        "filtered": 2288,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4951884
+      },
+      "hyw_armtdp": {
+        "total": 6644,
+        "filtered": 4976,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 13749032
+      },
+      "nhi_itml": {
+        "total": 909,
+        "filtered": 419,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 681309
+      },
+      "wo_wtb": {
+        "total": 2107,
+        "filtered": 1842,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 4078855
+      },
+      "xav_xdt": {
+        "total": 248,
+        "filtered": 109,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 150748
+      },
+      "sjo_xdt": {
+        "total": 810,
+        "filtered": 546,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1398475
+      },
+      "sah_yktdt": {
+        "total": 299,
+        "filtered": 13,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 18780
+      },
+      "yi_yitb": {
+        "total": 3054,
+        "filtered": 974,
+        "malformed": 0,
+        "splits": [
+          "dev",
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1550646
+      },
+      "yo_ytb": {
+        "total": 317,
+        "filtered": 296,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 651698
+      },
+      "ess_sli": {
+        "total": 309,
+        "filtered": 124,
+        "malformed": 0,
+        "splits": [
+          "test"
+        ],
+        "capped": false,
+        "temp_size_bytes": 171046
+      },
+      "say_autogramm": {
+        "total": 2105,
+        "filtered": 941,
+        "malformed": 0,
+        "splits": [
+          "test",
+          "train"
+        ],
+        "capped": false,
+        "temp_size_bytes": 1565557
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "abq_atb",
+      "examples": [
+        {
+          "input": "{\"text\": \"сара санхвыцыз сан лаща ари английскала йалрыпхьуштI хIва йгIасайхIвлун\", \"tokens\": [\"сара\", \"санхвыцыз\", \"сан\", \"лаща\", \"ари\", \"английскала\", \"йалрыпхьуштI\", \"хIва\", \"йгIасайхIвлун\"], \"heads\": [2, 9, 4, 9, 7, 7, 9, 7, 0], \"deprels\": [\"nsubj\", \"advcl\", \"nmod\", \"nsubj\", \"nsubj\", \"iobj\", \"ccomp\", \"mark\", \"root\"], \"upos\": [\"PRON\", \"VERB\", \"NOUN\", \"NOUN\", \"PRON\", \"NOUN\", \"VERB\", \"SCONJ\", \"VERB\"], \"feats\": [null, \"Number[abs]=Sing|Person[abs]=1|RelType=Tmp|Tense=Past|VerbForm=NonFin\", \"Number[psor]=Sing|Person[psor]=1\", \"Gender[psor]=Fem|Number[psor]=Sing|Person[psor]=3\", \"Number=Sing|PronType=Dem\", null, \"Caus=Yes|Gender[erg]=Fem|Gender[io]=Neut|Number[abs]=Plur|Number[erg]=Sing|Number[io]=Sing|Person[abs]=3|Person[erg]=3|Person[io]=3|Tense=Fut|VerbForm=Fin\", null, \"Gender[abs]=Neut|Gender[erg]=Masc|Number[abs]=Sing|Number[erg]=Sing|Number[io]=Sing|Person[abs]=3|Person[erg]=3|Person[io]=1|Tense=Imp|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 2, \"max_arity\": 3, \"mean_arity\": 2.0, \"mean_dd\": 2.5, \"dd_variance\": 4.5, \"dd_skewness\": 1.2178, \"dd_list\": [1, 7, 1, 5, 2, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.375, \"ic_variance\": 0.4844, \"max_ic\": 2, \"functional_ratio\": 0.125, \"content_ratio\": 0.875, \"head_direction_entropy\": 0.5436}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "3"
+        },
+        {
+          "input": "{\"text\": \"саргьи ауи схъа йтаскIын апхьарта съадзапхьузгьи сангIалгагьи ауи акIвымкIва закIгьи гьстахъымызтI\", \"tokens\": [\"саргьи\", \"ауи\", \"схъа\", \"йтаскIын\", \"апхьарта\", \"съадзапхьузгьи\", \"сангIалгагьи\", \"ауи\", \"акIвымкIва\", \"закIгьи\", \"гьстахъымызтI\"], \"heads\": [4, 4, 4, 0, 6, 11, 11, 10, 8, 11, 4], \"deprels\": [\"nsubj\", \"obj\", \"iobj\", \"root\", \"obl\", \"advcl\", \"advcl\", \"nmod\", \"case\", \"obj\", \"conj\"], \"upos\": [\"PRON\", \"PRON\", \"NOUN\", \"VERB\", \"NOUN\", \"VERB\", \"VERB\", \"PRON\", \"ADP\", \"NUM\", \"VERB\"], \"feats\": [null, \"Number=Sing|PronType=Dem\", \"Number[psor]=Sing|Person[psor]=1\", \"Gender[abs]=Neut|Number[abs]=Sing|Number[erg]=Sing|Person[abs]=3|Person[erg]=1|Tense=Past|VerbForm=Fin\", \"Definite=Def\", \"Gender[io]=Neut|Number[abs]=Sing|Number[io]=Sing|Person[abs]=1|Person[io]=3|RelType=Loc|Tense=Past|VerbForm=NonFin\", \"Number[abs]=Sing|Person[abs]=1|RelType=Tmp|Tense=Aor\", \"Number=Sing|PronType=Dem\", \"Gender[io]=Neut|Number[io]=Sing|Person[io]=3\", \"Definite=Ind\", \"Number[io]=Sing|Person[io]=1|Polarity=Neg|Tense=Past|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 11, \"effective_length\": 11, \"tree_depth\": 4, \"max_arity\": 4, \"mean_arity\": 2.0, \"mean_dd\": 2.7, \"dd_variance\": 3.81, \"dd_skewness\": 0.9891, \"dd_list\": [3, 2, 1, 1, 5, 4, 2, 1, 1, 7], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.7, \"ic_variance\": 1.21, \"max_ic\": 3, \"functional_ratio\": 0.1, \"content_ratio\": 0.9, \"head_direction_entropy\": 0.7219}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "4"
+        },
+        {
+          "input": "{\"text\": \"апхъа азаман уагIахъата адунай йыквыз шабгаз йазкIкIыта зджьара йбзазун\", \"tokens\": [\"апхъа\", \"азаман\", \"уагIахъата\", \"адунай\", \"йыквыз\", \"шабгаз\", \"йазкIкIыта\", \"зджьара\", \"йбзазун\"], \"heads\": [2, 9, 9, 5, 3, 7, 9, 9, 0], \"deprels\": [\"amod\", \"obl\", \"nsubj\", \"obl\", \"acl\", \"advcl\", \"advcl\", \"advmod\", \"root\"], \"upos\": [\"ADJ\", \"NOUN\", \"NOUN\", \"NOUN\", \"VERB\", \"VERB\", \"VERB\", \"ADV\", \"VERB\"], \"feats\": [null, \"Definite=Def\", null, \"Definite=Def\", \"RelType=Abs|Tense=Past|VerbForm=NonFin\", \"RelType=Mnr|Tense=Past|VerbForm=NonFin\", \"Gender[io]=Neut|Number[abs]=Plur|Number[io]=Sing|Person[abs]=3|Person[io]=3\", null, \"Number[abs]=Plur|Person[abs]=3|Tense=Imp|VerbForm=Fin\"]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 9, \"tree_depth\": 3, \"max_arity\": 4, \"mean_arity\": 1.6, \"mean_dd\": 2.625, \"dd_variance\": 5.2344, \"dd_skewness\": 1.0911, \"dd_list\": [1, 7, 6, 1, 2, 1, 2, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.625, \"ic_variance\": 1.2344, \"max_ic\": 3, \"functional_ratio\": 0.0, \"content_ratio\": 1.0, \"head_direction_entropy\": 0.5436}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_language_code": "abq",
+          "metadata_treebank_name": "abq_atb",
+          "metadata_sent_id": "11"
+        }
+      ]
+    },
+    {
+      "dataset": "ab_abnc",
+      "examples": [
+        {
+          "input": "{\"text\": \"Сара Сталини Бериеи сшьырцаз Лакоба исиҭаз адҵа насыгӡон.\", \"tokens\": [\"Сара\", \"Сталини\", \"Бериеи\", \"сшьырцаз\", \"Лакоба\", \"исиҭаз\", \"адҵа\", \"насыгӡон\", \".\"], \"heads\": [4, 4, 2, 8, 6, 7, 8, 0, 8], \"deprels\": [\"nsubj\", \"obj\", \"conj\", \"ccomp:purp\", \"nsubj\", \"acl:relcl\", \"obj\", \"root\", \"punct\"], \"upos\": [\"PRON\", \"PROPN\", \"PROPN\", \"VERB\", \"PROPN\", \"VERB\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [\"Number=Sing|Person=1|PronType=Prs\", \"NameType=Prs\", \"NameType=Prs\", \"Dyn=Yes|Mood=Prp|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|VerbForm=NonFin\", \"NameType=Prs\", \"Dyn=Yes|Gender[subj]=Masc|Number[io]=Sing|Number[subj]=Sing|Person[io]=1|Person[obj]=Rel|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=NonFin\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Dyn=Yes|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Imp|VerbForm=Fin\", null]}",
+          "output": "{\"sentence_length\": 9, \"effective_length\": 8, \"tree_depth\": 3, \"max_arity\": 3, \"mean_arity\": 1.6, \"mean_dd\": 1.75, \"dd_variance\": 1.1875, \"dd_skewness\": 1.0867, \"dd_list\": [3, 2, 1, 4, 1, 1, 1, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.375, \"ic_variance\": 0.4844, \"max_ic\": 2, \"functional_ratio\": 0.125, \"content_ratio\": 0.875, \"head_direction_entropy\": 0.8113}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w1439000"
+        },
+        {
+          "input": "{\"text\": \"« Ахәыҷқәа амц аҳәашьа рыздырӡом », … – ҳәа дхәыцуа, игәалашәаз игәалаҟара аабжьнахит, аха инимырҧшит.\", \"tokens\": [\"«\", \"Ахәыҷқәа\", \"амц\", \"аҳәашьа\", \"рыздырӡом\", \"»\", \",\", \"…\", \"–\", \"ҳәа\", \"дхәыцуа\", \",\", \"игәалашәаз\", \"игәалаҟара\", \"аабжьнахит\", \",\", \"аха\", \"инимырҧшит\", \".\"], \"heads\": [5, 5, 4, 5, 11, 5, 5, 5, 10, 5, 15, 15, 15, 15, 0, 15, 18, 15, 15], \"deprels\": [\"punct\", \"iobj:po\", \"nmod:poss\", \"nsubj\", \"advcl:quote\", \"punct\", \"punct\", \"punct\", \"punct\", \"mark\", \"advcl:conv\", \"punct\", \"csubj\", \"obj\", \"root\", \"punct\", \"cc\", \"conj\", \"punct\"], \"upos\": [\"PUNCT\", \"NOUN\", \"NOUN\", \"NOUN\", \"VERB\", \"PUNCT\", \"PUNCT\", \"PUNCT\", \"PUNCT\", \"PART\", \"VERB\", \"PUNCT\", \"VERB\", \"NOUN\", \"VERB\", \"PUNCT\", \"CCONJ\", \"VERB\", \"PUNCT\"], \"feats\": [null, \"Animacy=Hum|Definite=Def|Number=Plur\", \"Animacy=Nhum|Definite=Def|Number=Sing\", \"Animacy=Nhum|Gender[psor]=Neut|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Mood=Ind|Number[po]=Plur|Person[po]=3|Person[subj]=3|Polarity=Neg|Reln=Pot|Subcat=Tran|Tense=Pres|VerbForm=Fin\", null, null, null, null, null, \"Dyn=Yes|Gender[subj]=Com|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=NonFin\", null, \"Dyn=Yes|Gender[lo]=Masc|Number[lo]=Sing|Person[lo]=3|Person[subj]=Rel|Subcat=Intr|Tense=Past|VerbForm=NonFin\", \"Animacy=Nhum|Gender[psor]=Masc|Number=Sing|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[lo]=Neut|Gender[subj]=Neut|Mood=Ind|Number[lo]=Sing|Number[subj]=Sing|Person[lo]=3|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null, null, \"Dyn=Yes|Gender[subj]=Masc|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Polarity=Neg|Subcat=Intr|Tense=Aor|VerbForm=Fin|Voice=Cau\", null]}",
+          "output": "{\"sentence_length\": 19, \"effective_length\": 11, \"tree_depth\": 4, \"max_arity\": 7, \"mean_arity\": 3.0, \"mean_dd\": 2.5556, \"dd_variance\": 2.358, \"dd_skewness\": 0.5857, \"dd_list\": [4, 3, 1, 1, 6, 1, 2, 3, 1, 5, 4, 3, 2, 1, 1, 1, 3, 4], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2222, \"ic_variance\": 0.1728, \"max_ic\": 1, \"functional_ratio\": 0.5556, \"content_ratio\": 0.4444, \"head_direction_entropy\": 0.9641}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w2640700"
+        },
+        {
+          "input": "{\"text\": \"– Ҳнапқәа ӡык нарықәаҳҭәап, – иҳәан, днаиҧызаны рҿанынарха, Лакоба ауадақәа лаҧшыла иааимидеит, анапыӡәӡәарҭаҿы ада иахьабалак Сталин ипатреҭқәа кнаҳан.\", \"tokens\": [\"–\", \"Ҳнапқәа\", \"ӡык\", \"нарықәаҳҭәап\", \",\", \"–\", \"иҳәан\", \",\", \"днаиҧызаны\", \"рҿанынарха\", \",\", \"Лакоба\", \"ауадақәа\", \"лаҧшыла\", \"иааимидеит\", \",\", \"анапыӡәӡәарҭаҿы\", \"ада\", \"иахьабалак\", \"Сталин\", \"ипатреҭқәа\", \"кнаҳан\", \".\"], \"heads\": [4, 4, 4, 7, 7, 7, 15, 10, 10, 15, 15, 15, 15, 15, 0, 22, 22, 17, 22, 21, 22, 15, 15], \"deprels\": [\"punct\", \"iobj:lo\", \"obj\", \"ccomp:quote\", \"punct\", \"punct\", \"advcl:seq\", \"punct\", \"advcl:conv\", \"advcl\", \"punct\", \"nsubj\", \"obj\", \"obl\", \"root\", \"punct\", \"obl\", \"case\", \"advcl\", \"nmod:poss\", \"nsubj\", \"conj\", \"punct\"], \"upos\": [\"PUNCT\", \"NOUN\", \"NOUN\", \"VERB\", \"PUNCT\", \"PUNCT\", \"VERB\", \"PUNCT\", \"VERB\", \"VERB\", \"PUNCT\", \"PROPN\", \"NOUN\", \"NOUN\", \"VERB\", \"PUNCT\", \"NOUN\", \"ADP\", \"VERB\", \"PROPN\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [null, \"Animacy=Nhum|Number=Plur|Number[psor]=Plur|Person[psor]=1\", \"Animacy=Nhum|Number=Sing\", \"Dyn=Yes|Mood=Ind|Number[lo]=Plur|Number[subj]=Plur|Person[lo]=3|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin\", null, null, \"Dyn=Yes|Gender[subj]=Masc|Mood=Ind|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin\", null, \"Dyn=Yes|Gender[io]=Masc|Gender[subj]=Com|Number[io]=Sing|Number[subj]=Sing|Person[io]=3|Person[subj]=3|Subcat=Intr|Tense=Aor|VerbForm=NonFin\", \"Dyn=Yes|Number[psor]=Plur|Number[subj]=Plur|Person[psor]=3|Person[subj]=3|RelType=Tmp|Subcat=Tran|Tense=Aor|VerbForm=NonFin\", null, \"NameType=Prs\", \"Animacy=Nhum|Definite=Def|Number=Plur\", \"Animacy=Nhum|Case=Ins|Number=Sing\", \"Dyn=Yes|Gender[subj]=Masc|Mood=Ind|Number[subj]=Sing|Person[lo]=Rec|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Aor|VerbForm=Fin\", null, \"Animacy=Nhum|Case=Ine|Definite=Def|Number=Sing\", \"Gender[psor]=Neut|Number[psor]=Sing|Person[psor]=3\", \"Dyn=Yes|Gender[subj]=Neut|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|RelType=Loc|Subcat=Tran|VerbForm=NonFin\", \"NameType=Prs\", \"Animacy=Nhum|Gender[psor]=Masc|Number=Plur|Number[psor]=Sing|Person[psor]=3\", \"Dyn=No|Mood=Ind|Person[subj]=3|Subcat=Tran|Tense=Imp|VerbForm=Fin|Voice=Pass\", null]}",
+          "output": "{\"sentence_length\": 23, \"effective_length\": 16, \"tree_depth\": 3, \"max_arity\": 8, \"mean_arity\": 3.1429, \"mean_dd\": 3.1818, \"dd_variance\": 5.2397, \"dd_skewness\": 0.8906, \"dd_list\": [3, 2, 1, 3, 2, 1, 8, 2, 1, 5, 4, 3, 2, 1, 6, 5, 1, 3, 1, 1, 7, 8], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.4545, \"ic_variance\": 0.7025, \"max_ic\": 3, \"functional_ratio\": 0.3636, \"content_ratio\": 0.6364, \"head_direction_entropy\": 0.5746}",
+          "metadata_fold": "test",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_language_code": "ab",
+          "metadata_treebank_name": "ab_abnc",
+          "metadata_sent_id": "adzhindzhal-sh+djavol+w2642600"
+        }
+      ]
+    },
+    {
+      "dataset": "af_afribooms",
+      "examples": [
+        {
+          "input": "{\"text\": \"En ons hoop hierdie keer dat hernude pogings deur die internasionale gemeenskap om blywende oplossings vir hierdie konflik te vind, vrugte sal afwerp sodat die Israeliete en die Palestyne as bure vrede en sekuriteit kan geniet binne hul soewereine gebiede.\", \"tokens\": [\"En\", \"ons\", \"hoop\", \"hierdie\", \"keer\", \"dat\", \"hernude\", \"pogings\", \"deur\", \"die\", \"internasionale\", \"gemeenskap\", \"om\", \"blywende\", \"oplossings\", \"vir\", \"hierdie\", \"konflik\", \"te\", \"vind\", \",\", \"vrugte\", \"sal\", \"afwerp\", \"sodat\", \"die\", \"Israeliete\", \"en\", \"die\", \"Palestyne\", \"as\", \"bure\", \"vrede\", \"en\", \"sekuriteit\", \"kan\", \"geniet\", \"binne\", \"hul\", \"soewereine\", \"gebiede\", \".\"], \"heads\": [3, 3, 0, 5, 3, 3, 8, 24, 12, 12, 12, 8, 20, 15, 20, 18, 18, 15, 20, 12, 20, 24, 24, 6, 24, 27, 37, 27, 30, 27, 37, 31, 37, 33, 33, 37, 25, 41, 41, 41, 37, 37], \"deprels\": [\"amod\", \"nsubj\", \"root\", \"det\", \"obj\", \"amod\", \"amod\", \"nsubj\", \"case\", \"det\", \"amod\", \"nmod\", \"case\", \"amod\", \"obj\", \"case\", \"det\", \"nmod\", \"mark\", \"xcomp\", \"punct\", \"obj\", \"aux\", \"dep\", \"amod\", \"det\", \"nsubj\", \"cc\", \"det\", \"conj\", \"amod\", \"dep\", \"obj\", \"cc\", \"conj\", \"aux\", \"dep\", \"case\", \"det\", \"amod\", \"obl\", \"punct\"], \"upos\": [\"CCONJ\", \"PRON\", \"VERB\", \"DET\", \"NOUN\", \"SCONJ\", \"ADJ\", \"NOUN\", \"ADP\", \"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"ADJ\", \"NOUN\", \"ADP\", \"DET\", \"NOUN\", \"PART\", \"VERB\", \"PUNCT\", \"NOUN\", \"AUX\", \"VERB\", \"SCONJ\", \"DET\", \"NOUN\", \"CCONJ\", \"DET\", \"NOUN\", \"SCONJ\", \"NOUN\", \"NOUN\", \"CCONJ\", \"NOUN\", \"AUX\", \"VERB\", \"ADP\", \"PRON\", \"ADJ\", \"NOUN\", \"PUNCT\"], \"feats\": [null, \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"PronType=Dem\", \"Number=Sing\", null, \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"AdpType=Prep\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", \"AdpType=Prep\", \"PronType=Dem\", \"Number=Sing\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null, \"Number=Plur\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null, \"Definite=Def|PronType=Art\", \"Number=Plur\", null, \"Definite=Def|PronType=Art\", \"Number=Plur\", null, \"Number=Plur\", \"Number=Sing\", null, \"Number=Sing\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"AdpType=Prep\", \"Number=Plur|Person=3|Poss=Yes|PronType=Prs\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", null]}",
+          "output": "{\"sentence_length\": 42, \"effective_length\": 40, \"tree_depth\": 8, \"max_arity\": 6, \"mean_arity\": 2.5625, \"mean_dd\": 3.5366, \"dd_variance\": 15.8096, \"dd_skewness\": 2.2063, \"dd_list\": [2, 1, 1, 2, 3, 1, 16, 3, 2, 1, 4, 7, 1, 5, 2, 1, 3, 1, 8, 1, 2, 1, 18, 1, 1, 10, 1, 1, 3, 6, 1, 4, 1, 2, 1, 12, 3, 2, 1, 4, 5], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.5854, \"ic_variance\": 1.5598, \"max_ic\": 5, \"functional_ratio\": 0.4146, \"content_ratio\": 0.5854, \"head_direction_entropy\": 0.965}",
+          "metadata_fold": "dev",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "dev-s1"
+        },
+        {
+          "input": "{\"text\": \"Ons spesiale gelukwensing gaan aan die Regering en mense van Kuba met die 50ste herdenking van hul soewereiniteit en, daarmee saam, die vryheid om hul eie ontwikkelingspad te kies.\", \"tokens\": [\"Ons\", \"spesiale\", \"gelukwensing\", \"gaan\", \"aan\", \"die\", \"Regering\", \"en\", \"mense\", \"van\", \"Kuba\", \"met\", \"die\", \"50ste\", \"herdenking\", \"van\", \"hul\", \"soewereiniteit\", \"en\", \",\", \"daarmee\", \"saam\", \",\", \"die\", \"vryheid\", \"om\", \"hul\", \"eie\", \"ontwikkelingspad\", \"te\", \"kies\", \".\"], \"heads\": [3, 3, 4, 0, 7, 7, 4, 7, 7, 11, 9, 15, 15, 15, 4, 18, 18, 15, 18, 18, 25, 21, 22, 25, 18, 31, 29, 29, 31, 31, 25, 31], \"deprels\": [\"det\", \"amod\", \"nsubj\", \"root\", \"case\", \"det\", \"obl\", \"cc\", \"conj\", \"case\", \"nmod\", \"case\", \"det\", \"amod\", \"obl\", \"case\", \"det\", \"nmod\", \"cc\", \"punct\", \"dep\", \"dep\", \"punct\", \"det\", \"conj\", \"case\", \"det\", \"amod\", \"obj\", \"mark\", \"xcomp\", \"punct\"], \"upos\": [\"PRON\", \"ADJ\", \"NOUN\", \"VERB\", \"ADP\", \"DET\", \"NOUN\", \"CCONJ\", \"NOUN\", \"ADP\", \"PROPN\", \"ADP\", \"DET\", \"SYM\", \"NOUN\", \"ADP\", \"PRON\", \"NOUN\", \"CCONJ\", \"PUNCT\", \"PRON\", \"ADV\", \"PUNCT\", \"DET\", \"NOUN\", \"ADP\", \"PRON\", \"ADJ\", \"NOUN\", \"PART\", \"VERB\", \"PUNCT\"], \"feats\": [\"Number=Plur|Person=1|Poss=Yes|PronType=Prs\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"Subcat=Intr|Tense=Pres|VerbForm=Fin,Inf\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"Number=Sing\", null, \"Number=Plur\", \"AdpType=Prep\", \"Number=Sing\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", null, \"Number=Sing\", \"AdpType=Prep\", \"Number=Plur|Person=3|Poss=Yes|PronType=Prs\", \"Number=Sing\", null, null, \"PronType=Rel\", \"Degree=Pos\", null, \"Definite=Def|PronType=Art\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Plur|Person=3|Poss=Yes|PronType=Prs\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 32, \"effective_length\": 29, \"tree_depth\": 6, \"max_arity\": 5, \"mean_arity\": 2.5833, \"mean_dd\": 2.3871, \"dd_variance\": 4.7534, \"dd_skewness\": 2.3939, \"dd_list\": [2, 1, 1, 2, 1, 3, 1, 2, 1, 2, 3, 2, 1, 11, 2, 1, 3, 1, 2, 4, 1, 1, 1, 7, 5, 2, 1, 2, 1, 6, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.2581, \"ic_variance\": 0.4495, \"max_ic\": 3, \"functional_ratio\": 0.5484, \"content_ratio\": 0.4516, \"head_direction_entropy\": 0.9812}",
+          "metadata_fold": "dev",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "dev-s2"
+        },
+        {
+          "input": "{\"text\": \"Ons was gedurende die afgelope jaar in staat om verdere onderhandelinge met die Europese Unie te voer oor ons strategiese vennootskap; en ons hoop dat die goeie gees waarin die gebeure plaasgevind het, sal voortduur soos ons die multilaterale onderhandelinge oor die ekonomiese vennootskapooreenkomste met lande in ons streek finaliseer.\", \"tokens\": [\"Ons\", \"was\", \"gedurende\", \"die\", \"afgelope\", \"jaar\", \"in\", \"staat\", \"om\", \"verdere\", \"onderhandelinge\", \"met\", \"die\", \"Europese\", \"Unie\", \"te\", \"voer\", \"oor\", \"ons\", \"strategiese\", \"vennootskap\", \";\", \"en\", \"ons\", \"hoop\", \"dat\", \"die\", \"goeie\", \"gees\", \"waarin\", \"die\", \"gebeure\", \"plaasgevind\", \"het\", \",\", \"sal\", \"voortduur\", \"soos\", \"ons\", \"die\", \"multilaterale\", \"onderhandelinge\", \"oor\", \"die\", \"ekonomiese\", \"vennootskapooreenkomste\", \"met\", \"lande\", \"in\", \"ons\", \"streek\", \"finaliseer\", \".\"], \"heads\": [6, 6, 6, 6, 6, 0, 8, 6, 17, 11, 17, 15, 15, 15, 17, 17, 8, 21, 21, 21, 17, 21, 17, 25, 17, 25, 29, 29, 37, 33, 32, 33, 29, 33, 33, 37, 26, 37, 52, 42, 42, 52, 46, 46, 46, 42, 48, 46, 51, 51, 48, 38, 52], \"deprels\": [\"nsubj\", \"cop\", \"case\", \"det\", \"amod\", \"root\", \"case\", \"obl\", \"case\", \"amod\", \"obj\", \"case\", \"det\", \"amod\", \"obl\", \"mark\", \"xcomp\", \"case\", \"det\", \"amod\", \"obl\", \"punct\", \"cc\", \"nsubj\", \"dep\", \"amod\", \"det\", \"amod\", \"obj\", \"nsubj\", \"det\", \"obj\", \"ccomp\", \"aux\", \"punct\", \"aux\", \"dep\", \"amod\", \"nsubj\", \"det\", \"amod\", \"obj\", \"case\", \"det\", \"amod\", \"nmod\", \"case\", \"nmod\", \"case\", \"det\", \"nmod\", \"obj\", \"punct\"], \"upos\": [\"PRON\", \"AUX\", \"ADP\", \"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"NOUN\", \"ADP\", \"ADJ\", \"NOUN\", \"ADP\", \"DET\", \"ADJ\", \"NOUN\", \"PART\", \"VERB\", \"ADP\", \"PRON\", \"ADJ\", \"NOUN\", \"PUNCT\", \"CCONJ\", \"PRON\", \"VERB\", \"SCONJ\", \"DET\", \"ADJ\", \"NOUN\", \"PRON\", \"DET\", \"NOUN\", \"VERB\", \"AUX\", \"PUNCT\", \"AUX\", \"VERB\", \"SCONJ\", \"PRON\", \"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"DET\", \"ADJ\", \"NOUN\", \"ADP\", \"NOUN\", \"ADP\", \"PRON\", \"NOUN\", \"VERB\", \"PUNCT\"], \"feats\": [\"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Tense=Past|VerbForm=Fin|VerbType=Cop\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"AdpType=Prep\", \"Number=Sing\", \"AdpType=Prep\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"PartType=Inf\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", \"AdpType=Prep\", \"Number=Plur|Person=1|Poss=Yes|PronType=Prs\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", null, null, \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null, \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Sing\", \"PronType=Rel\", \"Definite=Def|PronType=Art\", \"Number=Plur\", \"Subcat=Intr|Tense=Past|VerbForm=Part\", \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Aux\", null, \"Tense=Pres|VerbForm=Fin,Inf|VerbType=Mod\", \"Subcat=Intr|Tense=Pres|VerbForm=Fin,Inf\", null, \"Case=Acc,Nom|Number=Plur|Person=1|PronType=Prs\", \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", \"AdpType=Prep\", \"Definite=Def|PronType=Art\", \"AdjType=Attr|Case=Nom|Degree=Pos\", \"Number=Plur\", \"AdpType=Prep\", \"Number=Plur\", \"AdpType=Prep\", \"Number=Plur|Person=1|Poss=Yes|PronType=Prs\", \"Number=Sing\", \"Subcat=Tran|Tense=Pres|VerbForm=Fin,Inf\", null]}",
+          "output": "{\"sentence_length\": 53, \"effective_length\": 50, \"tree_depth\": 12, \"max_arity\": 7, \"mean_arity\": 2.8889, \"mean_dd\": 3.3462, \"dd_variance\": 10.6879, \"dd_skewness\": 1.7021, \"dd_list\": [5, 4, 3, 2, 1, 1, 2, 8, 1, 6, 3, 2, 1, 2, 1, 9, 3, 2, 1, 4, 1, 6, 1, 8, 1, 2, 1, 8, 3, 1, 1, 4, 1, 2, 1, 11, 1, 13, 2, 1, 10, 3, 2, 1, 4, 1, 2, 2, 1, 3, 14, 1], \"projectivity_proportion\": 1.0, \"n_nonprojective\": 0, \"mean_ic\": 0.4808, \"ic_variance\": 1.0573, \"max_ic\": 4, \"functional_ratio\": 0.4615, \"content_ratio\": 0.5385, \"head_direction_entropy\": 0.9118}",
+          "metadata_fold": "dev",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_language_code": "af",
+          "metadata_treebank_name": "af_afribooms",
+          "metadata_sent_id": "dev-s3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+[project]
+name = "ud-treebank-metadata"
+version = "1.0.0"
+requires-python = ">=3.10,<3.12"
+description = "Cross-linguistic typological and modality metadata for all UD treebanks"
+dependencies = [
+    "datasets==4.8.4",
+    "loguru==0.7.3",
+    "numpy==2.4.3",
+    "pandas==3.0.1",
+    "requests==2.33.0",
+    "scipy==1.17.1",
+    "jsonschema==4.26.0",
+    "pyarrow==23.0.1",
+]

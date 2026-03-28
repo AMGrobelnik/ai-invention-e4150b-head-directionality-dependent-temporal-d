@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "description": "Cross-linguistic typological and modality metadata for all UD treebanks. Compiled from commul/universal_dependencies (HuggingFace), WALS Feature 81A (word order), Glottolog CLDF (language families), and curated spoken treebank labels from Dobrovoljc (2022).",
+    "source": "commul/universal_dependencies",
+    "version": "1.0",
+    "total_treebanks": 336,
+    "external_sources": [
+      "WALS Feature 81A (word order classification)",
+      "Glottolog CLDF (language family/macroarea)",
+      "Dobrovoljc 2022 (spoken treebank survey)"
+    ],
+    "coverage": {
+      "wals_word_order_pct": 61.3,
+      "glottolog_family_pct": 92.6
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "commul/universal_dependencies",
+      "examples": [
+        {
+          "input": "abq_atb",
+          "output": "{\"treebank_id\": \"abq_atb\", \"lang_code\": \"abq\", \"iso_639_3\": \"abq\", \"language_name\": \"Abaza\", \"wals_word_order\": null, \"wals_code\": null, \"wals_family\": null, \"wals_genus\": null, \"glottocode\": \"abaz1241\", \"glottolog_family_id\": \"abkh1242\", \"glottolog_family_name\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"is_isolate\": false, \"modality\": \"written\", \"spoken_written_pair_id\": null, \"case_values_distinct\": [\"Ins\"], \"case_richness_count\": 1, \"case_token_proportion\": 0.0015, \"has_differential_object_marking\": false, \"disfluency_deprels_present\": [\"reparandum\", \"discourse\"], \"head_direction_entropy_binary\": 0.9358, \"head_direction_entropy_deprel\": 0.401, \"head_direction_left_proportion\": 0.352, \"num_sentences\": 98, \"num_tokens\": 652, \"mean_sentence_length\": 6.65, \"deprel_inventory\": [\"acl\", \"advcl\", \"advmod\", \"amod\", \"case\", \"cc\", \"ccomp\", \"conj\", \"cop\", \"csubj\", \"dep:repeat\", \"det\", \"discourse\", \"dislocated\", \"fixed\", \"flat\", \"iobj\", \"mark\", \"nmod\", \"nsubj\", \"nummod\", \"obj\", \"obl\", \"parataxis\", \"reparandum\", \"root\", \"vocative\", \"xcomp\"]}",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 0,
+          "metadata_lang_code": "abq",
+          "metadata_iso_639_3": "abq",
+          "metadata_language_name": "Abaza",
+          "metadata_wals_word_order": "",
+          "metadata_glottolog_family_name": "Abkhaz-Adyge",
+          "metadata_macroarea": "Eurasia",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 1,
+          "metadata_head_direction_entropy_binary": 0.9358,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 98,
+          "metadata_num_tokens": 652
+        },
+        {
+          "input": "ab_abnc",
+          "output": "{\"treebank_id\": \"ab_abnc\", \"lang_code\": \"ab\", \"iso_639_3\": \"abk\", \"language_name\": \"Abkhaz\", \"wals_word_order\": \"SOV\", \"wals_code\": \"abk\", \"wals_family\": \"Northwest Caucasian\", \"wals_genus\": \"Northwest Caucasian\", \"glottocode\": \"abkh1244\", \"glottolog_family_id\": \"abkh1242\", \"glottolog_family_name\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"is_isolate\": false, \"modality\": \"written\", \"spoken_written_pair_id\": null, \"case_values_distinct\": [\"Abe\", \"Ben\", \"Ess\", \"Ine\", \"Ins\", \"Lat\", \"Loc\", \"Ter\"], \"case_richness_count\": 8, \"case_token_proportion\": 0.0156, \"has_differential_object_marking\": false, \"disfluency_deprels_present\": [\"discourse\"], \"head_direction_entropy_binary\": 0.9318, \"head_direction_entropy_deprel\": 0.5826, \"head_direction_left_proportion\": 0.3475, \"num_sentences\": 1316, \"num_tokens\": 10585, \"mean_sentence_length\": 8.04, \"deprel_inventory\": [\"acl\", \"acl:relcl\", \"advcl\", \"advcl:compar\", \"advcl:cond\", \"advcl:conv\", \"advcl:purp\", \"advcl:quote\", \"advcl:seq\", \"advmod\", \"advmod:q\", \"amod\", \"appos\", \"aux\", \"case\", \"cc\", \"ccomp:iobj\", \"ccomp:lo\", \"ccomp:obj\", \"ccomp:poss\", \"ccomp:purp\", \"ccomp:quote\", \"ccomp:ro\", \"compound\", \"compound:pred\", \"compound:prt\", \"conj\", \"conj:q\", \"cop\", \"csubj\", \"csubj:outer\", \"csubj:quote\", \"det\", \"discourse\", \"dislocated\", \"flat\", \"flat:name\", \"iobj\", \"iobj:cs\", \"iobj:lo\", \"iobj:po\", \"iobj:poss\", \"iobj:ro\", \"mark\", \"nmod\", \"nmod:poss\", \"nmod:quote\", \"nsubj\", \"nsubj:outer\", \"nummod\", \"obj\", \"obl\", \"orphan\", \"parataxis\", \"punct\", \"root\", \"vocative\", \"xcomp\", \"xcomp:lo\", \"xcomp:subj\"]}",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 1,
+          "metadata_lang_code": "ab",
+          "metadata_iso_639_3": "abk",
+          "metadata_language_name": "Abkhaz",
+          "metadata_wals_word_order": "SOV",
+          "metadata_glottolog_family_name": "Abkhaz-Adyge",
+          "metadata_macroarea": "Eurasia",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 8,
+          "metadata_head_direction_entropy_binary": 0.9318,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 1316,
+          "metadata_num_tokens": 10585
+        },
+        {
+          "input": "af_afribooms",
+          "output": "{\"treebank_id\": \"af_afribooms\", \"lang_code\": \"af\", \"iso_639_3\": \"afr\", \"language_name\": \"Afrikaans\", \"wals_word_order\": null, \"wals_code\": null, \"wals_family\": null, \"wals_genus\": null, \"glottocode\": \"afri1274\", \"glottolog_family_id\": \"indo1319\", \"glottolog_family_name\": \"Indo-European\", \"macroarea\": \"Africa\", \"is_isolate\": false, \"modality\": \"written\", \"spoken_written_pair_id\": null, \"case_values_distinct\": [\"Acc\", \"Nom\"], \"case_richness_count\": 2, \"case_token_proportion\": 0.0916, \"has_differential_object_marking\": false, \"disfluency_deprels_present\": [], \"head_direction_entropy_binary\": 0.9792, \"head_direction_entropy_deprel\": 0.4429, \"head_direction_left_proportion\": 0.4153, \"num_sentences\": 1315, \"num_tokens\": 33878, \"mean_sentence_length\": 25.76, \"deprel_inventory\": [\"advmod\", \"amod\", \"appos\", \"aux\", \"aux:pass\", \"case\", \"cc\", \"ccomp\", \"compound:prt\", \"conj\", \"cop\", \"csubj\", \"dep\", \"det\", \"fixed\", \"flat\", \"iobj\", \"mark\", \"nmod\", \"nsubj\", \"nsubj:pass\", \"nummod\", \"obj\", \"obl\", \"punct\", \"root\", \"xcomp\"]}",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 2,
+          "metadata_lang_code": "af",
+          "metadata_iso_639_3": "afr",
+          "metadata_language_name": "Afrikaans",
+          "metadata_wals_word_order": "",
+          "metadata_glottolog_family_name": "Indo-European",
+          "metadata_macroarea": "Africa",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 2,
+          "metadata_head_direction_entropy_binary": 0.9792,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 1315,
+          "metadata_num_tokens": 33878
+        }
+      ]
+    }
+  ]
+}

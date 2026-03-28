@@ -1,0 +1,60 @@
+{
+  "datasets": [
+    {
+      "dataset": "contrastive_dependency_tree_pairs",
+      "examples": [
+        {
+          "input": "{\"n_words\":5,\"tree_topology\":\"(()()()())\",\"heads_array\":[0,1,1,1,1],\"words\":[1,2,3,4,5]}",
+          "output": "{\"dd_list\":[1,2,3,4],\"dd_multiset\":\"1,2,3,4\",\"imb_profile\":[0.0,4.0,6.0,6.0,4.0],\"max_imb\":6.0,\"mean_imb\":4.0,\"llf\":0.6666666666666666,\"total_imb\":20.0,\"total_imb_formula\":20.0,\"formula_verified\":true...",
+          "metadata_fold": "all",
+          "metadata_tree_topology_id": "t5_000",
+          "metadata_linearization_id": 0,
+          "metadata_contrastive_group_id": "wg_00000",
+          "metadata_cross_topo_group_id": "xg_00000",
+          "metadata_is_contrastive": true,
+          "metadata_is_cross_contrastive": true,
+          "metadata_is_worked_example": false,
+          "metadata_n_deps_in_tree": 4,
+          "metadata_n_words": 5,
+          "metadata_dd_multiset": "1,2,3,4",
+          "metadata_max_imb": 6.0,
+          "metadata_llf": 0.6666666666666666
+        },
+        {
+          "input": "{\"n_words\":5,\"tree_topology\":\"(()()()())\",\"heads_array\":[2,0,2,2,2],\"words\":[1,2,3,4,5]}",
+          "output": "{\"dd_list\":[1,1,2,3],\"dd_multiset\":\"1,1,2,3\",\"imb_profile\":[0.0,1.0,3.0,4.0,3.0],\"max_imb\":4.0,\"mean_imb\":2.2,\"llf\":0.55,\"total_imb\":11.0,\"total_imb_formula\":11.0,\"formula_verified\":true,\"cost_alpha_1...",
+          "metadata_fold": "all",
+          "metadata_tree_topology_id": "t5_000",
+          "metadata_linearization_id": 1,
+          "metadata_contrastive_group_id": "wg_00001",
+          "metadata_cross_topo_group_id": "xg_00001",
+          "metadata_is_contrastive": true,
+          "metadata_is_cross_contrastive": true,
+          "metadata_is_worked_example": false,
+          "metadata_n_deps_in_tree": 4,
+          "metadata_n_words": 5,
+          "metadata_dd_multiset": "1,1,2,3",
+          "metadata_max_imb": 4.0,
+          "metadata_llf": 0.55
+        },
+        {
+          "input": "{\"n_words\":5,\"tree_topology\":\"(()()()())\",\"heads_array\":[3,3,0,3,3],\"words\":[1,2,3,4,5]}",
+          "output": "{\"dd_list\":[1,1,2,2],\"dd_multiset\":\"1,1,2,2\",\"imb_profile\":[0.0,1.0,3.0,2.0,2.0],\"max_imb\":3.0,\"mean_imb\":1.6,\"llf\":0.5333333333333333,\"total_imb\":8.0,\"total_imb_formula\":8.0,\"formula_verified\":true,\"...",
+          "metadata_fold": "all",
+          "metadata_tree_topology_id": "t5_000",
+          "metadata_linearization_id": 2,
+          "metadata_contrastive_group_id": "",
+          "metadata_cross_topo_group_id": "xg_00002",
+          "metadata_is_contrastive": false,
+          "metadata_is_cross_contrastive": true,
+          "metadata_is_worked_example": false,
+          "metadata_n_deps_in_tree": 4,
+          "metadata_n_words": 5,
+          "metadata_dd_multiset": "1,1,2,2",
+          "metadata_max_imb": 3.0,
+          "metadata_llf": 0.5333333333333333
+        }
+      ]
+    }
+  ]
+}

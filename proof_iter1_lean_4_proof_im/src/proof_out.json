@@ -1,0 +1,52 @@
+{
+  "proof_successful": true,
+  "verified": true,
+  "lean_code": "import Mathlib.Tactic\nimport Mathlib.Algebra.BigOperators.Group.Finset\nimport Mathlib.Algebra.BigOperators.Intervals\nimport Mathlib.Analysis.Convex.Jensen\nimport Mathlib.Analysis.Convex.SpecificFunctions.Basic\n\nopen Finset BigOperators\n\n/-! # IMB Decomposition and Convex Cost Optimality\n\nFormal verification of two foundational theorems for the\nParametric Convex-Cost Load Smoothing hypothesis:\n\n1. **Gauss Sum / IMB Decomposition**: Total IMB decomposes via\n   the arithmetic series formula into a function of dependency distances.\n\n2. **Jensen-based Convex Cost Optimality**: Under any strictly convex\n   cost function (α > 1), uniform load distribution minimizes total cost.\n-/\n\n/-! ## Part 1: Gauss Sum and IMB Decomposition -/\n\n/-- Gauss sum (multiplication form): (∑_{i=0}^{d} i) * 2 = d * (d + 1).\n    Uses multiplication to avoid natural number division issues. -/\nlemma gauss_sum_mul_two (d : ℕ) :\n    (∑ i in Finset.range (d + 1), i) * 2 = d * (d + 1) := by\n  have h := Finset.sum_range_id_mul_two (d + 1)\n  simp only [Nat.add_sub_cancel] at h\n  linarith\n\n/-- IMB decomposition: for dependencies with distances d_1,...,d_m,\n    2 * ∑_k ∑_{i=0}^{d_k} i = ∑_k d_k * (d_k + 1).\n    Total IMB decomposes into per-dependency Gauss contributions. -/\ntheorem imb_decomposition {m : ℕ} (dist : Fin m → ℕ) :\n    (∑ k : Fin m, ∑ i in Finset.range (dist k + 1), i) * 2 =\n    ∑ k : Fin m, dist k * (dist k + 1) := by\n  rw [Finset.sum_mul]\n  congr 1; ext k; exact gauss_sum_mul_two (dist k)\n\n/-- Summation order equivalence: swapping nested finite sums.\n    Position-centric IMB equals dependency-centric IMB. -/\ntheorem sum_order_swap {α : Type*} [AddCommMonoid α]\n    {I J : Type*} (s : Finset I) (t : Finset J) (f : I → J → α) :\n    ∑ i in s, ∑ j in t, f i j = ∑ j in t, ∑ i in s, f i j :=\n  Finset.sum_comm\n\n/-! ## Part 2: Convex Cost Optimality -/\n\n/-- Power functions x^p are strictly convex on [0,∞) for p > 1.\n    Direct instantiation of Mathlib's strictConvexOn_rpow. -/\nlemma rpow_strict_convex_on {p : ℝ} (hp : 1 < p) :\n    StrictConvexOn ℝ (Set.Ici (0 : ℝ)) (fun x : ℝ => x ^ p) :=\n  strictConvexOn_rpow hp\n\n/-- Jensen's inequality application: uniform load minimizes convex cost.\n    For convex f on [0,∞) and non-negative x_1,...,x_n summing to S:\n    n * f(S/n) ≤ ∑ f(x_i). -/\ntheorem jensen_uniform_optimal\n    {n : ℕ} (hn : 0 < n)\n    {f : ℝ → ℝ} (hf : ConvexOn ℝ (Set.Ici (0 : ℝ)) f)\n    (x : Fin n → ℝ) (hx : ∀ i, 0 ≤ x i)\n    (S : ℝ) (hS : ∑ i : Fin n, x i = S) :\n    (n : ℝ) * f (S / (n : ℝ)) ≤ ∑ i : Fin n, f (x i) := by\n  have hn_pos : (0 : ℝ) < (n : ℝ) := Nat.cast_pos.mpr hn\n  have hn_ne : (n : ℝ) ≠ 0 := ne_of_gt hn_pos\n  -- Weights non-negative\n  have hw_nn : ∀ i ∈ (Finset.univ : Finset (Fin n)), 0 ≤ (n : ℝ)⁻¹ :=\n    fun _ _ => le_of_lt (inv_pos.mpr hn_pos)\n  -- Weights sum to 1\n  have hw_sum : ∑ _i : Fin n, ((n : ℝ)⁻¹ : ℝ) = 1 := by\n    rw [Finset.sum_const, Finset.card_fin, nsmul_eq_mul]\n    exact mul_inv_cancel₀ hn_ne\n  -- Points in convex set\n  have hx_mem : ∀ i ∈ (Finset.univ : Finset (Fin n)), x i ∈ Set.Ici (0 : ℝ) :=\n    fun i _ => Set.mem_Ici.mpr (hx i)\n  -- Apply Jensen's inequality\n  have hj := hf.map_sum_le hw_nn hw_sum hx_mem\n  -- hj : f (∑ i, (n:ℝ)⁻¹ • x i) ≤ ∑ i, (n:ℝ)⁻¹ • f (x i)\n  -- Simplify smul to mul and factor constants out of sums\n  simp only [smul_eq_mul, ← Finset.mul_sum] at hj\n  -- hj : f ((n:ℝ)⁻¹ * ∑ i, x i) ≤ (n:ℝ)⁻¹ * ∑ i, f (x i)\n  rw [hS, ← div_eq_inv_mul] at hj\n  -- hj : f (S / n) ≤ (n:ℝ)⁻¹ * ∑ i, f (x i)\n  -- Multiply both sides by n\n  calc (n : ℝ) * f (S / (n : ℝ))\n      ≤ (n : ℝ) * ((n : ℝ)⁻¹ * ∑ i : Fin n, f (x i)) :=\n        mul_le_mul_of_nonneg_left hj (le_of_lt hn_pos)\n    _ = ∑ i : Fin n, f (x i) := by\n        rw [← mul_assoc, mul_inv_cancel₀ hn_ne, one_mul]\n\n/-- Linear cost negative control: at α=1, total cost = S\n    regardless of how load is distributed. -/\ntheorem linear_cost_invariant\n    {n : ℕ} (x : Fin n → ℝ) (S : ℝ) (hS : ∑ i : Fin n, x i = S) :\n    ∑ i : Fin n, x i = S := hS\n",
+  "proof_explanation": "The proof formalizes two foundational theorems for the Parametric Convex-Cost Load Smoothing hypothesis in Lean 4 + Mathlib. Part 1 (IMB Decomposition): The Gauss sum lemma uses Mathlib's Finset.sum_range_id_mul_two to establish that the sum of 0..d multiplied by 2 equals d*(d+1), using the multiplication form to avoid natural number division. The IMB decomposition theorem distributes multiplication into the outer sum via Finset.sum_mul, then applies the Gauss sum pointwise via congr+ext. The sum order swap is a direct application of Finset.sum_comm. Part 2 (Convex Cost Optimality): The power function strict convexity lemma directly instantiates Mathlib's strictConvexOn_rpow. The Jensen theorem is the centerpiece: it sets uniform weights w_i = 1/n, proves they are non-negative (via inv_pos) and sum to 1 (via Finset.sum_const + nsmul_eq_mul + mul_inv_cancel), then applies ConvexOn.map_sum_le (Mathlib's Jensen inequality). The result is simplified by converting smul to mul, factoring constants out of sums, substituting the sum constraint, and finally multiplying both sides by n using a calc block with mul_le_mul_of_nonneg_left and mul_inv_cancel. The linear cost negative control is trivially proved by the hypothesis itself.",
+  "lemmas": [
+    {
+      "name": "gauss_sum_mul_two",
+      "statement": "lemma gauss_sum_mul_two (d : ℕ) : (∑ i in Finset.range (d + 1), i) * 2 = d * (d + 1)",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "have (Finset.sum_range_id_mul_two) + simp + linarith"
+    },
+    {
+      "name": "imb_decomposition",
+      "statement": "theorem imb_decomposition {m : ℕ} (dist : Fin m → ℕ) : (∑ k : Fin m, ∑ i in Finset.range (dist k + 1), i) * 2 = ∑ k : Fin m, dist k * (dist k + 1)",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "rw [Finset.sum_mul] + congr + ext + gauss_sum_mul_two"
+    },
+    {
+      "name": "sum_order_swap",
+      "statement": "theorem sum_order_swap {α : Type*} [AddCommMonoid α] {I J : Type*} (s : Finset I) (t : Finset J) (f : I → J → α) : ∑ i in s, ∑ j in t, f i j = ∑ j in t, ∑ i in s, f i j",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "exact Finset.sum_comm"
+    },
+    {
+      "name": "rpow_strict_convex_on",
+      "statement": "lemma rpow_strict_convex_on {p : ℝ} (hp : 1 < p) : StrictConvexOn ℝ (Set.Ici (0 : ℝ)) (fun x : ℝ => x ^ p)",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "exact strictConvexOn_rpow hp"
+    },
+    {
+      "name": "jensen_uniform_optimal",
+      "statement": "theorem jensen_uniform_optimal {n : ℕ} (hn : 0 < n) {f : ℝ → ℝ} (hf : ConvexOn ℝ (Set.Ici (0 : ℝ)) f) (x : Fin n → ℝ) (hx : ∀ i, 0 ≤ x i) (S : ℝ) (hS : ∑ i : Fin n, x i = S) : (n : ℝ) * f (S / (n : ℝ)) ≤ ∑ i : Fin n, f (x i)",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "ConvexOn.map_sum_le + simp [smul_eq_mul] + calc with mul_le_mul_of_nonneg_left + mul_inv_cancel"
+    },
+    {
+      "name": "linear_cost_invariant",
+      "statement": "theorem linear_cost_invariant {n : ℕ} (x : Fin n → ℝ) (S : ℝ) (hS : ∑ i : Fin n, x i = S) : ∑ i : Fin n, x i = S",
+      "compiler_out": "{\"success\": true, \"verified\": true, \"has_sorries\": false, \"errors\": [], \"warnings\": []}",
+      "is_compiler_verified": true,
+      "tactic": "exact hS"
+    }
+  ],
+  "approaches_tried": [],
+  "error_messages": []
+}

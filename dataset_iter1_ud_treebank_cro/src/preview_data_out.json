@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "description": "Cross-linguistic typological and modality metadata for all UD treebanks. Compiled from commul/universal_dependencies (HuggingFace), WALS Feature 81A (word order), Glottolog CLDF (language families), a...",
+    "source": "commul/universal_dependencies",
+    "version": "1.0",
+    "total_treebanks": 336,
+    "external_sources": [
+      "WALS Feature 81A (word order classification)",
+      "Glottolog CLDF (language family/macroarea)",
+      "Dobrovoljc 2022 (spoken treebank survey)"
+    ],
+    "coverage": {
+      "wals_word_order_pct": 61.3,
+      "glottolog_family_pct": 92.6
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "commul/universal_dependencies",
+      "examples": [
+        {
+          "input": "abq_atb",
+          "output": "{\"treebank_id\": \"abq_atb\", \"lang_code\": \"abq\", \"iso_639_3\": \"abq\", \"language_name\": \"Abaza\", \"wals_word_order\": null, \"wals_code\": null, \"wals_family\": null, \"wals_genus\": null, \"glottocode\": \"abaz124...",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 0,
+          "metadata_lang_code": "abq",
+          "metadata_iso_639_3": "abq",
+          "metadata_language_name": "Abaza",
+          "metadata_wals_word_order": "",
+          "metadata_glottolog_family_name": "Abkhaz-Adyge",
+          "metadata_macroarea": "Eurasia",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 1,
+          "metadata_head_direction_entropy_binary": 0.9358,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 98,
+          "metadata_num_tokens": 652
+        },
+        {
+          "input": "ab_abnc",
+          "output": "{\"treebank_id\": \"ab_abnc\", \"lang_code\": \"ab\", \"iso_639_3\": \"abk\", \"language_name\": \"Abkhaz\", \"wals_word_order\": \"SOV\", \"wals_code\": \"abk\", \"wals_family\": \"Northwest Caucasian\", \"wals_genus\": \"Northwes...",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 1,
+          "metadata_lang_code": "ab",
+          "metadata_iso_639_3": "abk",
+          "metadata_language_name": "Abkhaz",
+          "metadata_wals_word_order": "SOV",
+          "metadata_glottolog_family_name": "Abkhaz-Adyge",
+          "metadata_macroarea": "Eurasia",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 8,
+          "metadata_head_direction_entropy_binary": 0.9318,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 1316,
+          "metadata_num_tokens": 10585
+        },
+        {
+          "input": "af_afribooms",
+          "output": "{\"treebank_id\": \"af_afribooms\", \"lang_code\": \"af\", \"iso_639_3\": \"afr\", \"language_name\": \"Afrikaans\", \"wals_word_order\": null, \"wals_code\": null, \"wals_family\": null, \"wals_genus\": null, \"glottocode\": ...",
+          "metadata_fold": "metadata",
+          "metadata_task_type": "metadata_compilation",
+          "metadata_row_index": 2,
+          "metadata_lang_code": "af",
+          "metadata_iso_639_3": "afr",
+          "metadata_language_name": "Afrikaans",
+          "metadata_wals_word_order": "",
+          "metadata_glottolog_family_name": "Indo-European",
+          "metadata_macroarea": "Africa",
+          "metadata_modality": "written",
+          "metadata_spoken_written_pair_id": "",
+          "metadata_case_richness_count": 2,
+          "metadata_head_direction_entropy_binary": 0.9792,
+          "metadata_has_dom": false,
+          "metadata_num_sentences": 1315,
+          "metadata_num_tokens": 33878
+        }
+      ]
+    }
+  ]
+}
