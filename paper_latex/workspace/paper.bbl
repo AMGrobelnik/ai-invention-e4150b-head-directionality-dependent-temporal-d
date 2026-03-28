@@ -1,0 +1,173 @@
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aggarwal(2025)]{Aggarwal2025}
+Krishna Aggarwal.
+\newblock Cross-linguistic analysis of memory load in sentence comprehension:
+  Linear distance and structural density.
+\newblock \emph{arXiv preprint arXiv:2509.20916}, 2025.
+\newblock \doi{10.48550/arXiv.2509.20916}.
+
+\bibitem[Bresnan et~al.(2007)Bresnan, Cueni, Nikitina, and Baayen]{Bresnan2007}
+Joan Bresnan, Anna Cueni, Tatiana Nikitina, and Harald Baayen.
+\newblock Predicting the dative alternation.
+\newblock In Gerlof Bouma, Irene Kr{\"a}mer, and Joost Zwarts, editors,
+  \emph{Cognitive Foundations of Interpretation}, pages 69--94. Royal
+  Netherlands Academy of Arts and Sciences, 2007.
+
+\bibitem[Chen et~al.(2005)Chen, Gibson, and Wolf]{Chen2005}
+Evan Chen, Edward Gibson, and Florian Wolf.
+\newblock Online syntactic storage costs in sentence comprehension.
+\newblock \emph{Journal of Memory and Language}, 52\penalty0 (1):\penalty0
+  144--169, 2005.
+\newblock \doi{10.1016/j.jml.2004.10.001}.
+
+\bibitem[Clark et~al.(2023)Clark, Meister, Pimentel, Hahn, Cotterell, Futrell,
+  and Levy]{Clark2023}
+Thomas~Hikaru Clark, Clara Meister, Tiago Pimentel, Michael Hahn, Ryan
+  Cotterell, Richard Futrell, and Roger Levy.
+\newblock A cross-linguistic pressure for uniform information density in word
+  order.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  11:\penalty0 1048--1065, 2023.
+\newblock \doi{10.1162/tacl_a_00589}.
+
+\bibitem[de~Marneffe et~al.(2021)de~Marneffe, Manning, Nivre, and
+  Zeman]{deMarneffe2021}
+Marie-Catherine de~Marneffe, Christopher Manning, Joakim Nivre, and Daniel
+  Zeman.
+\newblock Universal dependencies.
+\newblock \emph{Computational Linguistics}, 47\penalty0 (2):\penalty0 255--308,
+  2021.
+\newblock \doi{10.1162/coli_a_00402}.
+
+\bibitem[Dyer(2023)]{Dyer2023}
+Andrew Dyer.
+\newblock Revisiting dependency length and intervener complexity minimisation
+  on a parallel corpus in 35 languages.
+\newblock In \emph{Proceedings of SIGTYP 2023}, 2023.
+\newblock \doi{10.18653/v1/2023.sigtyp-1.11}.
+
+\bibitem[Futrell et~al.(2015)Futrell, Mahowald, and Gibson]{Futrell2015}
+Richard Futrell, Kyle Mahowald, and Edward Gibson.
+\newblock Large-scale evidence of dependency length minimization in 37
+  languages.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 112\penalty0
+  (33):\penalty0 10336--10341, 2015.
+\newblock \doi{10.1073/pnas.1502134112}.
+
+\bibitem[Futrell et~al.(2020)Futrell, Gibson, and Levy]{Futrell2020a}
+Richard Futrell, Edward Gibson, and Roger Levy.
+\newblock Lossy-context surprisal: An information-theoretic model of memory
+  effects in sentence processing.
+\newblock \emph{Cognitive Science}, 44:\penalty0 e12814, 2020.
+\newblock \doi{10.1111/cogs.12814}.
+
+\bibitem[Gerdes et~al.(2019)Gerdes, Guillaume, Kahane, and Perrier]{Gerdes2019}
+Kim Gerdes, Bruno Guillaume, Sylvain Kahane, and Guy Perrier.
+\newblock Improving {Surface-syntactic Universal Dependencies} ({SUD}).
+\newblock In \emph{Proceedings of TLT/DepLing 2019}, 2019.
+
+\bibitem[Gibson(1998)]{Gibson1998}
+Edward Gibson.
+\newblock Linguistic complexity: Locality of syntactic dependencies.
+\newblock \emph{Cognition}, 68\penalty0 (1):\penalty0 1--76, 1998.
+\newblock \doi{10.1016/S0010-0277(98)00034-1}.
+
+\bibitem[Gibson(2000)]{Gibson2000}
+Edward Gibson.
+\newblock The dependency locality theory: A distance-based theory of linguistic
+  complexity.
+\newblock In Alec Marantz, Yasushi Miyashita, and Wayne O'Neil, editors,
+  \emph{Image, Language, Brain}, pages 95--126. MIT Press, 2000.
+
+\bibitem[Gildea and Temperley(2007)]{Gildea2007}
+Daniel Gildea and David Temperley.
+\newblock Optimizing grammars for minimum dependency length.
+\newblock In \emph{Proceedings of ACL 2007}, pages 184--191, 2007.
+
+\bibitem[Gordon et~al.(2002)Gordon, Hendrick, and Levine]{Gordon2002}
+Peter~C. Gordon, Randall Hendrick, and William~H. Levine.
+\newblock Memory-load interference in syntactic processing.
+\newblock \emph{Psychological Science}, 13\penalty0 (5):\penalty0 425--430,
+  2002.
+\newblock \doi{10.1111/1467-9280.00475}.
+
+\bibitem[Graf et~al.(2017)Graf, Monette, and Zhang]{Graf2017}
+Thomas Graf, James Monette, and Chong Zhang.
+\newblock Relative clauses as a benchmark for {Minimalist} parsing.
+\newblock \emph{Journal of Language Modelling}, 5\penalty0 (1):\penalty0
+  57--106, 2017.
+
+\bibitem[Kobele et~al.(2013)Kobele, Gerth, and Hale]{Kobele2013}
+Gregory~M. Kobele, Sabrina Gerth, and John Hale.
+\newblock Memory resource allocation in top-down minimalist parsing.
+\newblock In \emph{Formal Grammar (FG 2012)}, volume 8036 of \emph{LNCS}, pages
+  32--51. Springer, 2013.
+\newblock \doi{10.1007/978-3-642-39998-5_3}.
+
+\bibitem[Konieczny(2000)]{Konieczny2000}
+Lars Konieczny.
+\newblock Locality and parsing complexity.
+\newblock \emph{Journal of Psycholinguistic Research}, 29\penalty0
+  (6):\penalty0 627--645, 2000.
+
+\bibitem[Levy(2008)]{Levy2008}
+Roger Levy.
+\newblock Expectation-based syntactic comprehension.
+\newblock \emph{Cognition}, 106\penalty0 (3):\penalty0 1126--1177, 2008.
+\newblock \doi{10.1016/j.cognition.2007.05.006}.
+
+\bibitem[Lewis and Vasishth(2005)]{Lewis2005}
+Richard~L. Lewis and Shravan Vasishth.
+\newblock An activation-based model of sentence processing as skilled memory
+  retrieval.
+\newblock \emph{Cognitive Science}, 29\penalty0 (3):\penalty0 375--419, 2005.
+\newblock \doi{10.1207/s15516709cog0000_25}.
+
+\bibitem[Liu(2008)]{Liu2008}
+Haitao Liu.
+\newblock Dependency distance as a metric of language comprehension difficulty.
+\newblock \emph{Journal of Cognitive Science}, 9\penalty0 (2):\penalty0
+  159--191, 2008.
+
+\bibitem[Petrini and i~Cancho(2022)]{Petrini2022}
+Sylvain Petrini and Ramon~Ferrer i~Cancho.
+\newblock The distribution of syntactic dependency distances.
+\newblock \emph{Glottometrics}, 58:\penalty0 35--94, 2022.
+
+\bibitem[Temperley and Gildea(2018)]{Temperley2018}
+David Temperley and Daniel Gildea.
+\newblock Minimizing syntactic dependency lengths: Typological/cognitive
+  universal?
+\newblock \emph{Annual Review of Linguistics}, 4:\penalty0 67--80, 2018.
+\newblock \doi{10.1146/annurev-linguistics-011817-045617}.
+
+\bibitem[Vasishth(2003)]{Vasishth2003}
+Shravan Vasishth.
+\newblock \emph{Working Memory in Sentence Comprehension: Processing {Hindi}
+  Center Embeddings}.
+\newblock PhD thesis, Ohio State University, 2003.
+
+\bibitem[Wasow(2002)]{Wasow2002}
+Thomas Wasow.
+\newblock \emph{Postverbal Behavior}.
+\newblock CSLI Publications, Stanford, 2002.
+
+\bibitem[Xu and Futrell(2024)]{Xu2024}
+Weijie Xu and Richard Futrell.
+\newblock Syntactic dependency length shaped by strategic memory allocation.
+\newblock In \emph{Proceedings of SIGTYP 2024}, pages 1--9, 2024.
+\newblock \doi{10.18653/v1/2024.sigtyp-1.1}.
+
+\bibitem[Yadav et~al.(2022)Yadav, Mittal, and Husain]{Yadav2022}
+Himanshu Yadav, Samar Mittal, and Samar Husain.
+\newblock A reappraisal of dependency length minimization as a linguistic
+  universal.
+\newblock \emph{Open Mind}, 6:\penalty0 147--168, 2022.
+
+\end{thebibliography}
