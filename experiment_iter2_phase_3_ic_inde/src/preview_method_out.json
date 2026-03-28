@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "experiment": "phase3_ic_independence",
+    "n_treebanks": 35,
+    "n_sentences_per_tb": 400,
+    "n_baselines_per_sentence": 50,
+    "residualization_r2": 0.9613,
+    "residualization_summary": "R²=0.9613, adj_R²=0.9613, F=2954561.1",
+    "alphas": [
+      1.0,
+      1.2,
+      1.5
+    ],
+    "selected_treebanks": [
+      "en_ewt",
+      "fr_gsd",
+      "de_gsd"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "model_comparison_summary",
+      "examples": [
+        {
+          "input": "model_A",
+          "output": "{\"model\": \"A\", \"description\": \"DD only (mean_dd + dd_variance + dd_skewness + sentence_length + tree_depth + mean_arity)\", \"n_converged\": 35, \"n_treebanks\": 35, \"mean_aic\": 3532.8, \"mean_bic\": 3588.27...",
+          "predict_mean_pseudo_r2": "0.1064",
+          "metadata_model_name": "A"
+        },
+        {
+          "input": "model_B",
+          "output": "{\"model\": \"B\", \"description\": \"DD + IC (Model A + mean_ic + ic_variance + max_ic)\", \"n_converged\": 35, \"n_treebanks\": 35, \"mean_aic\": 3376.7, \"mean_bic\": 3455.93, \"mean_pseudo_r2\": 0.1475, \"median_pse...",
+          "predict_mean_pseudo_r2": "0.1475",
+          "metadata_model_name": "B"
+        },
+        {
+          "input": "model_C",
+          "output": "{\"model\": \"C\", \"description\": \"DD + IC + LLF (Model B + llf)\", \"n_converged\": 35, \"n_treebanks\": 35, \"mean_aic\": 3296.64, \"mean_bic\": 3383.8, \"mean_pseudo_r2\": 0.1684, \"median_pseudo_r2\": 0.1709}",
+          "predict_mean_pseudo_r2": "0.1684",
+          "metadata_model_name": "C"
+        }
+      ]
+    },
+    {
+      "dataset": "per_treebank_results",
+      "examples": [
+        {
+          "input": "en_ewt",
+          "output": "{\"treebank_id\": \"en_ewt\", \"word_order\": \"SVO\", \"family\": \"Indo-European\", \"models\": {\"A\": {\"converged\": true, \"llf\": -1796.995234239724, \"aic\": 3607.990468479448, \"bic\": 3663.453499738274, \"n_params\":...",
+          "predict_llf_significant": "false",
+          "predict_resid_max_imb_significant": "false",
+          "metadata_treebank_id": "en_ewt",
+          "metadata_word_order": "SVO",
+          "metadata_family": "Indo-European"
+        },
+        {
+          "input": "fr_gsd",
+          "output": "{\"treebank_id\": \"fr_gsd\", \"word_order\": \"SVO\", \"family\": \"Indo-European\", \"models\": {\"A\": {\"converged\": true, \"llf\": -1642.4217786646104, \"aic\": 3298.843557329221, \"bic\": 3354.306588588047, \"n_params\"...",
+          "predict_llf_significant": "true",
+          "predict_resid_max_imb_significant": "true",
+          "metadata_treebank_id": "fr_gsd",
+          "metadata_word_order": "SVO",
+          "metadata_family": "Indo-European"
+        },
+        {
+          "input": "de_gsd",
+          "output": "{\"treebank_id\": \"de_gsd\", \"word_order\": \"No dominant order\", \"family\": \"Indo-European\", \"models\": {\"A\": {\"converged\": true, \"llf\": -1887.1136808145698, \"aic\": 3788.2273616291395, \"bic\": 3843.690392887...",
+          "predict_llf_significant": "true",
+          "predict_resid_max_imb_significant": "true",
+          "metadata_treebank_id": "de_gsd",
+          "metadata_word_order": "No dominant order",
+          "metadata_family": "Indo-European"
+        }
+      ]
+    },
+    {
+      "dataset": "meta_analysis",
+      "examples": [
+        {
+          "input": "llf_meta",
+          "output": "{\"pooled_effect\": -0.047234082923743786, \"se\": 0.08734735758394349, \"ci_lower\": -0.21843490378827302, \"ci_upper\": 0.12396673794078544, \"z\": -0.5407614406463341, \"p_value\": 0.5886720235418028, \"tau2\": ...",
+          "predict_pooled_effect": "-0.047234",
+          "predict_p_value": "0.588672",
+          "metadata_variable": "llf",
+          "metadata_test": "B_vs_C"
+        },
+        {
+          "input": "resid_max_imb_meta",
+          "output": "{\"pooled_effect\": -0.10588414493224467, \"se\": 0.08158504761704528, \"ci_lower\": -0.26579083826165345, \"ci_upper\": 0.0540225483971641, \"z\": -1.2978376310970328, \"p_value\": 0.19434313547757642, \"tau2\": 0...",
+          "predict_pooled_effect": "-0.105884",
+          "predict_p_value": "0.194343",
+          "metadata_variable": "resid_max_imb",
+          "metadata_test": "B_vs_D"
+        },
+        {
+          "input": "ic_bidirectional_meta",
+          "output": "{\"pooled_effect\": -1.7430386911290934, \"se\": 0.3405880235398725, \"ci_lower\": -2.4105912172672435, \"ci_upper\": -1.0754861649909433, \"z\": -5.117733363061243, \"p_value\": 3.0922933845778574e-07, \"tau2\": 3...",
+          "predict_pooled_effect": "-1.743039",
+          "predict_p_value": "0.0",
+          "metadata_variable": "mean_ic",
+          "metadata_test": "F_vs_G"
+        }
+      ]
+    }
+  ]
+}

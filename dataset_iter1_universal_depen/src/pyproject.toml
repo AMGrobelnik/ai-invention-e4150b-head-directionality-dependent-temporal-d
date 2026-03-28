@@ -1,0 +1,22 @@
+[project]
+name = "ud-treebank-feature-extraction"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+description = "Download and process Universal Dependencies treebanks for IMB/LLF analysis"
+dependencies = [
+    "datasets==4.8.4",
+    "huggingface-hub==1.8.0",
+    "loguru==0.7.3",
+    "numpy==2.4.3",
+    "scipy==1.17.1",
+    "pyarrow==23.0.1",
+    "fsspec==2026.2.0",
+    "requests==2.33.0",
+    "tqdm==4.67.3",
+    "pandas==3.0.1",
+    "dill==0.4.1",
+    "multiprocess==0.70.19",
+    "xxhash==3.6.0",
+    "aiohttp==3.13.3",
+    "pyyaml==6.0.3",
+]
