@@ -1,0 +1,9 @@
+[project]
+name = "exp-id1-it3"
+version = "0.1.0"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "numpy==1.26.4",
+    "scipy==1.17.1",
+    "loguru==0.7.3",
+]

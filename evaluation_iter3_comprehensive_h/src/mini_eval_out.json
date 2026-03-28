@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "evaluation": "comprehensive_synthesis_hypothesis_criteria_assessment",
+    "description": "This synthesis evaluates 7 pre-registered criteria for the load-smoothing hypothesis across 4 experiments covering 335 treebanks. Results: 0 criteria fully confirmed, 1 partial pass (novelty R²), 1 weak pass (α=1 control), 1 inconclusive (IC independence), and 4 failures (coverage, monotonicity, modality, case-marking). The primary empirical finding is a strong typological split (VSO>SVO>SOV) with a 1.58 SD gradient, which is explicitly exploratory and post-hoc. The head-initial-only IMB variant provides a mechanistic explanation for the SOV pattern via 68% peak IMB reduction. Of 8 reviewer critiques, 3 are fully resolved and 5 partially addressed. Major paper revisions needed: reframe as exploratory, drop failed predictions, add confirmatory/exploratory distinction.",
+    "n_experiments_synthesized": 4,
+    "n_criteria_evaluated": 7,
+    "n_reviewer_critiques": 8,
+    "n_revision_recommendations": 11,
+    "what_paper_can_claim": "The paper can claim: (1) A strong typological split exists in load-smoothing behavior: VSO languages show substantially higher real LLF than projective baselines (median d=1.039), SVO languages show near-zero difference (d=0.134), and SOV languages show reverse patterns (d=-0.546). (2) The head-initial-only IMB variant captures novel signal beyond DD statistics (R²=0.8827 < 0.90), particularly for head-initial dependencies. (3) This variant explains the SOV anti-smoothing pattern via 68% reduction in peak IMB. (4) IC and temporal overlap are partially independent (bidirectional test p=3.09e-07), though effects vary in direction across languages. (5) Head-final dependency proportion correlates strongly with the load-smoothing differential (r=0.501).",
+    "what_paper_cannot_claim": "The paper cannot claim: (1) Universal load smoothing — only 31.4% of treebanks exceed d>0.2, far below the 70% threshold. (2) Monotonically increasing convexity effects — the residualized test fails. (3) Spoken modality shows greater smoothing — only 3/7 pairs support this. (4) Case-marking or DOM predict smoothing — both show null results. (5) The typological split is a confirmed pre-registered finding — it is explicitly exploratory and the VSO anchor rests on n=7 treebanks. (6) A clean negative control at α=1 — d=-0.0847 is small but not zero."
+  },
+  "metrics_agg": {
+    "novelty_r2_standard": 0.9475,
+    "novelty_r2_encounter_only": 0.8827,
+    "novel_variance_standard_pct": 5.25,
+    "novel_variance_encounter_pct": 11.73,
+    "treebank_coverage_d_gt_02": 0.314,
+    "median_cohen_d_overall": -0.0636,
+    "alpha1_negative_control_d": -0.0847,
+    "monotonic_alpha_spearman_rho_resid": -0.7,
+    "monotonic_alpha_is_monotonic": 0,
+    "ic_independence_pct_llf_significant": 0.7429,
+    "ic_meta_llf_pooled_p": 0.588672,
+    "ic_meta_resid_pooled_p": 0.194343,
+    "ic_meta_bidirectional_p": 3.092e-07,
+    "spoken_written_pct_higher": 0.4286,
+    "spoken_written_n_pairs": 7,
+    "case_richness_r": -0.0474,
+    "case_richness_p": 0.7412,
+    "dom_coefficient": -0.000565,
+    "dom_p": 0.204,
+    "typological_vso_median_d": 1.0387,
+    "typological_svo_median_d": 0.1341,
+    "typological_sov_median_d": -0.5459,
+    "typological_gradient_sd": 1.5845,
+    "head_final_corr_r": 0.5008,
+    "sov_svo_llf_delta_d": 2.5766,
+    "sov_peak_imb_reduction_mean_pct": 68.5,
+    "head_final_r2_std": 0.9423,
+    "head_final_r2_enc": 0.6469,
+    "n_confirmed": 0,
+    "n_exploratory_findings": 2,
+    "n_partial_pass": 1,
+    "n_weak_pass": 1,
+    "n_inconclusive": 1,
+    "n_fail": 4,
+    "reviewer_fully_resolved": 3,
+    "reviewer_partially_addressed": 5,
+    "reviewer_unresolved": 0
+  },
+  "datasets": [
+    {
+      "dataset": "criteria_verdicts",
+      "examples": [
+        {
+          "input": "Novelty R² Test",
+          "output": "{\"criterion\": \"Novelty R\\u00b2 Test\", \"verdict\": \"PARTIAL PASS\", \"evidence\": \"Standard IMB is largely predictable from DD moments (R\\u00b2=0.9475), meaning temporal overlap adds only 5.25% novel variance. However, the head-initial-only variant (R\\u00b2=0.8827) falls below the 0.90 threshold, confirming genuine novel signal (11.73% novel variance) when head-final dependencies are excluded. Per-head-type: head-final n=83, head-initial n=141, mixed n=70.\", \"source_experiment\": \"exp_id1\", \"r2_standard\": 0.9475, \"r2_encounter_only\": 0.8827, \"novel_variance_standard_pct\": 5.25, \"novel_variance_encounter_pct\": 11.73, \"head_type_details\": {\"head_final\": {\"n_treebanks\": 83, \"r2_std_mean\": 0.9423, \"r2_enc_mean\": 0.6469}, \"head_initial\": {\"n_treebanks\": 141, \"r2_std_mean\": 0.9325, \"r2_enc_mean\": 0.8711}, \"mixed\": {\"n_treebanks\": 70, \"r2_std_mean\": 0.9307, \"r2_enc_mean\": 0.8064}}, \"treebank_count_note\": \"R\\u00b2 computed on 294 treebanks; head-type sum=294; total=335\"}",
+          "predict_verdict": "PARTIAL PASS",
+          "eval_criterion_pass": 1,
+          "metadata_source_experiment": "exp_id1",
+          "metadata_criterion_name": "Novelty R² Test"
+        },
+        {
+          "input": "Treebank Coverage (d>0.2)",
+          "output": "{\"criterion\": \"Treebank Coverage (d>0.2)\", \"verdict\": \"FAIL\", \"evidence\": \"FAIL on pre-registered threshold (31.4% vs \\u226570%). However, typological stratification reveals the aggregate failure masks a strong word-order-dependent pattern: VSO median d=1.039 (n=7), SVO median d=0.134 (n=24), SOV median d=-0.546 (n=26), other median d=-0.045 (n=29).\", \"source_experiment\": \"exp_id2\", \"proportion_d_gt_02\": 0.314, \"threshold\": 0.7, \"median_cohen_d_overall\": -0.0636, \"by_word_order\": {\"SOV\": {\"n\": 26, \"median_d\": -0.5458541193529757, \"mean_d\": -0.4876027980870027}, \"other\": {\"n\": 29, \"median_d\": -0.04522706093430924, \"mean_d\": -0.019678175614508134}, \"VSO\": {\"n\": 7, \"median_d\": 1.038653886534236, \"mean_d\": 1.0393826099792964}, \"SVO\": {\"n\": 24, \"median_d\": 0.13414442774265187, \"mean_d\": 0.12354632723981386}}, \"per_word_order_detailed\": {\"SOV\": {\"n\": 26, \"median_d\": -0.5459, \"prop_d_gt_02\": 0.0769, \"iqr\": [-0.7388, -0.2758]}, \"unknown\": {\"n\": 25, \"median_d\": -0.03, \"prop_d_gt_02\": 0.36, \"iqr\": [-0.3016, 0.3045]}, \"VSO\": {\"n\": 7, \"median_d\": 1.0387, \"prop_d_gt_02\": 1.0, \"iqr\": [0.6866, 1.263]}, \"No dominant order\": {\"n\": 4, \"median_d\": -0.2652, \"prop_d_gt_02\": 0.0, \"iqr\": [-0.3156, 0.1686]}, \"SVO\": {\"n\": 24, \"median_d\": 0.1341, \"prop_d_gt_02\": 0.375, \"iqr\": [-0.0388, 0.475]}}}",
+          "predict_verdict": "FAIL",
+          "eval_criterion_pass": 0,
+          "metadata_source_experiment": "exp_id2",
+          "metadata_criterion_name": "Treebank Coverage (d>0.2)"
+        },
+        {
+          "input": "α=1 Negative Control",
+          "output": "{\"criterion\": \"\\u03b1=1 Negative Control\", \"verdict\": \"WEAK PASS\", \"evidence\": \"d=-0.0847, |d|=0.0847. Small but not zero. Negative control does not cleanly pass.\", \"source_experiment\": \"exp_id2\", \"alpha1_residualized_d\": -0.0847}",
+          "predict_verdict": "WEAK PASS",
+          "eval_criterion_pass": 1,
+          "metadata_source_experiment": "exp_id2",
+          "metadata_criterion_name": "α=1 Negative Control"
+        }
+      ]
+    },
+    {
+      "dataset": "typological_split",
+      "examples": [
+        {
+          "input": "VSO",
+          "output": "{\"word_order\": \"VSO\", \"median_d\": 1.038653886534236, \"n\": 7, \"fragility_note\": \"n=7 is critically small. Leave-one-out not yet run. Requires replication with additional VSO treebanks.\"}",
+          "predict_median_d": "1.0387",
+          "eval_n_treebanks": 7,
+          "metadata_word_order": "VSO"
+        },
+        {
+          "input": "SVO",
+          "output": "{\"word_order\": \"SVO\", \"median_d\": 0.13414442774265187, \"n\": 24, \"fragility_note\": \"\"}",
+          "predict_median_d": "0.1341",
+          "eval_n_treebanks": 24,
+          "metadata_word_order": "SVO"
+        },
+        {
+          "input": "SOV",
+          "output": "{\"word_order\": \"SOV\", \"median_d\": -0.5458541193529757, \"n\": 26, \"fragility_note\": \"\"}",
+          "predict_median_d": "-0.5459",
+          "eval_n_treebanks": 26,
+          "metadata_word_order": "SOV"
+        }
+      ]
+    },
+    {
+      "dataset": "confirmatory_vs_exploratory",
+      "examples": [
+        {
+          "input": "Temporal overlap is novel beyond DD",
+          "output": "{\"finding\": \"Temporal overlap is novel beyond DD\", \"status\": \"PARTIAL PASS (exploratory)\", \"evidence\": \"Standard R\\u00b2=0.9475 fails novelty threshold; encounter-only R\\u00b2=0.8827 passes\"}",
+          "predict_status": "PARTIAL PASS (exploratory)",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Temporal overlap is novel beyond DD"
+        },
+        {
+          "input": "Universal load smoothing (d>0.2 in ≥70%)",
+          "output": "{\"finding\": \"Universal load smoothing (d>0.2 in \\u226570%)\", \"status\": \"FAIL (confirmatory prediction)\", \"evidence\": \"Only 31.4% of treebanks exceed d>0.2 threshold\"}",
+          "predict_status": "FAIL (confirmatory prediction)",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Universal load smoothing (d>0.2 in ≥70%)"
+        },
+        {
+          "input": "Convexity α=1 negative control",
+          "output": "{\"finding\": \"Convexity \\u03b1=1 negative control\", \"status\": \"WEAK PASS\", \"evidence\": \"d=-0.0847, |d|=0.0847. Small but not zero. Negative control does not cleanly pass.\"}",
+          "predict_status": "WEAK PASS",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Convexity α=1 negative control"
+        }
+      ]
+    },
+    {
+      "dataset": "reviewer_resolution",
+      "examples": [
+        {
+          "input": "Encounter-only code-paper mismatch",
+          "output": "{\"critique\": \"Encounter-only code-paper mismatch\", \"status\": \"FULLY RESOLVED\", \"detail\": \"Relabeled to 'head-initial-only IMB' with honest description. exp_id1 and exp_id4 both implement and report the head-initial-only variant consistently throughout.\"}",
+          "predict_resolution_status": "FULLY RESOLVED",
+          "eval_is_resolved": 1,
+          "metadata_critique": "Encounter-only code-paper mismatch"
+        },
+        {
+          "input": "VSO fragility (n=7)",
+          "output": "{\"critique\": \"VSO fragility (n=7)\", \"status\": \"PARTIALLY ADDRESSED\", \"detail\": \"Acknowledged: VSO n=7 treebanks with median d=1.039. Leave-one-out analysis not yet run in these experiments. Language family diversity of VSO sample not assessed.\"}",
+          "predict_resolution_status": "PARTIALLY ADDRESSED",
+          "eval_is_resolved": 0,
+          "metadata_critique": "VSO fragility (n=7)"
+        },
+        {
+          "input": "R² monotonicity mathematical confound",
+          "output": "{\"critique\": \"R\\u00b2 monotonicity mathematical confound\", \"status\": \"FULLY RESOLVED\", \"detail\": \"Separated mathematical from empirical: non-residualized R\\u00b2 monotonicity confirmed (\\u03c1=-1.0000) but flagged as partly mathematical. Residualized test reported (\\u03c1=-0.7000), honestly showing failure.\"}",
+          "predict_resolution_status": "FULLY RESOLVED",
+          "eval_is_resolved": 1,
+          "metadata_critique": "R² monotonicity mathematical confound"
+        }
+      ]
+    },
+    {
+      "dataset": "paper_revisions",
+      "examples": [
+        {
+          "input": "Rewrite abstract to lead with typological split as exploratory finding",
+          "output": "{\"priority\": \"HIGH\", \"recommendation\": \"Rewrite abstract to lead with typological split as exploratory finding\", \"rationale\": \"The universal load smoothing prediction failed (31.4% vs 70% threshold). The primary empirical contribution is the post-hoc typological split (VSO>SVO>SOV). The abstract must not claim universal smoothing.\"}",
+          "predict_priority": "HIGH",
+          "eval_priority_score": 3,
+          "metadata_priority": "HIGH"
+        },
+        {
+          "input": "Revise Discussion to separate mathematical from empirical convexity evidence",
+          "output": "{\"priority\": \"HIGH\", \"recommendation\": \"Revise Discussion to separate mathematical from empirical convexity evidence\", \"rationale\": \"Non-residualized R\\u00b2 monotonicity is partly mathematical. Residualized test shows \\u03c1=-0.7000, failing the empirical test. Paper must not conflate these two results.\"}",
+          "predict_priority": "HIGH",
+          "eval_priority_score": 3,
+          "metadata_priority": "HIGH"
+        },
+        {
+          "input": "Add explicit Confirmatory vs Exploratory table in Results",
+          "output": "{\"priority\": \"HIGH\", \"recommendation\": \"Add explicit Confirmatory vs Exploratory table in Results\", \"rationale\": \"0 CONFIRMED, 2 EXPLORATORY, 4 FAIL. Readers need to clearly distinguish pre-registered vs post-hoc findings.\"}",
+          "predict_priority": "HIGH",
+          "eval_priority_score": 3,
+          "metadata_priority": "HIGH"
+        }
+      ]
+    },
+    {
+      "dataset": "head_initial_only_variant",
+      "examples": [
+        {
+          "input": "head_initial_only_variant_analysis",
+          "output": "{\"sov_peak_imb_reduction_mean_pct\": 68.5, \"sov_peak_imb_reduction_range\": [13.5, 87.6], \"n_sov_treebanks_analyzed\": 51, \"head_final_r2_std\": 0.9423, \"head_final_r2_enc\": 0.6469, \"interpretation\": \"Head-initial-only variant explains the SOV anti-smoothing pattern: excluding dependencies whose heads haven't been encountered removes inflated burden estimates. Mean SOV peak IMB reduction: 68.5% (range: 13.5%\\u201387.6%). Head-final treebanks: standard R\\u00b2=0.9423, encounter-only R\\u00b2=0.6469.\"}",
+          "predict_mean_reduction_pct": "68.5",
+          "eval_sov_reduction_pct": 68.5,
+          "metadata_analysis": "head_initial_only_variant"
+        }
+      ]
+    },
+    {
+      "dataset": "synthesis_summary",
+      "examples": [
+        {
+          "input": "comprehensive_synthesis",
+          "output": "{\"summary\": \"This synthesis evaluates 7 pre-registered criteria for the load-smoothing hypothesis across 4 experiments covering 335 treebanks. Results: 0 criteria fully confirmed, 1 partial pass (novelty R\\u00b2), 1 weak pass (\\u03b1=1 control), 1 inconclusive (IC independence), and 4 failures (coverage, monotonicity, modality, case-marking). The primary empirical finding is a strong typological split (VSO>SVO>SOV) with a 1.58 SD gradient, which is explicitly exploratory and post-hoc. The head-initial-only IMB variant provides a mechanistic explanation for the SOV pattern via 68% peak IMB reduction. Of 8 reviewer critiques, 3 are fully resolved and 5 partially addressed. Major paper revisions needed: reframe as exploratory, drop failed predictions, add confirmatory/exploratory distinction.\", \"what_paper_can_claim\": \"The paper can claim: (1) A strong typological split exists in load-smoothing behavior: VSO languages show substantially higher real LLF than projective baselines (median d=1.039), SVO languages show near-zero difference (d=0.134), and SOV languages show reverse patterns (d=-0.546). (2) The head-initial-only IMB variant captures novel signal beyond DD statistics (R\\u00b2=0.8827 < 0.90), particularly for head-initial dependencies. (3) This variant explains the SOV anti-smoothing pattern via 68% reduction in peak IMB. (4) IC and temporal overlap are partially independent (bidirectional test p=3.09e-07), though effects vary in direction across languages. (5) Head-final dependency proportion correlates strongly with the load-smoothing differential (r=0.501).\", \"what_paper_cannot_claim\": \"The paper cannot claim: (1) Universal load smoothing \\u2014 only 31.4% of treebanks exceed d>0.2, far below the 70% threshold. (2) Monotonically increasing convexity effects \\u2014 the residualized test fails. (3) Spoken modality shows greater smoothing \\u2014 only 3/7 pairs support this. (4) Case-marking or DOM predict smoothing \\u2014 both show null results. (5) The typological split is a confirmed pre-registered finding \\u2014 it is explicitly exploratory and the VSO anchor rests on n=7 treebanks. (6) A clean negative control at \\u03b1=1 \\u2014 d=-0.0847 is small but not zero.\"}",
+          "predict_overall_status": "mostly_disconfirmed_with_exploratory_findings",
+          "eval_n_criteria_pass": 2,
+          "metadata_evaluation_type": "comprehensive_synthesis"
+        }
+      ]
+    }
+  ]
+}

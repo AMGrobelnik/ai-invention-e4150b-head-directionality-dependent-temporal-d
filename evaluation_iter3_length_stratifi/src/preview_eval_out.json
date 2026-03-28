@@ -1,0 +1,453 @@
+{
+  "metadata": {
+    "evaluation": "sentence_length_stratified_r2_head_type_reconciliation_residual_contextualization",
+    "description": "Three complementary evaluations: (1) sentence-length-stratified R2 in 4 bins with head-type cross-stratification, (2) head-type count reconciliation between 335-treebank and 294-treebank groupings, (3...",
+    "length_bins": [
+      "8-12",
+      "13-20",
+      "21-35"
+    ],
+    "n_predictors": 7,
+    "predictors": [
+      "mean_dd",
+      "dd_variance",
+      "dd_skewness"
+    ],
+    "length_stratified_r2": {
+      "r2_std_by_bin": {
+        "8-12": 0.8468231968501084,
+        "13-20": 0.8526353394043769,
+        "21-35": 0.8640067203943604,
+        "36+": 0.9496867929451538
+      },
+      "r2_enc_by_bin": {
+        "8-12": 0.3815651564783282,
+        "13-20": 0.4649733048529634,
+        "21-35": 0.5812515661445723,
+        "36+": 0.8985668249647968
+      },
+      "residual_variance_by_bin": {
+        "8-12": 5.3638951629042655,
+        "13-20": 16.306155191175915,
+        "21-35": 47.56856212815263,
+        "36+": 224.52615700477745
+      },
+      "mean_abs_residualized_max_imb_by_bin": {
+        "8-12": 1.8051554402753793,
+        "13-20": 3.117403836524416,
+        "21-35": 5.17634547923019,
+        "36+": 9.672117195185093
+      },
+      "n_sentences_per_bin": {
+        "8-12": 222176,
+        "13-20": 300788,
+        "21-35": 246105,
+        "36+": 101608
+      },
+      "r2_std_by_headtype_bin": {
+        "head_final": {
+          "8-12": 0.8841325661235373,
+          "13-20": 0.8948703900304344,
+          "21-35": 0.8944119435099624,
+          "36+": 0.937098280392137
+        },
+        "head_initial": {
+          "8-12": 0.8348003944877835,
+          "13-20": 0.8448381495173723,
+          "21-35": 0.862015682859189,
+          "36+": 0.9578526210860107
+        },
+        "mixed": {
+          "8-12": 0.8638213333350957,
+          "13-20": 0.8516303579939843,
+          "21-35": 0.861772436139941,
+          "36+": 0.9472551928461572
+        }
+      },
+      "r2_enc_by_headtype_bin": {
+        "head_final": {
+          "8-12": 0.2860790623026481,
+          "13-20": 0.3893903925621227,
+          "21-35": 0.4892116928404112,
+          "36+": 0.7746511918675912
+        },
+        "head_initial": {
+          "8-12": 0.6368061712377808,
+          "13-20": 0.682909659773292,
+          "21-35": 0.7255572341992691,
+          "36+": 0.9426409471556741
+        },
+        "mixed": {
+          "8-12": 0.3812944225224617,
+          "13-20": 0.5006491325422091,
+          "21-35": 0.6494276222399928,
+          "36+": 0.9008671621350656
+        }
+      },
+      "n_by_headtype_bin": {
+        "head_final": {
+          "8-12": 72371,
+          "13-20": 86287,
+          "21-35": 53771,
+          "36+": 16547
+        },
+        "head_initial": {
+          "8-12": 88967,
+          "13-20": 152487,
+          "21-35": 147686,
+          "36+": 67372
+        },
+        "mixed": {
+          "8-12": 60838,
+          "13-20": 62014,
+          "21-35": 44648,
+          "36+": 17689
+        }
+      },
+      "r2_delta_std": -0.10286359609504536,
+      "r2_delta_enc": -0.5170016684864686
+    },
+    "head_type_reconciliation": {
+      "head_type_counts_all": {
+        "head_initial": 151,
+        "head_final": 102,
+        "mixed": 82
+      },
+      "head_type_counts_with_r2": {
+        "head_initial": 141,
+        "head_final": 83,
+        "mixed": 70
+      },
+      "n_treebanks_all": 335,
+      "n_treebanks_with_r2": 294,
+      "head_type_counts_by_method": {
+        "wals_direct_count": 188,
+        "left_proportion_fallback_count": 147,
+        "wals_head_final": 51,
+        "wals_head_initial": 137,
+        "wals_other": 0,
+        "lp_fallback_head_final": 51,
+        "lp_fallback_head_initial": 14,
+        "lp_fallback_mixed": 82,
+        "lp_fallback_no_data": 0
+      },
+      "classification_consistency_check": {
+        "n_treebanks_with_both": 188,
+        "agree": 38,
+        "disagree": 150,
+        "agreement_rate": 0.2021,
+        "disagreement_details": [
+          {
+            "treebank_id": "am_att",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5361,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "apu_ufpa",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5329,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "arh_chibergis",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.6279,
+            "lp_ht": "head_initial",
+            "assigned_head_type": "head_final"
+          }
+        ]
+      },
+      "r2_by_head_type_all_335": {
+        "head_final": {
+          "n_treebanks": 102,
+          "n_with_r2": 83,
+          "r2_std_mean": 0.9423,
+          "r2_std_median": 0.9439
+        },
+        "head_initial": {
+          "n_treebanks": 151,
+          "n_with_r2": 141,
+          "r2_std_mean": 0.9325,
+          "r2_std_median": 0.9353
+        },
+        "mixed": {
+          "n_treebanks": 82,
+          "n_with_r2": 70,
+          "r2_std_mean": 0.9307,
+          "r2_std_median": 0.9308
+        }
+      },
+      "r2_by_head_type_n30_subset": {
+        "head_final": {
+          "n_treebanks": 83,
+          "r2_std_mean": 0.9423,
+          "r2_std_median": 0.9439,
+          "r2_enc_mean": 0.6469,
+          "r2_enc_median": 0.634
+        },
+        "head_initial": {
+          "n_treebanks": 141,
+          "r2_std_mean": 0.9325,
+          "r2_std_median": 0.9353,
+          "r2_enc_mean": 0.8711,
+          "r2_enc_median": 0.8949
+        },
+        "mixed": {
+          "n_treebanks": 70,
+          "r2_std_mean": 0.9307,
+          "r2_std_median": 0.9308,
+          "r2_enc_mean": 0.8064,
+          "r2_enc_median": 0.8928
+        }
+      }
+    },
+    "residual_contextualization": {
+      "residual_r2_pct_std": 0.0525,
+      "residual_r2_pct_enc": 0.1173,
+      "residual_r2_std_pct_display": "5.25%",
+      "residual_r2_enc_pct_display": "11.73%",
+      "incremental_r2": {
+        "predictor_order": [
+          "dd_variance",
+          "mean_dd",
+          "sentence_length"
+        ],
+        "incremental_r2_std": {
+          "dd_variance": {
+            "individual_r2": 0.875385,
+            "cumulative_r2": 0.875385,
+            "incremental_r2": 0.875385
+          },
+          "mean_dd": {
+            "individual_r2": 0.640193,
+            "cumulative_r2": 0.940511,
+            "incremental_r2": 0.065126
+          },
+          "sentence_length": {
+            "individual_r2": 0.560801,
+            "cumulative_r2": 0.942183,
+            "incremental_r2": 0.001672
+          },
+          "max_arity": {
+            "individual_r2": 0.283244,
+            "cumulative_r2": 0.942606,
+            "incremental_r2": 0.000423
+          },
+          "tree_depth": {
+            "individual_r2": 0.1624,
+            "cumulative_r2": 0.942607,
+            "incremental_r2": 2e-06
+          },
+          "dd_skewness": {
+            "individual_r2": 0.145227,
+            "cumulative_r2": 0.947449,
+            "incremental_r2": 0.004842
+          },
+          "mean_arity": {
+            "individual_r2": 0.020923,
+            "cumulative_r2": 0.94745,
+            "incremental_r2": 1e-06
+          }
+        },
+        "incremental_r2_enc": {
+          "dd_variance": {
+            "cumulative_r2": 0.874992,
+            "incremental_r2": 0.874992
+          },
+          "mean_dd": {
+            "cumulative_r2": 0.879311,
+            "incremental_r2": 0.004319
+          },
+          "sentence_length": {
+            "cumulative_r2": 0.880334,
+            "incremental_r2": 0.001023
+          },
+          "max_arity": {
+            "cumulative_r2": 0.88154,
+            "incremental_r2": 0.001206
+          },
+          "tree_depth": {
+            "cumulative_r2": 0.881543,
+            "incremental_r2": 3e-06
+          },
+          "dd_skewness": {
+            "cumulative_r2": 0.882194,
+            "incremental_r2": 0.000651
+          },
+          "mean_arity": {
+            "cumulative_r2": 0.882652,
+            "incremental_r2": 0.000459
+          }
+        },
+        "final_r2_std": 0.94745,
+        "final_r2_enc": 0.882652
+      },
+      "benchmark_effect_sizes": {
+        "heavy_np_shift": {
+          "r2_mid": 0.035,
+          "r2_range": "0.02-0.05",
+          "source": "Wasow 2002; Arnold et al. 2000 (mixed-effects models for heavy-NP shift ordering)",
+          "ratio_to_residual_std": 1.5,
+          "ratio_to_residual_enc": 3.35
+        },
+        "given_before_new": {
+          "r2_mid": 0.055,
+          "r2_range": "0.03-0.08",
+          "source": "Bresnan et al. 2007 (dative alternation); Arnold et al. 2000",
+          "ratio_to_residual_std": 0.95,
+          "ratio_to_residual_enc": 2.13
+        },
+        "uid_word_order": {
+          "r2_mid": 0.025,
+          "r2_range": "0.01-0.04",
+          "source": "Clark et al. 2023 (UID and word order); Maurits et al. 2010",
+          "ratio_to_residual_std": 2.1,
+          "ratio_to_residual_enc": 4.69
+        },
+        "ddm_dependency_length": {
+          "r2_mid": 0.04,
+          "r2_range": "0.02-0.06",
+          "source": "Futrell et al. 2015 (DDM); Gildea & Temperley 2010",
+          "ratio_to_residual_std": 1.31,
+          "ratio_to_residual_enc": 2.93
+        }
+      },
+      "per_treebank_residual_r2": {
+        "n_treebanks": 294,
+        "mean": 0.0652,
+        "median": 0.0614,
+        "q25": 0.0472,
+        "q75": 0.0802,
+        "pct_above_005": 0.7007,
+        "pct_above_010": 0.0884,
+        "pct_above_015": 0.0068
+      }
+    },
+    "monotonicity_test": {
+      "spearman_r_length_r2": 1.0,
+      "spearman_p_length_r2": 0.0,
+      "linear_slope_length_r2": 0.00262598,
+      "linear_intercept": 0.809684,
+      "linear_r": 0.9586,
+      "linear_p": 0.0414,
+      "bootstrap_ci_slope_lower": 0.00239133,
+      "bootstrap_ci_slope_upper": 0.00287556,
+      "n_bootstrap_resamples": 1000,
+      "n_valid_slopes": 1000,
+      "r2_values_by_bin": {
+        "8-12": 0.8468231968501084,
+        "13-20": 0.8526353394043769,
+        "21-35": 0.8640067203943604,
+        "36+": 0.9496867929451538
+      },
+      "midpoints_by_bin": {
+        "8-12": 10.0,
+        "13-20": 16.5,
+        "21-35": 28.0,
+        "36+": 50.0
+      }
+    }
+  },
+  "metrics_agg": {
+    "r2_std_bin_8_12": 0.846823,
+    "r2_enc_bin_8_12": 0.381565,
+    "n_sentences_bin_8_12": 222176,
+    "residual_var_bin_8_12": 5.3639,
+    "mean_abs_resid_bin_8_12": 1.8052,
+    "r2_std_bin_13_20": 0.852635,
+    "r2_enc_bin_13_20": 0.464973,
+    "n_sentences_bin_13_20": 300788,
+    "residual_var_bin_13_20": 16.3062,
+    "mean_abs_resid_bin_13_20": 3.1174,
+    "r2_std_bin_21_35": 0.864007,
+    "r2_enc_bin_21_35": 0.581252,
+    "n_sentences_bin_21_35": 246105,
+    "residual_var_bin_21_35": 47.5686,
+    "mean_abs_resid_bin_21_35": 5.1763,
+    "r2_std_bin_36plus": 0.949687,
+    "r2_enc_bin_36plus": 0.898567,
+    "n_sentences_bin_36plus": 101608,
+    "residual_var_bin_36plus": 224.5262,
+    "mean_abs_resid_bin_36plus": 9.6721,
+    "r2_delta_std_short_minus_long": -0.102864,
+    "r2_delta_enc_short_minus_long": -0.517002,
+    "head_type_all_head_initial": 151,
+    "head_type_all_head_final": 102,
+    "head_type_all_mixed": 82,
+    "head_type_n30_head_initial": 141,
+    "head_type_n30_head_final": 83,
+    "head_type_n30_mixed": 70,
+    "n_treebanks_all": 335,
+    "n_treebanks_with_r2": 294,
+    "classification_agreement_rate": 0.2021,
+    "classification_n_with_both": 188,
+    "classification_n_agree": 38,
+    "classification_n_disagree": 150,
+    "residual_r2_pct_std": 0.0525,
+    "residual_r2_pct_enc": 0.1173,
+    "per_tb_residual_mean": 0.0652,
+    "per_tb_residual_median": 0.0614,
+    "per_tb_residual_q25": 0.0472,
+    "per_tb_residual_q75": 0.0802,
+    "per_tb_pct_above_5pct": 0.7007,
+    "per_tb_pct_above_10pct": 0.0884,
+    "per_tb_pct_above_15pct": 0.0068,
+    "spearman_r_length_r2": 1.0,
+    "spearman_p_length_r2": 0.0,
+    "linear_slope_length_r2": 0.00262598,
+    "bootstrap_ci_slope_lower": 0.00239133,
+    "bootstrap_ci_slope_upper": 0.00287556
+  },
+  "datasets": [
+    {
+      "dataset": "commul/universal_dependencies",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"head_type\": \"head_final\", \"wals_word_order\": \"SOV\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 321}",
+          "output": "{\"n_sentences\": 321, \"max_imb_mean\": 19.7196, \"max_imb_median\": 17.0, \"max_imb_std\": 10.527, \"mean_imb_mean\": 7.5469, \"mean_imb_median\": 6.4545, \"mean_imb_std\": 4.1893, \"total_imb_mean\": 113.9408, \"to...",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_head_type": "head_final",
+          "metadata_n_sentences": 321,
+          "predict_imb_method": "{\"max_imb_mean\": 19.7196, \"llf_mean\": 0.3888, \"max_imb_enc_mean\": 8.0031, \"r2_std\": 0.9042, \"r2_enc\": 0.5683, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.6972, \"dd_variance_mean\": 5.8736, \"dd_skewness_mean\": 1.2875, \"r2_std\": 0.9042, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9042,
+          "eval_residual_r2_std": 0.0958,
+          "eval_r2_enc": 0.5683,
+          "eval_residual_r2_enc": 0.4317
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"head_type\": \"head_final\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 32}",
+          "output": "{\"n_sentences\": 32, \"max_imb_mean\": 13.1875, \"max_imb_median\": 13.0, \"max_imb_std\": 6.8027, \"mean_imb_mean\": 5.4655, \"mean_imb_median\": 5.1667, \"mean_imb_std\": 2.8963, \"total_imb_mean\": 61.875, \"total...",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_head_type": "head_final",
+          "metadata_n_sentences": 32,
+          "predict_imb_method": "{\"max_imb_mean\": 13.1875, \"llf_mean\": 0.42, \"max_imb_enc_mean\": 5.7188, \"r2_std\": 0.9114, \"r2_enc\": 0.5257, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.3322, \"dd_variance_mean\": 4.0082, \"dd_skewness_mean\": 1.2245, \"r2_std\": 0.9114, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9114,
+          "eval_residual_r2_std": 0.0886,
+          "eval_r2_enc": 0.5257,
+          "eval_residual_r2_enc": 0.4743
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"head_type\": \"mixed\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Indo-European\", \"macroarea\": \"Africa\", \"n_sentences\": 1862}",
+          "output": "{\"n_sentences\": 1862, \"max_imb_mean\": 35.6144, \"max_imb_median\": 28.0, \"max_imb_std\": 25.9531, \"mean_imb_mean\": 13.3782, \"mean_imb_median\": 10.5, \"mean_imb_std\": 10.4049, \"total_imb_mean\": 419.1557, \"...",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_head_type": "mixed",
+          "metadata_n_sentences": 1862,
+          "predict_imb_method": "{\"max_imb_mean\": 35.6144, \"llf_mean\": 0.3818, \"max_imb_enc_mean\": 14.928, \"r2_std\": 0.9356, \"r2_enc\": 0.4188, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 3.1672, \"dd_variance_mean\": 14.0979, \"dd_skewness_mean\": 1.944, \"r2_std\": 0.9356, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9356,
+          "eval_residual_r2_std": 0.0644,
+          "eval_r2_enc": 0.4188,
+          "eval_residual_r2_enc": 0.5812
+        }
+      ]
+    }
+  ]
+}

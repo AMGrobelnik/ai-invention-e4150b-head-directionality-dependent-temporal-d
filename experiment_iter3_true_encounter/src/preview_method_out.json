@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "experiment": "true_encounter_only_imb_vso_10k_reanalysis",
+    "n_vso_treebanks": 11,
+    "n_sov_comparison": 5,
+    "n_svo_comparison": 5,
+    "max_sentences_vso": 10000,
+    "max_sentences_comparison": 500,
+    "n_baselines": 100,
+    "alphas": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "runtime_seconds": 92.0,
+    "num_cpus_used": 4,
+    "imb_variants_computed": [
+      "standard (full span, all deps)",
+      "head_initial_only (full span, head-initial deps only)",
+      "true_encounter_only (age-weighted, both endpoints encountered -- identically 0)"
+    ],
+    "aggregate": {
+      "VSO": {
+        "group": "VSO",
+        "n_treebanks": 11,
+        "std_llf_median_d": 1.05664,
+        "std_llf_mean_d": 1.021933,
+        "std_llf_n_positive": 11,
+        "std_llf_n_treebanks_valid": 11,
+        "std_max_median_d": -0.690731,
+        "std_max_mean_d": -0.496896,
+        "std_max_n_positive": 1,
+        "std_max_n_treebanks_valid": 11,
+        "hio_llf_median_d": 1.475178,
+        "hio_llf_mean_d": 1.867827,
+        "hio_llf_n_positive": 11,
+        "hio_llf_n_treebanks_valid": 11,
+        "hio_max_median_d": 0.085901,
+        "hio_max_mean_d": 0.483551,
+        "hio_max_n_positive": 8,
+        "hio_max_n_treebanks_valid": 11,
+        "cnt_llf_median_d": 0.669531,
+        "cnt_llf_mean_d": 0.573293,
+        "cnt_llf_n_positive": 11,
+        "cnt_llf_n_treebanks_valid": 11,
+        "cnt_max_median_d": -0.817049,
+        "cnt_max_mean_d": -0.875684,
+        "cnt_max_n_positive": 0,
+        "cnt_max_n_treebanks_valid": 11
+      },
+      "SOV": {
+        "group": "SOV",
+        "n_treebanks": 5,
+        "std_llf_median_d": -0.790718,
+        "std_llf_mean_d": -0.832653,
+        "std_llf_n_positive": 0,
+        "std_llf_n_treebanks_valid": 5,
+        "std_max_median_d": -0.466065,
+        "std_max_mean_d": -0.493658,
+        "std_max_n_positive": 0,
+        "std_max_n_treebanks_valid": 5,
+        "hio_llf_median_d": -1.051446,
+        "hio_llf_mean_d": -1.164674,
+        "hio_llf_n_positive": 0,
+        "hio_llf_n_treebanks_valid": 5,
+        "hio_max_median_d": -0.815844,
+        "hio_max_mean_d": -0.947448,
+        "hio_max_n_positive": 0,
+        "hio_max_n_treebanks_valid": 5,
+        "cnt_llf_median_d": -0.149908,
+        "cnt_llf_mean_d": -0.192038,
+        "cnt_llf_n_positive": 1,
+        "cnt_llf_n_treebanks_valid": 5,
+        "cnt_max_median_d": 0.100291,
+        "cnt_max_mean_d": 0.094113,
+        "cnt_max_n_positive": 4,
+        "cnt_max_n_treebanks_valid": 5
+      },
+      "SVO": {
+        "group": "SVO",
+        "n_treebanks": 5,
+        "std_llf_median_d": 0.173541,
+        "std_llf_mean_d": 0.038494,
+        "std_llf_n_positive": 3,
+        "std_llf_n_treebanks_valid": 5,
+        "std_max_median_d": -0.753704,
+        "std_max_mean_d": -0.731396,
+        "std_max_n_positive": 0,
+        "std_max_n_treebanks_valid": 5,
+        "hio_llf_median_d": 0.676713,
+        "hio_llf_mean_d": 0.510494,
+        "hio_llf_n_positive": 4,
+        "hio_llf_n_treebanks_valid": 5,
+        "hio_max_median_d": -0.262544,
+        "hio_max_mean_d": -0.280837,
+        "hio_max_n_positive": 0,
+        "hio_max_n_treebanks_valid": 5,
+        "cnt_llf_median_d": 0.144783,
+        "cnt_llf_mean_d": -0.021087,
+        "cnt_llf_n_positive": 3,
+        "cnt_llf_n_treebanks_valid": 5,
+        "cnt_max_median_d": -0.272192,
+        "cnt_max_mean_d": -0.138053,
+        "cnt_max_n_positive": 2,
+        "cnt_max_n_treebanks_valid": 5
+      },
+      "gradients": {
+        "std_llf_vso_minus_sov": 1.847358,
+        "std_llf_vso_minus_svo": 0.883099,
+        "std_max_vso_minus_sov": -0.224666,
+        "std_max_vso_minus_svo": 0.062973,
+        "hio_llf_vso_minus_sov": 2.526624,
+        "hio_llf_vso_minus_svo": 0.798465,
+        "hio_max_vso_minus_sov": 0.901745,
+        "hio_max_vso_minus_svo": 0.348445,
+        "cnt_llf_vso_minus_sov": 0.819439,
+        "cnt_llf_vso_minus_svo": 0.524748,
+        "cnt_max_vso_minus_sov": -0.91734,
+        "cnt_max_vso_minus_svo": -0.544857
+      },
+      "hio_reduction_fraction": {
+        "VSO": 1.4886,
+        "SOV": -0.3053,
+        "SVO": 0.7744
+      }
+    },
+    "leave_one_out_vso": {
+      "std_llf": {
+        "full_median_d": 1.05664,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 1.3461520373718692,
+            "remaining_n": 10,
+            "loo_median_d": 0.976209,
+            "change_from_full": -0.080432
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 1.0935421117638884,
+            "remaining_n": 10,
+            "loo_median_d": 0.976209,
+            "change_from_full": -0.080432
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": 0.2693531343215569,
+            "remaining_n": 10,
+            "loo_median_d": 1.075091,
+            "change_from_full": 0.018451
+          }
+        ],
+        "max_abs_change": 0.080432,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      },
+      "std_max": {
+        "full_median_d": -0.690731,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": -0.6938604120635866,
+            "remaining_n": 10,
+            "loo_median_d": -0.67842,
+            "change_from_full": 0.012311
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": -0.9030263805977835,
+            "remaining_n": 10,
+            "loo_median_d": -0.67842,
+            "change_from_full": 0.012311
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": -0.08925798819129306,
+            "remaining_n": 10,
+            "loo_median_d": -0.692296,
+            "change_from_full": -0.001565
+          }
+        ],
+        "max_abs_change": 0.012311,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      },
+      "hio_llf": {
+        "full_median_d": 1.475178,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 2.1394042382752034,
+            "remaining_n": 10,
+            "loo_median_d": 1.473838,
+            "change_from_full": -0.00134
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 1.725091165331611,
+            "remaining_n": 10,
+            "loo_median_d": 1.473838,
+            "change_from_full": -0.00134
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": 1.2508916496849025,
+            "remaining_n": 10,
+            "loo_median_d": 1.600135,
+            "change_from_full": 0.124957
+          }
+        ],
+        "max_abs_change": 0.124957,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      },
+      "hio_max": {
+        "full_median_d": 0.085901,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 0.010655519684613155,
+            "remaining_n": 10,
+            "loo_median_d": 0.087022,
+            "change_from_full": 0.001121
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 0.08814242454204163,
+            "remaining_n": 10,
+            "loo_median_d": 0.085616,
+            "change_from_full": -0.000285
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": 0.8942060676214328,
+            "remaining_n": 10,
+            "loo_median_d": 0.085616,
+            "change_from_full": -0.000285
+          }
+        ],
+        "max_abs_change": 0.001121,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      },
+      "cnt_llf": {
+        "full_median_d": 0.669531,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 0.8527722776646316,
+            "remaining_n": 10,
+            "loo_median_d": 0.603738,
+            "change_from_full": -0.065793
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": 0.6695308916429118,
+            "remaining_n": 10,
+            "loo_median_d": 0.671444,
+            "change_from_full": 0.001913
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": 0.020454146531166124,
+            "remaining_n": 10,
+            "loo_median_d": 0.737237,
+            "change_from_full": 0.067706
+          }
+        ],
+        "max_abs_change": 0.067706,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      },
+      "cnt_max": {
+        "full_median_d": -0.817049,
+        "n_vso_treebanks": 11,
+        "loo_details": [
+          {
+            "removed_treebank": "ar_padt",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": -0.913733264019105,
+            "remaining_n": 10,
+            "loo_median_d": -0.806635,
+            "change_from_full": 0.010413
+          },
+          {
+            "removed_treebank": "ar_pud",
+            "removed_language": "Standard Arabic",
+            "removed_family": "Afro-Asiatic",
+            "removed_d": -0.7962216571075923,
+            "remaining_n": 10,
+            "loo_median_d": -0.865391,
+            "change_from_full": -0.048342
+          },
+          {
+            "removed_treebank": "ceb_gja",
+            "removed_language": "Cebuano",
+            "removed_family": "Austronesian",
+            "removed_d": -0.25555181702594376,
+            "remaining_n": 10,
+            "loo_median_d": -0.865391,
+            "change_from_full": -0.048342
+          }
+        ],
+        "max_abs_change": 0.048342,
+        "any_sign_flip": false,
+        "family_diversity": 4
+      }
+    },
+    "novelty_test_r_squared": {
+      "std_llf": 0.26443192501110035,
+      "std_max": 0.7158509722462569,
+      "hio_llf": 0.2535467843746283,
+      "hio_max": 0.7949772805487574,
+      "cnt_llf": 0.010065912188027548,
+      "cnt_max": 0.10521306198706526
+    },
+    "key_findings": {
+      "true_encounter_only_is_zero": "Confirmed: age-weighted encounter-only IMB is identically 0 for all sentences, proving IMB burden comes from anticipatory load before both endpoints are seen.",
+      "vso_sensitivity": "LOO analysis on 11 VSO treebanks: max |change| in median d = 0.080432, sign flip = False"
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "encounter_only_imb_reanalysis",
+      "examples": [
+        {
+          "input": "ar_padt",
+          "output": "{\"treebank_id\": \"ar_padt\", \"language\": \"Standard Arabic\", \"family\": \"Afro-Asiatic\", \"word_order\": \"VSO\", \"macroarea\": \"Eurasia\", \"n_sentences\": 6918, \"std_llf_raw_cohen_d\": 1.3461520373718692, \"std_ll...",
+          "metadata_language": "Standard Arabic",
+          "metadata_word_order": "VSO",
+          "metadata_family": "Afro-Asiatic",
+          "metadata_n_sentences": "6918",
+          "metadata_group": "VSO",
+          "predict_std_llf_cohen_d": "1.3462",
+          "predict_hio_llf_cohen_d": "2.1394",
+          "predict_cnt_llf_cohen_d": "0.8528",
+          "predict_std_max_cohen_d": "-0.6939",
+          "predict_hio_max_cohen_d": "0.0107",
+          "predict_cnt_max_cohen_d": "-0.9137"
+        },
+        {
+          "input": "ar_pud",
+          "output": "{\"treebank_id\": \"ar_pud\", \"language\": \"Standard Arabic\", \"family\": \"Afro-Asiatic\", \"word_order\": \"VSO\", \"macroarea\": \"Eurasia\", \"n_sentences\": 943, \"std_llf_raw_cohen_d\": 1.0935421117638884, \"std_llf_...",
+          "metadata_language": "Standard Arabic",
+          "metadata_word_order": "VSO",
+          "metadata_family": "Afro-Asiatic",
+          "metadata_n_sentences": "943",
+          "metadata_group": "VSO",
+          "predict_std_llf_cohen_d": "1.0935",
+          "predict_hio_llf_cohen_d": "1.7251",
+          "predict_cnt_llf_cohen_d": "0.6695",
+          "predict_std_max_cohen_d": "-0.9030",
+          "predict_hio_max_cohen_d": "0.0881",
+          "predict_cnt_max_cohen_d": "-0.7962"
+        },
+        {
+          "input": "ceb_gja",
+          "output": "{\"treebank_id\": \"ceb_gja\", \"language\": \"Cebuano\", \"family\": \"Austronesian\", \"word_order\": \"VSO\", \"macroarea\": \"Papunesia\", \"n_sentences\": 52, \"std_llf_raw_cohen_d\": 0.2693531343215569, \"std_llf_raw_p\"...",
+          "metadata_language": "Cebuano",
+          "metadata_word_order": "VSO",
+          "metadata_family": "Austronesian",
+          "metadata_n_sentences": "52",
+          "metadata_group": "VSO",
+          "predict_std_llf_cohen_d": "0.2694",
+          "predict_hio_llf_cohen_d": "1.2509",
+          "predict_cnt_llf_cohen_d": "0.0205",
+          "predict_std_max_cohen_d": "-0.0893",
+          "predict_hio_max_cohen_d": "0.8942",
+          "predict_cnt_max_cohen_d": "-0.2556"
+        }
+      ]
+    }
+  ]
+}

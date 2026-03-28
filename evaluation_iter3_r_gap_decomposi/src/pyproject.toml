@@ -1,0 +1,10 @@
+[project]
+name = "eval-r2-gap-typological-stratification"
+version = "1.0.0"
+requires-python = ">=3.10,<3.12"
+description = "R² Gap Decomposition & Typological Stratification of Convexity Evidence"
+dependencies = [
+    "loguru==0.7.3",
+    "numpy==2.4.3",
+    "scipy==1.17.1",
+]

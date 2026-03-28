@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "description": "Load-smoothing hypothesis analysis: Phases 4-5 (modality, head-final, case-richness, DOM)",
+    "phases": [
+      "4_modality",
+      "5a_head_final",
+      "5b_case_richness"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset": "phase4_modality_comparison",
+      "examples": [
+        {
+          "input": "sl",
+          "output": "{\"spoken_tb\": [\"sl_sst\"], \"written_tb\": \"sl_ssj\", \"lang\": \"Slovenian\", \"n_spoken\": 3290, \"n_written\": 10000, \"mean_llf_spoken\": 0.4279765243215833, \"mean_llf_written\": 0.4314560999851655, \"residual_ll...",
+          "predict_method": "{\"spoken_higher\": true, \"cohens_d\": 0.031379133291548095, \"p\": 0.11944738508274681}",
+          "metadata_phase": "4",
+          "metadata_analysis": "modality_comparison",
+          "metadata_language": "Slovenian"
+        },
+        {
+          "input": "fr",
+          "output": "{\"spoken_tb\": [\"fr_rhapsodie\", \"fr_parisstories\"], \"written_tb\": \"fr_gsd\", \"lang\": \"French\", \"n_spoken\": 3570, \"n_written\": 10000, \"mean_llf_spoken\": 0.41872784162008886, \"mean_llf_written\": 0.4676617...",
+          "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.5305605072482736, \"p\": 5.004088775851193e-151}",
+          "metadata_phase": "4",
+          "metadata_analysis": "modality_comparison",
+          "metadata_language": "French"
+        },
+        {
+          "input": "it",
+          "output": "{\"spoken_tb\": [\"it_valico\"], \"written_tb\": \"it_isdt\", \"lang\": \"Italian\", \"n_spoken\": 310, \"n_written\": 10000, \"mean_llf_spoken\": 0.44953997169592264, \"mean_llf_written\": 0.4679438715803999, \"residual_...",
+          "predict_method": "{\"spoken_higher\": false, \"cohens_d\": -0.18076707963901778, \"p\": 0.0014604890534923908}",
+          "metadata_phase": "4",
+          "metadata_analysis": "modality_comparison",
+          "metadata_language": "Italian"
+        }
+      ]
+    },
+    {
+      "dataset": "phase5a_head_final_effects",
+      "examples": [
+        {
+          "input": "ab_abnc",
+          "output": "{\"tb_id\": \"ab_abnc\", \"word_order\": \"SOV\", \"n_sentences\": 321, \"mean_llf_standard\": 0.3888006485960089, \"mean_llf_encounter\": 0.31257360754164343, \"llf_delta\": 0.07622704105436545, \"mean_max_imb_standa...",
+          "predict_method": "{\"llf_delta\": 0.07622704105436545, \"mean_llf_standard\": 0.3888006485960089}",
+          "metadata_phase": "5a",
+          "metadata_word_order": "SOV"
+        },
+        {
+          "input": "am_att",
+          "output": "{\"tb_id\": \"am_att\", \"word_order\": \"SOV\", \"n_sentences\": 568, \"mean_llf_standard\": 0.45156128169437487, \"mean_llf_encounter\": 0.3375863138772156, \"llf_delta\": 0.11397496781715927, \"mean_max_imb_standar...",
+          "predict_method": "{\"llf_delta\": 0.11397496781715927, \"mean_llf_standard\": 0.45156128169437487}",
+          "metadata_phase": "5a",
+          "metadata_word_order": "SOV"
+        },
+        {
+          "input": "arh_chibergis",
+          "output": "{\"tb_id\": \"arh_chibergis\", \"word_order\": \"SOV\", \"n_sentences\": 247, \"mean_llf_standard\": 0.4598164468359213, \"mean_llf_encounter\": 0.37858683338462756, \"llf_delta\": 0.08122961345129376, \"mean_max_imb_...",
+          "predict_method": "{\"llf_delta\": 0.08122961345129376, \"mean_llf_standard\": 0.4598164468359213}",
+          "metadata_phase": "5a",
+          "metadata_word_order": "SOV"
+        }
+      ]
+    },
+    {
+      "dataset": "phase5b_case_richness",
+      "examples": [
+        {
+          "input": "ab_abnc",
+          "output": "{\"tb_id\": \"ab_abnc\", \"case_richness_count\": 8, \"case_token_proportion\": 0.0156, \"mean_llf_standard\": 0.3888006485960089, \"mean_llf_encounter\": 0.31257360754164343, \"mean_sentence_length\": 8.04, \"num_s...",
+          "predict_method": "{\"mean_llf_standard\": 0.3888006485960089, \"case_richness_count\": 8}",
+          "metadata_phase": "5b",
+          "metadata_analysis": "case_richness_scatter"
+        },
+        {
+          "input": "am_att",
+          "output": "{\"tb_id\": \"am_att\", \"case_richness_count\": 5, \"case_token_proportion\": 0.0114, \"mean_llf_standard\": 0.45156128169437487, \"mean_llf_encounter\": 0.3375863138772156, \"mean_sentence_length\": 9.32, \"num_se...",
+          "predict_method": "{\"mean_llf_standard\": 0.45156128169437487, \"case_richness_count\": 5}",
+          "metadata_phase": "5b",
+          "metadata_analysis": "case_richness_scatter"
+        },
+        {
+          "input": "arh_chibergis",
+          "output": "{\"tb_id\": \"arh_chibergis\", \"case_richness_count\": 4, \"case_token_proportion\": 0.1019, \"mean_llf_standard\": 0.4598164468359213, \"mean_llf_encounter\": 0.37858683338462756, \"mean_sentence_length\": 8.45, ...",
+          "predict_method": "{\"mean_llf_standard\": 0.4598164468359213, \"case_richness_count\": 4}",
+          "metadata_phase": "5b",
+          "metadata_analysis": "case_richness_scatter"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1638 @@
+{
+  "metadata": {
+    "evaluation": "sentence_length_stratified_r2_head_type_reconciliation_residual_contextualization",
+    "description": "Three complementary evaluations: (1) sentence-length-stratified R2 in 4 bins with head-type cross-stratification, (2) head-type count reconciliation between 335-treebank and 294-treebank groupings, (3) residual variance (5.25%) contextualization via incremental R2 and literature benchmarks.",
+    "length_bins": [
+      "8-12",
+      "13-20",
+      "21-35",
+      "36+"
+    ],
+    "n_predictors": 7,
+    "predictors": [
+      "mean_dd",
+      "dd_variance",
+      "dd_skewness",
+      "sentence_length",
+      "tree_depth",
+      "max_arity",
+      "mean_arity"
+    ],
+    "length_stratified_r2": {
+      "r2_std_by_bin": {
+        "8-12": 0.8468231968501084,
+        "13-20": 0.8526353394043769,
+        "21-35": 0.8640067203943604,
+        "36+": 0.9496867929451538
+      },
+      "r2_enc_by_bin": {
+        "8-12": 0.3815651564783282,
+        "13-20": 0.4649733048529634,
+        "21-35": 0.5812515661445723,
+        "36+": 0.8985668249647968
+      },
+      "residual_variance_by_bin": {
+        "8-12": 5.3638951629042655,
+        "13-20": 16.306155191175915,
+        "21-35": 47.56856212815263,
+        "36+": 224.52615700477745
+      },
+      "mean_abs_residualized_max_imb_by_bin": {
+        "8-12": 1.8051554402753793,
+        "13-20": 3.117403836524416,
+        "21-35": 5.17634547923019,
+        "36+": 9.672117195185093
+      },
+      "n_sentences_per_bin": {
+        "8-12": 222176,
+        "13-20": 300788,
+        "21-35": 246105,
+        "36+": 101608
+      },
+      "r2_std_by_headtype_bin": {
+        "head_final": {
+          "8-12": 0.8841325661235373,
+          "13-20": 0.8948703900304344,
+          "21-35": 0.8944119435099624,
+          "36+": 0.937098280392137
+        },
+        "head_initial": {
+          "8-12": 0.8348003944877835,
+          "13-20": 0.8448381495173723,
+          "21-35": 0.862015682859189,
+          "36+": 0.9578526210860107
+        },
+        "mixed": {
+          "8-12": 0.8638213333350957,
+          "13-20": 0.8516303579939843,
+          "21-35": 0.861772436139941,
+          "36+": 0.9472551928461572
+        }
+      },
+      "r2_enc_by_headtype_bin": {
+        "head_final": {
+          "8-12": 0.2860790623026481,
+          "13-20": 0.3893903925621227,
+          "21-35": 0.4892116928404112,
+          "36+": 0.7746511918675912
+        },
+        "head_initial": {
+          "8-12": 0.6368061712377808,
+          "13-20": 0.682909659773292,
+          "21-35": 0.7255572341992691,
+          "36+": 0.9426409471556741
+        },
+        "mixed": {
+          "8-12": 0.3812944225224617,
+          "13-20": 0.5006491325422091,
+          "21-35": 0.6494276222399928,
+          "36+": 0.9008671621350656
+        }
+      },
+      "n_by_headtype_bin": {
+        "head_final": {
+          "8-12": 72371,
+          "13-20": 86287,
+          "21-35": 53771,
+          "36+": 16547
+        },
+        "head_initial": {
+          "8-12": 88967,
+          "13-20": 152487,
+          "21-35": 147686,
+          "36+": 67372
+        },
+        "mixed": {
+          "8-12": 60838,
+          "13-20": 62014,
+          "21-35": 44648,
+          "36+": 17689
+        }
+      },
+      "r2_delta_std": -0.10286359609504536,
+      "r2_delta_enc": -0.5170016684864686
+    },
+    "head_type_reconciliation": {
+      "head_type_counts_all": {
+        "head_initial": 151,
+        "head_final": 102,
+        "mixed": 82
+      },
+      "head_type_counts_with_r2": {
+        "head_initial": 141,
+        "head_final": 83,
+        "mixed": 70
+      },
+      "n_treebanks_all": 335,
+      "n_treebanks_with_r2": 294,
+      "head_type_counts_by_method": {
+        "wals_direct_count": 188,
+        "left_proportion_fallback_count": 147,
+        "wals_head_final": 51,
+        "wals_head_initial": 137,
+        "wals_other": 0,
+        "lp_fallback_head_final": 51,
+        "lp_fallback_head_initial": 14,
+        "lp_fallback_mixed": 82,
+        "lp_fallback_no_data": 0
+      },
+      "classification_consistency_check": {
+        "n_treebanks_with_both": 188,
+        "agree": 38,
+        "disagree": 150,
+        "agreement_rate": 0.2021,
+        "disagreement_details": [
+          {
+            "treebank_id": "am_att",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5361,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "apu_ufpa",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5329,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "arh_chibergis",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.6279,
+            "lp_ht": "head_initial",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "arr_tudet",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5483,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "bej_autogramm",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.415,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "bg_btb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.426,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "bm_crb",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4716,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "bn_bru",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4318,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "br_keb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5037,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ca_ancora",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4293,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ckb_mukri",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4139,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "cop_bohairic",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3831,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cop_scriptorium",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4066,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_cac",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4552,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_cltt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.489,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_fictree",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4152,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_pdtc",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4474,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_poetry",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4232,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cs_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4266,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "cy_ccg",
+            "wals_word_order": "VSO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.538,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "da_ddt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.421,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "eme_tudet",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4771,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "en_atis",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4826,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_childes",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4579,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_ctetex",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3521,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_eslspok",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3688,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_ewt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.393,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_gentle",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3976,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_gum",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3867,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_gumreddit",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3737,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_lines",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3783,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_littleprince",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3741,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_partut",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3874,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_pronouns",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4507,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "en_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3574,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "es_ancora",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4358,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "es_coser",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.445,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "es_gsd",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.433,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "es_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4272,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "eu_bdt",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4666,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "fa_perdt",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4611,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "fa_seraji",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4732,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "fi_ftb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4743,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fi_ood",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4755,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fi_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4415,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fi_tdt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4415,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_alts",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4289,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_fqb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4835,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_gsd",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4281,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_parisstories",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3698,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_partut",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.43,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_poitevindivital",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4204,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4144,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_rhapsodie",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4203,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "fr_sequoia",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4298,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ga_cadhan",
+            "wals_word_order": "VSO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5564,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ga_idt",
+            "wals_word_order": "VSO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5688,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "gd_arcosg",
+            "wals_word_order": "VSO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.556,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "gn_oldtudet",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5823,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ha_northernautogramm",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5339,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ha_southernautogramm",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5468,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ha_westernautogramm",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4585,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "he_htb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5158,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "he_iahltknesset",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4712,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "he_iahltwiki",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5172,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "hi_hdtb",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4178,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "hi_pud",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4198,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "id_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5809,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "is_gc",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5471,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "is_icepahc",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5422,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "is_modern",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4843,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "is_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4892,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_isdt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4343,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_kiparlaforest",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3253,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_markit",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3923,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_old",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3482,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_parlamint",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3973,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_partut",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4256,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_postwita",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4854,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.429,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_twittiro",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4801,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_valico",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3915,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "it_vit",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.441,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ja_bccwjluw",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5526,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "ja_gsd",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5169,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "ja_gsdluw",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5721,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "ja_pud",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5468,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "ja_pudluw",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.5787,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "kpv_ikdp",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4377,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "kpv_lattice",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.413,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "lt_alksnis",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3791,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "lt_hse",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3844,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "lv_cairo",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4865,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "lv_lvtb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3797,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "mk_mtb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4498,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "mr_ufal",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4074,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "myu_tudet",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.6331,
+            "lp_ht": "head_initial",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "myv_jr",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4541,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "naq_kdt",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4265,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "nmf_suansu",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4317,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "no_bokmaal",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.398,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "no_nynorsk",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4078,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pl_lfg",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4866,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pl_mpdt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4339,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pl_pdb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4942,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pl_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5079,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_bosque",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4472,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_dantestocks",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5235,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_gsd",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4369,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_petrogold",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4751,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_porttinari",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4333,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "pt_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4209,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_art",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4207,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_moldoro",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.545,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_nonstandard",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3981,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_rrt",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5112,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_simonero",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.547,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ro_tuecl",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4702,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ru_gsd",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4806,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ru_poetry",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4387,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ru_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4549,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ru_syntagrus",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.444,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ru_taiga",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.449,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sl_ssj",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3849,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sl_sst",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.398,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sme_giella",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.529,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sq_staf",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4531,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sq_tsa",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4745,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sv_lines",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4137,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sv_old",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4497,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sv_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4058,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sv_swell",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4079,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "sv_talbanken",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4103,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "tl_ugnayan",
+            "wals_word_order": "VSO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5862,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "uk_iu",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4375,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "uk_parlamint",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4588,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "ur_udtb",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4048,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "vi_tuecl",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4832,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "vi_vtb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5697,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "wo_wtb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.499,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "yo_ytb",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4789,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "yrk_tundra",
+            "wals_word_order": "SOV",
+            "wals_ht": "head_final",
+            "left_proportion": 0.4129,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_final"
+          },
+          {
+            "treebank_id": "yue_hk",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.5506,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_beginner",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4633,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_cfl",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4533,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_gsd",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3774,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_gsdsimp",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.3773,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_hk",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4653,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_patentchar",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.2934,
+            "lp_ht": "head_final",
+            "assigned_head_type": "head_initial"
+          },
+          {
+            "treebank_id": "zh_pud",
+            "wals_word_order": "SVO",
+            "wals_ht": "head_initial",
+            "left_proportion": 0.4042,
+            "lp_ht": "mixed",
+            "assigned_head_type": "head_initial"
+          }
+        ]
+      },
+      "r2_by_head_type_all_335": {
+        "head_final": {
+          "n_treebanks": 102,
+          "n_with_r2": 83,
+          "r2_std_mean": 0.9423,
+          "r2_std_median": 0.9439
+        },
+        "head_initial": {
+          "n_treebanks": 151,
+          "n_with_r2": 141,
+          "r2_std_mean": 0.9325,
+          "r2_std_median": 0.9353
+        },
+        "mixed": {
+          "n_treebanks": 82,
+          "n_with_r2": 70,
+          "r2_std_mean": 0.9307,
+          "r2_std_median": 0.9308
+        }
+      },
+      "r2_by_head_type_n30_subset": {
+        "head_final": {
+          "n_treebanks": 83,
+          "r2_std_mean": 0.9423,
+          "r2_std_median": 0.9439,
+          "r2_enc_mean": 0.6469,
+          "r2_enc_median": 0.634
+        },
+        "head_initial": {
+          "n_treebanks": 141,
+          "r2_std_mean": 0.9325,
+          "r2_std_median": 0.9353,
+          "r2_enc_mean": 0.8711,
+          "r2_enc_median": 0.8949
+        },
+        "mixed": {
+          "n_treebanks": 70,
+          "r2_std_mean": 0.9307,
+          "r2_std_median": 0.9308,
+          "r2_enc_mean": 0.8064,
+          "r2_enc_median": 0.8928
+        }
+      }
+    },
+    "residual_contextualization": {
+      "residual_r2_pct_std": 0.0525,
+      "residual_r2_pct_enc": 0.1173,
+      "residual_r2_std_pct_display": "5.25%",
+      "residual_r2_enc_pct_display": "11.73%",
+      "incremental_r2": {
+        "predictor_order": [
+          "dd_variance",
+          "mean_dd",
+          "sentence_length",
+          "max_arity",
+          "tree_depth",
+          "dd_skewness",
+          "mean_arity"
+        ],
+        "incremental_r2_std": {
+          "dd_variance": {
+            "individual_r2": 0.875385,
+            "cumulative_r2": 0.875385,
+            "incremental_r2": 0.875385
+          },
+          "mean_dd": {
+            "individual_r2": 0.640193,
+            "cumulative_r2": 0.940511,
+            "incremental_r2": 0.065126
+          },
+          "sentence_length": {
+            "individual_r2": 0.560801,
+            "cumulative_r2": 0.942183,
+            "incremental_r2": 0.001672
+          },
+          "max_arity": {
+            "individual_r2": 0.283244,
+            "cumulative_r2": 0.942606,
+            "incremental_r2": 0.000423
+          },
+          "tree_depth": {
+            "individual_r2": 0.1624,
+            "cumulative_r2": 0.942607,
+            "incremental_r2": 2e-06
+          },
+          "dd_skewness": {
+            "individual_r2": 0.145227,
+            "cumulative_r2": 0.947449,
+            "incremental_r2": 0.004842
+          },
+          "mean_arity": {
+            "individual_r2": 0.020923,
+            "cumulative_r2": 0.94745,
+            "incremental_r2": 1e-06
+          }
+        },
+        "incremental_r2_enc": {
+          "dd_variance": {
+            "cumulative_r2": 0.874992,
+            "incremental_r2": 0.874992
+          },
+          "mean_dd": {
+            "cumulative_r2": 0.879311,
+            "incremental_r2": 0.004319
+          },
+          "sentence_length": {
+            "cumulative_r2": 0.880334,
+            "incremental_r2": 0.001023
+          },
+          "max_arity": {
+            "cumulative_r2": 0.88154,
+            "incremental_r2": 0.001206
+          },
+          "tree_depth": {
+            "cumulative_r2": 0.881543,
+            "incremental_r2": 3e-06
+          },
+          "dd_skewness": {
+            "cumulative_r2": 0.882194,
+            "incremental_r2": 0.000651
+          },
+          "mean_arity": {
+            "cumulative_r2": 0.882652,
+            "incremental_r2": 0.000459
+          }
+        },
+        "final_r2_std": 0.94745,
+        "final_r2_enc": 0.882652
+      },
+      "benchmark_effect_sizes": {
+        "heavy_np_shift": {
+          "r2_mid": 0.035,
+          "r2_range": "0.02-0.05",
+          "source": "Wasow 2002; Arnold et al. 2000 (mixed-effects models for heavy-NP shift ordering)",
+          "ratio_to_residual_std": 1.5,
+          "ratio_to_residual_enc": 3.35
+        },
+        "given_before_new": {
+          "r2_mid": 0.055,
+          "r2_range": "0.03-0.08",
+          "source": "Bresnan et al. 2007 (dative alternation); Arnold et al. 2000",
+          "ratio_to_residual_std": 0.95,
+          "ratio_to_residual_enc": 2.13
+        },
+        "uid_word_order": {
+          "r2_mid": 0.025,
+          "r2_range": "0.01-0.04",
+          "source": "Clark et al. 2023 (UID and word order); Maurits et al. 2010",
+          "ratio_to_residual_std": 2.1,
+          "ratio_to_residual_enc": 4.69
+        },
+        "ddm_dependency_length": {
+          "r2_mid": 0.04,
+          "r2_range": "0.02-0.06",
+          "source": "Futrell et al. 2015 (DDM); Gildea & Temperley 2010",
+          "ratio_to_residual_std": 1.31,
+          "ratio_to_residual_enc": 2.93
+        }
+      },
+      "per_treebank_residual_r2": {
+        "n_treebanks": 294,
+        "mean": 0.0652,
+        "median": 0.0614,
+        "q25": 0.0472,
+        "q75": 0.0802,
+        "pct_above_005": 0.7007,
+        "pct_above_010": 0.0884,
+        "pct_above_015": 0.0068
+      }
+    },
+    "monotonicity_test": {
+      "spearman_r_length_r2": 1.0,
+      "spearman_p_length_r2": 0.0,
+      "linear_slope_length_r2": 0.00262598,
+      "linear_intercept": 0.809684,
+      "linear_r": 0.9586,
+      "linear_p": 0.0414,
+      "bootstrap_ci_slope_lower": 0.00239133,
+      "bootstrap_ci_slope_upper": 0.00287556,
+      "n_bootstrap_resamples": 1000,
+      "n_valid_slopes": 1000,
+      "r2_values_by_bin": {
+        "8-12": 0.8468231968501084,
+        "13-20": 0.8526353394043769,
+        "21-35": 0.8640067203943604,
+        "36+": 0.9496867929451538
+      },
+      "midpoints_by_bin": {
+        "8-12": 10.0,
+        "13-20": 16.5,
+        "21-35": 28.0,
+        "36+": 50.0
+      }
+    }
+  },
+  "metrics_agg": {
+    "r2_std_bin_8_12": 0.846823,
+    "r2_enc_bin_8_12": 0.381565,
+    "n_sentences_bin_8_12": 222176,
+    "residual_var_bin_8_12": 5.3639,
+    "mean_abs_resid_bin_8_12": 1.8052,
+    "r2_std_bin_13_20": 0.852635,
+    "r2_enc_bin_13_20": 0.464973,
+    "n_sentences_bin_13_20": 300788,
+    "residual_var_bin_13_20": 16.3062,
+    "mean_abs_resid_bin_13_20": 3.1174,
+    "r2_std_bin_21_35": 0.864007,
+    "r2_enc_bin_21_35": 0.581252,
+    "n_sentences_bin_21_35": 246105,
+    "residual_var_bin_21_35": 47.5686,
+    "mean_abs_resid_bin_21_35": 5.1763,
+    "r2_std_bin_36plus": 0.949687,
+    "r2_enc_bin_36plus": 0.898567,
+    "n_sentences_bin_36plus": 101608,
+    "residual_var_bin_36plus": 224.5262,
+    "mean_abs_resid_bin_36plus": 9.6721,
+    "r2_delta_std_short_minus_long": -0.102864,
+    "r2_delta_enc_short_minus_long": -0.517002,
+    "head_type_all_head_initial": 151,
+    "head_type_all_head_final": 102,
+    "head_type_all_mixed": 82,
+    "head_type_n30_head_initial": 141,
+    "head_type_n30_head_final": 83,
+    "head_type_n30_mixed": 70,
+    "n_treebanks_all": 335,
+    "n_treebanks_with_r2": 294,
+    "classification_agreement_rate": 0.2021,
+    "classification_n_with_both": 188,
+    "classification_n_agree": 38,
+    "classification_n_disagree": 150,
+    "residual_r2_pct_std": 0.0525,
+    "residual_r2_pct_enc": 0.1173,
+    "per_tb_residual_mean": 0.0652,
+    "per_tb_residual_median": 0.0614,
+    "per_tb_residual_q25": 0.0472,
+    "per_tb_residual_q75": 0.0802,
+    "per_tb_pct_above_5pct": 0.7007,
+    "per_tb_pct_above_10pct": 0.0884,
+    "per_tb_pct_above_15pct": 0.0068,
+    "spearman_r_length_r2": 1.0,
+    "spearman_p_length_r2": 0.0,
+    "linear_slope_length_r2": 0.00262598,
+    "bootstrap_ci_slope_lower": 0.00239133,
+    "bootstrap_ci_slope_upper": 0.00287556
+  },
+  "datasets": [
+    {
+      "dataset": "commul/universal_dependencies",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"head_type\": \"head_final\", \"wals_word_order\": \"SOV\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 321}",
+          "output": "{\"n_sentences\": 321, \"max_imb_mean\": 19.7196, \"max_imb_median\": 17.0, \"max_imb_std\": 10.527, \"mean_imb_mean\": 7.5469, \"mean_imb_median\": 6.4545, \"mean_imb_std\": 4.1893, \"total_imb_mean\": 113.9408, \"total_imb_median\": 87.0, \"total_imb_std\": 91.3612, \"llf_mean\": 0.3888, \"llf_median\": 0.3824, \"llf_std\": 0.0655, \"imb_variance_mean\": 45.3075, \"imb_variance_median\": 28.1538, \"imb_variance_std\": 51.3577, \"max_imb_enc_mean\": 8.0031, \"max_imb_enc_median\": 6.0, \"max_imb_enc_std\": 7.1401, \"mean_imb_enc_mean\": 3.1471, \"mean_imb_enc_median\": 2.0556, \"mean_imb_enc_std\": 3.648, \"total_imb_enc_mean\": 49.2586, \"total_imb_enc_median\": 25.0, \"total_imb_enc_std\": 70.3543, \"llf_enc_mean\": 0.3126, \"llf_enc_median\": 0.3047, \"llf_enc_std\": 0.1253, \"imb_variance_enc_mean\": 12.4595, \"imb_variance_enc_median\": 4.41, \"imb_variance_enc_std\": 20.4133, \"mean_dd_mean\": 2.6972, \"mean_dd_median\": 2.6, \"mean_dd_std\": 0.6323, \"dd_variance_mean\": 5.8736, \"dd_variance_median\": 4.5207, \"dd_variance_std\": 4.8112, \"dd_skewness_mean\": 1.2875, \"dd_skewness_median\": 1.2303, \"dd_skewness_std\": 0.5314, \"sentence_length_mean\": 13.8879, \"sentence_length_median\": 13.0, \"sentence_length_std\": 3.6412, \"tree_depth_mean\": 3.5109, \"tree_depth_median\": 3.0, \"tree_depth_std\": 0.9831, \"max_arity_mean\": 5.0903, \"max_arity_median\": 5.0, \"max_arity_std\": 1.2999, \"mean_arity_mean\": 2.5653, \"mean_arity_median\": 2.4444, \"mean_arity_std\": 0.6096, \"r2_std\": 0.9042, \"r2_adj_std\": 0.902, \"r2_enc\": 0.5683, \"r2_adj_enc\": 0.5586, \"residual_std_sd\": 3.2584, \"residual_enc_sd\": 4.6914}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_head_type": "head_final",
+          "metadata_n_sentences": 321,
+          "predict_imb_method": "{\"max_imb_mean\": 19.7196, \"llf_mean\": 0.3888, \"max_imb_enc_mean\": 8.0031, \"r2_std\": 0.9042, \"r2_enc\": 0.5683, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.6972, \"dd_variance_mean\": 5.8736, \"dd_skewness_mean\": 1.2875, \"r2_std\": 0.9042, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9042,
+          "eval_residual_r2_std": 0.0958,
+          "eval_r2_enc": 0.5683,
+          "eval_residual_r2_enc": 0.4317
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"head_type\": \"head_final\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 32}",
+          "output": "{\"n_sentences\": 32, \"max_imb_mean\": 13.1875, \"max_imb_median\": 13.0, \"max_imb_std\": 6.8027, \"mean_imb_mean\": 5.4655, \"mean_imb_median\": 5.1667, \"mean_imb_std\": 2.8963, \"total_imb_mean\": 61.875, \"total_imb_median\": 53.0, \"total_imb_std\": 43.9444, \"llf_mean\": 0.42, \"llf_median\": 0.4167, \"llf_std\": 0.07, \"imb_variance_mean\": 22.152, \"imb_variance_median\": 13.9295, \"imb_variance_std\": 22.3415, \"max_imb_enc_mean\": 5.7188, \"max_imb_enc_median\": 5.0, \"max_imb_enc_std\": 3.7603, \"mean_imb_enc_mean\": 2.3631, \"mean_imb_enc_median\": 1.9444, \"mean_imb_enc_std\": 1.7772, \"total_imb_enc_mean\": 27.1875, \"total_imb_enc_median\": 19.5, \"total_imb_enc_std\": 26.3859, \"llf_enc_mean\": 0.3948, \"llf_enc_median\": 0.3833, \"llf_enc_std\": 0.1648, \"imb_variance_enc_mean\": 6.0737, \"imb_variance_enc_median\": 3.5547, \"imb_variance_enc_std\": 8.6596, \"mean_dd_mean\": 2.3322, \"mean_dd_median\": 2.35, \"mean_dd_std\": 0.5395, \"dd_variance_mean\": 4.0082, \"dd_variance_median\": 3.025, \"dd_variance_std\": 3.245, \"dd_skewness_mean\": 1.2245, \"dd_skewness_median\": 1.2398, \"dd_skewness_std\": 0.4537, \"sentence_length_mean\": 10.5938, \"sentence_length_median\": 9.5, \"sentence_length_std\": 2.737, \"tree_depth_mean\": 3.375, \"tree_depth_median\": 3.0, \"tree_depth_std\": 1.0533, \"max_arity_mean\": 3.7812, \"max_arity_median\": 4.0, \"max_arity_std\": 1.0227, \"mean_arity_mean\": 2.0214, \"mean_arity_median\": 2.0, \"mean_arity_std\": 0.4875, \"r2_std\": 0.9114, \"r2_adj_std\": 0.8855, \"r2_enc\": 0.5257, \"r2_adj_enc\": 0.3873, \"residual_std_sd\": 2.0251, \"residual_enc_sd\": 2.5898}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_head_type": "head_final",
+          "metadata_n_sentences": 32,
+          "predict_imb_method": "{\"max_imb_mean\": 13.1875, \"llf_mean\": 0.42, \"max_imb_enc_mean\": 5.7188, \"r2_std\": 0.9114, \"r2_enc\": 0.5257, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.3322, \"dd_variance_mean\": 4.0082, \"dd_skewness_mean\": 1.2245, \"r2_std\": 0.9114, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9114,
+          "eval_residual_r2_std": 0.0886,
+          "eval_r2_enc": 0.5257,
+          "eval_residual_r2_enc": 0.4743
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"head_type\": \"mixed\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Indo-European\", \"macroarea\": \"Africa\", \"n_sentences\": 1862}",
+          "output": "{\"n_sentences\": 1862, \"max_imb_mean\": 35.6144, \"max_imb_median\": 28.0, \"max_imb_std\": 25.9531, \"mean_imb_mean\": 13.3782, \"mean_imb_median\": 10.5, \"mean_imb_std\": 10.4049, \"total_imb_mean\": 419.1557, \"total_imb_median\": 247.5, \"total_imb_std\": 572.3084, \"llf_mean\": 0.3818, \"llf_median\": 0.3721, \"llf_std\": 0.0759, \"imb_variance_mean\": 174.2627, \"imb_variance_median\": 67.7858, \"imb_variance_std\": 427.9963, \"max_imb_enc_mean\": 14.928, \"max_imb_enc_median\": 12.0, \"max_imb_enc_std\": 13.8271, \"mean_imb_enc_mean\": 5.8971, \"mean_imb_enc_median\": 4.3292, \"mean_imb_enc_std\": 6.2622, \"total_imb_enc_mean\": 190.1595, \"total_imb_enc_median\": 99.0, \"total_imb_enc_std\": 341.7962, \"llf_enc_mean\": 0.3702, \"llf_enc_median\": 0.3667, \"llf_enc_std\": 0.1008, \"imb_variance_enc_mean\": 40.6798, \"imb_variance_enc_median\": 13.3935, \"imb_variance_enc_std\": 188.2058, \"mean_dd_mean\": 3.1672, \"mean_dd_median\": 3.0723, \"mean_dd_std\": 0.7644, \"dd_variance_mean\": 14.0979, \"dd_variance_median\": 9.47, \"dd_variance_std\": 15.5638, \"dd_skewness_mean\": 1.944, \"dd_skewness_median\": 1.8309, \"dd_skewness_std\": 0.9031, \"sentence_length_mean\": 26.1864, \"sentence_length_median\": 23.0, \"sentence_length_std\": 13.3036, \"tree_depth_mean\": 5.3367, \"tree_depth_median\": 5.0, \"tree_depth_std\": 2.3007, \"max_arity_mean\": 5.7723, \"max_arity_median\": 6.0, \"max_arity_std\": 1.4989, \"mean_arity_mean\": 2.8694, \"mean_arity_median\": 2.8, \"mean_arity_std\": 0.4982, \"r2_std\": 0.9356, \"r2_adj_std\": 0.9354, \"r2_enc\": 0.4188, \"r2_adj_enc\": 0.4167, \"residual_std_sd\": 6.5857, \"residual_enc_sd\": 10.5409}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_head_type": "mixed",
+          "metadata_n_sentences": 1862,
+          "predict_imb_method": "{\"max_imb_mean\": 35.6144, \"llf_mean\": 0.3818, \"max_imb_enc_mean\": 14.928, \"r2_std\": 0.9356, \"r2_enc\": 0.4188, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 3.1672, \"dd_variance_mean\": 14.0979, \"dd_skewness_mean\": 1.944, \"r2_std\": 0.9356, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "eval_r2_std": 0.9356,
+          "eval_residual_r2_std": 0.0644,
+          "eval_r2_enc": 0.4188,
+          "eval_residual_r2_enc": 0.5812
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "evaluation": "comprehensive_synthesis_hypothesis_criteria_assessment",
+    "description": "This synthesis evaluates 7 pre-registered criteria for the load-smoothing hypothesis across 4 experiments covering 335 treebanks. Results: 0 criteria fully confirmed, 1 partial pass (novelty R²), 1 we...",
+    "n_experiments_synthesized": 4,
+    "n_criteria_evaluated": 7,
+    "n_reviewer_critiques": 8,
+    "n_revision_recommendations": 11,
+    "what_paper_can_claim": "The paper can claim: (1) A strong typological split exists in load-smoothing behavior: VSO languages show substantially higher real LLF than projective baselines (median d=1.039), SVO languages show n...",
+    "what_paper_cannot_claim": "The paper cannot claim: (1) Universal load smoothing — only 31.4% of treebanks exceed d>0.2, far below the 70% threshold. (2) Monotonically increasing convexity effects — the residualized test fails. ..."
+  },
+  "metrics_agg": {
+    "novelty_r2_standard": 0.9475,
+    "novelty_r2_encounter_only": 0.8827,
+    "novel_variance_standard_pct": 5.25,
+    "novel_variance_encounter_pct": 11.73,
+    "treebank_coverage_d_gt_02": 0.314,
+    "median_cohen_d_overall": -0.0636,
+    "alpha1_negative_control_d": -0.0847,
+    "monotonic_alpha_spearman_rho_resid": -0.7,
+    "monotonic_alpha_is_monotonic": 0,
+    "ic_independence_pct_llf_significant": 0.7429,
+    "ic_meta_llf_pooled_p": 0.588672,
+    "ic_meta_resid_pooled_p": 0.194343,
+    "ic_meta_bidirectional_p": 3.092e-07,
+    "spoken_written_pct_higher": 0.4286,
+    "spoken_written_n_pairs": 7,
+    "case_richness_r": -0.0474,
+    "case_richness_p": 0.7412,
+    "dom_coefficient": -0.000565,
+    "dom_p": 0.204,
+    "typological_vso_median_d": 1.0387,
+    "typological_svo_median_d": 0.1341,
+    "typological_sov_median_d": -0.5459,
+    "typological_gradient_sd": 1.5845,
+    "head_final_corr_r": 0.5008,
+    "sov_svo_llf_delta_d": 2.5766,
+    "sov_peak_imb_reduction_mean_pct": 68.5,
+    "head_final_r2_std": 0.9423,
+    "head_final_r2_enc": 0.6469,
+    "n_confirmed": 0,
+    "n_exploratory_findings": 2,
+    "n_partial_pass": 1,
+    "n_weak_pass": 1,
+    "n_inconclusive": 1,
+    "n_fail": 4,
+    "reviewer_fully_resolved": 3,
+    "reviewer_partially_addressed": 5,
+    "reviewer_unresolved": 0
+  },
+  "datasets": [
+    {
+      "dataset": "criteria_verdicts",
+      "examples": [
+        {
+          "input": "Novelty R² Test",
+          "output": "{\"criterion\": \"Novelty R\\u00b2 Test\", \"verdict\": \"PARTIAL PASS\", \"evidence\": \"Standard IMB is largely predictable from DD moments (R\\u00b2=0.9475), meaning temporal overlap adds only 5.25% novel varia...",
+          "predict_verdict": "PARTIAL PASS",
+          "eval_criterion_pass": 1,
+          "metadata_source_experiment": "exp_id1",
+          "metadata_criterion_name": "Novelty R² Test"
+        },
+        {
+          "input": "Treebank Coverage (d>0.2)",
+          "output": "{\"criterion\": \"Treebank Coverage (d>0.2)\", \"verdict\": \"FAIL\", \"evidence\": \"FAIL on pre-registered threshold (31.4% vs \\u226570%). However, typological stratification reveals the aggregate failure mask...",
+          "predict_verdict": "FAIL",
+          "eval_criterion_pass": 0,
+          "metadata_source_experiment": "exp_id2",
+          "metadata_criterion_name": "Treebank Coverage (d>0.2)"
+        },
+        {
+          "input": "α=1 Negative Control",
+          "output": "{\"criterion\": \"\\u03b1=1 Negative Control\", \"verdict\": \"WEAK PASS\", \"evidence\": \"d=-0.0847, |d|=0.0847. Small but not zero. Negative control does not cleanly pass.\", \"source_experiment\": \"exp_id2\", \"al...",
+          "predict_verdict": "WEAK PASS",
+          "eval_criterion_pass": 1,
+          "metadata_source_experiment": "exp_id2",
+          "metadata_criterion_name": "α=1 Negative Control"
+        }
+      ]
+    },
+    {
+      "dataset": "typological_split",
+      "examples": [
+        {
+          "input": "VSO",
+          "output": "{\"word_order\": \"VSO\", \"median_d\": 1.038653886534236, \"n\": 7, \"fragility_note\": \"n=7 is critically small. Leave-one-out not yet run. Requires replication with additional VSO treebanks.\"}",
+          "predict_median_d": "1.0387",
+          "eval_n_treebanks": 7,
+          "metadata_word_order": "VSO"
+        },
+        {
+          "input": "SVO",
+          "output": "{\"word_order\": \"SVO\", \"median_d\": 0.13414442774265187, \"n\": 24, \"fragility_note\": \"\"}",
+          "predict_median_d": "0.1341",
+          "eval_n_treebanks": 24,
+          "metadata_word_order": "SVO"
+        },
+        {
+          "input": "SOV",
+          "output": "{\"word_order\": \"SOV\", \"median_d\": -0.5458541193529757, \"n\": 26, \"fragility_note\": \"\"}",
+          "predict_median_d": "-0.5459",
+          "eval_n_treebanks": 26,
+          "metadata_word_order": "SOV"
+        }
+      ]
+    },
+    {
+      "dataset": "confirmatory_vs_exploratory",
+      "examples": [
+        {
+          "input": "Temporal overlap is novel beyond DD",
+          "output": "{\"finding\": \"Temporal overlap is novel beyond DD\", \"status\": \"PARTIAL PASS (exploratory)\", \"evidence\": \"Standard R\\u00b2=0.9475 fails novelty threshold; encounter-only R\\u00b2=0.8827 passes\"}",
+          "predict_status": "PARTIAL PASS (exploratory)",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Temporal overlap is novel beyond DD"
+        },
+        {
+          "input": "Universal load smoothing (d>0.2 in ≥70%)",
+          "output": "{\"finding\": \"Universal load smoothing (d>0.2 in \\u226570%)\", \"status\": \"FAIL (confirmatory prediction)\", \"evidence\": \"Only 31.4% of treebanks exceed d>0.2 threshold\"}",
+          "predict_status": "FAIL (confirmatory prediction)",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Universal load smoothing (d>0.2 in ≥70%)"
+        },
+        {
+          "input": "Convexity α=1 negative control",
+          "output": "{\"finding\": \"Convexity \\u03b1=1 negative control\", \"status\": \"WEAK PASS\", \"evidence\": \"d=-0.0847, |d|=0.0847. Small but not zero. Negative control does not cleanly pass.\"}",
+          "predict_status": "WEAK PASS",
+          "eval_is_confirmed": 0,
+          "metadata_finding": "Convexity α=1 negative control"
+        }
+      ]
+    }
+  ]
+}

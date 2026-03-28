@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "experiment": "phase1_imb_profiles_and_novelty_test",
+    "total_sentences": 870677,
+    "total_treebanks": 335,
+    "description": "IMB profiles and Phase 1 novelty test: per-treebank IMB summary and R2 regression results",
+    "decomposition_identity": {
+      "checks_performed": 32669,
+      "failures": 0,
+      "pass_rate": 1.0
+    },
+    "worked_example": {
+      "tree_a": {
+        "heads": [
+          0,
+          1,
+          2
+        ],
+        "imb_profile": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "max_imb": 3,
+        "llf": 0.533,
+        "dd_multiset": [
+          1,
+          1,
+          2
+        ]
+      },
+      "tree_b": {
+        "heads": [
+          0,
+          1,
+          1
+        ],
+        "imb_profile": [
+          0.0,
+          2.0,
+          2.0
+        ],
+        "max_imb": 2,
+        "llf": 0.8,
+        "dd_multiset": [
+          1,
+          1,
+          2
+        ]
+      },
+      "cost_quadratic": {
+        "tree_a": 18.0,
+        "tree_b": 16.0,
+        "reduction_pct": 11.1
+      },
+      "cost_linear": {
+        "tree_a": 8.0,
+        "tree_b": 8.0,
+        "identical": true
+      }
+    },
+    "novelty_test_pooled": {
+      "standard": {
+        "r2": 0.9475,
+        "r2_adj": 0.9475,
+        "n": 870677,
+        "coefficients": {
+          "const": -19.179721,
+          "mean_dd": 10.690059,
+          "dd_variance": 0.837638,
+          "dd_skewness": -3.482369,
+          "sentence_length": 0.307688,
+          "tree_depth": 0.690695,
+          "max_arity": 0.441108,
+          "mean_arity": -0.064182
+        },
+        "pvalues": {
+          "const": 0.0,
+          "mean_dd": 0.0,
+          "dd_variance": 0.0,
+          "dd_skewness": 0.0,
+          "sentence_length": 0.0,
+          "tree_depth": 0.0,
+          "max_arity": 0.0,
+          "mean_arity": 3.988475460183784e-05
+        }
+      },
+      "encounter_only": {
+        "r2": 0.8827,
+        "r2_adj": 0.8827,
+        "n": 870677,
+        "coefficients": {
+          "const": -7.123063,
+          "mean_dd": 1.610244,
+          "dd_variance": 0.885759,
+          "dd_skewness": 0.95901,
+          "sentence_length": 0.022726,
+          "tree_depth": -0.099123,
+          "max_arity": 0.562865,
+          "mean_arity": 1.135407
+        },
+        "pvalues": {
+          "const": 0.0,
+          "mean_dd": 0.0,
+          "dd_variance": 0.0,
+          "dd_skewness": 0.0,
+          "sentence_length": 2.908730475980307e-41,
+          "tree_depth": 2.3110227132801394e-29,
+          "max_arity": 0.0,
+          "mean_arity": 0.0
+        }
+      }
+    },
+    "r2_by_head_type": {
+      "head_final": {
+        "n_treebanks": 83,
+        "r2_std_mean": 0.9423,
+        "r2_std_median": 0.9439,
+        "r2_std_q25": 0.9328,
+        "r2_std_q75": 0.9543,
+        "r2_std_below_090": 2,
+        "r2_enc_mean": 0.6469,
+        "r2_enc_median": 0.634
+      },
+      "head_initial": {
+        "n_treebanks": 141,
+        "r2_std_mean": 0.9325,
+        "r2_std_median": 0.9353,
+        "r2_std_q25": 0.9162,
+        "r2_std_q75": 0.9527,
+        "r2_std_below_090": 14,
+        "r2_enc_mean": 0.8711,
+        "r2_enc_median": 0.8949
+      },
+      "mixed": {
+        "n_treebanks": 70,
+        "r2_std_mean": 0.9307,
+        "r2_std_median": 0.9308,
+        "r2_std_q25": 0.9133,
+        "r2_std_q75": 0.9526,
+        "r2_std_below_090": 10,
+        "r2_enc_mean": 0.8064,
+        "r2_enc_median": 0.8928
+      }
+    },
+    "residualized_max_imb_distributions": {
+      "head_final_resid_max_imb": {
+        "n": 228976,
+        "mean": 2.0649,
+        "std": 6.9547,
+        "median": 1.7455,
+        "q05": -6.8268,
+        "q25": -1.4469,
+        "q75": 4.8278,
+        "q95": 11.4797,
+        "skewness": 2.9262,
+        "kurtosis": 191.4728
+      },
+      "head_final_resid_max_imb_enc": {
+        "n": 228976,
+        "mean": -3.9398,
+        "std": 10.9108,
+        "median": -1.6671,
+        "q05": -21.5006,
+        "q25": -7.3999,
+        "q75": 2.1669,
+        "q95": 6.2215,
+        "skewness": -2.1859,
+        "kurtosis": 120.1546
+      },
+      "head_initial_resid_max_imb": {
+        "n": 456512,
+        "mean": -0.8548,
+        "std": 6.8963,
+        "median": -0.7888,
+        "q05": -10.5331,
+        "q25": -4.0945,
+        "q75": 2.1669,
+        "q95": 8.1162,
+        "skewness": 1.764,
+        "kurtosis": 150.0245
+      },
+      "head_initial_resid_max_imb_enc": {
+        "n": 456512,
+        "mean": 1.7256,
+        "std": 7.0112,
+        "median": 2.1383,
+        "q05": -7.651,
+        "q25": 0.0658,
+        "q75": 4.0735,
+        "q95": 9.0752,
+        "skewness": 2.3198,
+        "kurtosis": 310.0087
+      },
+      "mixed_resid_max_imb": {
+        "n": 185189,
+        "mean": -0.4459,
+        "std": 8.5245,
+        "median": -0.3904,
+        "q05": -10.3287,
+        "q25": -3.7766,
+        "q75": 2.6024,
+        "q95": 8.017,
+        "skewness": 25.8475,
+        "kurtosis": 2806.0087
+      },
+      "mixed_resid_max_imb_enc": {
+        "n": 185189,
+        "mean": 0.6177,
+        "std": 10.1686,
+        "median": 1.6219,
+        "q05": -10.8227,
+        "q25": -1.0911,
+        "q75": 3.6182,
+        "q95": 8.3038,
+        "skewness": 27.402,
+        "kurtosis": 3670.8171
+      },
+      "all_resid_max_imb": {
+        "n": 870677,
+        "mean": 0.0,
+        "std": 7.3931,
+        "median": -0.0717,
+        "q05": -9.7131,
+        "q25": -3.4085,
+        "q75": 3.0517,
+        "q95": 9.1429,
+        "skewness": 9.809,
+        "kurtosis": 1152.2707
+      },
+      "all_resid_max_imb_enc": {
+        "n": 870677,
+        "mean": 0.0,
+        "std": 9.2086,
+        "median": 1.5,
+        "q05": -13.3477,
+        "q25": -1.8988,
+        "q75": 3.6132,
+        "q95": 8.2139,
+        "skewness": 7.1605,
+        "kurtosis": 1282.4511
+      }
+    },
+    "descriptive_statistics": {
+      "head_final": {
+        "n_sentences": 228976,
+        "n_treebanks": 102,
+        "max_imb": {
+          "mean": 29.359,
+          "std": 28.6924,
+          "median": 21.0
+        },
+        "mean_imb": {
+          "mean": 11.8405,
+          "std": 13.0823,
+          "median": 8.5
+        },
+        "llf": {
+          "mean": 0.4103,
+          "std": 0.0719,
+          "median": 0.4028
+        },
+        "max_imb_enc": {
+          "mean": 12.1673,
+          "std": 19.1936,
+          "median": 6.0
+        },
+        "llf_enc": {
+          "mean": 0.3401,
+          "std": 0.1398,
+          "median": 0.3333
+        },
+        "mean_dd": {
+          "mean": 2.9514,
+          "std": 0.9237,
+          "median": 2.8
+        },
+        "dd_variance": {
+          "mean": 12.4271,
+          "std": 19.85,
+          "median": 7.3248
+        },
+        "sentence_length": {
+          "mean": 18.8735,
+          "std": 10.9044,
+          "median": 16.0
+        },
+        "tree_depth": {
+          "mean": 4.2479,
+          "std": 1.5916,
+          "median": 4.0
+        }
+      },
+      "head_initial": {
+        "n_sentences": 456512,
+        "n_treebanks": 151,
+        "max_imb": {
+          "mean": 32.4235,
+          "std": 31.9966,
+          "median": 25.0
+        },
+        "mean_imb": {
+          "mean": 14.7794,
+          "std": 16.5052,
+          "median": 11.2273
+        },
+        "llf": {
+          "mean": 0.4582,
+          "std": 0.0795,
+          "median": 0.458
+        },
+        "max_imb_enc": {
+          "mean": 23.2759,
+          "std": 27.8297,
+          "median": 18.0
+        },
+        "llf_enc": {
+          "mean": 0.4654,
+          "std": 0.1003,
+          "median": 0.4721
+        },
+        "mean_dd": {
+          "mean": 3.1311,
+          "std": 0.7874,
+          "median": 3.0435
+        },
+        "dd_variance": {
+          "mean": 17.2827,
+          "std": 27.7982,
+          "median": 11.0533
+        },
+        "sentence_length": {
+          "mean": 23.4169,
+          "std": 14.2429,
+          "median": 20.0
+        },
+        "tree_depth": {
+          "mean": 4.6863,
+          "std": 1.8738,
+          "median": 4.0
+        }
+      },
+      "mixed": {
+        "n_sentences": 185189,
+        "n_treebanks": 82,
+        "max_imb": {
+          "mean": 29.438,
+          "std": 36.5766,
+          "median": 21.0
+        },
+        "mean_imb": {
+          "mean": 13.1097,
+          "std": 18.3982,
+          "median": 9.0
+        },
+        "llf": {
+          "mean": 0.4471,
+          "std": 0.0817,
+          "median": 0.4432
+        },
+        "max_imb_enc": {
+          "mean": 18.7452,
+          "std": 30.5062,
+          "median": 12.0
+        },
+        "llf_enc": {
+          "mean": 0.4362,
+          "std": 0.1212,
+          "median": 0.4415
+        },
+        "mean_dd": {
+          "mean": 3.0268,
+          "std": 0.9554,
+          "median": 2.9
+        },
+        "dd_variance": {
+          "mean": 14.4068,
+          "std": 28.6249,
+          "median": 7.6389
+        },
+        "sentence_length": {
+          "mean": 19.9415,
+          "std": 13.8994,
+          "median": 16.0
+        },
+        "tree_depth": {
+          "mean": 4.2358,
+          "std": 1.9396,
+          "median": 4.0
+        }
+      },
+      "all": {
+        "n_sentences": 870677,
+        "n_treebanks": 335,
+        "max_imb": {
+          "mean": 30.9826,
+          "std": 32.2511,
+          "median": 23.0
+        },
+        "mean_imb": {
+          "mean": 13.6514,
+          "std": 16.1689,
+          "median": 10.0
+        },
+        "llf": {
+          "mean": 0.4432,
+          "std": 0.0806,
+          "median": 0.4397
+        },
+        "max_imb_enc": {
+          "mean": 19.3908,
+          "std": 26.8817,
+          "median": 14.0
+        },
+        "llf_enc": {
+          "mean": 0.4262,
+          "std": 0.1277,
+          "median": 0.4396
+        },
+        "mean_dd": {
+          "mean": 3.0617,
+          "std": 0.8658,
+          "median": 2.9583
+        },
+        "dd_variance": {
+          "mean": 15.394,
+          "std": 26.2194,
+          "median": 9.24
+        },
+        "sentence_length": {
+          "mean": 21.4828,
+          "std": 13.5271,
+          "median": 18.0
+        },
+        "tree_depth": {
+          "mean": 4.4752,
+          "std": 1.8321,
+          "median": 4.0
+        }
+      }
+    },
+    "key_findings": {
+      "pooled_r2_std": 0.9475,
+      "pooled_r2_enc": 0.8827,
+      "novelty_confirmed": "False",
+      "n_treebanks_r2_below_090": 26,
+      "n_treebanks_with_r2": 294
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "commul/universal_dependencies",
+      "examples": [
+        {
+          "input": "{\"treebank_id\": \"ab_abnc\", \"head_type\": \"head_final\", \"wals_word_order\": \"SOV\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 321}",
+          "output": "{\"n_sentences\": 321, \"max_imb_mean\": 19.7196, \"max_imb_median\": 17.0, \"max_imb_std\": 10.527, \"mean_imb_mean\": 7.5469, \"mean_imb_median\": 6.4545, \"mean_imb_std\": 4.1893, \"total_imb_mean\": 113.9408, \"to...",
+          "predict_imb_method": "{\"max_imb_mean\": 19.7196, \"llf_mean\": 0.3888, \"max_imb_enc_mean\": 8.0031, \"r2_std\": 0.9042, \"r2_enc\": 0.5683, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.6972, \"dd_variance_mean\": 5.8736, \"dd_skewness_mean\": 1.2875, \"r2_std\": 0.9042, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "metadata_treebank_id": "ab_abnc",
+          "metadata_head_type": "head_final",
+          "metadata_modality": "written",
+          "metadata_wals_word_order": "SOV",
+          "metadata_language_family": "Abkhaz-Adyge"
+        },
+        {
+          "input": "{\"treebank_id\": \"abq_atb\", \"head_type\": \"head_final\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Abkhaz-Adyge\", \"macroarea\": \"Eurasia\", \"n_sentences\": 32}",
+          "output": "{\"n_sentences\": 32, \"max_imb_mean\": 13.1875, \"max_imb_median\": 13.0, \"max_imb_std\": 6.8027, \"mean_imb_mean\": 5.4655, \"mean_imb_median\": 5.1667, \"mean_imb_std\": 2.8963, \"total_imb_mean\": 61.875, \"total...",
+          "predict_imb_method": "{\"max_imb_mean\": 13.1875, \"llf_mean\": 0.42, \"max_imb_enc_mean\": 5.7188, \"r2_std\": 0.9114, \"r2_enc\": 0.5257, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 2.3322, \"dd_variance_mean\": 4.0082, \"dd_skewness_mean\": 1.2245, \"r2_std\": 0.9114, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "metadata_treebank_id": "abq_atb",
+          "metadata_head_type": "head_final",
+          "metadata_modality": "written",
+          "metadata_wals_word_order": "",
+          "metadata_language_family": "Abkhaz-Adyge"
+        },
+        {
+          "input": "{\"treebank_id\": \"af_afribooms\", \"head_type\": \"mixed\", \"wals_word_order\": \"\", \"modality\": \"written\", \"language_family\": \"Indo-European\", \"macroarea\": \"Africa\", \"n_sentences\": 1862}",
+          "output": "{\"n_sentences\": 1862, \"max_imb_mean\": 35.6144, \"max_imb_median\": 28.0, \"max_imb_std\": 25.9531, \"mean_imb_mean\": 13.3782, \"mean_imb_median\": 10.5, \"mean_imb_std\": 10.4049, \"total_imb_mean\": 419.1557, \"...",
+          "predict_imb_method": "{\"max_imb_mean\": 35.6144, \"llf_mean\": 0.3818, \"max_imb_enc_mean\": 14.928, \"r2_std\": 0.9356, \"r2_enc\": 0.4188, \"novelty_detected\": \"False\"}",
+          "predict_baseline": "{\"mean_dd_mean\": 3.1672, \"dd_variance_mean\": 14.0979, \"dd_skewness_mean\": 1.944, \"r2_std\": 0.9356, \"baseline_note\": \"DD moments predict max_imb with this R2; residual is novel IMB signal\"}",
+          "metadata_treebank_id": "af_afribooms",
+          "metadata_head_type": "mixed",
+          "metadata_modality": "written",
+          "metadata_wals_word_order": "",
+          "metadata_language_family": "Indo-European"
+        }
+      ]
+    }
+  ]
+}
